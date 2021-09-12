@@ -1,11 +1,20 @@
-import './App.css';
+import LandingPage from "./Pages/LandingPage";
+import Navbar from "./components/Navbar";
+import ContactHeader from "./components/Navbar/ContactHeader";
+import AboutUsPage from "./Pages/AboutUsPage";
+
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>MITRC</h1>
-    </div>
+    <>
+        <ContactHeader />
+        <Navbar />
+        <LandingPage />
+        {/* <AboutUsPage /> */}
+    </>
   );
 }
+
+
 
 export default App;
