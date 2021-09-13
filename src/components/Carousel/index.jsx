@@ -24,16 +24,16 @@ const SlideTextData = [
         subtitle: "Admissions are now open"
     },
     {
-        title: "Think placemet think MITRC",
-        subtitle: "100% placement record for an decade now"
+        title: "Think placement think MITRC",
+        subtitle: "100% placement record for a decade now"
     },
     {
-        title: "Think placemet think MITRC",
-        subtitle: "100% placement record for an decade now"
+        title: "Think placement think MITRC",
+        subtitle: "100% placement record for a decade now"
     },
     {
-        title: "Think placemet think MITRC",
-        subtitle: "100% placement record for an decade now"
+        title: "Think placement think MITRC",
+        subtitle: "100% placement record for a decade now"
     }
 ]
 
