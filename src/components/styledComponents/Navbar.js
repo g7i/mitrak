@@ -9,7 +9,8 @@ export const Nav = styled.div`
     max-width: 100vw;
     overflow: hidden;
     background: ${({ background }) => (background ?? "white")};
-
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+    
     @media (max-width: 768px) {
         justify-content: space-between;
     }
@@ -63,6 +64,19 @@ export const MenuLink = styled.a`
     &:hover {
         color: #7b7fda;
     }
+`;
+
+export const ExpandableList = styled.div`
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    background: red;
+    bottom: -20;
+    z-index: 1000;
+`;
+
+export const ExpandableLink = styled.div`
+
 `;
 
 export const Menu = styled.div`

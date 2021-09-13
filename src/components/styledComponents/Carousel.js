@@ -64,7 +64,8 @@ export const SlideTextWrapper = styled.div`
 
   @media (max-width:768px) {
     top: 40%;
-    left: 20px;
+    left: 0px;
+    width: 100vw;
   }
 `;
 
@@ -75,7 +76,8 @@ export const SlideHeading = styled.h1`
   margin-bottom: 0.5rem;
 
   @media (max-width:768px) {
-    font-size: 0.9rem;
+    font-size: 1.8rem;
+    text-align: center;
   }
 `;
 
@@ -84,6 +86,7 @@ export const SlideSubHeading = styled.h2`
   color: white;
 
   @media (max-width:768px) {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
 `;

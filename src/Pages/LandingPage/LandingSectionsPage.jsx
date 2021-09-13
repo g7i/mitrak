@@ -7,12 +7,11 @@ import Placements from "./sections/Placements";
 
 const LandingPage = () => {
     return (
-        <FullScreenContainer>
-            <Carousel />
-            {/* <Courses />
-            <News />
-            <Placements /> */}
-        </FullScreenContainer>
+        <>
+            <Courses />
+                <News />
+            <Placements />
+        </>
     )
 }
 
