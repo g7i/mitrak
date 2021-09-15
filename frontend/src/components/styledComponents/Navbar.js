@@ -1,19 +1,18 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 100vw;
-    overflow: hidden;
-    background: ${({ background }) => (background ?? "white")};
-    box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
-    
-    @media (max-width: 768px) {
-        justify-content: space-between;
-    }
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  background: ${({ background }) => background ?? "white"};
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 `;
 
 export const Hamburger = styled.div`
@@ -53,17 +52,16 @@ export const Logo = styled.a`
 `;
 
 export const MenuLink = styled.a`
-    padding: 1rem 1rem;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    color: #6B454D;
-    transition: all 0.3s ease-in;
-    font-size: 1.1rem;
-
-    &:hover {
-        color: #7b7fda;
-    }
+  padding: 1rem 0.5rem 1rem 1.4rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #6b454d;
+  transition: all 0.3s ease-in;
+  font-size: 1.1rem;
+  &:hover {
+    color: #7b7fda;
+  }
 `;
 
 export const ExpandableList = styled.div`
@@ -89,7 +87,7 @@ export const Menu = styled.div`
         overflow: hidden;
         flex-direction: column;
         width: 100%;
-        max-height: ${({ showMobileMenu }) => (showMobileMenu ? "300px" : "0")};
+        max-height: ${({ showMobileMenu }) => (showMobileMenu ? "2000px" : "0")};
         transition: max-height 0.3s ease;
     }
 `;
