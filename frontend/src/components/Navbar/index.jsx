@@ -1,6 +1,7 @@
  
 import React, {useState} from 'react';
 import { Nav, Hamburger, Menu, MenuLink, ImgLogo } from '../styledComponents/Navbar';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/images/mitrc.png'
 
@@ -58,7 +59,7 @@ const Navbar = () => {
         </Hamburger>
         <Menu showMobileMenu={showMobileMenu}>
           <DropDown content={DropDownContent.aboutUs}>
-            <MenuLink href="">About Us</MenuLink>
+            <MenuLink href="/about">About Us</MenuLink>
           </DropDown>
           <DropDown content={DropDownContent.academics}>
             <MenuLink href="">Academics</MenuLink>
