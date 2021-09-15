@@ -1,6 +1,6 @@
 import express from 'express';
 import db from './db';
-import controllers from "./controllers";
+import controllers from './controllers';
 const PORT = process.env.PORT || 8080;
 
 const app = express();
