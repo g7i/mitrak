@@ -1,14 +1,14 @@
 import express from "express";
-import Students from "../../db/models/students";
+import Users from "../../db/models/user";
 
 /**
  * @param {express.Request} req
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function listStudents(req, res) {
+export async function listUsers(req, res) {
     try {
-        res.json(await Students.find().exec());
+        res.json(await Users.find().exec());
     } catch (err) {
         console.error(err)
         return res.status(500).json({error: "Something went wrong."});
@@ -21,16 +21,16 @@ export async function listStudents(req, res) {
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function getStudent(req, res) {
-    const {roll} = req.params;
+export async function getUser(req, res) {
+    const { id } = req.params;
 
-    let student;
+    let user;
     try {
-        student = await Students.findOne({roll}).exec();
-        if (!student) return res.status(404).json({error: "Student not found."});
+        user = await Users.findOne({ id }).exec();
+        if (!user) return res.status(404).json({error: "User not found."});
     } catch (e) {
         console.error(e)
         return res.status(500).json({error: "Something went wrong."});
     }
-    return res.json(student);
+    return res.json(user);
 }

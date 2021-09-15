@@ -1,20 +1,20 @@
 import express from "express";
-import Students from "../../db/models/students";
+import Users from "../../db/models/user";
 
 /**
  * @param {express.Request} req
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function createStudent(req, res) {
-    let student;
+export async function createUser(req, res) {
+    let user;
     try {
-        student = await Students.create(req.body);
+        user = await Users.create(req.body);
     } catch (err) {
         console.error(err)
         return res.status(400).json({error: err});
     }
-    res.status(201).json(student);
+    res.status(201).json(user);
 }
 
 /**
@@ -22,9 +22,10 @@ export async function createStudent(req, res) {
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function updateStudent(req, res) {
+export async function updateUser(req, res) {
+    const { id } = req.params;
     try {
-        await Students.findOneAndUpdate({roll: req.params.roll}, req.body, {new: true}).exec();
+        await Users.findOneAndUpdate({ id }, req.body, {new: true}).exec();
     } catch (err) {
         console.error(err)
         return res.status(400).json({error: err});
@@ -37,9 +38,10 @@ export async function updateStudent(req, res) {
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function removeStudent(req, res) {
+export async function removeUser(req, res) {
+    const { id } = req.params;
     try {
-        await Students.findOneAndDelete({roll: req.params.roll}).exec();
+        await Users.findOneAndDelete({ id }).exec();
     } catch (err) {
         console.error(err)
         return res.status(500).json({error: "Something went wrong."});
