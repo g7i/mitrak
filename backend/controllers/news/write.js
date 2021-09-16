@@ -1,15 +1,15 @@
 import express from "express";
-import Users from "../../db/models/user";
+import News from "../../db/models/news";
 
 /**
  * @param {express.Request} req
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function createUser(req, res) {
+export async function createNews(req, res) {
     let user;
     try {
-        user = await Users.create(req.body);
+        user = await News.create(req.body);
     } catch (err) {
         return res.status(400).json({error: err});
     }
@@ -21,10 +21,10 @@ export async function createUser(req, res) {
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function updateUser(req, res) {
+export async function updateNews(req, res) {
     const { id } = req.params;
     try {
-        await Users.findOneAndUpdate({ id }, req.body, {new: true}).exec();
+        await News.findByIdAndUpdate(id, req.body, {new: true}).exec();
     } catch (err) {
         return res.status(400).json({error: err});
     }
@@ -36,10 +36,10 @@ export async function updateUser(req, res) {
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function removeUser(req, res) {
+export async function removeNews(req, res) {
     const { id } = req.params;
     try {
-        await Users.findOneAndDelete({ id }).exec();
+        await News.findByIdAndDelete(id).exec();
     } catch (err) {
         return res.status(500).json({error: "Something went wrong."});
     }

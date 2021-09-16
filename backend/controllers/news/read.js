@@ -1,14 +1,14 @@
 import express from "express";
-import Users from "../../db/models/user";
+import News from "../../db/models/news";
 
 /**
  * @param {express.Request} req
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function listUsers(req, res) {
+export async function listNews(req, res) {
     try {
-        res.json(await Users.find().exec());
+        res.json(await News.find().exec());
     } catch (err) {
         return res.status(500).json({error: "Something went wrong."});
     }
@@ -20,13 +20,13 @@ export async function listUsers(req, res) {
  * @param {express.Response} res
  * @return {Promise<*>}
  */
-export async function getUser(req, res) {
+export async function getNews(req, res) {
     const { id } = req.params;
 
     let user;
     try {
-        user = await Users.findOne({ id }).exec();
-        if (!user) return res.status(404).json({error: "User not found."});
+        user = await News.findById(id).exec();
+        if (!user) return res.status(404).json({error: "News not found."});
     } catch (e) {
         return res.status(500).json({error: "Something went wrong."});
     }
