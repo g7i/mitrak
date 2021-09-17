@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../../components/Banner'
-import { Heading, Container, Paragraph, FillImage, Box, BoxHeading, ListItem } from '../../components/styledComponents/GlobalComponents'
+import { Heading, Container, Paragraph, FillImage, Box, BoxHeading, ListItem, FlexContainer } from '../../components/styledComponents/GlobalComponents'
 import Layout from '../../constants/Layout'
 import collegeImg from '../../assets/images/college.jpg'
 import directorImg from '../../assets/images/director.png'
@@ -203,7 +203,7 @@ const AboutUsPage = () => {
             </Container>
             <Container>
             <Heading>Our Vision and Mission</Heading>
-                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '2vh'}}>
+                <FlexContainer>
                     <Box>
                         <BoxHeading>Vision</BoxHeading>
                         <Paragraph>
@@ -211,7 +211,6 @@ const AboutUsPage = () => {
                         </Paragraph>
                         <br />
                         <br />
-
                     </Box>
                     <Box>
                         <BoxHeading>Mission</BoxHeading>
@@ -219,11 +218,11 @@ const AboutUsPage = () => {
                             MITRC emphasizes on all round development of its students. It not only aims at equipping the students with the latest Engineering skills  knowledge to successfully meet the challenges posed by globalization, but also to be good  worthy citizens of this great country aiding it in its overall progress development.
                         </Paragraph>
                     </Box>
-                </div>
+                </FlexContainer>
             </Container>
             <Container style={{marginTop: '5vh'}}>
                 <Heading>Chairman's Desk</Heading>
-                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                <FlexContainer>
                     <Box>
                         <Paragraph>
                         As we are moving ahead in twenty first century, a realization that draws and makes us all proud is India’s emergence as an economic power to reckon with but this reinstates the need or required for quality education.
@@ -241,11 +240,11 @@ const AboutUsPage = () => {
                     <Box>
                         <FillImage src={collegeImg} alt="chairman mitrc alwar" />
                     </Box>
-                </div>
+                </FlexContainer>
             </Container>
-            <Container style={{marginTop: '5vh', display: 'flex', flexDirection: 'column'}}>
+            <Container>
                 <Heading>Director's Desk</Heading>
-                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                <FlexContainer>
                     <Box>
                         <FillImage src={directorImg} alt="director mitrc alwar" />
                     </Box>
@@ -256,7 +255,7 @@ const AboutUsPage = () => {
                         We are extremely delighted to introduce you to MITRC, Alwar. From its origin in 2007, MITRC has served our nation’s flagship comprehensive institution of technical and management education. We are elevating institute’s tradition of superbness in technical and management education through high quality programs in teaching, research, on-site industry executive training and service
                         </Paragraph>
                     </Box>
-                </div>
+                </FlexContainer>
                 <Paragraph>
                 Our campus is situated in a beautiful landscape. Our distinguished faculty with extensive ties to leading engineering and research community are able to bring the best engineers and managers into our programs as visiting faculty and guest speakers.
                 </Paragraph>
@@ -272,19 +271,23 @@ const AboutUsPage = () => {
                 <Paragraph>
                 Thank you for selecting us for your ward.
                 </Paragraph>
+                <br />
+                <br />
                 <Paragraph color="#32404D">
                     <strong>Dr. S. K. SHARMA (Director MITRC)</strong>
                 </Paragraph>
+                <br />
                 <Paragraph color="#32404D">
                     <strong>Mobile No.: +91 9413106857</strong>
                 </Paragraph>
+                <br />
                 <Paragraph color="#32404D">
                     <strong>E-mail: director@mitrc.ac.in</strong>
                 </Paragraph>
             </Container>
             <Container>
                 <Heading>Governing Board</Heading>
-                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                <FlexContainer>
                     <Box>
                         <Paragraph>The Governing Board reviews are scheduled on regular basis in MITRC Alwar.</Paragraph>
                         <Paragraph>
@@ -302,11 +305,11 @@ const AboutUsPage = () => {
                     <Box>
                         <FillImage src={students} alt="governing board mitrc" />
                     </Box>
-                </div>
+                </FlexContainer>
             </Container>
             <Container>
                 <Heading>Advisory Board</Heading>
-                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                <FlexContainer>
                     <Box>
                         <FillImage src={advisory} alt="advisory board mitrc" />
                     </Box>
@@ -324,8 +327,8 @@ const AboutUsPage = () => {
                             <ListItem>Strategic advice</ListItem>
                         </ul>
                     </Box>
-                </div>
-                <BoxHeading>Board Members</BoxHeading>
+                </FlexContainer>
+                <BoxHeading style={{marginTop: '5vh'}}>Board Members</BoxHeading>
                 {
                     advisoryBoard.map((item) => (
                         <div style={{display: 'flex', flexDirection: 'column'}}>
