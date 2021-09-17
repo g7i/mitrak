@@ -23,8 +23,8 @@ const DropDownContent = {
     { title: "Apply for admission", link: "" },
   ],
   campusLife: [
-    { title: "Amentities", link: "" },
-    { title: "Students Affair", link: "" },
+    { title: "Amenities", link: "/campus-life/amenities" },
+    { title: "Students Affair", link: "/campus-life/studentaffair" },
     { title: "Clubs and Activities", link: "" },
     { title: "College Daze- the magzine", link: "" },
     { title: "Events And Gallery", link: "" },
@@ -65,7 +65,7 @@ const Navbar = () => {
             <MenuLink href="">Academics</MenuLink>
           </DropDown>
           <DropDown content={DropDownContent.campusLife}>
-            <MenuLink href="">Campus Life</MenuLink>
+            <MenuLink href="/campus-life">Campus Life</MenuLink>
           </DropDown>
           <DropDown content={DropDownContent.placements}>
             <MenuLink href="">Placements</MenuLink>

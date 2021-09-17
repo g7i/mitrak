@@ -20,6 +20,12 @@ export const FillImage = styled.img`
     object-fit: contain;
 `;
 
+export const HalfImage = styled.img`
+    width: 50%;
+    margin: 0 auto;
+    object-fit: contain;
+`;
+
 export const Wrapper = styled.div`
     width: 80%;
     display: flex;
@@ -51,13 +57,22 @@ export const HalfWrapper = styled.div`
 //TYPOGRAPHY
 export const Heading = styled.h1`
     font-size: 2.5rem;
-    text-align: center;
+    /* text-align: center; */
+    margin-top: 2vh;
     font-family: 'Bebas Neue', cursive;
     color: #32404D;
     letter-spacing: 2px;
     @media (max-width: 768px) {
         font-size: 1.5rem;
     }
+`;
+
+export const HyperLink = styled.a`
+    color: #0000FF;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
 `;
 
 export const Paragraph = styled.span`
@@ -100,6 +115,12 @@ export const Container = styled.div`
         padding: 0.5vh 2rem;
         margin-top: 5vh;
     }
+`;
+
+export const PageContainer = styled.div`
+    padding: 2vw;
+    height: 100vh;
+    overflow-y: scroll;
 `;
 
 export const FlexContainer = styled.div`

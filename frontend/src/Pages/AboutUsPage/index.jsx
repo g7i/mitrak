@@ -195,14 +195,14 @@ const AboutUsPage = () => {
                 bannerDescription={staticData.description}
             />
             <Container>
-                <Heading>Modern Institute of Technology and Research Center</Heading>
+                <Heading style={{textAlign: 'center', marginTop: 0}}>Modern Institute of Technology and Research Center</Heading>
                 <Paragraph>
                     Alwar- the City of Parks has always been proud of its rich heritage and culture. We at MITRC, Alwar add another feather in the already colorful cap of Alwar, Rajasthan. Since its inception in 2007, Modern Institute of Technology & Research Centre (An Engineering and Management College), Alwar has been known to enable students to carve a niche for themselves and develop a strong personality. Ranked as one of the best private engineering and management colleges of Alwar, Rajasthan it is located in the serene lap of the Aravali Hills on Alwar-Delhi-Tijara Highway.MITRC Alwar provides students with state-of-the art infrastructure which helps them to attain understanding of their chosen engineering discipline. Engineering transforms scientific discoveries into technological solutions for the benefit of humanity. Everything we rely on for work, life and play has been touched by Engineering.
                 </Paragraph>
                 <FillImage src={collegeImg} alt="mitrc alwar rajasthan" />
             </Container>
             <Container>
-            <Heading>Our Vision and Mission</Heading>
+            <Heading style={{textAlign: 'center', marginTop: 0}}>Our Vision and Mission</Heading>
                 <FlexContainer>
                     <Box>
                         <BoxHeading>Vision</BoxHeading>
@@ -221,7 +221,7 @@ const AboutUsPage = () => {
                 </FlexContainer>
             </Container>
             <Container style={{marginTop: '5vh'}}>
-                <Heading>Chairman's Desk</Heading>
+                <Heading style={{textAlign: 'center', marginTop: 0}}>Chairman's Desk</Heading>
                 <FlexContainer>
                     <Box>
                         <Paragraph>
@@ -243,7 +243,7 @@ const AboutUsPage = () => {
                 </FlexContainer>
             </Container>
             <Container>
-                <Heading>Director's Desk</Heading>
+                <Heading style={{textAlign: 'center', marginTop: 0}}>Director's Desk</Heading>
                 <FlexContainer>
                     <Box>
                         <FillImage src={directorImg} alt="director mitrc alwar" />
@@ -286,7 +286,7 @@ const AboutUsPage = () => {
                 </Paragraph>
             </Container>
             <Container>
-                <Heading>Governing Board</Heading>
+                <Heading style={{textAlign: 'center', marginTop: 0}}>Governing Board</Heading>
                 <FlexContainer>
                     <Box>
                         <Paragraph>The Governing Board reviews are scheduled on regular basis in MITRC Alwar.</Paragraph>
@@ -308,7 +308,7 @@ const AboutUsPage = () => {
                 </FlexContainer>
             </Container>
             <Container>
-                <Heading>Advisory Board</Heading>
+                <Heading style={{textAlign: 'center', marginTop: 0}}>Advisory Board</Heading>
                 <FlexContainer>
                     <Box>
                         <FillImage src={advisory} alt="advisory board mitrc" />
@@ -342,7 +342,7 @@ const AboutUsPage = () => {
                 }
             </Container>
             <Container style={{display: 'flex', flexDirection: 'column', marginBottom: '4rem'}}>
-                <Heading>Society</Heading>
+                <Heading style={{textAlign: 'center', marginTop: 0}}>Society</Heading>
                 <FillImage src={society} alt="society mitrc alwar" />
                 <BoxHeading style={{textAlign: 'center', fontSize: '1.5rem'}}>“All India Arya Samajis Society for Advance Education & Research” (AIASSAER)</BoxHeading>
                 <Paragraph>
