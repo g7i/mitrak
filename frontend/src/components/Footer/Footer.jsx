@@ -56,6 +56,7 @@ const Footer = () => {
 
         <FooterSectionContainer>
           <SectionHeading>Enquiry</SectionHeading>
+          <SectionText>We will call you on the number provided</SectionText>
           <FooterSecondSectionContainer numberOfRow={1}>
             <CustomInputContainer>
               <input placeholder={"enter your number"}/>
