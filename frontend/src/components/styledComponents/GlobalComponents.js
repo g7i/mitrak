@@ -11,12 +11,18 @@ export const HalfScreenContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: ${({background}) => (background ?? "#FFFFFF")}
+    background: ${({ background }) => (background ?? "#FFFFFF")}
 `;
 
 export const FillImage = styled.img`
     width: 100%;
     margin: 2vh 0;
+    object-fit: contain;
+`;
+
+export const HalfImage = styled.img`
+    width: 50%;
+    margin: 0 auto;
     object-fit: contain;
 `;
 
@@ -51,7 +57,8 @@ export const HalfWrapper = styled.div`
 //TYPOGRAPHY
 export const Heading = styled.h1`
     font-size: 2.5rem;
-    text-align: center;
+    /* text-align: center; */
+    margin-top: 2vh;
     font-family: 'Bebas Neue', cursive;
     color: #32404D;
     letter-spacing: 2px;
@@ -60,12 +67,20 @@ export const Heading = styled.h1`
     }
 `;
 
+export const HyperLink = styled.a`
+    color: #0000FF;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+`;
+
 export const Paragraph = styled.span`
     font-size: 1.3rem;
     /* text-align: center; */
     font-family: 'Lato', sans-serif;
     margin-top: 1vh;
-    color: ${({color}) => (color ?? "#777797")};
+    color: ${({ color }) => (color ?? "#777797")};
     @media (max-width: 768px) {
         font-size: 1rem;
         text-align: justify;
@@ -94,8 +109,28 @@ export const BannerHeading = styled.h1`
 `;
 
 export const Container = styled.div`
-    margin-top: 2vh;
+    margin-top: 10vh;
     padding: 0 15vw;
+    @media (max-width: 768px) {
+        padding: 0.5vh 2rem;
+        margin-top: 5vh;
+    }
+`;
+
+export const PageContainer = styled.div`
+    padding: 2vw;
+    height: 100vh;
+    overflow-y: scroll;
+`;
+
+export const FlexContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.4vh;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const Box = styled.div`
@@ -104,15 +139,25 @@ export const Box = styled.div`
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const BoxHeading = styled.h1`
     font-size: 2.4rem;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+        font-size: 1.4rem;
+        text-align: center;
+        width: 100%;
+    }
 `;
 
 export const BannerContainer = styled.div`
-    background-image: url(${({imageUrl}) => (imageUrl)});
+    background-image: url(${({ imageUrl }) => (imageUrl)});
     height: 35vh;
     background-repeat: no-repeat;
     background-size: cover;
