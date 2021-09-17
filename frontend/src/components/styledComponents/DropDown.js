@@ -4,8 +4,8 @@ import { AiOutlineDown } from "react-icons/ai";
 export const DropDownOuterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 `;
 
 export const DropDownContainer = styled.div`
@@ -25,6 +25,8 @@ export const DropDownContentContainer = styled.div`
   top: 50px;
   z-index: 1000;
   padding: 1rem;
+  width: 100%;
+  left: 0;
   ul {
     list-style-type: none;
     li {
@@ -38,7 +40,7 @@ export const DropDownContentContainer = styled.div`
   }
   a {
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: black;
   }
   display: "";
@@ -52,12 +54,22 @@ export const DropDownContentContainer = styled.div`
       max-height: "0px";
       overflow: hidden;
       max-height: ${({ visible }) => (visible ? "800px" : "0px")};
-      transition: max-height 1s ease;
+      transition: max-height 800ms ease;
     }
     a {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
+    padding-left: 40px;
+    
   }
 `;
+
+export const DropDownList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  li{
+    margin-left: 20px;
+  }
+`
 
 

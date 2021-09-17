@@ -1,20 +1,26 @@
- 
-import React, {useState} from 'react';
-import { Nav, Hamburger, Menu, MenuLink, ImgLogo } from '../styledComponents/Navbar';
+import React, { useState } from "react";
+import {
+  Nav,
+  Hamburger,
+  Menu,
+  MenuLink,
+  ImgLogo,
+  LoginButton,
+} from "../styledComponents/Navbar";
 
-import logo from '../../assets/images/mitrc.png'
+import logo from "../../assets/images/mitrc.png";
 
-import DropDown from '../DropDown/DropDown';
+import DropDown from "../DropDown/DropDown";
 
 const DropDownContent = {
-  aboutUs: [
-    { title: "Vision And Mission", link: "" },
-    { title: "Governing Board", link: "" },
-    { title: "Chairmen's Desk", link: "" },
-    { title: "Advisory Board", link: "" },
-    { title: "Director's Desk", link: "" },
-    { title: "Society", link: "" },
-  ],
+  // aboutUs: [
+  //   { title: "Vision And Mission", link: "" },
+  //   { title: "Governing Board", link: "" },
+  //   { title: "Chairmen's Desk", link: "" },
+  //   { title: "Advisory Board", link: "" },
+  //   { title: "Director's Desk", link: "" },
+  //   { title: "Society", link: "" },
+  // ],
   academics: [
     { title: "Courses", link: "" },
     { title: "Departments", link: "" },
@@ -45,36 +51,36 @@ const DropDownContent = {
 };
 
 const Navbar = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
+  return (
+    <Nav>
+      <ImgLogo src={logo} alt="Mitrc Logo" />
+      <Hamburger onClick={() => setShowMobileMenu(!showMobileMenu)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </Hamburger>
+      <Menu showMobileMenu={showMobileMenu}>
+        <MenuLink href="#">About Us</MenuLink>
+        <DropDown content={DropDownContent.academics}>
+          <MenuLink href="#">Academics</MenuLink>
+        </DropDown>
+        <DropDown content={DropDownContent.campusLife}>
+          <MenuLink href="#">Campus Life</MenuLink>
+        </DropDown>
+        <DropDown content={DropDownContent.placements}>
+          <MenuLink href="#">Placements</MenuLink>
+        </DropDown>
 
-    return (
-      <Nav>
-        <ImgLogo src={logo} alt="Mitrc Logo" />
-        <Hamburger onClick={() => setShowMobileMenu(!showMobileMenu)}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </Hamburger>
-        <Menu showMobileMenu={showMobileMenu}>
-          <DropDown content={DropDownContent.aboutUs}>
-            <MenuLink href="">About Us</MenuLink>
-          </DropDown>
-          <DropDown content={DropDownContent.academics}>
-            <MenuLink href="">Academics</MenuLink>
-          </DropDown>
-          <DropDown content={DropDownContent.campusLife}>
-            <MenuLink href="">Campus Life</MenuLink>
-          </DropDown>
-          <DropDown content={DropDownContent.placements}>
-            <MenuLink href="">Placements</MenuLink>
-          </DropDown>
-          
-
-          <MenuLink href="">Research</MenuLink>
-        </Menu>
-      </Nav>
-    );
-}
+        <MenuLink href="">Research</MenuLink>
+      </Menu>
+      <Menu showMobileMenu={showMobileMenu}>
+        <MenuLink>Apply for Admission</MenuLink>
+        <LoginButton>Login</LoginButton>
+      </Menu>
+    </Nav>
+  );
+};
 
 export default Navbar;
