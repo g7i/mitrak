@@ -1,10 +1,9 @@
-import LandingPage from "./Pages/LandingPage";
+import LandingPage from "./Pages/HomePage";
 import Navbar from "./components/Navbar";
 import ContactHeader from "./components/Navbar/ContactHeader";
-import AboutUsPage from "./Pages/AboutUsPage";
-import LandingSectionsPage from './Pages/LandingPage/LandingSectionsPage';
-import MainNav from "./components/Navbar/MainNav";
+import LandingSectionsPage from './Pages/HomePage/LandingSectionsPage';
 import Footer from "./components/Footer/Footer";
+import AboutUsSection from './Pages/HomePage/sections/AboutUsSection';
 
 
 const App = () => {
@@ -13,9 +12,7 @@ const App = () => {
       <div className="app-main-container">
         <ContactHeader />
         <Navbar />
-        {/* <MainNav /> */}
         <LandingPage />
-        <AboutUsPage />
         <LandingSectionsPage />
         <Footer />
       </div>

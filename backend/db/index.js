@@ -7,15 +7,8 @@ const db = mongoose.createConnection(uri, {
     useUnifiedTopology: true,
 });
 
-db.on('error', (error) => {
-    console.log('DB connection failed', error);
-    db.close().catch(() =>
-        console.log(`DB failed to close connection ${this.name}`)
-    );
-});
+db.on('error', (error) => console.log('DB connection failed', error));
 
-db.on('disconnected', () => {
-    console.log('DB disconnected');
-});
+db.on('disconnected', () => console.log('DB disconnected'));
 
 export default db;

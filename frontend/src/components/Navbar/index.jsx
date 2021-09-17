@@ -50,6 +50,46 @@ const DropDownContent = {
   ],
 };
 
+import DropDown from '../DropDown/DropDown';
+
+const DropDownContent = {
+  aboutUs: [
+    { title: "Vision And Mission", link: "" },
+    { title: "Governing Board", link: "" },
+    { title: "Chairmen's Desk", link: "" },
+    { title: "Advisory Board", link: "" },
+    { title: "Director's Desk", link: "" },
+    { title: "Society", link: "" },
+  ],
+  academics: [
+    { title: "Courses", link: "" },
+    { title: "Departments", link: "" },
+    { title: "Mendatory disclosures", link: "" },
+    { title: "Apply for admission", link: "" },
+  ],
+  campusLife: [
+    { title: "Amenities", link: "/campus-life/amenities" },
+    { title: "Students Affair", link: "/campus-life/studentaffair" },
+    { title: "Clubs and Activities", link: "" },
+    { title: "College Daze- the magzine", link: "" },
+    { title: "Events And Gallery", link: "" },
+  ],
+
+  placements: [
+    { title: "From TPO Desk", link: "" },
+    { title: "Placement Activities", link: "" },
+    { title: "Government Selection", link: "" },
+    { title: "Placement Highlight", link: "" },
+    { title: "Coporate feedback", link: "" },
+    { title: "Recent Achievments", link: "" },
+    { title: "Recruitment partner", link: "" },
+    { title: "Testimonials", link: "" },
+    { title: "gallery", link: "" },
+    { title: "Placement Summary", link: "" },
+    { title: "Alumini", link: "" },
+  ],
+};
+
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
