@@ -3,6 +3,7 @@ import {
   DropDownContainer,
   DropDownContentContainer,
   DropDownIcon,
+  DropDownList,
   DropDownOuterContainer,
 } from "../styledComponents/DropDown";
 
@@ -22,19 +23,20 @@ const DropDown = ({ children, content }) => {
           setOpen(false);
         }
       }}
+      onClick={() => setOpen(!open)}
     >
       <DropDownContainer>
         {children}
-        <DropDownIcon onClick={() => setOpen(!open)} />
+        <DropDownIcon />
       </DropDownContainer>
       <DropDownContentContainer visible={open}>
-        <ul>
-          {content?.map((item) => (
-            <li>
+        <DropDownList>
+          {content?.map((item , i) => (
+            <li key={i}>
               <a href={item.link}>{item.title}</a>
             </li>
           ))}
-        </ul>
+        </DropDownList>
       </DropDownContentContainer>
     </DropDownOuterContainer>
   );

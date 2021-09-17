@@ -16,6 +16,7 @@ import {
     ItemWrapper,
 } from "../../../components/styledComponents/News";
 import {Heading} from "../../../components/styledComponents/GlobalComponents";
+import PartnerSlider from "../PartnerSlider";
 
 const SlickArrowRight = ({onClick, className}) => {
     if (className.includes('slick-disabled')) return null;
@@ -89,6 +90,7 @@ export default function Placements() {
                     </ItemWrapper>
                 ))}
             </Slider>
+            <PartnerSlider />
         </Container>
     );
 }
