@@ -5,6 +5,7 @@ import PagesLayout from '../../constants/PagesLayout'
 import { useParams } from 'react-router-dom';
 import { amenities, studentaffair, clubandactivities } from './staticData/doc';
 import { HalfImage, Heading, HyperLink, ListItem, PageContainer, Paragraph } from '../../components/styledComponents/GlobalComponents';
+import ComplaintForm from './ComplaintForm';
 
 const CampusLife = () => {
 
@@ -28,15 +29,15 @@ const CampusLife = () => {
 
     const relatedLinks = {
         "amenities": [
-            { title: "Hostel", link: "" },
-            { title: "Laundary", link: "" },
-            { title: "Conveyance", link: "" },
-            { title: "Canteen", link: "" },
-            { title: "Mess", link: "" },
-            { title: "Gym", link: "" },
-            { title: "Medical", link: "" },
-            { title: "Library", link: "" },
-            { title: "Language Lab", link: "" },
+            { title: "Hostel" },
+            { title: "Laundary" },
+            { title: "Conveyance" },
+            { title: "Canteen" },
+            { title: "Mess" },
+            { title: "Gym" },
+            { title: "Medical"},
+            { title: "Library"},
+            { title: "Language Lab"},
         ],
         "studentaffair": [
             { title: "Anti Ragging" },
@@ -92,6 +93,9 @@ const CampusLife = () => {
                                 }
                             </>
                         ))
+                    }
+                    {
+                        (child === 'grievance redressal' || 'complaint of caste base descrimination') && (<ComplaintForm title={child} />)
                     }
                 </PageContainer>
             </PagesLayout>
