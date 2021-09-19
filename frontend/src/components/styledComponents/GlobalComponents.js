@@ -26,6 +26,18 @@ export const HalfImage = styled.img`
     object-fit: contain;
 `;
 
+export const OneThirdImage = styled.img`
+  width: 33%;
+  margin: 0 auto;
+  object-fit: contain;
+  @media (max-width: 1120px) {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
 export const Wrapper = styled.div`
     width: 80%;
     display: flex;
@@ -52,6 +64,7 @@ export const HalfWrapper = styled.div`
         padding-top: 0.5rem;
     }
 `;
+
 
 
 //TYPOGRAPHY

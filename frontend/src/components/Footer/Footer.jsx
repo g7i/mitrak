@@ -6,6 +6,7 @@ import {
   FooterSecondMainContainer,
   FooterSecondSectionContainer,
   FooterSectionContainer,
+  LogoImage,
   SectionHeading,
   SectionText,
   SocailMediaContainer,
@@ -24,7 +25,12 @@ const Footer = () => {
     <FooterMainContainer>
       <FooterSecondMainContainer>
         <FooterSectionContainer>
-          <img src={""} alt={"mitrc-logo"} />
+          <LogoImage
+            src={
+              "https://www.mitrc.ac.in/wp-content/uploads/2019/05/mitrc_logo_small.png"
+            }
+            alt={"mitrc-logo"}
+          />
         </FooterSectionContainer>
         <FooterSectionContainer>
           <SectionHeading>Quick Links</SectionHeading>
@@ -59,7 +65,7 @@ const Footer = () => {
           <SectionText>We will call you on the number provided</SectionText>
           <FooterSecondSectionContainer numberOfRow={1}>
             <CustomInputContainer>
-              <input placeholder={"enter your number"}/>
+              <input placeholder={"enter your number"} />
               <div>
                 <IoMdSend />
               </div>
