@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../../constants/Colors";
 
 export const Nav = styled.div`
   padding: 0 2rem;
@@ -112,18 +113,19 @@ export const Wrapper = styled.div`
 `;
 
 export const LoginButton = styled.button`
-  padding: 10px;
+  padding: 0.3rem 1rem;
   border-radius: 20px;
-  border: 0px;
-  height: 40px;
+  border: 4px solid #32404D;
   margin-left: 20px;
-  background-color: #7b7fda;
+  background-color: #32404D;
   color: white;
   transition: all 0.3s ease-in;
   font-size: 1.2rem;
+  cursor: pointer;
   &:hover {
-    color: #7b7fda;
-    background-color: white;
+    border: 4px solid #32404D;
+    background-color: transparent;
+    color: #32404D;
   }
   @media (max-width: 768px) {
     margin-bottom: 20px;

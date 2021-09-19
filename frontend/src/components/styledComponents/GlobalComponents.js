@@ -132,8 +132,8 @@ export const Container = styled.div`
 
 export const PageContainer = styled.div`
     padding: 2vw;
-    height: 100vh;
-    overflow-y: scroll;
+    /* height: 100vh;
+    overflow-y: scroll; */
 `;
 
 export const FlexContainer = styled.div`
@@ -171,7 +171,7 @@ export const BoxHeading = styled.h1`
 
 export const BannerContainer = styled.div`
     background-image: url(${({ imageUrl }) => (imageUrl)});
-    height: 35vh;
+    height: 30vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
@@ -183,4 +183,22 @@ export const BannerContainer = styled.div`
 export const ListItem = styled.li`
     color: #777797;
     margin-top: 1vh;
+`;
+
+export const FormInput = styled.input`
+    padding: 0.3vw;
+    font-size: 1vw;
+    width: 100%;
+    margin-top: 0.5vw;
+`;
+
+export const FillButton = styled.button`
+    background-color: #777797;
+    border: none;
+    padding: 1vh;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 3vh;
+    cursor: pointer;
 `;

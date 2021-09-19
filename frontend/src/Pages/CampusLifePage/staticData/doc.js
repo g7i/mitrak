@@ -255,3 +255,173 @@ export const studentaffair = [
     },
     
 ]
+
+export const clubandactivities = [
+    {
+        title: "aadharclub",
+        imageUrl: "",
+        contentPara1: {
+            para: "We are a non-profit student organization which facilitates the overall development of students by providing them a platform to showcase their talent and sharpen their skills through a variety of planned events and activities."
+        },
+        contentPara2: {
+            contentHeading: "WHAT WE DO",
+            list: [
+                "Workshop",
+                "Publications",
+                "Survey Camps",
+                "Software Trainings on Stadd Pro, Revit, Primavera etc",
+                "Site Visits (Major construction projects including Dams & Power Plants",
+                "Guest Lecture",
+                "National/International Seminar",
+                "Quiz Competition",
+                "Sports/Atheletes",
+                "Project & Model Competition",
+                "Picnic / Historic Monuments"
+            ]
+        }
+    },
+    {
+        title: "healthfulness science & spirituality club",
+        imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2019/07/HSS_CLUB3-1024x768.png",
+        contentPara1: {
+            para: "We are happy to inform you that on the occasion of International Youth Day at 12 August, 2017 we inaugurate Heartfulness Science & Spirituality Club (HSSC) at MITRC Engineering College at Alwar, Rajasthan. HSSC Club inaugurated by the chief guest Mr. Parvender Pal Sing (ADJ, Behror) and Mr. Kamal Sharma (Heartfulness Center coordinator, Alwar) and Mr. Yogendra Bhardwaj (PRO, Jaipur). Mr. Parvender Pal Sing & Mr. Kamal Sharma address the student and staff member of college and discuss the issue related with youth and importance of balanced life for the overall progress of student, Value based spiritual education. In the auspicious occasion director of MITRC, (Prof) Dr. S. K Sharma, Dean Examination Mr. Neeraj Jain, Dean Students Affairs Mr. Vikas Mahalawat, H.O.D of Electronics & Communication Engineering Mr. Deepak Sharma of MITRC were present. On this special day 145 Students and 5 faculty member experienced the Heartfulness Relaxation technique."
+        }
+    },
+    {
+        title: "mech. contours club",
+        imageUrl: "",
+        contentPara1: {
+            contentHeading: "Objectives",
+            list: [
+                "To organize skill development activities.",
+                "Organizing workshops, seminars & conferences.",
+                "Creating team spirit & healthy competition among students through contests/quizzes.",
+                "Coordination of sports & cultural activities.",
+                "To organize debate, group discussions & personality development programs."
+            ]
+        },
+        contentPara2: {
+            contentHeading: "Membership Requirements",
+            list: [
+                "Being a student of mechanical branch of institute.",
+                "Attending and participating in all meetings/activities.",
+                "Contributing to the preparation and the coordination of the club’s activities."
+            ]
+        },
+        contentPara3: {
+            contentHeading: "Membership Advantages",
+            list: [
+                "The priority to attend sessions and activities.",
+                "Obtaining certificates of attendance for courses or workshops attended.",
+                "Getting support from institute when you show special skills."
+            ]
+        },
+        contentPara4: {
+            contentHeading: "Student Coordinators",
+            list: [
+                "Keshav Saini",
+                "Gourav Saini",
+                "Dilip Thakkar",
+                "Apurv Gupta"
+            ]
+        },
+        contentPara5: {
+            contentHeading: "Chief Patrons",
+            list: [
+                "Shri Ashok Aggarwal (Executive Director)",
+                "Shri Amit Choudhary (Secretary)"
+            ]
+        },
+        contentPara6: {
+            contentHeading: "Advisory Group",
+            list: [
+                "Prof.(Dr.) S. K Sharma (Director)",
+                "Mr. Sanjay Babu Sharma ( Dean Academics)",
+                "Mr. Neeraj Jain (Dean Exam)",
+                "Mr. Vikas Mahalawat (Dean Student Affairs)",
+                "Mrs. Chhavi Nagpal (HR Executive)",
+                "Ms. Vaishali Gupta (TPO)",
+                "Mr. Mukesh Choudhary (HOD-ME)"
+            ]
+        },
+        contentPara7: {
+            contentHeading: "Faculty Coordinator",
+            list: [
+                "Mr. Kalyan Singh"
+            ]
+        },
+        contentPara8: {
+            contentHeading: "Faculty Members",
+            list: [
+                "Mr. Surendra Kumar",
+                "Mr. Sushil Kumar Maurya"
+            ]
+        }
+    },
+    {
+        title: "ignight robotics club",
+        imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/EE_Club2-1024x768.jpg",
+        contentPara1: {
+            para: "IGNIGHT ROBOTICS CLUB at Electrical Engineering Department, MITRC is an undergraduate student organization that provides ideas and resources to develop different types of robots. This club offers guidance, workshops and tutorials along with tools, components and workspace.  Club members participate in many technical events organized in different colleges."
+        }
+    },
+    {
+        title: "tech wizard club",
+        imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2019/07/tech_wizard3A.jpg",
+        contentPara1: {
+            contentHeading: "Mission  & Vision of TECH WIZARD",
+            list: [
+                "To motivate and provides excellence knowledge of young and dynamic computer science students to become as technology innovative leader, shape and preserve society with world class research environment.",
+                "Develop the students with core and basic conception of programming with most modern computer engineering knowledge.",
+                "Provides prospective approach to promote leadership skills in students with global IT Challenges .",
+                "To make the students good and worthy citizens of India serve superior digitalization revolution in the our society"
+            ]
+        },
+        contentPara2: {
+            contentHeading: "Motive Of TECH WIZARDS",
+            list: [
+                "Students are encourage to become more active.",
+                "Promote student Learning and Achievements.",
+                "Encourage the development of critical thinking skills.",
+                "It enhances Social skills Interactions.",
+                "Learning Outcomes are improved.",
+                "It can save time and requires a shared Workload.",
+                "Students get the chance to work on large projects"
+            ]
+        },
+        contentPara3: {
+            contentHeading: "Activities",
+            list: [
+                "Online Quiz",
+                "Code Debugging",
+                "Model/project competition",
+                "Departmental Social activities",
+                "Programming wars",
+                "Spoken tutorial",
+                "Fundamental",
+                "Programming Test",
+                "Online Aptitude Test",
+                "National Technical conference"
+            ]
+        }
+    },
+    {
+        title: "electrocrew club",
+        imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2019/07/ElectroCrew_logo.jpg",
+        contentPara1: {
+            para: "ECE DEPARTMENT FORMED A CLUB NAMED “ElectroCrew” for the students of computer science department. Club is organizing a seminar on recent trends Electronics & Communications Engineering "
+        },
+        contentPara2: {
+            para: "Here are some precious moments from the inauguration of our club…."
+        },
+        contentPara3: {
+            para: "#ElectroCrew⚡"
+        },
+        contentPara4: {
+            para: "Workshop conducted by Mr.Deepak Pandey from Autronicals Infotech Pvt Ltd,Delhi organised by ElectroCrew."
+        },
+        contentPara5: {
+            para: "In presence of MITRC Director Dr.S.K Sharma , Club President Mr. Neeraj Jain , Club Vice President Mr.  Deepak Sharma and Department of Electronics and Communications  of MITRC Alwar"
+        }
+    }
+]

@@ -28,12 +28,12 @@ const SlideTextData = [
         subtitle: "100% placement record for a decade now"
     },
     {
-        title: "Think placement think MITRC",
-        subtitle: "100% placement record for a decade now"
+        title: "Start Here Go Anywhere",
+        subtitle: "Highly professional and skilled teaching assitance throughout the journey"
     },
     {
-        title: "Think placement think MITRC",
-        subtitle: "100% placement record for a decade now"
+        title: "Where Concepts Meets The Real World",
+        subtitle: "Research Oriented Evironment"
     }
 ]
 
@@ -41,10 +41,10 @@ const SlideTextData = [
 
 const ImageSlider = ({
     images = [
-        'https://images.unsplash.com/photo-1631430411956-44b72ddb0ee0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-        'https://images.unsplash.com/photo-1631373905812-7ec18393eaff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80',
-        'https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-        'https://images.unsplash.com/photo-1631399991778-fa32b739552b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1401&q=80'
+        'https://images.static-collegedunia.com/public/college_data/images/appImage/14351_MITRC_New.jpg?tr=c-force',
+        'https://www.admissionfever.com/Media/clgimg/gallery/2934_img8884798266738968.png',
+        'https://www.campusoption.com/images/colleges/gallery/28_12_16_111345_18.jpg',
+        'https://pbs.twimg.com/media/EspGBh8VEAILE67.jpg'
     ],
     autoPlay = true,
     autoPlayTime = 3000,
