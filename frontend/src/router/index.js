@@ -31,7 +31,7 @@ const Router = () => {
         </Switch>
       </BrowserRouter>
     );
-
+    }
 // const Router = () => {
 //     return (
 //         <BrowserRouter>
