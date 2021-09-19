@@ -10,7 +10,6 @@ const Router = () => {
             <Switch>
                 <Route path="/" exact component={App} />
                 <Route path="/about" exact component={AboutUsPage} />
-                <Route path="/campus-life/:routename" exact component={CampusLife} />
                 <Route path="/campus-life/:routename/:child" exact component={CampusLife} />
             </Switch>
         </BrowserRouter>
