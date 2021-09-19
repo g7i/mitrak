@@ -95,7 +95,7 @@ const CampusLife = () => {
                         ))
                     }
                     {
-                        (child === 'grievance redressal' || 'complaint of caste base descrimination') && (<ComplaintForm title={child} />)
+                        (child === 'grievance redressal' || child ===  'complaint of caste base descrimination') && (<ComplaintForm title={child} />)
                     }
                 </PageContainer>
             </PagesLayout>

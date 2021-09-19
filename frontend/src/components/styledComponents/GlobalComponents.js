@@ -158,7 +158,7 @@ export const BoxHeading = styled.h1`
 
 export const BannerContainer = styled.div`
     background-image: url(${({ imageUrl }) => (imageUrl)});
-    height: 35vh;
+    height: 30vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;

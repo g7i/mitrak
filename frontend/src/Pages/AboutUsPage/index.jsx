@@ -194,7 +194,7 @@ const AboutUsPage = () => {
                 bannerHeading={staticData.heading}
                 bannerDescription={staticData.description}
             />
-            <Container>
+            <Container style={{marginTop: '4vh'}}>
                 <Heading style={{textAlign: 'center', marginTop: 0}}>Modern Institute of Technology and Research Center</Heading>
                 <Paragraph>
                     Alwar- the City of Parks has always been proud of its rich heritage and culture. We at MITRC, Alwar add another feather in the already colorful cap of Alwar, Rajasthan. Since its inception in 2007, Modern Institute of Technology & Research Centre (An Engineering and Management College), Alwar has been known to enable students to carve a niche for themselves and develop a strong personality. Ranked as one of the best private engineering and management colleges of Alwar, Rajasthan it is located in the serene lap of the Aravali Hills on Alwar-Delhi-Tijara Highway.MITRC Alwar provides students with state-of-the art infrastructure which helps them to attain understanding of their chosen engineering discipline. Engineering transforms scientific discoveries into technological solutions for the benefit of humanity. Everything we rely on for work, life and play has been touched by Engineering.
