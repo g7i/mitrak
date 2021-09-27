@@ -11,7 +11,7 @@ const PagesLayout = ({children, rightNavLinks, currentRoute}) => {
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                     {
                         rightNavLinks?.map(link => (
-                            <HyperLink key={link?.title} href={`/campus-life/${currentRoute}/${link.title.toLowerCase()}`}>{link?.title}</HyperLink>
+                            <HyperLink key={link?.title} href={`${link.pageName}/${currentRoute}/${link.title.toLowerCase()}`}>{link?.title}</HyperLink>
                         ))
                     }
                 </div>

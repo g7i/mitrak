@@ -7,19 +7,23 @@ import {
 } from "./partnerSlider";
 let widthOfImage = 100;
 const partners = [
-  "https://images.unsplash.com/photo-1631430411956-44b72ddb0ee0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-  "https://cdn.pixabay.com/photo/2014/11/13/06/12/boy-529067__340.jpg",
-  "https://cdn.pixabay.com/photo/2016/02/28/12/55/boy-1226964__340.jpg",
-  "https://cdn.pixabay.com/photo/2015/03/26/09/41/chain-690088__340.jpg",
+  "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1415386231/utypaslbyxwfuwhfdzxd.png",
+  "https://mms.businesswire.com/media/20210603005462/en/882678/23/TCS.jpg",
+  "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202007/20017667_1556257447773154_1353.jpeg?jNsFst0gYxFr7J7qTIfzrAYrne.kx3_9&size=770:433",
+  "https://bsmedia.business-standard.com/_media/bs/img/about-page/1562577931.jpg",
   "https://cdn.pixabay.com/photo/2012/11/13/17/44/e-mail-65927__340.jpg",
   "https://cdn.pixabay.com/photo/2013/06/07/15/45/sky-122701__340.jpg",
-  "https://cdn.pixabay.com/photo/2013/12/01/08/16/neural-pathways-221718__340.jpg",
-  "https://cdn.pixabay.com/photo/2016/04/20/19/05/horse-1341775__340.jpg",
-  "https://cdn.pixabay.com/photo/2017/06/01/22/42/chain-2364828__340.jpg",
-  "https://cdn.pixabay.com/photo/2018/10/17/18/52/anchor-chain-3754661__340.jpg",
-  "https://cdn.pixabay.com/photo/2013/11/26/05/31/lock-218505__340.jpg",
-  "https://cdn.pixabay.com/photo/2017/04/15/12/08/chain-2232278__340.jpg",
-  "https://cdn.pixabay.com/photo/2014/07/31/22/07/padlock-406986__340.jpg",
+  "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c13d14731358e5b4339c564%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D416%26cropY1%3D0%26cropY2%3D416",
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEUZGRl+uQIAo+7/uAbxUCEAABoaAAAZGBcAFRkQARoXGRkXFRkKFxkVEBmCvwAZFQ8SFRlchQ37UyInMRdlkg08UxT4swUFnOQHktQAqvj/vwSrPR7IkQ49MBfWSSBoKxubOR0jKhhLahL/VCKFxADeSyBfKRsdIBgyRBYaCQAACRrAiw/aW2j9AAABRElEQVR4nO3ayU4CQRSG0ZKWqWkQW0XFAQdwfP/3E3pn1KQvMZaBc1KrSu7i2/8pAQAAAAAAAAAAAAAAAAB/bBBSri9Gw4hx9sC7q4iyTKP744iH3ImDVX34Wd28L5q/x2pdeLKcBJwOcxfeflPzo7opnBy0p1ChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKf7VwVQfEd23L7IXV0yKiLFN6Pot4GWUuTFXIZl+axhHZA/dBP6K5KCMy16299iI2idNuxFvuwN5F57y9zlE/TW+KWXvFezd/YcBlUzgv2ptf73phoVChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoU7VPgfVl+B4d4Wy71Z9uVeCo0vt1hfZg8EAAAAAAAAAAAAAAAAgP3zAXJhwbJsyxS3AAAAAElFTkSuQmCC",
+  "https://cdn.pixabay.com/photo/2012/11/13/17/44/e-mail-65927__340.jpg",
+  "https://cdn.pixabay.com/photo/2013/06/07/15/45/sky-122701__340.jpg",
+  "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c13d14731358e5b4339c564%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D416%26cropY1%3D0%26cropY2%3D416",
+  "https://s3-symbol-logo.tradingview.com/facebook--600.png",
+  "https://cdn.pixabay.com/photo/2012/11/13/17/44/e-mail-65927__340.jpg",
+  "https://cdn.pixabay.com/photo/2013/06/07/15/45/sky-122701__340.jpg",
+  "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c13d14731358e5b4339c564%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D416%26cropY1%3D0%26cropY2%3D416",
+  "https://s3-symbol-logo.tradingview.com/facebook--600.png",
+  
 ];
 const PartnerSlider = () => {
   let [Pos, setPos] = React.useState({ x: 0, y: 0 });

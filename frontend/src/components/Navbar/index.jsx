@@ -39,17 +39,17 @@ const DropDownContent = {
   ],
 
   placements: [
-    { title: "From TPO Desk", link: "" },
-    { title: "Placement Activities", link: "" },
-    { title: "Government Selection", link: "" },
-    { title: "Placement Highlight", link: "" },
-    { title: "Coporate feedback", link: "" },
-    { title: "Recent Achievments", link: "" },
-    { title: "Recruitment partner", link: "" },
-    { title: "Testimonials", link: "" },
-    { title: "gallery", link: "" },
-    { title: "Placement Summary", link: "" },
-    { title: "Alumini", link: "" },
+    { title: "From TPO Desk", link: "/placements/tpodesk" },
+    { title: "Placement Activities", link: "/placements/placementactivities" },
+    { title: "Government Selection", link: "/placements/governmentselections" },
+    { title: "Placement Highlight", link: "/placements/placementhighlight" },
+    { title: "Coporate feedback", link: "/placements/coporatefeedback" },
+    { title: "Recent Achievments", link: "/placements/recentachievments" },
+    { title: "Recruitment partner", link: "/placements/recruitmentpartner" },
+    { title: "Testimonials", link: "/placements/testimonials" },
+    { title: "gallery", link: "/placements/recentachievments" },
+    { title: "Placement Summary", link: "/placements/placementsummary" },
+    { title: "Alumini", link: "/placements/recentachievments" },
   ],
 };
 
