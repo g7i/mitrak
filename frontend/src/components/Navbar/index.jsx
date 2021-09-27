@@ -12,6 +12,8 @@ import { Link } from 'react-router-dom';
 import logo from "../../assets/images/mitrc.png";
 
 import DropDown from "../DropDown/DropDown";
+import { MenuItem, Menu as MaterialMenu, Avatar } from "@mui/material";
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 const DropDownContent = {
   aboutUs: [
@@ -53,6 +55,7 @@ const DropDownContent = {
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <Nav>
@@ -78,12 +81,42 @@ const Navbar = () => {
 
         <MenuLink href="">Research</MenuLink>
       </Menu>
-      <Menu showMobileMenu={showMobileMenu}>
-        <MenuLink>Apply for Admission</MenuLink>
-        <LoginButton>Login</LoginButton>
-      </Menu>
+      {
+        !isLoggedIn && (
+          <Menu showMobileMenu={showMobileMenu}>
+            <MenuLink>Apply for Admission</MenuLink>
+            <LoginButton>Login</LoginButton>
+          </Menu>
+        )
+      }
+      {
+        isLoggedIn && (
+          <PopupState variant="popover" popupId="demo-popup-menu">
+            {(popupState) => (
+              <React.Fragment>
+                {/* <Button variant="contained" {...bindTrigger(popupState)}>
+                  Dashboard
+                </Button> */}
+                <Avatar 
+                  alt="user profile image"
+                  src='https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png'
+                  style={{cursor: 'pointer'}}
+                  {...bindTrigger(popupState)}
+                />
+                <MaterialMenu {...bindMenu(popupState)}>
+                  <Link to="/profile/student/1" style={{textDecoration: 'none', color: '#000'}}>
+                    <MenuItem onClick={popupState.close}>Profile</MenuItem>
+                  </Link>
+                  <MenuItem onClick={popupState.close}>Logout</MenuItem>
+                </MaterialMenu>
+              </React.Fragment>
+            )}
+          </PopupState>
+        )
+      }
     </Nav>
   );
 };
 
 export default Navbar;
+
