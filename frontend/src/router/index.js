@@ -4,7 +4,7 @@ import App from "../App";
 import AboutUsPage from "../Pages/AboutUsPage";
 import CampusLife from "../Pages/CampusLifePage";
 import PlacementPage from "../Pages/PlacementPage";
-import MagazinePage from "../Pages/CampusLifePage/MagazinePage";
+import MagazinePage from '../Pages/CampusLifePage/MagazinePage/index';  
 
 const Router = () => {
     return (
@@ -12,7 +12,7 @@ const Router = () => {
         <Switch>
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
-          <Route path="/campus-life/:routename" exact component={CampusLife} />
+          <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
           <Route
             path="/campus-life/:routename/:child"
             exact
@@ -24,7 +24,7 @@ const Router = () => {
             component={PlacementPage}
           />
           <Route
-            path="/placements/:routename"
+            path="/placements/:routename/:child"
             exact
             component={PlacementPage}
           />

@@ -74,7 +74,8 @@ const settings = {
 export default function Placements() {
     return (
         <Container>
-            <Heading>Placements</Heading>
+            <Heading style={{textAlign: 'center'}}>Placements</Heading>
+            <PartnerSlider />
             <Slider {...settings}>
                 {Array.from({length: 5}).map((_, i) => (
                     <ItemWrapper key={i}>
@@ -90,7 +91,6 @@ export default function Placements() {
                     </ItemWrapper>
                 ))}
             </Slider>
-            <PartnerSlider />
         </Container>
     );
 }

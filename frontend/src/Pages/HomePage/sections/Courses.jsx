@@ -16,7 +16,7 @@ import MbaImage from "../../../assets/images/mba.jpg";
 export default function Courses() {
   return (
     <Container>
-      <Heading>Courses We Offer</Heading>
+      <Heading style={{textAlign: 'center'}}>Courses We Offer</Heading>
       <Wrapper>
         <CardWrapper>
           <ImageWrapper>
