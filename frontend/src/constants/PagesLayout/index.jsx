@@ -13,9 +13,19 @@ const PagesLayout = ({children, rightNavLinks, currentRoute, pageName}) => {
                 <Heading>Related Links</Heading>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                     {
-                        rightNavLinks?.map(link => (
-                            <Link className={currentRoute === link.title.toLowerCase() ? 'activelink' : "hyperlink"} key={link?.title} to={`/${pageName}/${currentRoute}/${link.title.toLowerCase()}`}>{link?.title}</Link>
-                        ))
+                        pageName ==='campus-life' && (
+                            rightNavLinks?.map(link => (
+                                <Link className={currentRoute === link.title.toLowerCase() ? 'activelink' : "hyperlink"} key={link?.title} to={`/${pageName}/${currentRoute}/${link.title.toLowerCase()}`}>{link?.title}</Link>
+                            ))
+                        )
+                    }
+                    {
+                        pageName === 'events-gallery' && (
+                            rightNavLinks?.map(item => (
+                                // console.log(item)
+                                <Link className='hyperlink' key={item?.title} to={`/campus-life/${pageName}/${item.title.toLowerCase()}`}>{item?.title}</Link>
+                            ))
+                        )
                     }
                 </div>
             </RightNav>

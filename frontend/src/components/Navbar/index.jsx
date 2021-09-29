@@ -35,7 +35,7 @@ const DropDownContent = {
     { title: "Students Affair", link: "/campus-life/studentaffair/anti%20ragging" },
     { title: "Clubs and Activities", link: "/campus-life/clubandactivities/aadharclub" },
     { title: "College Daze- the magzine", link: "/campus-life/collegedaze" },
-    { title: "Events And Gallery", link: "" },
+    { title: "Events And Gallery", link: "/campus-life/events-gallery/curricular" },
   ],
 
   placements: [

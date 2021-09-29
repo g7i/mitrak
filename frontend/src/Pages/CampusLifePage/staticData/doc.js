@@ -425,3 +425,106 @@ export const clubandactivities = [
         }
     }
 ]
+
+export const eventsGallery = [
+    {
+        title: "Curricular",
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/National-Workshop-CETPA-CSE-27-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Online-Workshop-on-Virtual-Labs-4-Aug.-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Webinar-Entrepreneurship-Talk-Prabandtosav-29-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Literacy-Activity-22-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Manodarpan-21-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/National-Webinar-by-BTU-16-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Fun-with-Science-webinar-15-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Gender-Equality-Webinar-16-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Human-Values-E-Certificates-Distribution-by-BTU-9-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/International-Webinar-Be-the-Change-10-July-2020-703x1024.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/International-Webinar-Dr.-Shaikh-Abdul-Azeem-30-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Leadership-Talk-11-July-2020.jpg'
+        ]
+    },
+    {
+        title: "CoCurricular",
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Webinar-Joy-of-Living-Session-2-29-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Webinar-Joy-of-Living-24-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Webinar-Joy-of-Giving-Session-3-31-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Manodarpan-21-July-2020-1-712x1024.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Prabandtosav-Career-Talk-31-July-2020-1024x712.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Leadership-Talk-11-July-2020-1-1024x712.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Fun-with-Science-webinar-15-July-2020-1-1024x712.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Human-Values-E-Certificates-Distribution-by-BTU-9-July-2020-1-1024x768.jpg'
+        ]
+    },
+    {
+        title: 'Plantation',
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation4.jpeg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation3.jpeg', 
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation1.jpeg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation-HDFC-Bank-8-July-2020-1024x722.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Save-Bird-Campaign-1024x606.jpg'
+        ]
+    },
+    {
+        title: 'Sports',
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/sports.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/sports.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/07/DSC_5828-1140x680.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/07/DSC_2317-1140x680-1024x611.jpg'
+        ]
+    },
+    {
+        title: 'CSRActivities',
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/2-Literacy-Activity-22-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/1-Gender-Equality-Webinar-16-July-2020.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/SVI-5-Feb-csr.jpg'
+        ]
+    },
+    {
+        title: 'CulturalActivities',
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/07/invincible-T20.jpeg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Fare.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Diwali-Celebration.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/convocation2.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/convocation1.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/convocation3.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/celebration1.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Winner-1-1024x682.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Singing-3-1-1024x682.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Ramp-Walk-1-1-1024x682.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Singing-2-1-1024x682.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/farewell2.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/farewell.jpg',
+            ''
+        ]
+    },
+    {
+        title: 'SIH',
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/SIH-2020-1-3-Aug.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/SIH-1.jpeg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/National-Hackathon-MUJ-16-17-Dec.-2019.jpg'
+        ]
+    },
+    {
+        title: 'HealthAndWelfare',
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Gandhi-Jyanti-Celebration-2-Oct.-2019.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/blood-donation2.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/blood-donation.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/blood-donation3.jpg'
+        ]
+    },
+    {
+        title: 'Picnic',
+        images: [
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/picnic-1-1.jpg',
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Wow2.jpg'
+        ]
+    }
+]

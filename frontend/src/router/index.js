@@ -6,6 +6,7 @@ import CampusLife from "../Pages/CampusLifePage";
 import PlacementPage from "../Pages/PlacementPage";
 import MagazinePage from '../Pages/CampusLifePage/MagazinePage/index';  
 import StudentProfile from "../Pages/Profile/StudentProfile";
+import EventGallery from "../Pages/CampusLifePage/EventGallery";
 
 const Router = () => {
     return (
@@ -14,6 +15,7 @@ const Router = () => {
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
           <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
+          <Route path="/campus-life/events-gallery/:child" exact component={EventGallery} />
 
           <Route
             path="/placements"
@@ -27,7 +29,7 @@ const Router = () => {
           />
           
           <Route
-            path="/placements/:routename/:child"
+            path="/placements/:routename"
             exact
             component={PlacementPage}
           />
