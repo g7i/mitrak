@@ -20,17 +20,17 @@ const PlacementPage = () => {
   const { routename, child } = useParams();
 
   const relatedLinks = [
-    { title: "From TPO Desk", link: "/placements/tpodesk" },
-    { title: "Placement Activities", link: "/placements/placementactivities" },
-    { title: "Government Selection", link: "/placements/governmentselections" },
-    { title: "Placement Highlight", link: "/placements/placementhighlight" },
-    { title: "Coporate feedback", link: "/placements/coporatefeedback" },
-    { title: "Recent Achievments", link: "/placements/recentachievments" },
-    { title: "Recruitment partner", link: "/placements/recruitmentpartner" },
-    { title: "Testimonials", link: "/placements/testimonials" },
-    { title: "gallery", link: "/placements/recentachievments" },
-    { title: "Placement Summary", link: "/placements/placementsummary" },
-    { title: "Alumini", link: "/placements/recentachievments" },
+    { title: "From TPO Desk", routeName: "tpodesk" },
+    { title: "Placement Activities", routeName: "placementactivities" },
+    { title: "Government Selection", routeName: "governmentselections" },
+    { title: "Placement Highlight", routeName: "placementhighlight" },
+    { title: "Coporate feedback", routeName: "coporatefeedback" },
+    { title: "Recent Achievments", routeName: "recentachievments" },
+    { title: "Recruitment partner", routeName: "recruitmentpartner" },
+    { title: "Testimonials", routeName: "testimonials" },
+    { title: "gallery", routeName: "recentachievments" },
+    { title: "Placement Summary", routeName: "placementsummary" },
+    { title: "Alumini", routeName: "recentachievments" },
   ];
 
   return (
