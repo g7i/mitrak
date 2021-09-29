@@ -42,7 +42,7 @@ const PlacementPage = () => {
       <PagesLayout
         rightNavLinks={relatedLinks}
         currentRoute={routename}
-        mainRoute={"placements"}
+        pageName={"placements"}
       >
         <PageContainer>
           {data?.map(

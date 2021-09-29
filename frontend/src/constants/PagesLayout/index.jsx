@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Heading, HyperLink } from '../../components/styledComponents/GlobalComponents'
-const PagesLayout = ({children, rightNavLinks, currentRoute}) => {
+import { Link } from 'react-router-dom'
+const PagesLayout = ({children, rightNavLinks, currentRoute, pageName}) => {
+
+    console.log(rightNavLinks);
 
     return (
         <Container>
@@ -11,7 +14,7 @@ const PagesLayout = ({children, rightNavLinks, currentRoute}) => {
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                     {
                         rightNavLinks?.map(link => (
-                            <HyperLink key={link?.title} href={`${link.pageName}/${currentRoute}/${link.title.toLowerCase()}`}>{link?.title}</HyperLink>
+                            <Link className={currentRoute === link.title.toLowerCase() ? 'activelink' : "hyperlink"} key={link?.title} to={`/${pageName}/${currentRoute}/${link.title.toLowerCase()}`}>{link?.title}</Link>
                         ))
                     }
                 </div>
@@ -33,3 +36,4 @@ const RightNav = styled.div`
     width: 25%;
     padding: 2rem;
 `;
+ 

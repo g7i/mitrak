@@ -14,16 +14,18 @@ const Router = () => {
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
           <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
-          <Route
-            path="/campus-life/:routename/:child"
-            exact
-            component={CampusLife}
-          />
+
           <Route
             path="/placements"
             exact
             component={PlacementPage}
           />
+          <Route
+            path="/campus-life/:routename/:child"
+            exact
+            component={CampusLife}
+          />
+          
           <Route
             path="/placements/:routename/:child"
             exact

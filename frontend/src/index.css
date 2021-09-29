@@ -39,3 +39,13 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.hyperlink {
+  color: blue;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.activelink {
+  color: yellow;
+}
