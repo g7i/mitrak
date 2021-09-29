@@ -105,3 +105,9 @@ export const CustomInputContainer = styled.div`
     }
   }
 `;
+
+export const LogoImage = styled.img`
+  width : 200px;
+  height: 50px;
+  object-fit: contain;
+`

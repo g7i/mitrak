@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Colors } from "../../constants/Colors";
 
 export const Nav = styled.div`
   padding: 0 2rem;
