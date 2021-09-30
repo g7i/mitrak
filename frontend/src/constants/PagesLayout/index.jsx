@@ -35,6 +35,14 @@ const PagesLayout = ({children, rightNavLinks, currentRoute, pageName}) => {
                             ))
                         )
                     }
+                    {
+                        pageName === 'departments' && (
+                            rightNavLinks?.map(link => (
+                                // console.log('link', link)
+                                <Link className={"hyperlink"} key={link?.title} to={`/academics/departments/${link.title.trim().toLowerCase()}`}>{link?.title}</Link>
+                            ))
+                        )
+                    }
                 </div>
             </RightNav>
         </Container>
