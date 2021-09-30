@@ -16,20 +16,24 @@ const Router = () => {
         <Switch>
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
-          <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
-          <Route path="/campus-life/events-gallery/:child" exact component={EventGallery} />
-
           <Route
-            path="/placements"
+            path="/campus-life/collegedaze"
             exact
-            component={PlacementPage}
+            component={MagazinePage}
           />
+          <Route
+            path="/campus-life/events-gallery/:child"
+            exact
+            component={EventGallery}
+          />
+
+          <Route path="/placements" exact component={PlacementPage} />
           <Route
             path="/campus-life/:routename/:child"
             exact
             component={CampusLife}
           />
-          
+
           <Route
             path="/placements/:routename"
             exact
@@ -40,26 +44,11 @@ const Router = () => {
             exact
             component={StudentProfile}
           />
-          <Route
-            path="/admin/dashboard"
-            exact
-            component={AdminDashboard}
-          />
+          <Route path="/admin/dashboard" exact component={AdminDashboard} />
         </Switch>
       </BrowserRouter>
     );
     }
-// const Router = () => {
-//     return (
-//         <BrowserRouter>
-//             <Switch>
-//                 <Route path="/" exact component={App} />
-//                 <Route path="/about" exact component={AboutUsPage} />
-//                 <Route path="/campus-life/:routename/:child" exact component={CampusLife} />
-//                 <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
-//             </Switch>
-//         </BrowserRouter>
-//     )
-// }
+
 
 export default Router;
