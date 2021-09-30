@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../../constants/UiConstants";
 
 export const FullScreenContainer = styled.div`
   width: 100vw;
@@ -114,8 +115,9 @@ export const BannerTextContainer = styled.div`
 export const BannerHeading = styled.h1`
     font-size: 4rem;
     font-family: 'Bebas Neue', cursive;
-    color: #FFFFFF;
+    color: ${Colors.WHITE};
     letter-spacing: 2px;
+    z-index: 100;
     @media (max-width: 768px) {
         font-size: 1.5rem;
     }
@@ -178,6 +180,7 @@ export const BannerContainer = styled.div`
     background-position: center;
     display: flex;
     align-items: center;
+    position: relative;
 `;
 
 export const ListItem = styled.li`

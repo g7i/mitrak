@@ -26,8 +26,8 @@ const DropDownContent = {
   ],
   academics: [
     { title: "Courses", link: "" },
-    { title: "Departments", link: "" },
-    { title: "Mendatory disclosures", link: "" },
+    { title: "Departments", link: "/academics/departments/electrical%20engineering" },
+    { title: "Mendatory disclosures", link: "/academics/madatory-disclosures" },
     { title: "Apply for admission", link: "" },
   ],
   campusLife: [

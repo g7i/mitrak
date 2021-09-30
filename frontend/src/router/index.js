@@ -7,6 +7,8 @@ import PlacementPage from "../Pages/PlacementPage";
 import MagazinePage from '../Pages/CampusLifePage/MagazinePage/index';  
 import StudentProfile from "../Pages/Profile/StudentProfile";
 import EventGallery from "../Pages/CampusLifePage/EventGallery";
+import DepartmentsPage from "../Pages/AcademicsPage/DepartmentsPage";
+import MandatoryDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclosuresPage";
 
 const Router = () => {
     return (
@@ -37,6 +39,16 @@ const Router = () => {
             path="/profile/student/:studentid"
             exact
             component={StudentProfile}
+          />
+          <Route
+            path="/academics/madatory-disclosures"
+            exact
+            component={MandatoryDisclosuresPage}
+          />
+          <Route
+            path="/academics/departments/:child"
+            exact
+            component={DepartmentsPage}
           />
         </Switch>
       </BrowserRouter>
