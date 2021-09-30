@@ -6,6 +6,8 @@ import CampusLife from "../Pages/CampusLifePage";
 import PlacementPage from "../Pages/PlacementPage";
 import MagazinePage from '../Pages/CampusLifePage/MagazinePage/index';  
 import StudentProfile from "../Pages/Profile/StudentProfile";
+import SidePanel from "../Pages/Dashboard/Admin/SidePanel";
+import AdminDashboard from "../Pages/Dashboard/Admin/AdminDashBorad";
 
 const Router = () => {
     return (
@@ -13,19 +15,19 @@ const Router = () => {
         <Switch>
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
-          <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
+          <Route
+            path="/campus-life/collegedaze"
+            exact
+            component={MagazinePage}
+          />
           <Route
             path="/campus-life/:routename/:child"
             exact
             component={CampusLife}
           />
+          <Route path="/placements" exact component={PlacementPage} />
           <Route
-            path="/placements"
-            exact
-            component={PlacementPage}
-          />
-          <Route
-            path="/placements/:routename/:child"
+            path="/placements/:routename"
             exact
             component={PlacementPage}
           />
@@ -33,6 +35,11 @@ const Router = () => {
             path="/profile/student/:studentid"
             exact
             component={StudentProfile}
+          />
+          <Route
+            path="/admin/dashboard"
+            exact
+            component={AdminDashboard}
           />
         </Switch>
       </BrowserRouter>
