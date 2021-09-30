@@ -24,9 +24,6 @@ const CampusLife = () => {
         }
     }, [routename])
 
-    console.log({ obj })
-    console.log({ child })
-
     const relatedLinks = {
         "amenities": [
             { title: "Hostel" },
@@ -68,7 +65,7 @@ const CampusLife = () => {
                 bannerHeading="Campus Life @MITRC"
                 bannerDescription={routename}
             />
-            <PagesLayout rightNavLinks={relatedLinks[routename]} currentRoute={routename}>
+            <PagesLayout rightNavLinks={relatedLinks[routename]} currentRoute={routename} pageName='campus-life'>
                 <PageContainer>
                     {
                         obj?.map(item => item.title === child && (

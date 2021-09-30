@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Heading, HyperLink } from '../../components/styledComponents/GlobalComponents'
-const PagesLayout = ({children, rightNavLinks, currentRoute}) => {
+import { Link } from 'react-router-dom'
+const PagesLayout = ({children, rightNavLinks, currentRoute, pageName}) => {
+
+    console.log(rightNavLinks);
 
     return (
         <Container>
@@ -10,9 +13,27 @@ const PagesLayout = ({children, rightNavLinks, currentRoute}) => {
                 <Heading>Related Links</Heading>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                     {
-                        rightNavLinks?.map(link => (
-                            <HyperLink key={link?.title} href={`${link.pageName}/${currentRoute}/${link.title.toLowerCase()}`}>{link?.title}</HyperLink>
-                        ))
+                        pageName ==='campus-life' && (
+                            rightNavLinks?.map(link => (
+                                <Link className={"hyperlink"} key={link?.title} to={`/${pageName}/${currentRoute}/${link.title.toLowerCase()}`}>{link?.title}</Link>
+                            ))
+                        )
+                    }
+                    {
+                        pageName === 'events-gallery' && (
+                            rightNavLinks?.map(item => (
+                                // console.log(item)
+                                <Link className='hyperlink' key={item?.title} to={`/campus-life/${pageName}/${item.title.toLowerCase()}`}>{item?.title}</Link>
+                            ))
+                        )
+                    }
+                    {
+                        pageName === 'placements' && (
+                            rightNavLinks?.map(link => (
+                                // console.log('link', link)
+                                <Link className={"hyperlink"} key={link?.title} to={`/${pageName}/${link.routeName}`}>{link?.title}</Link>
+                            ))
+                        )
                     }
                 </div>
             </RightNav>
@@ -33,3 +54,4 @@ const RightNav = styled.div`
     width: 25%;
     padding: 2rem;
 `;
+ 
