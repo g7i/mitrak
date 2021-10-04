@@ -114,19 +114,32 @@ export const Wrapper = styled.div`
 export const LoginButton = styled.button`
   padding: 0.3rem 1rem;
   border-radius: 20px;
-  border: 4px solid #32404D;
+  border: 4px solid #32404d;
   margin-left: 20px;
-  background-color: #32404D;
+  background-color: #32404d;
   color: white;
   transition: all 0.3s ease-in;
   font-size: 1.2rem;
   cursor: pointer;
   &:hover {
-    border: 4px solid #32404D;
+    border: 4px solid #32404d;
     background-color: transparent;
-    color: #32404D;
+    color: #32404d;
   }
   @media (max-width: 768px) {
     margin-bottom: 20px;
+  }
+`;
+
+export const ContactHeaderLinksWrapper = styled.div`
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  &:hover {
+    svg {
+      fill: #a8dddd;
+
+      transition: fill 500ms ease-in;
+    }
   }
 `;

@@ -11,6 +11,7 @@ import AdminDashboard from "../Pages/Dashboard/Admin/AdminDashBorad";
 import EventGallery from "../Pages/CampusLifePage/EventGallery";
 import DepartmentsPage from "../Pages/AcademicsPage/DepartmentsPage";
 import MandatoryDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclosuresPage";
+import CoursesPage from "../Pages/AcademicsPage/CoursesPage";
 
 const Router = () => {
     return (
@@ -46,9 +47,7 @@ const Router = () => {
             exact
             component={StudentProfile}
           />
-<<<<<<< HEAD
           <Route path="/admin/dashboard" exact component={AdminDashboard} />
-=======
           <Route
             path="/academics/madatory-disclosures"
             exact
@@ -59,7 +58,11 @@ const Router = () => {
             exact
             component={DepartmentsPage}
           />
->>>>>>> 9ebdcdcc56176a44381a5e95115455b7e1d9f4d6
+          <Route
+            path="/academics/courses/:child"
+            exact
+            component={CoursesPage}
+          />
         </Switch>
       </BrowserRouter>
     );
