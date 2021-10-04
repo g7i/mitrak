@@ -59,6 +59,11 @@ const Router = () => {
             component={DepartmentsPage}
           />
           <Route
+            path="/academics/courses"
+            exact
+            component={CoursesPage}
+          />
+          <Route
             path="/academics/courses/:child"
             exact
             component={CoursesPage}

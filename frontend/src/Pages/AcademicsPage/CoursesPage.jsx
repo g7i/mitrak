@@ -12,7 +12,6 @@ import MbaPage from "./CoursesPage/Mba";
 
 const CoursesPage = () => {
   const { child } = useParams();
-
   const CoursesPageSections = [
     { title: "B.Tech" },
     { title: "M.Tech" },
@@ -25,6 +24,7 @@ const CoursesPage = () => {
       <Banner bannerHeading="Courses" />
       <PagesLayout rightNavLinks={CoursesPageSections} pageName="courses">
         <PageContainer>
+          {child === undefined && <BtechPage />}
           {child === "b.tech" && <BtechPage />}
           {child === "m.tech" && <MtechPage />}
           {child === "mba" && <MbaPage />}
