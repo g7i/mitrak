@@ -4,7 +4,7 @@ import Layout from '../../constants/Layout'
 import PagesLayout from '../../constants/PagesLayout'
 import { useParams } from 'react-router-dom';
 import { amenities, studentaffair, clubandactivities } from './staticData/doc';
-import { HalfImage, Heading, HyperLink, ListItem, PageContainer, Paragraph } from '../../components/styledComponents/GlobalComponents';
+import { FillImage, HalfImage, Heading, HyperLink, ListItem, PageContainer, Paragraph } from '../../components/styledComponents/GlobalComponents';
 import ComplaintForm from './ComplaintForm';
 
 const CampusLife = () => {
@@ -70,7 +70,7 @@ const CampusLife = () => {
                     {
                         obj?.map(item => item.title === child && (
                             <>
-                                <HalfImage src={item?.imageUrl} alt="mitrc image" />
+                                <FillImage src={item?.imageUrl} alt="mitrc image" />
                                 {
                                     Object.keys(item).map(key => (
                                         <>
