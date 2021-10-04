@@ -12,6 +12,7 @@ export const DropDownContainer = styled.div`
     display: flex;
     align-items: center;
     overflow: hidden;
+    color: #000;
 `;
 
 export const DropDownIcon = styled(AiOutlineDown)`

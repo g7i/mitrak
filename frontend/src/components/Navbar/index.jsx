@@ -17,12 +17,8 @@ import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 const DropDownContent = {
   aboutUs: [
-    { title: "Vision And Mission", link: "" },
-    { title: "Governing Board", link: "" },
-    { title: "Chairmen's Desk", link: "" },
-    { title: "Advisory Board", link: "" },
-    { title: "Director's Desk", link: "" },
-    { title: "Society", link: "" },
+    { title: "About Us", link: "/about" },
+    { title: "Contact Us", link: "" },
   ],
   academics: [
     { title: "Courses", link: "" },
@@ -68,7 +64,9 @@ const Navbar = () => {
         <span></span>
       </Hamburger>
       <Menu showMobileMenu={showMobileMenu}>
-        <MenuLink href="/about">About Us</MenuLink>
+        <DropDown content={DropDownContent.aboutUs}>
+          <MenuLink href="/">Home</MenuLink>
+        </DropDown>
         <DropDown content={DropDownContent.academics}>
           <MenuLink href="#">Academics</MenuLink>
         </DropDown>

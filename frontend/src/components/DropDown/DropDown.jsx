@@ -27,7 +27,7 @@ const DropDown = ({ children, content }) => {
     >
       <DropDownContainer>
         {children}
-        <DropDownIcon />
+        {/* <DropDownIcon /> */}
       </DropDownContainer>
       <DropDownContentContainer visible={open}>
         <DropDownList>

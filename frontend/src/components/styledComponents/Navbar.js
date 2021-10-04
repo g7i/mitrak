@@ -55,15 +55,17 @@ export const Logo = styled.a`
 `;
 
 export const MenuLink = styled.a`
-  padding: 1rem 0.5rem 1rem 1.4rem;
+  padding: 1rem 0.5rem 1rem 1rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   color: #6b454d;
   transition: all 0.3s ease-in;
   font-size: 1rem;
+  text-align: center;
   &:hover {
-    color: #7b7fda;
+    background-color: #7b7fda;
+    color: white;
   }
 `;
 
