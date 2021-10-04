@@ -74,16 +74,16 @@ const Footer = () => {
         </FooterSectionContainer>
 
         <SocailMediaContainer>
-          <SocialMediaIcon>
+          <SocialMediaIcon href="https://www.facebook.com/mitrc.alwar.1">
             <FaFacebookF />
           </SocialMediaIcon>
-          <SocialMediaIcon>
+          <SocialMediaIcon href="https://twitter.com/mitrc_alwar?s=08">
             <FaTwitter />
           </SocialMediaIcon>
-          <SocialMediaIcon>
+          <SocialMediaIcon href="https://www.linkedin.com/in/tpo-mitrc-726b0a3a/Mitrc">
             <FaLinkedinIn />
           </SocialMediaIcon>
-          <SocialMediaIcon>
+          <SocialMediaIcon href="https://www.youtube.com/watch?v=MMzFcZ3aIGI">
             <FaYoutube />
           </SocialMediaIcon>
         </SocailMediaContainer>
