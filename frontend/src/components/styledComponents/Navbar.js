@@ -134,10 +134,13 @@ export const LoginButton = styled.button`
   }
 `;
 
-export const ContactHeaderLinksWrapper = styled.div`
+export const ContactHeaderLinksWrapper = styled.a`
   width: fit-content;
   height: fit-content;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
   &:hover {
     svg {
       fill: #a8dddd;

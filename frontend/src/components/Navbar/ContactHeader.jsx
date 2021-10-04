@@ -7,7 +7,6 @@ import {
 } from "../styledComponents/Navbar";
 import {
   AiOutlineMail,
-  AiFillPhone,
   AiFillFacebook,
   AiFillLinkedin,
   AiFillTwitterCircle,
@@ -22,18 +21,18 @@ const ContactHeader = () => {
       <Wrapper>
         <Wrapper>
           <ContactHeaderLinksWrapper
-            onClick={() => {
-              window.location.href = "mailto: abc@example.com";
-            }}
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@mitrc.ac.in"
           >
             <AiOutlineMail color={"#FFFFFF"} />
             <Text color="#FFFFFF">info@mitrc.ac.in</Text>
           </ContactHeaderLinksWrapper>
         </Wrapper>
         <Wrapper>
-          <ContactHeaderLinksWrapper>
-            <AiFillPhone color={"#FFFFFF"} />
-            <Text color="#FFFFFF">info@mitrc.ac.in</Text>
+          <ContactHeaderLinksWrapper
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hr@mitrc.ac.in"
+          >
+            <AiOutlineMail color={"#FFFFFF"} />
+            <Text color="#FFFFFF">hr@mitrc.ac.in</Text>
           </ContactHeaderLinksWrapper>
         </Wrapper>
       </Wrapper>
@@ -55,7 +54,7 @@ const ContactHeader = () => {
             size={20}
             onClick={() => {
               window.location.href =
-                "https://www.linkedin.com/in/tpo-mitrc-726b0a3a/Mitrc";
+                "https://www.linkedin.com/school/mitrc-college-alwar/";
             }}
           />
         </ContactHeaderLinksWrapper>
