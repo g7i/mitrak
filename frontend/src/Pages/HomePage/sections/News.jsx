@@ -75,7 +75,7 @@ const settings = {
 export default function News() {
   return (
     <Container>
-      <Heading>News</Heading>
+      <Heading style={{textAlign: 'center'}}>News</Heading>
       <Slider {...settings}>
         {Array.from({ length: 5 }).map((_, i) => (
           <ItemWrapper key={i}>

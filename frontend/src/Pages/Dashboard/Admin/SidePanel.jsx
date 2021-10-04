@@ -19,6 +19,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
 import LocalActivityIcon from "@mui/icons-material/LocalActivity";
 import { ImageLogo } from "./Styles";
+import { Link } from 'react-router-dom'
 
 const sidePanelData = [
   { title: "Students", icon: <PeopleIcon /> },
@@ -41,12 +42,14 @@ function SidePanel(props) {
   const drawer = (
     <div>
       <Toolbar>
-        <ImageLogo
-          src={
-            "https://www.mitrc.ac.in/wp-content/uploads/2019/05/mitrc_logo_small.png"
-          }
-          alt={"mitrc-logo"}
-        />
+        <Link to="/">
+          <ImageLogo
+            src={
+              "https://www.mitrc.ac.in/wp-content/uploads/2019/05/mitrc_logo_small.png"
+            }
+            alt={"mitrc-logo"}
+          />
+        </Link>
       </Toolbar>
       <Divider />
       <List>

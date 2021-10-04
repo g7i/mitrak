@@ -102,7 +102,7 @@ const Navbar = () => {
           <LoginButton>Login</LoginButton>
         </Menu>
       )}
-      {isLoggedIn && (
+      {(isLoggedIn) &&  (
         <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (
             <React.Fragment>
@@ -121,6 +121,12 @@ const Navbar = () => {
                   style={{ textDecoration: "none", color: "#000" }}
                 >
                   <MenuItem onClick={popupState.close}>Profile</MenuItem>
+                </Link>
+                <Link
+                  to="/admin/dashboard"
+                  style={{ textDecoration: "none", color: "#000" }}
+                >
+                  <MenuItem onClick={popupState.close}>Admin Dashboard</MenuItem>
                 </Link>
                 <MenuItem onClick={popupState.close}>Logout</MenuItem>
               </MaterialMenu>

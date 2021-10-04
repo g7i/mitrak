@@ -22,7 +22,7 @@ const MtechPage = () => {
       />
       <div>
         {/* section1 */}
-        <Heading>ELIGIBILITY FOR B.TECH (UG PROGRAMME)</Heading>
+        <Heading>ELIGIBILITY FOR M.TECH (PG PROGRAMME)</Heading>
         <Paragraph>
           Candidates should have passed B.E./B.Tech from RTU or any other
           recognized University. Also, candidates who have obtained

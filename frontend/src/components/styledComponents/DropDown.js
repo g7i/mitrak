@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AiOutlineDown } from "react-icons/ai";
+import { Colors } from '../../constants/UiConstants'
 
 export const DropDownOuterContainer = styled.div`
   display: flex;
@@ -34,7 +35,7 @@ export const DropDownContentContainer = styled.div`
       padding: 1rem 0rem;
       &:hover {
         a {
-          color: #7b7fda;
+          color: ${Colors.SECONDARY};
         }
       }
     }
