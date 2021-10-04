@@ -1,5 +1,6 @@
 import styled , {keyframes} from "styled-components";
 import { FaArrowAltCircleDown} from "react-icons/fa";
+import { Colors } from '../../constants/UiConstants'
 
 const IconAnimation = keyframes`
  0% {}
@@ -8,17 +9,22 @@ const IconAnimation = keyframes`
 `;
 
 
-export const ExploreMoreContainer = styled.div`
+export const ExploreMoreContainer = styled.a`
   width: 200px;
   height: 50px;
+  text-decoration: none;
+  color: ${Colors.PRIMARY};
   border-radius: 40px;
   background-color: white;
-  box-shadow: 5px 2px 10px 4px #888888;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   padding: 10px;
+  box-shadow: -4px 1px 35px -4px rgba(92,68,68,0.75);
+-webkit-box-shadow: -4px 1px 35px -4px rgba(92,68,68,0.75);
+-moz-box-shadow: -4px 1px 35px -4px rgba(92,68,68,0.75);
+cursor: pointer;
   
   &:hover{
       transform: scale(1.1);

@@ -5,14 +5,6 @@ export const Container = styled.div `
     padding: 0 5rem;
 `
 
-export const ProfilePicture = styled.img`
-    width: 20rem;
-    height: 20rem;
-    position: relative;
-    object-fit: cover;
-    border-radius: 20rem;
-`;
-
 export const Form = styled.div`
     display: flex;
     flex-direction: column;

@@ -3,5 +3,6 @@ export const Colors = {
     SECONDARY: '#4D8FFA',
     WHITE: "#FFFFFF",
     DETAILS_BACKGROUND: '#F3F1F5',
-    LINK_COLOR: '#176699'
+    LINK_COLOR: '#176699',
+    BORDER_COLOR: '#DDDDDD'
 }

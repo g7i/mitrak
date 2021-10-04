@@ -116,7 +116,7 @@ const Navbar = () => {
               />
               <MaterialMenu {...bindMenu(popupState)}>
                 <Link
-                  to="/profile/student/1"
+                  to="/student/dashboard"
                   style={{ textDecoration: "none", color: "#000" }}
                 >
                   <MenuItem onClick={popupState.close}>Profile</MenuItem>

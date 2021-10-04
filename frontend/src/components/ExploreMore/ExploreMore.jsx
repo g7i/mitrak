@@ -8,7 +8,7 @@ import {
 const ExploreMore = () => {
     return (
         
-            <ExploreMoreContainer>
+            <ExploreMoreContainer href="/academics/courses">
                 <ExploreText>
                     Explore More
                 </ExploreText>
