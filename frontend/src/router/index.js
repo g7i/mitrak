@@ -41,7 +41,21 @@ const Router = () => {
             exact
             component={PlacementPage}
           />
-          <Route path="/admin/dashboard" exact component={AdminDashboard} />
+          <Route
+            path="/admin/dashboard"
+            exact
+            component={AdminDashboard}
+          />
+          <Route
+            path="/admin/dashboard/:child"
+            exact
+            component={AdminDashboard}
+          />
+          <Route
+            path="/admin/dashboard/:child/:child2"
+            exact
+            component={AdminDashboard}
+          />
           <Route path="/student/dashboard" exact component={StudentDashboard} />
           <Route
             path="/academics/madatory-disclosures"
@@ -53,11 +67,7 @@ const Router = () => {
             exact
             component={DepartmentsPage}
           />
-          <Route
-            path="/academics/courses"
-            exact
-            component={CoursesPage}
-          />
+          <Route path="/academics/courses" exact component={CoursesPage} />
           <Route
             path="/academics/courses/:child"
             exact

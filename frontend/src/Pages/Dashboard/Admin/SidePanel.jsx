@@ -18,22 +18,44 @@ import MenuBookIcon from "@mui/icons-material/MenuBook";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
 import LocalActivityIcon from "@mui/icons-material/LocalActivity";
-import { ImageLogo } from "./Styles";
-import { Link } from 'react-router-dom'
+import { ImageLogo, ListItemMainWrapper } from "./Styles";
+import { Link, useParams, useHistory } from "react-router-dom";
 
 const sidePanelData = [
   { title: "Students", icon: <PeopleIcon /> },
-  { title: "Notes", icon: <MenuBookIcon /> },
-  { title: "Notice", icon: <NotificationsIcon /> },
+  {
+    title: "Notes",
+    icon: <MenuBookIcon />,
+    list: [{ title: "Upload" }, { title: "List" }],
+  },
+  {
+    title: "Notice",
+    icon: <NotificationsIcon />,
+    list: [{ title: "Upload" }, { title: "List" }],
+  },
   { title: "Result", icon: <FilePresentIcon /> },
   { title: "Activities", icon: <LocalActivityIcon /> },
+  {
+    title: "Placements",
+    icon: <NotificationsIcon />,
+    list: [{ title: "Upload" }, { title: "List" }],
+  },
 ];
 
 const drawerWidth = 240;
 
 function SidePanel(props) {
+  const { child , child2 } = useParams();
+  const history = useHistory();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [listOpen, setListOpen] = React.useState({
+    Students: false,
+    Notes: false,
+    Notice: false,
+    Resul: false,
+    Placements: false,
+  });
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -53,12 +75,64 @@ function SidePanel(props) {
       </Toolbar>
       <Divider />
       <List>
-        {sidePanelData.map((item, index) => (
-          <ListItem button key={item.title}>
-            <ListItemIcon>{item.icon}</ListItemIcon>
-            <ListItemText primary={item.title} />
-          </ListItem>
-        ))}
+        {sidePanelData.map((item, index) =>
+          item.list ? (
+            <>
+              <ListItemMainWrapper open={listOpen[item.title]}>
+                <ListItem
+                  button
+                  key={item.title}
+                  onClick={() => {
+                    setListOpen({
+                      ...listOpen,
+                      [item.title]: !listOpen[item.title],
+                    });
+                  }}
+                  
+                >
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.title} />
+                </ListItem>
+                {item?.list?.map((option) => (
+                  <ListItem
+                    button
+                    key={option.title}
+                    onClick={() => {
+                      history.push(
+                        `/admin/dashboard/${item.title.toLowerCase()}/${option.title.toLowerCase()}`
+                      );
+                    }}
+                    style={{
+                      backgroundColor:
+                        child === item.title.toLowerCase() &&
+                        child2 === option.title.toLowerCase() &&
+                        "rgba(26, 118, 210, 0.3)",
+                    }}
+                    className={"listItem"}
+                  >
+                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    <ListItemText primary={option.title} />
+                  </ListItem>
+                ))}
+              </ListItemMainWrapper>
+            </>
+          ) : (
+            <ListItem
+              button
+              key={item.title}
+              onClick={() => {
+                history.push(`/admin/dashboard/${item.title.toLowerCase()}`);
+              }}
+              style={{
+                backgroundColor:
+                  child === item.title.toLowerCase() && "#1a76d2",
+              }}
+            >
+              <ListItemIcon>{item.icon}</ListItemIcon>
+              <ListItemText primary={item.title} />
+            </ListItem>
+          )
+        )}
       </List>
     </div>
   );
