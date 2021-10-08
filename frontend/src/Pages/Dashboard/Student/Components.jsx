@@ -22,3 +22,23 @@ export const FormItem = styled.span`
     padding: 0.5rem;
     border-radius: 5px;
 `;
+
+export const PageContainer = styled.div`
+    border: 1px solid ${Colors.BORDER_COLOR};
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+export const NotesImg = styled.img`
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+`;
+
+export const FixImg = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+`;

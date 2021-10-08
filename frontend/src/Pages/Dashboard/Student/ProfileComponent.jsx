@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Colors } from '../../../constants/UiConstants'
 import { Tab, Tabs, Box, Typography } from '@mui/material'
 import { FormHead, FormItem, Form } from './Components'
+import { PageContainer } from './Components'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -41,7 +42,7 @@ const ProfileComponent = () => {
     }
 
     return (
-        <ProfileContainer>
+        <PageContainer>
             <ProfileImage
                 src="https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg"
                 alt="student profile image"
@@ -91,19 +92,13 @@ const ProfileComponent = () => {
                     </Form>
                 </TabPanel>
             </div>
-        </ProfileContainer>
+        </PageContainer>
     )
 }
 
 export default ProfileComponent
 
-const ProfileContainer = styled.div`
-    border: 1px solid ${Colors.BORDER_COLOR};
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`;
+
 
 const ProfileImage = styled.img`
     width: 20rem;
