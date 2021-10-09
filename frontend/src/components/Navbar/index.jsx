@@ -14,6 +14,8 @@ import logo from "../../assets/images/mitrc.png";
 import DropDown from "../DropDown/DropDown";
 import { MenuItem, Menu as MaterialMenu, Avatar } from "@mui/material";
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+import {useStore} from "../../store";
+import {logOut, signIn} from "../../utils/firebase/auth";
 
 const DropDownContent = {
   aboutUs: [
@@ -62,7 +64,21 @@ const DropDownContent = {
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const {
+    state: { user },
+    actions: { updateUser }
+  } = useStore();
+
+  const handleSignIn = async () => {
+    const data = await signIn();
+    updateUser(data);
+  };
+
+  const handleSignOut = async (popupState) => {
+    await logOut();
+    popupState.close();
+    updateUser(null);
+  };
 
   return (
     <Nav>
@@ -95,20 +111,22 @@ const Navbar = () => {
 
         <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">Apply For Admission</MenuLink>
       </Menu>
-      {!isLoggedIn && (
+      {!user && (
         <Menu showMobileMenu={showMobileMenu}>
-          <Link to="/login">
-            <LoginButton>Login/Register</LoginButton>
-          </Link>
+          <MenuLink>Apply for Admission</MenuLink>
+          <LoginButton onClick={handleSignIn}>Login</LoginButton>
         </Menu>
       )}
-      {(isLoggedIn) &&  (
+      {!!user &&  (
         <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (
             <React.Fragment>
+              {/* <Button variant="contained" {...bindTrigger(popupState)}>
+                  Dashboard
+                </Button> */}
               <Avatar
                 alt="user profile image"
-                src="https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png"
+                src={user.photoURL}
                 style={{ cursor: "pointer" }}
                 {...bindTrigger(popupState)}
               />
@@ -125,7 +143,7 @@ const Navbar = () => {
                 >
                   <MenuItem onClick={popupState.close}>Admin Dashboard</MenuItem>
                 </Link>
-                <MenuItem onClick={popupState.close}>Logout</MenuItem>
+                <MenuItem onClick={() => handleSignOut(popupState)}>Logout</MenuItem>
               </MaterialMenu>
             </React.Fragment>
           )}
