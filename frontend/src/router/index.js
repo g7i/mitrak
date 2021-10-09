@@ -11,11 +11,17 @@ import DepartmentsPage from "../Pages/AcademicsPage/DepartmentsPage";
 import MandatoryDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclosuresPage";
 import CoursesPage from "../Pages/AcademicsPage/CoursesPage";
 import StudentDashboard from "../Pages/Dashboard/Student/StudentDashboard";
+import Login from "../Pages/AuthPage/Login";
+import Register from "../Pages/AuthPage/Register";
 
 const Router = () => {
     return (
       <BrowserRouter>
         <Switch>
+          {/* Authentication Routes */}
+          <Route path="/login" exact component={Login} />
+          <Route path="/register" exact component={Register} />
+
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
           <Route

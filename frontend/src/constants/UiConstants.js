@@ -4,5 +4,7 @@ export const Colors = {
     WHITE: "#FFFFFF",
     DETAILS_BACKGROUND: '#F3F1F5',
     LINK_COLOR: '#176699',
-    BORDER_COLOR: '#DDDDDD'
+    BORDER_COLOR: '#DDDDDD',
+    TEXT_PRIMARY: '#212121',
+    TEXT_SECONDARY: '#2B2B2B'
 }
