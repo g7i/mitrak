@@ -17,25 +17,32 @@ import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 const DropDownContent = {
   aboutUs: [
-    { title: "Vision And Mission", link: "" },
-    { title: "Governing Board", link: "" },
-    { title: "Chairmen's Desk", link: "" },
-    { title: "Advisory Board", link: "" },
-    { title: "Director's Desk", link: "" },
-    { title: "Society", link: "" },
+    { title: "About Us", link: "/about" },
+    { title: "Contact Us", link: "" },
   ],
   academics: [
-    { title: "Courses", link: "" },
-    { title: "Departments", link: "" },
-    { title: "Mendatory disclosures", link: "" },
-    { title: "Apply for admission", link: "" },
+    { title: "Courses", link: "/academics/courses" },
+    {
+      title: "Departments",
+      link: "/academics/departments/electrical%20engineering",
+    },
+    { title: "Mendatory disclosures", link: "/academics/madatory-disclosures" },
   ],
   campusLife: [
     { title: "Amenities", link: "/campus-life/amenities/hostel" },
-    { title: "Students Affair", link: "/campus-life/studentaffair/anti%20ragging" },
-    { title: "Clubs and Activities", link: "/campus-life/clubandactivities/aadharclub" },
+    {
+      title: "Students Affair",
+      link: "/campus-life/studentaffair/anti%20ragging",
+    },
+    {
+      title: "Clubs and Activities",
+      link: "/campus-life/clubandactivities/aadharclub",
+    },
     { title: "College Daze- the magzine", link: "/campus-life/collegedaze" },
-    { title: "Events And Gallery", link: "/campus-life/events-gallery/curricular" },
+    {
+      title: "Events And Gallery",
+      link: "/campus-life/events-gallery/curricular",
+    },
   ],
 
   placements: [
@@ -60,7 +67,12 @@ const Navbar = () => {
   return (
     <Nav>
       <Link to="/">
-        <ImgLogo src={logo} alt="Mitrc Logo" />
+        <ImgLogo
+          src={
+            "https://www.mitrc.ac.in/wp-content/uploads/2019/05/mitrc_logo_small.png"
+          }
+          alt="Mitrc Logo"
+        />
       </Link>
       <Hamburger onClick={() => setShowMobileMenu(!showMobileMenu)}>
         <span></span>
@@ -68,7 +80,9 @@ const Navbar = () => {
         <span></span>
       </Hamburger>
       <Menu showMobileMenu={showMobileMenu}>
-        <MenuLink href="/about">About Us</MenuLink>
+        <DropDown content={DropDownContent.aboutUs}>
+          <MenuLink href="/">Home</MenuLink>
+        </DropDown>
         <DropDown content={DropDownContent.academics}>
           <MenuLink href="#">Academics</MenuLink>
         </DropDown>
@@ -79,41 +93,46 @@ const Navbar = () => {
           <MenuLink href="#">Placements</MenuLink>
         </DropDown>
 
-        <MenuLink href="">Research</MenuLink>
+        <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">Apply For Admission</MenuLink>
       </Menu>
-      {
-        !isLoggedIn && (
-          <Menu showMobileMenu={showMobileMenu}>
-            <MenuLink>Apply for Admission</MenuLink>
-            <LoginButton>Login</LoginButton>
-          </Menu>
-        )
-      }
-      {
-        isLoggedIn && (
-          <PopupState variant="popover" popupId="demo-popup-menu">
-            {(popupState) => (
-              <React.Fragment>
-                {/* <Button variant="contained" {...bindTrigger(popupState)}>
+      {!isLoggedIn && (
+        <Menu showMobileMenu={showMobileMenu}>
+          <MenuLink>Apply for Admission</MenuLink>
+          <LoginButton>Login</LoginButton>
+        </Menu>
+      )}
+      {(isLoggedIn) &&  (
+        <PopupState variant="popover" popupId="demo-popup-menu">
+          {(popupState) => (
+            <React.Fragment>
+              {/* <Button variant="contained" {...bindTrigger(popupState)}>
                   Dashboard
                 </Button> */}
-                <Avatar 
-                  alt="user profile image"
-                  src='https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png'
-                  style={{cursor: 'pointer'}}
-                  {...bindTrigger(popupState)}
-                />
-                <MaterialMenu {...bindMenu(popupState)}>
-                  <Link to="/profile/student/1" style={{textDecoration: 'none', color: '#000'}}>
-                    <MenuItem onClick={popupState.close}>Profile</MenuItem>
-                  </Link>
-                  <MenuItem onClick={popupState.close}>Logout</MenuItem>
-                </MaterialMenu>
-              </React.Fragment>
-            )}
-          </PopupState>
-        )
-      }
+              <Avatar
+                alt="user profile image"
+                src="https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png"
+                style={{ cursor: "pointer" }}
+                {...bindTrigger(popupState)}
+              />
+              <MaterialMenu {...bindMenu(popupState)}>
+                <Link
+                  to="/student/dashboard"
+                  style={{ textDecoration: "none", color: "#000" }}
+                >
+                  <MenuItem onClick={popupState.close}>Profile</MenuItem>
+                </Link>
+                <Link
+                  to="/admin/dashboard"
+                  style={{ textDecoration: "none", color: "#000" }}
+                >
+                  <MenuItem onClick={popupState.close}>Admin Dashboard</MenuItem>
+                </Link>
+                <MenuItem onClick={popupState.close}>Logout</MenuItem>
+              </MaterialMenu>
+            </React.Fragment>
+          )}
+        </PopupState>
+      )}
     </Nav>
   );
 };

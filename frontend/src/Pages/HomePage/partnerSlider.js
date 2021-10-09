@@ -25,5 +25,5 @@ export const OurPartnerText = styled.h3`
   color: #777777;
   text-align : center;
   font-weight: 500;
-  margin: 50px;
+  margin: 1.5rem 0;
 `;

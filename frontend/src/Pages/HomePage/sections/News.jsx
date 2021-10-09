@@ -15,6 +15,9 @@ import {
   RightArrowContainer,
   Container,
   ItemWrapper,
+  NewsBox,
+  NewsLink,
+  NewsContainer,
 } from "../../../components/styledComponents/News";
 import { Heading } from "../../../components/styledComponents/GlobalComponents";
 import { NewsImage } from "../component";
@@ -75,7 +78,7 @@ const settings = {
 export default function News() {
   return (
     <Container>
-      <Heading>News</Heading>
+      <Heading style={{ textAlign: 'center' }}>News</Heading>
       <Slider {...settings}>
         {Array.from({ length: 5 }).map((_, i) => (
           <ItemWrapper key={i}>
@@ -99,6 +102,63 @@ export default function News() {
           </ItemWrapper>
         ))}
       </Slider>
+      <Heading style={{ textAlign: 'center' }}>Important Links</Heading>
+      <Container style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <NewsBox> 
+            <Heading style={{fontSize: '1.4rem', textAlign: 'center'}}>Top Stories of the week</Heading>
+            <NewsContainer>
+              <NewsLink href="#">New placement season started for year 2021</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+            <NewsContainer>
+              <NewsLink href="#">placement new 2021</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+            <NewsContainer>
+              <NewsLink href="#">placement new 2021</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+            <NewsContainer>
+              <NewsLink href="#">placement new 2021</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+            <NewsContainer>
+              <NewsLink href="#">placement new 2021</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+          </NewsBox>
+          <NewsBox> 
+            <Heading style={{fontSize: '1.4rem', textAlign: 'center'}}>Placement News</Heading>
+            <NewsContainer>
+              <NewsLink href="#">New placement season started for year 2021</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+            <NewsContainer>
+              <NewsLink href="#">placement new 2021</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+            <NewsContainer>
+              <NewsLink href="#">placement new 2021</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+          </NewsBox>
+          <NewsBox> 
+            <Heading style={{fontSize: '1.4rem', textAlign: 'center'}}>Student Activities</Heading>
+            <NewsContainer>
+              <NewsLink href="#">Cultural fest 2021 auditions going on</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+            <NewsContainer>
+              <NewsLink href="#">field trip to be going on the coming wednesday</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+            <NewsContainer>
+              <NewsLink href="#">Exam forms are available now for odd sems</NewsLink>
+              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </NewsContainer>
+          </NewsBox>
+      </Container>
+
     </Container>
   );
 }

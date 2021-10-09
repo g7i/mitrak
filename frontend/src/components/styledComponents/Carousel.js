@@ -55,12 +55,12 @@ export const SlideTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 10;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.6);
   max-width: max-content;
   padding: 1rem 3rem;
   position: absolute;
-  top: ${({currentSlide}) => (currentSlide * 15)}%;
-  left: ${({currentSlide}) => (currentSlide * 10)}%;
+  top: 30%;
+  left: 20%;
 
   @media (max-width:768px) {
     top: 40%;

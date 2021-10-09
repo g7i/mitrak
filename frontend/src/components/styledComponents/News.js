@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import BREAKPOINTS from "../../constants/Breakpoints";
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
+import { Colors } from '../../constants/UiConstants'
 
 export const Container = styled.div`
   padding: 20px 40px;
@@ -70,4 +71,23 @@ export const PreviousIcon = styled(FaChevronLeft)`
 
 export const ItemWrapper = styled.div`
   padding: 10px;
+`;
+
+export const NewsBox = styled.div`
+  width: 33%;
+  padding-bottom: 0.5rem;
+  background-color: ${Colors.DETAILS_BACKGROUND};
+`;
+
+export const NewsLink = styled.a`
+  padding-left: 0.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: ${Colors.LINK_COLOR};
+`;
+
+export const NewsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
 `;

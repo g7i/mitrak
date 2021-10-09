@@ -6,6 +6,7 @@ import {
   DropDownList,
   DropDownOuterContainer,
 } from "../styledComponents/DropDown";
+import { Link } from 'react-router-dom'
 
 const DropDown = ({ children, content }) => {
   const [open, setOpen] = React.useState(false);
@@ -27,13 +28,13 @@ const DropDown = ({ children, content }) => {
     >
       <DropDownContainer>
         {children}
-        <DropDownIcon />
+        {/* <DropDownIcon /> */}
       </DropDownContainer>
       <DropDownContentContainer visible={open}>
         <DropDownList>
           {content?.map((item , i) => (
             <li key={i}>
-              <a href={item.link}>{item.title}</a>
+              <Link to={item.link}>{item.title}</Link>
             </li>
           ))}
         </DropDownList>

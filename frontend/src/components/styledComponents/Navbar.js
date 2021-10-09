@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Colors } from '../../constants/UiConstants'
 
 export const Nav = styled.div`
-  padding: 0 2rem;
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,15 +56,17 @@ export const Logo = styled.a`
 `;
 
 export const MenuLink = styled.a`
-  padding: 1rem 0.5rem 1rem 1.4rem;
+  padding: 1rem 1rem 1rem 1rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: #6b454d;
+  color: ${Colors.PRIMARY};
   transition: all 0.3s ease-in;
   font-size: 1rem;
+  text-align: center;
   &:hover {
-    color: #7b7fda;
+    background-color: ${Colors.SECONDARY};
+    color: ${Colors.WHITE};
   }
 `;
 
@@ -114,19 +117,35 @@ export const Wrapper = styled.div`
 export const LoginButton = styled.button`
   padding: 0.3rem 1rem;
   border-radius: 20px;
-  border: 4px solid #32404D;
+  border: 4px solid #32404d;
   margin-left: 20px;
-  background-color: #32404D;
+  background-color: #32404d;
   color: white;
   transition: all 0.3s ease-in;
   font-size: 1.2rem;
   cursor: pointer;
   &:hover {
-    border: 4px solid #32404D;
+    border: 4px solid #32404d;
     background-color: transparent;
-    color: #32404D;
+    color: #32404d;
   }
   @media (max-width: 768px) {
     margin-bottom: 20px;
+  }
+`;
+
+export const ContactHeaderLinksWrapper = styled.a`
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  &:hover {
+    svg {
+      fill: #a8dddd;
+
+      transition: fill 500ms ease-in;
+    }
   }
 `;

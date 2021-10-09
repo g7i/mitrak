@@ -5,14 +5,6 @@ export const Container = styled.div `
     padding: 0 5rem;
 `
 
-export const ProfilePicture = styled.img`
-    width: 20rem;
-    height: 20rem;
-    position: relative;
-    object-fit: cover;
-    border-radius: 20rem;
-`;
-
 export const Form = styled.div`
     display: flex;
     flex-direction: column;
@@ -29,4 +21,24 @@ export const FormItem = styled.span`
     background-color: ${Colors.DETAILS_BACKGROUND};
     padding: 0.5rem;
     border-radius: 5px;
+`;
+
+export const PageContainer = styled.div`
+    border: 1px solid ${Colors.BORDER_COLOR};
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+
+export const NotesImg = styled.img`
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+`;
+
+export const FixImg = styled.img`
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 `;

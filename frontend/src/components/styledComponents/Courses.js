@@ -22,11 +22,14 @@ export const Wrapper = styled.div`
 
 export const CardTitle = styled.h3`
   margin: 10px 0;
+  text-transform: capitalize;
+  font-size: 1.4em;
 `;
 
 export const CardContent = styled.p`
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.5em;
+  text-transform: capitalize;
 `;
 
 export const CardWrapper = styled.div`
@@ -37,7 +40,6 @@ export const CardWrapper = styled.div`
 
 export const ImageWrapper = styled.div`
   overflow: hidden;
-  background: yellow;
   height: 300px;
   border-radius: 3px;
 `;
@@ -46,7 +48,7 @@ export const CardImage = styled.img`
   display: inline-block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.3s linear;
   object-position: center;
   &:hover {
