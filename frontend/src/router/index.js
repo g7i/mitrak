@@ -1,18 +1,41 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BrowserRouter , Route, Switch } from 'react-router-dom';
 import App from "../App";
 import AboutUsPage from "../Pages/AboutUsPage";
 import CampusLife from "../Pages/CampusLifePage";
 import PlacementPage from "../Pages/PlacementPage";
-import MagazinePage from '../Pages/CampusLifePage/MagazinePage/index';  
+import MagazinePage from '../Pages/CampusLifePage/MagazinePage/index';
 import AdminDashboard from "../Pages/Dashboard/Admin/AdminDashBorad";
 import EventGallery from "../Pages/CampusLifePage/EventGallery";
 import DepartmentsPage from "../Pages/AcademicsPage/DepartmentsPage";
 import MandatoryDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclosuresPage";
 import CoursesPage from "../Pages/AcademicsPage/CoursesPage";
 import StudentDashboard from "../Pages/Dashboard/Student/StudentDashboard";
+import {onAuthStateChanged} from "firebase/auth";
+import {auth} from "../utils/firebase/auth";
+import {useStore} from "../store";
+import {getUser} from "../utils/firebase/users";
 
 const Router = () => {
+  const {
+    actions: { updateUser }
+  } = useStore();
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        const userData = await getUser(user.uid);
+        updateUser({
+          ...userData,
+          displayName: user.displayName,
+          email: user.email,
+          photoURL: user.photoURL,
+        });
+      } else updateUser(null);
+      unsubscribe();
+    });
+  }, []);
+
     return (
       <BrowserRouter>
         <Switch>
