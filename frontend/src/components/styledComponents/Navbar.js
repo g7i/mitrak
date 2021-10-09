@@ -116,7 +116,7 @@ export const Wrapper = styled.div`
 
 export const LoginButton = styled.button`
   padding: 0.3rem 1rem;
-  border-radius: 20px;
+  border-radius: 6px;
   border: 4px solid #32404d;
   margin-left: 20px;
   background-color: #32404d;

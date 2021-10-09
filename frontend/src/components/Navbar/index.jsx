@@ -62,7 +62,7 @@ const DropDownContent = {
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <Nav>
@@ -97,17 +97,15 @@ const Navbar = () => {
       </Menu>
       {!isLoggedIn && (
         <Menu showMobileMenu={showMobileMenu}>
-          <MenuLink>Apply for Admission</MenuLink>
-          <LoginButton>Login</LoginButton>
+          <Link to="/login">
+            <LoginButton>Login/Register</LoginButton>
+          </Link>
         </Menu>
       )}
       {(isLoggedIn) &&  (
         <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (
             <React.Fragment>
-              {/* <Button variant="contained" {...bindTrigger(popupState)}>
-                  Dashboard
-                </Button> */}
               <Avatar
                 alt="user profile image"
                 src="https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png"

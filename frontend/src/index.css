@@ -54,3 +54,8 @@ code {
 .activeTabBar {
   background-color: 'red';
 }
+
+.animate {
+  animation: swing ease-out 5s forwards;
+  float: left;
+}
