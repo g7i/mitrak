@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import './utils/firebase/index';
 import Router from './router';
+import {StoreProvider} from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <StoreProvider>
+        <Router />
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
