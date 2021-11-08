@@ -69,10 +69,9 @@ export const HalfWrapper = styled.div`
 //TYPOGRAPHY
 export const Heading = styled.h1`
   font-size: 2.5rem;
-  /* text-align: center; */
   margin: ${(props) => props.margin || "2vh 0 0 0"};
   font-family: "Bebas Neue", cursive;
-  color: ${(props) => props.color || "#32404d"};
+  color: ${(props) => props.color || "#191A19"};
 
   letter-spacing: 2px;
   @media (max-width: 768px) {
@@ -104,12 +103,13 @@ export const HyperLink = styled.a`
 export const Paragraph = styled.p`
   font-size: 1.3rem;
   /* text-align: center; */
+  text-align: justify;
+
   font-family: "Lato", sans-serif;
   margin-top: 1vh;
-  color: ${({ color }) => color ?? "#777797"};
+  color: ${({ color }) => color ?? "#152D35"};
   @media (max-width: 768px) {
     font-size: 1rem;
-    text-align: justify;
   }
 `;
 

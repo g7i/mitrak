@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Colors}  from '../../constants/UiConstants'
 
 export const Container = styled.div`
   margin: 20px 10px;
@@ -24,12 +25,14 @@ export const CardTitle = styled.h3`
   margin: 10px 0;
   text-transform: capitalize;
   font-size: 1.4em;
+  color: ${Colors.PRIMARY};
 `;
 
 export const CardContent = styled.p`
-  font-size: 1em;
+  font-size: 0.85em;
   line-height: 1.5em;
   text-transform: capitalize;
+  color: ${Colors.SECONDARY};
 `;
 
 export const CardWrapper = styled.div`
