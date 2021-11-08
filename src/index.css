@@ -59,3 +59,13 @@ code {
   animation: swing ease-out 5s forwards;
   float: left;
 }
+
+.contactContainer {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactForm {
+  width: 50%;
+}

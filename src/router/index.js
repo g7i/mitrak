@@ -17,6 +17,7 @@ import {onAuthStateChanged} from "firebase/auth";
 import {auth} from "../utils/firebase/auth";
 import {useStore} from "../store";
 import {getUser} from "../utils/firebase/users";
+import ContactsPage from "../Pages/ContactsPage";
 
 const Router = () => {
   const {
@@ -47,6 +48,7 @@ const Router = () => {
 
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
+          <Route path="/contact" exact component={ContactsPage} />
           <Route
             path="/campus-life/collegedaze"
             exact

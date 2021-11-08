@@ -20,7 +20,7 @@ import {logOut, signIn} from "../../utils/firebase/auth";
 const DropDownContent = {
   aboutUs: [
     { title: "About Us", link: "/about" },
-    { title: "Contact Us", link: "" },
+    { title: "Contact Us", link: "/contact" },
   ],
   academics: [
     { title: "Courses", link: "/academics/courses" },
