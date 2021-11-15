@@ -70,8 +70,13 @@ const Navbar = () => {
   } = useStore();
 
   const handleSignIn = async () => {
-    const data = await signIn();
-    updateUser(data);
+    try {
+      const data = await signIn();
+      updateUser(data);
+    } catch (e) {
+      console.error(e);
+      alert('unable to sign in');
+    }
   };
 
   const handleSignOut = async (popupState) => {

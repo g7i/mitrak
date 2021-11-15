@@ -1,5 +1,4 @@
 import {StateType, ActionTypes, ActionType, ContextType} from './types';
-import useActions from "./actions";
 
 export const initialState: StateType = {
   user: null,
@@ -8,7 +7,7 @@ export const initialState: StateType = {
 export const initialContext: ContextType = {
   state: initialState,
   dispatch: () => {
-    throw new Error('setDispatch function must be overridden');
+    throw new Error('dispatch function must be overridden');
   },
   actions: {
     updateUser: user => {},

@@ -41,6 +41,7 @@ export type User = {
     branch?: Branch,
     role: Role,
     createdAt: Number,
+    isValid?: boolean,
 }
 
 export type AuthDetails = {
