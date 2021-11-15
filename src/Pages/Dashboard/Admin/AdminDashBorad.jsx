@@ -8,14 +8,20 @@ import StudentAdminDashboard from "./Students/StudentAdminDashboard";
 import NotesComponent from "./Notes/index";
 import { useParams } from "react-router";
 import PlacementsPage from "./Placements";
+import AdminProfile from "./AdminProfile";
+import NoticePage from './Notice'
+
 const Router = [
+  { name: 'admin profile', component: AdminProfile },
   { name: "students", component: StudentAdminDashboard },
-  { name: "notes", component: NotesComponent },
-  { name: "placements", component: PlacementsPage },
+  { name: "upload notes", component: NotesComponent },
+  { name: "new notice", component: NoticePage },
+  { name: "placements", component: PlacementsPage }
 ];
 
 function AdminDashboard(props) {
   const { child } = useParams();
+
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -26,8 +32,13 @@ function AdminDashboard(props) {
         {Router?.map((route) => {
           if (route.name === child) {
             return <route.component />;
-          }
+          } 
         })}
+        {
+          !child && (
+            <AdminProfile />
+          )
+        }
       </Box>
     </Box>
   );

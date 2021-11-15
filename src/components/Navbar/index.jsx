@@ -111,12 +111,12 @@ const Navbar = () => {
 
         <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">Apply For Admission</MenuLink>
       </Menu>
-      {/* {!user && (
+      {!user && (
         <Menu showMobileMenu={showMobileMenu}>
-          <MenuLink>Apply for Admission</MenuLink>
+          {/* <MenuLink>Apply for Admission</MenuLink> */}
           <LoginButton onClick={handleSignIn}>Login</LoginButton>
         </Menu>
-      )} */}
+      )}
       {!!user &&  (
         <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (

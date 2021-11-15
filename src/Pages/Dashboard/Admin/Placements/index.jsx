@@ -9,17 +9,18 @@ const PlacementsPage = () => {
           <FormHeader>Upload Placement News</FormHeader>
           <FormWrapper>
             <FormInnerWrapper>
-              <TextField id="standard-basic" label="Title" variant="standard" />
               <TextField
                 id="standard-basic"
-                label="Company"
+                label="Company Name"
                 variant="standard"
+                required
               />
-              <TextField id="standard-basic" label="Image" variant="standard" />
+              <TextField id="standard-basic" label="Company Logo (URL)" variant="standard" required />
               <TextField
                 id="standard-basic"
-                label="Document"
+                label="Document (Job Description Link)"
                 variant="standard"
+                required
               />
               <TextField
                 id="standard-basic"
@@ -28,12 +29,17 @@ const PlacementsPage = () => {
               />
               <TextField
                 id="standard-basic"
-                label="package"
+                label="Package"
                 variant="standard"
               />
               <TextField
                 id="standard-basic"
-                label="apply link"
+                label="Eligible Student Creteria"
+                variant="standard"
+              />
+              <TextField
+                id="standard-basic"
+                label="Apply Link"
                 variant="standard"
               />
               <Button variant="contained">Upload</Button>

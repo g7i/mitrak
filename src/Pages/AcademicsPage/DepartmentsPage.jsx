@@ -16,11 +16,9 @@ const DepartmentsPage = () => {
         { title: "Electronics & Communication" },
         {title: "Civil Engineering"},
         {title: "Computer Science & Engineering"},
-        {title: 'Mechanical ENgineering'},
+        {title: 'Mechanical Engineering'},
         {title: 'Management Studies'}
     ]
-
-    console.log({ child })
 
     return (
         <Layout>

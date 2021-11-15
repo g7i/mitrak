@@ -1,7 +1,7 @@
-import { Button, Container, MenuItem, TextField } from "@mui/material";
+import { Autocomplete, Button, Container, MenuItem, TextField } from "@mui/material";
 import React, { useState } from "react";
 import {
-    FormHeader,
+  FormHeader,
   FormInnerWrapper,
   FormWrapper,
   SelectTextField,
@@ -23,9 +23,9 @@ const Notes = () => {
   return (
     <>
       <Container>
-          <FormHeader>
-              Upload Notes
-          </FormHeader>
+        <FormHeader>
+          Upload Notes
+        </FormHeader>
         <FormWrapper>
           <FormInnerWrapper>
             <SelectTextField
@@ -41,19 +41,13 @@ const Notes = () => {
                 </MenuItem>
               ))}
             </SelectTextField>
-            <SelectTextField
-              id="outlined-select-currency"
-              select
-              label="Subject"
-              value={selectedSubject}
-              onChange={(e) => setSelectedSubject(e.target.value)}
-            >
-              {Subject.map((option) => (
-                <MenuItem key={option} value={option}>
-                  {option}
-                </MenuItem>
-              ))}
-            </SelectTextField>
+            <Autocomplete
+              disablePortal
+              id="subject-select"
+              options={Subject}
+              sx={{ width: '100%' }}
+              renderInput={(params) => <TextField {...params} label="Subject" />}
+            />
 
             <TextField id="standard-basic" label="Title" variant="standard" />
             <TextField id="standard-basic" label="Link" variant="standard" />
