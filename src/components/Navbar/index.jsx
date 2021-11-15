@@ -7,7 +7,7 @@ import {
   ImgLogo,
   LoginButton,
 } from "../styledComponents/Navbar";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import logo from "../../assets/images/mitrc.png";
 
@@ -20,7 +20,7 @@ import {logOut, signIn} from "../../utils/firebase/auth";
 const DropDownContent = {
   aboutUs: [
     { title: "About Us", link: "/about" },
-    { title: "Contact Us", link: "" },
+    { title: "Contact Us", link: "/contact" },
   ],
   academics: [
     { title: "Courses", link: "/academics/courses" },
@@ -118,7 +118,7 @@ const Navbar = () => {
       </Menu>
       {!user && (
         <Menu showMobileMenu={showMobileMenu}>
-          <MenuLink>Apply for Admission</MenuLink>
+          {/* <MenuLink>Apply for Admission</MenuLink> */}
           <LoginButton onClick={handleSignIn}>Login</LoginButton>
         </Menu>
       )}

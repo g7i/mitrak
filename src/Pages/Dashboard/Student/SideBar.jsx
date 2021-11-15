@@ -25,7 +25,6 @@ import { Colors } from '../../../constants/UiConstants'
 const sidePanelData = [
   { title: "Profile", icon: <PeopleIcon /> },
   { title: "Download Notes", icon: <MenuBookIcon /> },
-  { title: "Results", icon: <FilePresentIcon /> },
   { title: "Academic Calander", icon: <LocalActivityIcon /> },
 ];
 

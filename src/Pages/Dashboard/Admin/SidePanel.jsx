@@ -16,29 +16,27 @@ import Typography from "@mui/material/Typography";
 import PeopleIcon from "@mui/icons-material/People";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import FilePresentIcon from "@mui/icons-material/FilePresent";
-import LocalActivityIcon from "@mui/icons-material/LocalActivity";
+import BusinessIcon from '@mui/icons-material/Business';
 import { ImageLogo, ListItemMainWrapper } from "./Styles";
 import { Link, useParams, useHistory } from "react-router-dom";
 
 const sidePanelData = [
-  { title: "Students", icon: <PeopleIcon /> },
   {
-    title: "Notes",
+    title: "Admin Profile",
+    icon: <PeopleIcon />,
+  },
+  
+  {
+    title: "Upload Notes",
     icon: <MenuBookIcon />,
-    list: [{ title: "Upload" }, { title: "List" }],
   },
   {
-    title: "Notice",
+    title: "New Notice",
     icon: <NotificationsIcon />,
-    list: [{ title: "Upload" }, { title: "List" }],
   },
-  { title: "Result", icon: <FilePresentIcon /> },
-  { title: "Activities", icon: <LocalActivityIcon /> },
   {
     title: "Placements",
-    icon: <NotificationsIcon />,
-    list: [{ title: "Upload" }, { title: "List" }],
+    icon: <BusinessIcon />,
   },
 ];
 

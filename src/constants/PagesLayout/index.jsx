@@ -6,8 +6,7 @@ import {
 } from "../../components/styledComponents/GlobalComponents";
 import { Link } from "react-router-dom";
 const PagesLayout = ({ children, rightNavLinks, currentRoute, pageName }) => {
-  console.log(rightNavLinks);
-console.log(currentRoute , pageName); 
+  
   return (
     <Container>
       <div style={{ width: "75%" }}>{children}</div>

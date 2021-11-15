@@ -16,11 +16,9 @@ const DepartmentsPage = () => {
         { title: "Electronics & Communication" },
         {title: "Civil Engineering"},
         {title: "Computer Science & Engineering"},
-        {title: 'Mechanical ENgineering'},
+        {title: 'Mechanical Engineering'},
         {title: 'Management Studies'}
     ]
-
-    console.log({ child })
 
     return (
         <Layout>
@@ -48,7 +46,7 @@ const DepartmentsPage = () => {
                                         <Paragraph>{item?.description}</Paragraph>
                                         {item?.points?.map(point => (
                                             <ul>
-                                                <li key={point} style={{marginTop: '0.4rem', color: 'gray'}}>{point}</li>
+                                                <li key={point} style={{marginTop: '0.4rem', color: '#152D35'}}>{point}</li>
                                             </ul>
                                         ))}
                                     </div>
@@ -57,7 +55,7 @@ const DepartmentsPage = () => {
                                 {data[item]?.labs && <Heading>Laboratories</Heading>}
                                 <ol>
                                     {data[item]?.labs?.map(title => (
-                                        <li key={title} style={{marginTop: '0.4rem', color: 'gray'}}>{title}</li>
+                                        <li key={title} style={{marginTop: '0.4rem', color: '#152D35'}}>{title}</li>
                                     ))}
                                 </ol>
                                 <Heading>{data[item]?.extras?.title}</Heading>

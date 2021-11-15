@@ -78,7 +78,7 @@ const data = [
         date: 'September 21, 2021',
         time: '09: 00 am - 04:00 pm',
         description: '@ E-campus placement drive',
-        image: 'https://lh3.googleusercontent.com/proxy/TfCPdWu4RIYp7_8T9DaVD4eJcZWC9Y9TcoKH8wfdmEFhczRoy-bCOOho1pqfFVc3_LVN6y9n152hnoh5d2-DeRN6Tnyk-hE3hn5_1pV2lhV_mF_-BDc'
+        image: 'https://media-exp1.licdn.com/dms/image/C510BAQEb5QUE4PRboQ/company-logo_200_200/0/1577705513428?e=2159024400&v=beta&t=6D2OCgBfj0KdXdZSBljGUF2yxITiAj5m0QI3UPcMPrg'
     },
     {
         id: 2,
@@ -111,6 +111,7 @@ export default function Placements() {
         <Container>
             <Heading style={{ textAlign: 'center' }}>Placements</Heading>
             <PartnerSlider />
+            <div style={{marginTop: '4rem'}} />
             <Slider {...settings}>
                 {data.map((item) => (
                     <ItemWrapper key={item.id}>

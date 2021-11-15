@@ -1,6 +1,6 @@
 export const Colors = {
-    PRIMARY: '#32404D',
-    SECONDARY: '#4D8FFA',
+    PRIMARY: '#112031',
+    SECONDARY: '#152D35',
     WHITE: "#FFFFFF",
     DETAILS_BACKGROUND: '#F3F1F5',
     LINK_COLOR: '#176699',
