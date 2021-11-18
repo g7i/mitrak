@@ -107,7 +107,7 @@ export const Paragraph = styled.p`
 
   font-family: "Lato", sans-serif;
   margin-top: 1vh;
-  color: ${({ color }) => color ?? "#152D35"};
+  color: ${({ color }) => color ?? Colors.TEXT_PRIMARY};
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -196,7 +196,7 @@ export const BannerContainer = styled.div`
 `;
 
 export const ListItem = styled.li`
-  color: #777797;
+  color: ${Colors.TEXT_SECONDARY};
   margin-top: 1vh;
 `;
 
