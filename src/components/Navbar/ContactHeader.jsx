@@ -14,10 +14,11 @@ import {
   AiOutlineYoutube,
 } from "react-icons/ai";
 import { useHistory } from "react-router-dom";
+import { Colors } from "../../constants/UiConstants";
 const ContactHeader = () => {
   const history = useHistory();
   return (
-    <Nav background="#32404D" flexType="space-around">
+    <Nav background={Colors.PRIMARY} flexType="space-around">
       <Wrapper>
         <Wrapper>
           <ContactHeaderLinksWrapper
