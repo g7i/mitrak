@@ -5,6 +5,7 @@ import News from "./sections/News";
 import Placements from "./sections/Placements";
 import AboutUsSection from './sections/AboutUsSection';
 import StudentsPlaced from './sections/StudentsPlaced';
+import ApplyForAdmission from '../../components/Banner/ApplyForAdmission';
 
 const LandingPage = () => {
     return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
                 <News />
             <Placements />
             <StudentsPlaced />
+            <ApplyForAdmission />
         </>
     )
 }

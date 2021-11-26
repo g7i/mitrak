@@ -44,7 +44,10 @@ const ImageSlider = ({
         'https://images.static-collegedunia.com/public/college_data/images/appImage/14351_MITRC_New.jpg?tr=c-force',
         'https://www.admissionfever.com/Media/clgimg/gallery/2934_img8884798266738968.png',
         'https://www.campusoption.com/images/colleges/gallery/28_12_16_111345_18.jpg',
-        'https://pbs.twimg.com/media/EspGBh8VEAILE67.jpg'
+        'https://pbs.twimg.com/media/EspGBh8VEAILE67.jpg',
+        'https://www.mitrc.ac.in/wp-content/uploads/2020/07/AIF3-1140x680.jpg',
+        'https://www.mitrc.ac.in/wp-content/uploads/2020/07/mitrc_alwar6a-1140x680.jpg',
+        'https://www.mitrc.ac.in/wp-content/uploads/2020/08/IMG_6469.jpg'
     ],
     autoPlay = true,
     autoPlayTime = 3000,
@@ -82,9 +85,9 @@ const ImageSlider = ({
             ))}
             <SlideTextWrapper currentSlide={currentSlide}>
                 <SlideHeading>
-                    {SlideTextData[currentSlide].title}
+                    {SlideTextData[currentSlide]?.title || SlideTextData[0].title}
                 </SlideHeading>
-                <SlideSubHeading>{SlideTextData[currentSlide].subtitle}</SlideSubHeading>
+                <SlideSubHeading>{SlideTextData[currentSlide]?.subtitle || SlideTextData[0].subtitle}</SlideSubHeading>
             </SlideTextWrapper>
             <Gradient />
             <Indicator

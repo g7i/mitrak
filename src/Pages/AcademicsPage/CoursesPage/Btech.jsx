@@ -11,12 +11,13 @@ import {
 } from "../../../components/styledComponents/GlobalComponents";
 import { Wrapper } from "../../../components/styledComponents/Navbar";
 import { OR_Span, Table, TableData, TableHeading, TableRow } from "./styles";
+import BTechImg from '../../../assets/images/btech.webp';
 
 const BtechPage = () => {
   return (
     <>
       <HalfImage
-        src={"https://www.mitrc.ac.in/wp-content/uploads/2020/08/gajal3.jpg"}
+        src={BTechImg}
         alt="Content Image"
         style={{ marginTop: "2rem", maxHeight: "600px" }}
       />

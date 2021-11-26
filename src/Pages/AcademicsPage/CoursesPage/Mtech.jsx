@@ -9,14 +9,13 @@ import {
   Paragraph,
   SubHeading,
 } from "../../../components/styledComponents/GlobalComponents";
-import { Wrapper } from "../../../components/styledComponents/Navbar";
-import { OR_Span, Table, TableData, TableHeading, TableRow } from "./styles";
+import MTechImg from '../../../assets/images/mtech.jpg'
 
 const MtechPage = () => {
   return (
     <>
       <HalfImage
-        src={"https://www.mitrc.ac.in/wp-content/uploads/2020/08/gajal3.jpg"}
+        src={MTechImg}
         alt="Content Image"
         style={{ marginTop: "2rem", maxHeight: "600px" }}
       />

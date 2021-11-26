@@ -3,7 +3,7 @@ import { HalfScreenContainer, Heading, Paragraph, Wrapper, HalfWrapper, VideoFra
 
 const AboutUsPage = () => {
     return (
-        <HalfScreenContainer background="#FCF2EB">
+        <HalfScreenContainer background="#FCF2EB" haveSvg={true}>
             <Wrapper>
                 <HalfWrapper>
                     <div style={{

@@ -9,9 +9,9 @@ import {
   Wrapper,
 } from "../../../components/styledComponents/Courses";
 import { Heading } from "../../../components/styledComponents/GlobalComponents";
-import BTechImage from "../../../assets/images/computer.jpeg";
-import MTechImage from "../../../assets/images/m.tech.jpeg";
-import MbaImage from "../../../assets/images/mba.jpg";
+import BTechImage from "../../../assets/images/btech.webp";
+import MTechImage from "../../../assets/images/mtech.jpg";
+import MbaImage from "../../../assets/images/mba.png";
 
 export default function Courses() {
   return (
