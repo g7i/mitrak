@@ -29,6 +29,7 @@ const ContactsPage = () => {
                     <form action={submitContactForm}>
                         <TextField 
                             title="Email Address"
+                            label="Email Address"
                             placeholder="Your email address"
                             variant="outlined"
                             required
@@ -36,6 +37,7 @@ const ContactsPage = () => {
                         />
                         <TextField 
                             title="Subject"
+                            label="Subject"
                             placeholder="Subject/Matter of your query"
                             variant="outlined"
                             required
@@ -43,6 +45,7 @@ const ContactsPage = () => {
                         />
                         <TextField 
                             title="Message"
+                            label="Message"
                             placeholder="Type your message here"
                             variant="outlined"
                             multiline

@@ -122,7 +122,7 @@ const Navbar = () => {
           <LoginButton onClick={handleSignIn}>Login</LoginButton>
         </Menu>
       )}
-      {!!user &&  (
+      {!user &&  (
         <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (
             <React.Fragment>
@@ -131,7 +131,7 @@ const Navbar = () => {
                 </Button> */}
               <Avatar
                 alt="user profile image"
-                src={user.photoURL}
+                src={user?.photoURL}
                 style={{ cursor: "pointer" }}
                 {...bindTrigger(popupState)}
               />

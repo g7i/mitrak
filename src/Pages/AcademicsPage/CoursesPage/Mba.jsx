@@ -9,14 +9,18 @@ import {
   Paragraph,
   SubHeading,
 } from "../../../components/styledComponents/GlobalComponents";
-import { Wrapper } from "../../../components/styledComponents/Navbar";
-import { OR_Span, Table, TableData, TableHeading, TableRow } from "./styles";
+import MbaImg from '../../../assets/images/mba.png'
 
 const MbaPage = () => {
   return (
     <>
       <div>
         {/* section1 */}
+        <HalfImage
+          src={MbaImg}
+          alt="Content Image"
+          style={{ marginTop: "2rem", maxHeight: "600px" }}
+        />
 
         <Paragraph>
           The 2 year MBA programme by Department of Management of Modern
