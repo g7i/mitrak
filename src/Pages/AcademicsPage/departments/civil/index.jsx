@@ -1,15 +1,17 @@
 import React from "react";
 import {
   FillImage,
+  FlexContainer,
   Heading,
   OneThirdImage,
   Paragraph,
   SubHeading,
 } from "../../../../components/styledComponents/GlobalComponents";
-import { getImages } from "../../../../utils/firebase/department";
+import { getImages, getImagesLab } from "../../../../utils/firebase/department";
 import styled from "styled-components";
 import ModalImage from "../../../../components/ModalImage";
-import {Collections} from "../../../../utils/firebase/storage";
+import { Collections } from "../../../../utils/firebase/storage";
+import ImageSlider from "../components/imageSlider";
 
 const Activities = [
   {
@@ -57,9 +59,13 @@ const Activities = [
 
 const CivilDepartment = () => {
   const [images, setImages] = React.useState([]);
+  const [labImages, setLabImages] = React.useState([]);
   React.useEffect(() => {
     getImages(Collections.departments.civil).then((imageList) => {
       setImages(imageList);
+    });
+    getImagesLab(Collections.departments.civil).then((imageList) => {
+      setLabImages(imageList);
     });
   }, []);
   return (
@@ -77,7 +83,7 @@ const CivilDepartment = () => {
         <Paragraph>{`The Civil Department of the MITRC College, Alwar was founded in 2011 with the mission of providing quality education in the field of Civil Engineering. The Civil Engineering is an evergreen and a booming sector and one of the major driving industries of the Indian economy. A civil engineer requires a fine balance of theoretical knowledge and practical experience. The Civil Department of MITRC boasts of well qualified faculty and well-equipped laboratories for the same. The students are also frequently taken to industrial trips to expose them to the industry and real world situations. Seminars, talk shows and guest lectures from prominent practicing engineers, professors and scholars are also held. The students are given complete opportunity to learn from their experience and inculcate professional values in their lives.`}</Paragraph>
 
         <Section>
-          <Heading>{"Mechanical Engineering Labs at MITRC:"}</Heading>
+          <Heading>{"Civil Engineering Labs at MITRC:"}</Heading>
           <ul>
             <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Hydraulic Engineering Lab
@@ -117,6 +123,27 @@ const CivilDepartment = () => {
               Civil Engineering & Material Lab
             </li>
           </ul>
+
+          <FlexContainer wrap={"wrap"} rowGap={40} justify={"center"} gap={30}>
+            {labImages.map((item) => (
+              <div
+                style={{
+                  width: "30%",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <ModalImage
+                  src={item}
+                  onClickOpen
+                  width={"100%"}
+                  height={"250px"}
+                  objectFit={"cover"}
+                  filter
+                />
+              </div>
+            ))}
+          </FlexContainer>
         </Section>
 
         <Section>
@@ -273,9 +300,7 @@ const CivilDepartment = () => {
         </Section>
 
         <Section>
-          {images.map((item) => (
-            <ModalImage src={item} onClickOpen width={"33%"} height={"250px"} />
-          ))}
+          <ImageSlider imageArray={images} />
         </Section>
       </>
     </>

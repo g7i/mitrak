@@ -79,6 +79,10 @@ import { useParams } from "react-router-dom";
 import { PageContainer } from "../../components/styledComponents/GlobalComponents";
 import MechanicalDepartment from "./departments/mechanical";
 import CivilDepartment from "./departments/civil";
+import ComputerDepartment from "./departments/cse";
+import ElectricalDepartment from "./departments/electrical";
+import ElectroCommunicationPage from "./departments/electroComunication";
+import MbaDepartment from "./departments/mba";
 const DepartmentsPage = () => {
   const { child } = useParams();
 
@@ -101,9 +105,14 @@ const DepartmentsPage = () => {
         <PageContainer>
           {console.log(child)}
           {child === undefined && <MechanicalDepartment />}
-          {child === "Mechanical Engineering" && <MechanicalDepartment />}
-          {child === "electrical engineering" && <MechanicalDepartment />}
+          {child === "mechanical engineering" && <MechanicalDepartment />}
           {child === "civil engineering" && <CivilDepartment />}
+          {child === "computer science & engineering" && <ComputerDepartment />}
+          {child === "electrical engineering" && <ElectricalDepartment />}
+          {child === "electronics & communication" && (
+            <ElectroCommunicationPage />
+          )}
+          {child === "management studies" && <MbaDepartment />}
         </PageContainer>
       </PagesLayout>
     </Layout>
