@@ -4,6 +4,7 @@ import { Colors } from '../../../constants/UiConstants'
 import { Tab, Tabs, Box, Typography } from '@mui/material'
 import { FormHead, FormItem, Form } from './Components'
 import { PageContainer } from './Components'
+import {useStore} from "../../../store";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -25,14 +26,18 @@ function TabPanel(props) {
     );
 }
 
-const ProfileComponent = () => {
+const defaultImg = "https://thumbs.dreamstime.com/b/default-avatar-profile-vector-user-profile-default-avatar-profile-vector-user-profile-profile-179376714.jpg";
 
+const ProfileComponent = () => {
+    const {
+        state: { user },
+        actions: { updateUser }
+    } = useStore();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-
 
     function a11yProps(index) {
         return {
@@ -44,7 +49,7 @@ const ProfileComponent = () => {
     return (
         <PageContainer>
             <ProfileImage
-                src="https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg"
+                src={user.photoURL ?? defaultImg}
                 alt="student profile image"
             />
             <div style={{width: '75%'}}>
@@ -58,37 +63,33 @@ const ProfileComponent = () => {
                 <TabPanel value={value} index={0}>
                     <Form>
                         <FormHead>Full Name</FormHead>
-                        <FormItem>Keshav Saini</FormItem>
+                        <FormItem>{user.displayName}</FormItem>
                     </Form>
                     <Form>
                         <FormHead>Email</FormHead>
-                        <FormItem>skeshav162@gmail.com</FormItem>
+                        <FormItem>{user.email}</FormItem>
                     </Form>
                     <Form>
                         <FormHead>Contact</FormHead>
-                        <FormItem>7014015981</FormItem>
+                        <FormItem>{user.contact}</FormItem>
                     </Form>
                     <Form>
                         <FormHead>Address</FormHead>
-                        <FormItem>Kali mori heera bass</FormItem>
+                        <FormItem>{user.address}</FormItem>
                     </Form>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     <Form>
                         <FormHead>Course Enrolled</FormHead>
-                        <FormItem>BTech (Computer Science)</FormItem>
+                        <FormItem>BTech ({user.branch})</FormItem>
                     </Form>
                     <Form>
                         <FormHead>Current Semester</FormHead>
-                        <FormItem>7th</FormItem>
+                        <FormItem>{user.semester}</FormItem>
                     </Form>
                     <Form>
                         <FormHead>University Roll No.</FormHead>
-                        <FormItem>18EMCCS052</FormItem>
-                    </Form>
-                    <Form>
-                        <FormHead>College Id</FormHead>
-                        <FormItem>1810052</FormItem>
+                        <FormItem>{user.roll}</FormItem>
                     </Form>
                 </TabPanel>
             </div>

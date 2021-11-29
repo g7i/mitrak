@@ -7,7 +7,7 @@ import {
   ImgLogo,
   LoginButton,
 } from "../styledComponents/Navbar";
-import { Link, NavLink } from 'react-router-dom';
+import {Link, NavLink, useHistory} from 'react-router-dom';
 
 import logo from "../../assets/images/mitrc.png";
 
@@ -64,6 +64,8 @@ const DropDownContent = {
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const { push } = useHistory();
+
   const {
     state: { user },
     actions: { updateUser }
@@ -119,10 +121,10 @@ const Navbar = () => {
       {!user && (
         <Menu showMobileMenu={showMobileMenu}>
           {/* <MenuLink>Apply for Admission</MenuLink> */}
-          <LoginButton onClick={handleSignIn}>Login</LoginButton>
+          <LoginButton onClick={() => push('/login')}>Login</LoginButton>
         </Menu>
       )}
-      {!user &&  (
+      {user &&  (
         <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (
             <React.Fragment>

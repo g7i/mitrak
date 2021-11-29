@@ -147,7 +147,7 @@ export const Container = styled.div`
 `;
 
 export const PageContainer = styled.div`
-  padding: 2vw;
+  padding: 2vw 5vw;
   /* height: 100vh;
     overflow-y: scroll; */
 `;

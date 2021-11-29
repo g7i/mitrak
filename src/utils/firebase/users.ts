@@ -39,9 +39,10 @@ export type User = {
     semester?: Semester,
     batch?: Batch,
     branch?: Branch,
+    roll?: string,
+    address?: string,
     role: Role,
     createdAt: Number,
-    isValid?: boolean,
 }
 
 export type AuthDetails = {
