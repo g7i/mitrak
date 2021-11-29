@@ -10,7 +10,7 @@ const ApplyForAdmission = () => {
             <Overlay>
                 <div>
                     <Heading>Wanna get started with your carrer?</Heading>
-                    <Paragraph>Apply for admission now!</Paragraph>
+                    <Paragraph align="center">Apply for admission now!</Paragraph>
                 </div>
                 <Button href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">Apply Now For Admission</Button>
             </Overlay>
@@ -27,6 +27,11 @@ const Container = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    @media (max-width: 768px) {
+        height: 50vh;
+        padding: 2rem;
+    }
     
 `;
 
@@ -40,6 +45,11 @@ const Overlay = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    }
 `;
 
 const Button = styled.a`
@@ -51,4 +61,10 @@ const Button = styled.a`
     cursor: pointer;
     margin-left: 5rem;
     text-decoration: none;
+    @media (max-width: 768px) {
+        margin: 0;
+        width: 90%;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
 `;

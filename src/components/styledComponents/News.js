@@ -6,6 +6,10 @@ import { Colors } from '../../constants/UiConstants'
 export const Container = styled.div`
   padding: 20px 40px;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftArrowContainer = styled.div`
@@ -77,6 +81,11 @@ export const NewsBox = styled.div`
   width: 33%;
   padding-bottom: 0.5rem;
   background-color: ${Colors.DETAILS_BACKGROUND};
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
 `;
 
 export const NewsLink = styled.a`
