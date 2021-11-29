@@ -4,8 +4,9 @@ import {Collections, db} from "./db";
 export type Notice = {
     id: string,
     title: string,
+    description : string,
     url: URL,
-    createdAt: Number,
+    createdAt: Date,
 }
 
 export async function addNotice(data: Omit<Notice, "id">): Promise<string> {

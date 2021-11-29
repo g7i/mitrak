@@ -6,6 +6,7 @@ export const Collections = {
   departments: {
     machanical: "mechanical",
     electrical : "electrical",
-    civil : "civil"
+    civil : "civil",
+    computer : "computer"
   },
 };

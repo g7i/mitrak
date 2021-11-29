@@ -105,9 +105,10 @@ export const Paragraph = styled.p`
   font-size: 1.3rem;
   /* text-align: center; */
   text-align: ${({ align }) => align ? align : 'justify'};
+  line-height: 1.8rem;
 
   font-family: "Lato", sans-serif;
-  margin-top: 1vh;
+  margin-top: ${props=>props.marginTop || "1rem"};
   color: ${({ color }) => color ?? Colors.TEXT_PRIMARY};
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -155,7 +156,11 @@ export const PageContainer = styled.div`
 export const FlexContainer = styled.div`
   display: flex;
   justify-content: ${(props) => props.justify || "space-between"};
+  align-items: ${(props) => props.align || "center"};
   margin: ${(props) => props.margin || "2.4vh 0 0 0"};
+  flex-wrap: ${(props) => props.wrap || "no-wrap"};
+  gap: ${(props) => `${props.gap}px` || "0"};
+  row-gap: ${(props) => `${props.rowGap}px` || "0"};
 
   @media (max-width: 768px) {
     flex-direction: column;

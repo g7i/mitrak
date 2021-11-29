@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import CancelIcon from "@mui/icons-material/Cancel";
 const ModalImage = (props) => {
-  const { src, width, height, onClickOpen, objectFit, margin } = props;
+  const { src, width, height, onClickOpen, objectFit, margin , filter } = props;
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -35,6 +35,7 @@ const ModalImage = (props) => {
         height={height}
         objectFit={objectFit}
         margin={margin}
+        filter={filter}
         onClick={() => {
           if (onClickOpen) {
             setOpen(true);
@@ -77,4 +78,9 @@ const Image = styled.img`
   margin: ${(props) => props.margin || "0 auto"};
   object-fit: ${(props) => props.objectFit || "contain"};
   ${(props) => props.height && `height : ${props.height}`};
+  background-color: cornsilk;
+  border-radius: ${(props) => props.objectFit === "cover" && "10px"};
+  &:hover {
+    ${(props) => props.filter && `filter: brightness(0.8);`};
+  }
 `;

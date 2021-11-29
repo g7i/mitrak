@@ -1,16 +1,16 @@
 import React from "react";
 import {
   FillImage,
+  FlexContainer,
   Heading,
   OneThirdImage,
   Paragraph,
   SubHeading,
 } from "../../../../components/styledComponents/GlobalComponents";
-import { getImages } from "../../../../utils/firebase/department";
+import { getImages, getImagesLab } from "../../../../utils/firebase/department";
 import styled from "styled-components";
 import ModalImage from "../../../../components/ModalImage";
 import { Collections } from "../../../../utils/firebase/storage";
-
 
 const PsuData = [
   {
@@ -118,9 +118,13 @@ const Activities = [
 
 const MechanicalDepartment = () => {
   const [images, setImages] = React.useState([]);
+  const [labImages, setLabImages] = React.useState([]);
   React.useEffect(() => {
     getImages(Collections.departments.machanical).then((imageList) => {
       setImages(imageList);
+    });
+    getImagesLab(Collections.departments.machanical).then((imageList) => {
+      setLabImages(imageList);
     });
   }, []);
   return (
@@ -178,6 +182,26 @@ const MechanicalDepartment = () => {
               Dynamics of Machines Lab
             </li>
           </ul>
+            <FlexContainer wrap={"wrap"} rowGap={40}>
+              {labImages.map((item) => (
+                <div
+                  style={{
+                    width: "30%",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <ModalImage
+                    src={item}
+                    onClickOpen
+                    width={"100%"}
+                    height={"250px"}
+                    objectFit={"cover"}
+                    filter
+                  />
+                </div>
+              ))}
+            </FlexContainer>
         </Section>
 
         <Section>
@@ -297,9 +321,26 @@ const MechanicalDepartment = () => {
         </Section>
 
         <Section>
-          {images.map((item) => (
-            <ModalImage src={item} onClickOpen width={"33%"} height={"250px"} />
-          ))}
+          <FlexContainer wrap={"wrap"} rowGap={40}>
+            {images.map((item) => (
+              <div
+                style={{
+                  width: "30%",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <ModalImage
+                  src={item}
+                  onClickOpen
+                  width={"100%"}
+                  height={"250px"}
+                  objectFit={"cover"}
+                  filter
+                />
+              </div>
+            ))}
+          </FlexContainer>
         </Section>
       </>
     </>
@@ -327,7 +368,5 @@ const TableData = styled.td`
 `;
 
 const Section = styled.div`
-    margin : 4rem 0 ; 
-`
-
-
+  margin: 4rem 0;
+`;
