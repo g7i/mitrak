@@ -10,13 +10,15 @@ import { useParams } from "react-router";
 import PlacementsPage from "./Placements";
 import AdminProfile from "./AdminProfile";
 import NoticePage from './Notice'
+import ContactMessages from "./ContactMessages";
 
 const Router = [
   { name: 'admin profile', component: AdminProfile },
   { name: "students", component: StudentAdminDashboard },
   { name: "upload notes", component: NotesComponent },
   { name: "new notice", component: NoticePage },
-  { name: "placements", component: PlacementsPage }
+  { name: "placements", component: PlacementsPage },
+  { name: "contact messages", component: ContactMessages },
 ];
 
 function AdminDashboard(props) {
@@ -32,7 +34,7 @@ function AdminDashboard(props) {
         {Router?.map((route) => {
           if (route.name === child) {
             return <route.component />;
-          } 
+          }
         })}
         {
           !child && (
