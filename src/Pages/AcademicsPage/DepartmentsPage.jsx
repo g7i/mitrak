@@ -97,7 +97,7 @@ const DepartmentsPage = () => {
 
   return (
     <Layout>
-      <Banner bannerHeading="Courses" />
+      <Banner bannerHeading="Departments" />
       <PagesLayout
         rightNavLinks={departmentsPageSections}
         pageName="departments"

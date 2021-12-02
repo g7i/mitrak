@@ -162,3 +162,7 @@ export const ItemWrapper = styled.div`
   padding: 10px;
 `;
 
+export const ListItem = styled.li`
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+`

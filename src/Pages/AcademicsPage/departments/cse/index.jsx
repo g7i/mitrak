@@ -12,7 +12,8 @@ import styled from "styled-components";
 import ModalImage from "../../../../components/ModalImage";
 import { Collections } from "../../../../utils/firebase/storage";
 import HeroImage from "../../../../assets/images/cse-department/coding-platform-STEM-code.jpg";
-import ImageSlider from "../components/imageSlider";
+import ImageSlider, { ListItem } from "../components/imageSlider";
+
 const Labs = [
   "Data Structure Lab",
   "DBMS Lab",
@@ -103,7 +104,7 @@ const ComputerDepartment = () => {
           <Heading>{"Computer Science Engineering Labs at MITRC:"}</Heading>
           <ul>
             {Labs.map((item) => (
-              <li style={{ marginTop: "0.4rem", color: "#152D35" }}>{item}</li>
+              <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>{item}</ListItem>
             ))}
           </ul>
           <FlexContainer wrap={"wrap"} rowGap={40}>
@@ -169,7 +170,7 @@ const ComputerDepartment = () => {
           </Heading>
 
           {domains.map((item) => (
-            <li
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -177,7 +178,7 @@ const ComputerDepartment = () => {
               }}
             >
               {item}
-            </li>
+            </ListItem>
           ))}
         </Section>
 

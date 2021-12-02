@@ -205,6 +205,8 @@ export const BannerContainer = styled.div`
 export const ListItem = styled.li`
   color: ${Colors.TEXT_SECONDARY};
   margin-top: 1vh;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 `;
 
 export const FormInput = styled.input`

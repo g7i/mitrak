@@ -3,6 +3,7 @@ import Banner from '../../components/Banner'
 import { Heading, PageContainer, Paragraph } from '../../components/styledComponents/GlobalComponents'
 import Layout from '../../constants/Layout'
 import { Colors } from '../../constants/UiConstants'
+import { ListItem } from './departments/components/imageSlider'
 import { data } from './staticData/mandatoryDisclosure'
 
 const MandatoryDisclosuresPage = () => {
@@ -22,7 +23,7 @@ const MandatoryDisclosuresPage = () => {
                         </div>
                         {item?.list?.map(listItem => (
                             <ul>
-                                <li key={listItem} style={{marginTop: '0.4rem', color: Colors.SECONDARY}}>{listItem}</li>
+                                <ListItem key={listItem} style={{marginTop: '0.4rem', color: Colors.SECONDARY}}>{listItem}</ListItem>
                             </ul>
                         ))}
                     </>
