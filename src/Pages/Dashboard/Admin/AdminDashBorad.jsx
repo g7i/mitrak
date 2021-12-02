@@ -10,13 +10,15 @@ import { useParams } from "react-router";
 import PlacementsPage from "./Placements";
 import AdminProfile from "./AdminProfile";
 import NoticePage from './Notice'
+import NewsPage from "./News";
 
 const Router = [
-  { name: 'admin profile', component: AdminProfile },
+  { name: "admin profile", component: AdminProfile },
   { name: "students", component: StudentAdminDashboard },
   { name: "upload notes", component: NotesComponent },
   { name: "new notice", component: NoticePage },
-  { name: "placements", component: PlacementsPage }
+  { name: "placements", component: PlacementsPage },
+  { name: "news", component: NewsPage },
 ];
 
 function AdminDashboard(props) {

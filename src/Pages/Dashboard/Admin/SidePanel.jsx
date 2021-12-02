@@ -25,7 +25,7 @@ const sidePanelData = [
     title: "Admin Profile",
     icon: <PeopleIcon />,
   },
-  
+
   {
     title: "Upload Notes",
     icon: <MenuBookIcon />,
@@ -36,6 +36,10 @@ const sidePanelData = [
   },
   {
     title: "Placements",
+    icon: <BusinessIcon />,
+  },
+  {
+    title: "News",
     icon: <BusinessIcon />,
   },
 ];
