@@ -12,6 +12,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
 //-------------------
 import PeopleIcon from "@mui/icons-material/People";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
@@ -42,6 +43,10 @@ const sidePanelData = [
     title: "News",
     icon: <BusinessIcon />,
   },
+    {
+        title: "Contact Messages",
+        icon: <MarkEmailUnreadIcon />,
+    },
 ];
 
 const drawerWidth = 240;
@@ -90,7 +95,7 @@ function SidePanel(props) {
                       [item.title]: !listOpen[item.title],
                     });
                   }}
-                  
+
                 >
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.title} />

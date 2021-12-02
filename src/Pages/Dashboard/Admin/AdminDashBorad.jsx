@@ -11,6 +11,7 @@ import PlacementsPage from "./Placements";
 import AdminProfile from "./AdminProfile";
 import NoticePage from './Notice'
 import NewsPage from "./News";
+import ContactMessages from "./ContactMessages";
 
 const Router = [
   { name: "admin profile", component: AdminProfile },
@@ -19,6 +20,7 @@ const Router = [
   { name: "new notice", component: NoticePage },
   { name: "placements", component: PlacementsPage },
   { name: "news", component: NewsPage },
+  { name: "contact messages", component: ContactMessages },
 ];
 
 function AdminDashboard(props) {
@@ -34,7 +36,7 @@ function AdminDashboard(props) {
         {Router?.map((route) => {
           if (route.name === child) {
             return <route.component />;
-          } 
+          }
         })}
         {
           !child && (

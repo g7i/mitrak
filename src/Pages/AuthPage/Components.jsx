@@ -39,7 +39,8 @@ export const FloatingText = styled.h1`
     color: white;
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
+    display: block;
     width: 100%;
     margin-top: 2rem;
 `;

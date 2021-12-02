@@ -4,6 +4,7 @@ import {Collections, db} from "./db";
 export type Contact = {
     id: string,
     title: string,
+    name: string,
     message: string,
     phone: Number,
     createdAt: Number,

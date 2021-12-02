@@ -21,6 +21,7 @@ export const FormItem = styled.span`
     background-color: ${Colors.DETAILS_BACKGROUND};
     padding: 0.5rem;
     border-radius: 5px;
+    min-height: 2.7rem;
 `;
 
 export const PageContainer = styled.div`

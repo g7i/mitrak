@@ -18,6 +18,7 @@ import {auth} from "../utils/firebase/auth";
 import {useStore} from "../store";
 import {getUser} from "../utils/firebase/users";
 import ContactsPage from "../Pages/ContactsPage";
+import Bot from "../components/Bot/Bot";
 
 const Router = () => {
   const {
@@ -41,6 +42,17 @@ const Router = () => {
 
     return (
       <BrowserRouter>
+        <Route exact
+            path={[
+              "/",
+              "/about",
+              "/contact",
+              "/placements/*",
+              "/campus-life/*",
+              "/academics/*",
+            ]}
+            component={Bot}
+        />
         <Switch>
           {/* Authentication Routes */}
           <Route path="/login" exact component={Login} />
@@ -49,61 +61,19 @@ const Router = () => {
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
           <Route path="/contact" exact component={ContactsPage} />
-          <Route
-            path="/campus-life/collegedaze"
-            exact
-            component={MagazinePage}
-          />
-          <Route
-            path="/campus-life/events-gallery/:child"
-            exact
-            component={EventGallery}
-          />
-
+          <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
+          <Route path="/campus-life/events-gallery/:child" exact component={EventGallery} />
           <Route path="/placements" exact component={PlacementPage} />
-          <Route
-            path="/campus-life/:routename/:child"
-            exact
-            component={CampusLife}
-          />
-
-          <Route
-            path="/placements/:routename"
-            exact
-            component={PlacementPage}
-          />
-          <Route
-            path="/admin/dashboard"
-            exact
-            component={AdminDashboard}
-          />
-          <Route
-            path="/admin/dashboard/:child"
-            exact
-            component={AdminDashboard}
-          />
-          <Route
-            path="/admin/dashboard/:child/:child2"
-            exact
-            component={AdminDashboard}
-          />
+          <Route path="/campus-life/:routename/:child" exact component={CampusLife} />
+          <Route path="/placements/:routename" exact component={PlacementPage} />
+          <Route path="/admin/dashboard" exact component={AdminDashboard} />
+          <Route path="/admin/dashboard/:child" exact component={AdminDashboard} />
+          <Route path="/admin/dashboard/:child/:child2" exact component={AdminDashboard} />
           <Route path="/student/dashboard" exact component={StudentDashboard} />
-          <Route
-            path="/academics/madatory-disclosures"
-            exact
-            component={MandatoryDisclosuresPage}
-          />
-          <Route
-            path="/academics/departments/:child"
-            exact
-            component={DepartmentsPage}
-          />
+          <Route path="/academics/madatory-disclosures" exact component={MandatoryDisclosuresPage} />
+          <Route path="/academics/departments/:child" exact component={DepartmentsPage} />
           <Route path="/academics/courses" exact component={CoursesPage} />
-          <Route
-            path="/academics/courses/:child"
-            exact
-            component={CoursesPage}
-          />
+          <Route path="/academics/courses/:child" exact component={CoursesPage} />
         </Switch>
       </BrowserRouter>
     );

@@ -1,26 +1,46 @@
-import {getAuth, GoogleAuthProvider, signInWithPopup, signOut, updateProfile as updateData} from "firebase/auth";
-import {addUser, AuthDetails, AuthUser, Role} from "./users";
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    updateProfile as updateData
+} from "firebase/auth";
+import {addUser, AuthDetails, AuthUser, getUser, Role, User} from "./users";
 
-const provider = new GoogleAuthProvider();
 export const auth = getAuth();
 
-export async function signIn(): Promise<AuthUser> {
-    try {
-        const result = await signInWithPopup(auth, provider)
-        const user = result.user;
-        await addUser(user.uid, { role: Role.Student });
-        return {
-            id: user.uid,
-            role: Role.Student,
-            // @ts-ignore
-            createdAt: Number(user.metadata.createdAt),
-            photoURL: user.photoURL,
-            displayName: user.displayName,
-            email: user.email,
-        };
-    } catch (error) {
-        console.log(error)
-    }
+export async function signIn(email: string, password: string): Promise<AuthUser> {
+    const result = await signInWithEmailAndPassword(auth, email, password);
+    console.log(result)
+    const user = result.user;
+    const userData: User = await getUser(user.uid);
+    return {
+        id: user.uid,
+        role: Role.Student,
+        // @ts-ignore
+        createdAt: Number(user.metadata.createdAt),
+        photoURL: user.photoURL,
+        displayName: user.displayName,
+        email: user.email,
+        ...(userData ?? {}),
+    };
+}
+
+export async function signUp(email: string, password: string, role?: Role): Promise<AuthUser> {
+    const result = await createUserWithEmailAndPassword(auth, email, password);
+    const user = result.user;
+    const userData: User = await getUser(user.uid);
+    await addUser(user.uid, { role: role ?? Role.Student });
+    return {
+        id: user.uid,
+        role: Role.Student,
+        // @ts-ignore
+        createdAt: Number(user.metadata.createdAt),
+        photoURL: user.photoURL,
+        displayName: user.displayName,
+        email: user.email,
+        ...(userData ?? {}),
+    };
 }
 
 export async function updateProfile(data: AuthDetails) {
