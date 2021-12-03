@@ -105,9 +105,9 @@ export const Paragraph = styled.p`
   font-size: 1.3rem;
   /* text-align: center; */
   text-align: ${({ align }) => align ? align : 'justify'};
-  line-height: 1.8rem;
+  line-height: 2rem;
 
-  font-family: "Lato", sans-serif;
+  font-family: "DejaVu Sans";
   margin-top: ${props=>props.marginTop || "1rem"};
   color: ${({ color }) => color ?? Colors.TEXT_PRIMARY};
   @media (max-width: 768px) {
