@@ -22,6 +22,7 @@ const MultipleInput = (props) => {
         label={label}
         variant={variant || "standard"}
         onChange={onHandleChange}
+        value={text}
         onKeyDown={(e) => {
           if (e.key == "Enter") {
             if (text) {

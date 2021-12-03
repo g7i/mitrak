@@ -11,6 +11,7 @@ import { getImages, getImagesLab } from "../../../../utils/firebase/department";
 import styled from "styled-components";
 import ModalImage from "../../../../components/ModalImage";
 import { Collections } from "../../../../utils/firebase/storage";
+import { ListItem } from "../components/imageSlider";
 
 const PsuData = [
   {
@@ -144,43 +145,43 @@ const MechanicalDepartment = () => {
         <Section>
           <Heading>{"Mechanical Engineering Labs at MITRC:"}</Heading>
           <ul>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Mechanical Workshop
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Thermal Engineering Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Material Testing Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Basic Mechanical Engineering Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>Turbo Lab</li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>Turbo Lab</ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Auto Cad Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Machine Drawing Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Production Engineering Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Heat Transfer Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Vibration Lab
-            </li>{" "}
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>{" "}
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Automobile Engineering Lab
-            </li>{" "}
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>{" "}
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Fluid Machinery Lab
-            </li>{" "}
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>{" "}
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Dynamics of Machines Lab
-            </li>
+            </ListItem>
           </ul>
             <FlexContainer wrap={"wrap"} rowGap={40}>
               {labImages.map((item) => (
@@ -243,7 +244,7 @@ const MechanicalDepartment = () => {
         <Section>
           <Heading>{"Job Profile:"}</Heading>
           <ul>
-            <li
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -251,8 +252,8 @@ const MechanicalDepartment = () => {
               }}
             >
               Object Oriented Analysis & Design.
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -260,8 +261,8 @@ const MechanicalDepartment = () => {
               }}
             >
               Test theoretical design.
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -269,8 +270,8 @@ const MechanicalDepartment = () => {
               }}
             >
               Discuss proposals with clients.
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -278,8 +279,8 @@ const MechanicalDepartment = () => {
               }}
             >
               Carry out project planning & prepare budget.
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -289,7 +290,7 @@ const MechanicalDepartment = () => {
               Mechanical engineer work in public & private sector in all
               branches of design, development and maintenance of machineries
               etc.
-            </li>
+            </ListItem>
           </ul>
         </Section>
 

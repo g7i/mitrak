@@ -39,6 +39,10 @@ const sidePanelData = [
     title: "Placements",
     icon: <BusinessIcon />,
   },
+  {
+    title: "News",
+    icon: <BusinessIcon />,
+  },
     {
         title: "Contact Messages",
         icon: <MarkEmailUnreadIcon />,

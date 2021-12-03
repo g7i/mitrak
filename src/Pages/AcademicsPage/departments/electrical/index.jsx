@@ -5,6 +5,7 @@ import {
   Paragraph,
 } from "../../../../components/styledComponents/GlobalComponents";
 import styled from "styled-components"
+import { ListItem } from "../components/imageSlider";
 
 const Labs = [
     "Machine Lab","High Voltage Engg. Lab" , "Power System Lab" , "Control System Lab" , "EEE Lab" , "Measurement Lab" , "Power Electronics Lab" , "Circuit Analysis Lab etc"
@@ -39,9 +40,9 @@ const  ElectricalDepartment = () => {
         <Heading>{`Labs`}</Heading>
         <ul>
           {Labs.map((item) => (
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               {item}
-            </li>
+            </ListItem>
           ))}
         </ul>
       </Section>

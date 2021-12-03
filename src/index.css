@@ -67,5 +67,19 @@ code {
 }
 
 .contactForm {
-  width: 50%;
+  width: 100%;
+}
+
+.mapContainer {
+  margin-top: 2rem;
+}
+
+.contentContaner {
+  padding-right: 2rem;
+}
+
+.center__div {
+  display: grid;
+  place-items: center;
+  margin-bottom: 5rem;
 }

@@ -11,7 +11,7 @@ import { getImages, getImagesLab } from "../../../../utils/firebase/department";
 import styled from "styled-components";
 import ModalImage from "../../../../components/ModalImage";
 import { Collections } from "../../../../utils/firebase/storage";
-import ImageSlider from "../components/imageSlider";
+import ImageSlider, { ListItem } from "../components/imageSlider";
 
 const Activities = [
   {
@@ -85,43 +85,43 @@ const CivilDepartment = () => {
         <Section>
           <Heading>{"Civil Engineering Labs at MITRC:"}</Heading>
           <ul>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Hydraulic Engineering Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Geo Technical Engineering Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Structural Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Geology Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>Turbo Lab</li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>Turbo Lab</ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Surveying Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Auto Cad Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Building Drawing Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Concrete Technology Lab
-            </li>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               RMT Lab Environmental Lab
-            </li>{" "}
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>{" "}
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Water Resource Engineering Lab
-            </li>{" "}
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>{" "}
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Estimating & Costing Lab
-            </li>{" "}
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            </ListItem>{" "}
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Civil Engineering & Material Lab
-            </li>
+            </ListItem>
           </ul>
 
           <FlexContainer wrap={"wrap"} rowGap={40} justify={"center"} gap={30}>
@@ -171,7 +171,7 @@ const CivilDepartment = () => {
         <Section>
           <Heading>{"Job Profile:"}</Heading>
           <ul>
-            <li
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -179,8 +179,8 @@ const CivilDepartment = () => {
               }}
             >
               Object Oriented Analysis & Design.
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -188,8 +188,8 @@ const CivilDepartment = () => {
               }}
             >
               Test theoretical design.
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -197,8 +197,8 @@ const CivilDepartment = () => {
               }}
             >
               Discuss proposals with clients.
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -206,8 +206,8 @@ const CivilDepartment = () => {
               }}
             >
               Carry out project planning & prepare budget.
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -217,7 +217,7 @@ const CivilDepartment = () => {
               Civil engineer work in public & private sector in all branches of
               design construction, maintenance of road, highway, bridges, dams,
               canals etc.
-            </li>
+            </ListItem>
           </ul>
         </Section>
 
@@ -251,7 +251,7 @@ const CivilDepartment = () => {
         <Section>
           <Heading>{"List of Notable Startup In Civil Engineering:"}</Heading>
           <ul>
-            <li
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -259,8 +259,8 @@ const CivilDepartment = () => {
               }}
             >
               Spartek Group
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -268,8 +268,8 @@ const CivilDepartment = () => {
               }}
             >
               BGR Energy System
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -277,8 +277,8 @@ const CivilDepartment = () => {
               }}
             >
               Urban Tech System
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -286,8 +286,8 @@ const CivilDepartment = () => {
               }}
             >
               Cityrene
-            </li>
-            <li
+            </ListItem>
+            <ListItem
               style={{
                 marginTop: "0.4rem",
                 color: "#152D35",
@@ -295,7 +295,7 @@ const CivilDepartment = () => {
               }}
             >
               Altra Design
-            </li>
+            </ListItem>
           </ul>
         </Section>
 
