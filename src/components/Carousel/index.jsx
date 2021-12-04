@@ -21,11 +21,11 @@ const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
 const SlideTextData = [
     {
         title: "MITRC",
-        subtitle: "Admissions are now open"
+        subtitle: "Yearn To Learn"
     },
     {
         title: "Think placement think MITRC",
-        subtitle: "100% placement record for a decade now"
+        subtitle: "Yearn To Explore"
     },
     {
         title: "Start Here Go Anywhere",
@@ -34,6 +34,16 @@ const SlideTextData = [
     {
         title: "Where Concepts Meets The Real World",
         subtitle: "Research Oriented Evironment"
+    },
+    {
+        subtitle: "Creative, Collaborative, and Practical Solutions to your engineering challenges from concept to production",
+    },
+    {
+        title: "We Give Wings To Your Aspirations",
+        subtitle: "Yearn To Innovate"
+    },
+    {
+        title: "Yearn To Research"
     }
 ]
 

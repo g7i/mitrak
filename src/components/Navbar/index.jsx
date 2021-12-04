@@ -21,6 +21,7 @@ const DropDownContent = {
   aboutUs: [
     { title: "About Us", link: "/about" },
     { title: "Contact Us", link: "/contact" },
+    { title: "How To Reach", link: "/how-to-reach" }
   ],
   academics: [
     { title: "Courses", link: "/academics/courses" },

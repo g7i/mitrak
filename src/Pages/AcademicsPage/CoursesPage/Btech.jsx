@@ -36,8 +36,6 @@ const BtechPage = () => {
           Entrepreneurship.(Any of the three) Obtained at least 45% marks (40%
           marks in case of candidates belonging to reserved category SC/ ST/ Non
           creamy layer OBC/ Non creamy layer MBC and PwD
-        </Paragraph>
-        <Paragraph>
           category of Rajasthan State) in the above subjects taken together in
           the final examination of Board of Secondary Education, Rajasthan(RBSE)
           or Central Board of Secondary Education (CBSE) or any other

@@ -1,17 +1,38 @@
 import React from 'react'
 import AuthLayout from './AuthLayout'
-import { Link } from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import { Container, Heading, SubHeading, Logo, Form, HyperLink } from './Components'
 import { TextField, Button, Divider } from '@mui/material'
 import GoogleIcon from '../../assets/icons/google.png'
+import {useStore} from "../../store";
+import {signIn, signUp} from "../../utils/firebase/auth";
 
 const Register = () => {
+    const { push } = useHistory();
+    const {
+        state: { user },
+        actions: { updateUser }
+    } = useStore();
+
+    const handleSignUp = async (e) => {
+        e.preventDefault();
+        try {
+            const data = await signUp(e.target.email.value, e.target.password.value);
+            console.log(user)
+            updateUser(data);
+            push('/student/dashboard');
+        } catch (e) {
+            console.error(e);
+            alert('unable to sign up');
+        }
+    };
+
     return (
         <AuthLayout>
             <Container>
                 <Heading>Get Started</Heading>
-                <SubHeading>Already have an account ? 
-                    <Link 
+                <SubHeading>Already have an account ?
+                    <Link
                     style={{textDecoration: 'none'}}
                     to="/login">
                         <HyperLink> Login </HyperLink>

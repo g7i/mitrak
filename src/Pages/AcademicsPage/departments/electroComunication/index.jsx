@@ -1,6 +1,7 @@
 import React from 'react'
 import { FillImage, Heading, Paragraph } from '../../../../components/styledComponents/GlobalComponents'
 import styled from "styled-components"
+import { ListItem } from '../components/imageSlider'
 
 const ElectroCommunicationPage = () => {
     return (
@@ -30,9 +31,9 @@ const ElectroCommunicationPage = () => {
       <Section>
           <Heading>{`Labs`}</Heading>
            <ul>
-            <li style={{ marginTop: "0.4rem", color: "#152D35" }}>
+            <ListItem style={{ marginTop: "0.4rem", color: "#152D35" }}>
               Hydraulic Engineering Lab
-            </li>
+            </ListItem>
             </ul>
       </Section>
     </>
