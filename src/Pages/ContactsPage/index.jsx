@@ -1,8 +1,8 @@
 import React from 'react'
-import { FillButton, Heading, Paragraph } from '../../components/styledComponents/GlobalComponents'
+import { FillButton, Heading, HyperLink, Paragraph } from '../../components/styledComponents/GlobalComponents'
 import Layout from '../../constants/Layout'
 import { TextField } from '@mui/material'
-import { functionaries } from './data'
+import { Link } from 'react-router-dom'
 
 const ContactsPage = () => {
 
@@ -48,20 +48,7 @@ const ContactsPage = () => {
                     <Heading>
                         Institute Functionaries (Directors, Deans, Placement Officer, Human Resource Manager)
                     </Heading>
-                    {
-                        functionaries.map(data => (
-                            <>
-                                <Paragraph>
-                                    <bold>Unit: {data.unit}</bold>
-                                </Paragraph>
-                                <Paragraph>Designation: {data.designation}</Paragraph>
-                                <Paragraph>Name: {data.name}</Paragraph>
-                                <Paragraph>Email: 
-                                    <a href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${data.email}`}>{data.email}</a>
-                                </Paragraph>
-                            </>
-                        ))
-                    }
+                    <Paragraph><Link to="/institute-functionaries">Click on this link</Link> to view the contact details</Paragraph>
                     <Heading>Division Functionaries</Heading>
                     <Paragraph>
                         Board line: +91 (0144) 2980643
@@ -69,6 +56,7 @@ const ContactsPage = () => {
                     <Paragraph>
                         National callers use the city code along with the STD access code (0): 0144.
                     </Paragraph>
+                    <Paragraph><Link to="/division-functionaries">Click on this link</Link> to view the contact details</Paragraph>
                 </div>
                 <div>
                     <div className="contactForm">

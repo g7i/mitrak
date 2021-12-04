@@ -4,8 +4,6 @@ import { CardContainer, CardImage, ClipDiv, Overlay } from './Components'
 
 const OverlayImageCard = ({img, student}) => {
 
-    console.log('studetn', student.image);
-
     return (
         <CardContainer>
             <CardImage 
