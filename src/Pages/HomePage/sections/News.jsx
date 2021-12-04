@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 
 import {
@@ -17,10 +17,19 @@ import {
   ItemWrapper,
   NewsBox,
   NewsLink,
-  NewsContainer,
 } from "../../../components/styledComponents/News";
-import { Heading } from "../../../components/styledComponents/GlobalComponents";
+import CancelIcon from "@mui/icons-material/Cancel";
+import { FcDocument } from "react-icons/fc";
+
+import styled from "styled-components";
+import {
+  FillImage,
+  Heading,
+  Paragraph,
+} from "../../../components/styledComponents/GlobalComponents";
 import { NewsImage } from "../component";
+import { listNews, NewsType } from "../../../utils/firebase/news";
+import { Modal } from "@mui/material";
 
 const SlickArrowRight = ({ onClick, className }) => {
   if (className.includes("slick-disabled")) return null;
@@ -76,9 +85,17 @@ const settings = {
 };
 
 export default function News() {
+  const [newsList, setNewsList] = useState([]);
+  useEffect(() => {
+    try {
+      listNews().then((data) => {
+        setNewsList(data);
+      });
+    } catch (error) {}
+  }, []);
   return (
     <Container>
-      <Heading style={{ textAlign: 'center' }}>News</Heading>
+      <Heading style={{ textAlign: "center" }}>News</Heading>
       <Slider {...settings}>
         {Array.from({ length: 5 }).map((_, i) => (
           <ItemWrapper key={i}>
@@ -102,63 +119,179 @@ export default function News() {
           </ItemWrapper>
         ))}
       </Slider>
-      <Heading style={{ textAlign: 'center' }}>Important Links</Heading>
-      <Container style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <NewsBox> 
-            <Heading style={{fontSize: '1.4rem', textAlign: 'center'}}>Top Stories of the week</Heading>
-            <NewsContainer>
-              <NewsLink href="#">New placement season started for year 2021</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-            <NewsContainer>
-              <NewsLink href="#">placement new 2021</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-            <NewsContainer>
-              <NewsLink href="#">placement new 2021</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-            <NewsContainer>
-              <NewsLink href="#">placement new 2021</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-            <NewsContainer>
-              <NewsLink href="#">placement new 2021</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-          </NewsBox>
-          <NewsBox> 
-            <Heading style={{fontSize: '1.4rem', textAlign: 'center'}}>Placement News</Heading>
-            <NewsContainer>
-              <NewsLink href="#">New placement season started for year 2021</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-            <NewsContainer>
-              <NewsLink href="#">placement new 2021</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-            <NewsContainer>
-              <NewsLink href="#">placement new 2021</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-          </NewsBox>
-          <NewsBox> 
-            <Heading style={{fontSize: '1.4rem', textAlign: 'center'}}>Student Activities</Heading>
-            <NewsContainer>
-              <NewsLink href="#">Cultural fest 2021 auditions going on</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-            <NewsContainer>
-              <NewsLink href="#">field trip to be going on the coming wednesday</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-            <NewsContainer>
-              <NewsLink href="#">Exam forms are available now for odd sems</NewsLink>
-              <iframe src="https://giphy.com/embed/V2lvxrRTfwYmljPY9y" width='40' height="30" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </NewsContainer>
-          </NewsBox>
+      <Heading style={{ textAlign: "center" }}>Important Update</Heading>
+      <Container style={{ display: "flex", justifyContent: "space-between" }}>
+        <NewsBox>
+          <Heading style={{ fontSize: "1.4rem", textAlign: "center" }}>
+            Latest News
+          </Heading>
+          <NewNewsContainer>
+            {newsList
+              ?.filter((item) => item.type == "new")
+              .map((item) => (
+                <NewsComponent
+                  news={item}
+                  width={
+                    newsList?.filter((item) => item.type == "new").length === 1
+                      ? "100%"
+                      : "50%"
+                  }
+                />
+              ))}
+          </NewNewsContainer>
+        </NewsBox>
+        <NewsBox>
+          <Heading style={{ fontSize: "1.4rem", textAlign: "center" }}>
+            Useful Links
+          </Heading>
+          {newsList
+            ?.filter((item) => item.type == "usefullLinks")
+            .map((item) => (
+              <NewsContainer>
+                <a target={"_blank"} href={item.links[0]}>
+                  {item.title}
+                </a>
+              </NewsContainer>
+            ))}
+        </NewsBox>
       </Container>
-
     </Container>
   );
 }
+
+const NewsComponent = (props) => {
+  const [open, setOpen] = useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const { news , width } = props;
+  return (
+    <>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <ModalBodyWrapper>
+          <ModalBodySecondWrapper>
+            <img src={news.image} />
+            <h3>{news.title}</h3>
+            <h5>{news.description}</h5>
+            {news.links?.map((item) => (
+              <div className={"document-link-div"}>
+                <FcDocument size={50} />
+                <a href={item} target={"_blank"}>
+                  {item}
+                </a>
+              </div>
+            ))}
+            <CloseIcon fontSize={"large"} onClick={handleClose} />
+          </ModalBodySecondWrapper>
+        </ModalBodyWrapper>
+      </Modal>
+
+      <NewNewsWrapper width={width}>
+        <div>
+          <FillImage src={news.image} />
+          <h3>{news.title}</h3>
+          <h5>{news.description}</h5>
+          <h5 className="read-more" onClick={() => setOpen(true)}>
+            Read More
+          </h5>
+        </div>
+      </NewNewsWrapper>
+    </>
+  );
+};
+
+const NewNewsContainer = styled.div`
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+`;
+const ModalBodyWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+`;
+
+const ModalBodySecondWrapper = styled.div`
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  padding: 50px;
+  position: relative;
+  img {
+    height: 200px;
+    max-width: 90%;
+    background-color: dimgrey;
+    margin-bottom: 0;
+  }
+  h2,
+  h3,
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+  .document-link-div {
+    display: flex;
+
+    align-items: center;
+    a {
+      max-width: 80%;
+      overflow: hidden;
+    }
+  }
+`;
+
+const NewNewsWrapper = styled.div`
+  width: ${(props) => props.width || "50%"};
+  display: flex;
+  justify-content: center;
+  div {
+    width: 90%;
+    img {
+      height: 200px;
+      background-color: dimgrey;
+      margin-bottom: 0;
+    }
+    h2,
+    h3,
+    h5 {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* number of lines to show */
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .read-more {
+      color: #e49c18;
+      cursor: pointer;
+    }
+  }
+`;
+
+const CloseIcon = styled(CancelIcon)`
+  position: absolute;
+  color: black;
+  top: 0px;
+  right: 0px;
+  &:hover {
+    color: blue;
+  }
+`;
+
+const NewsContainer = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  a {
+    font-size: 1.5rem;
+  }
+`;
