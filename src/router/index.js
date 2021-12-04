@@ -20,6 +20,8 @@ import {getUser} from "../utils/firebase/users";
 import ContactsPage from "../Pages/ContactsPage";
 import Bot from "../components/Bot/Bot";
 import HowToReach from "../Pages/HowToReachPage";
+import InstituteFunctionaries from "../Pages/ContactsPage/InstituteFunctionaries";
+import DivisionFunctionaries from "../Pages/ContactsPage/DivisionFunctionaries";
 
 const Router = () => {
   const {
@@ -63,6 +65,8 @@ const Router = () => {
           <Route path="/about" exact component={AboutUsPage} />
           <Route path="/how-to-reach" exact component={HowToReach} />
           <Route path="/contact" exact component={ContactsPage} />
+          <Route path="/institute-functionaries" exact component={InstituteFunctionaries} />
+          <Route path="/division-functionaries" exact component={DivisionFunctionaries} />
           <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
           <Route path="/campus-life/events-gallery/:child" exact component={EventGallery} />
           <Route path="/placements" exact component={PlacementPage} />
