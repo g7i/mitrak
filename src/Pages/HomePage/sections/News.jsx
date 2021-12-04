@@ -95,14 +95,12 @@ export default function News() {
   }, []);
   return (
     <Container>
-      <Heading style={{ textAlign: "center" }}>News</Heading>
+      {/* <Heading style={{ textAlign: "center" }}>News</Heading>
       <Slider {...settings}>
         {Array.from({ length: 5 }).map((_, i) => (
           <ItemWrapper key={i}>
             <CardWrapper>
               <ImageWrapper>
-                {/* <CardImage
-                                    src="https://images.unsplash.com/photo-1631430411956-44b72ddb0ee0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"/> */}
                 <NewsImage
                   imageUrl={
                     "https://images.unsplash.com/photo-1631430411956-44b72ddb0ee0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
@@ -118,7 +116,7 @@ export default function News() {
             </CardWrapper>
           </ItemWrapper>
         ))}
-      </Slider>
+      </Slider> */}
       <Heading style={{ textAlign: "center" }}>Important Update</Heading>
       <Container style={{ display: "flex", justifyContent: "space-between" }}>
         <NewsBox>
@@ -164,7 +162,7 @@ const NewsComponent = (props) => {
   const handleClose = () => {
     setOpen(false);
   };
-  const { news , width } = props;
+  const { news, width } = props;
   return (
     <>
       <Modal

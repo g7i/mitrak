@@ -72,7 +72,7 @@ const NewsPage = () => {
             <SelectTextField
               id="outlined-select-currency"
               select
-              label="Semester"
+              label="Type"
               value={data.type}
               onChange={(e) => setData({...data , type : e.target.value})}
             >
