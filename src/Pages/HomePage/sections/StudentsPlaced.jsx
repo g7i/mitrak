@@ -51,7 +51,7 @@ const studentData = [
         id: '8',
         name: 'Anshul Yadav',
         package: '5lpa',
-        image: require("../../../assets/studentsplaced/alpesh.jpeg").default,
+        image: require("../../../assets/studentsplaced/anshul.jpeg").default,
         company: 'Solveda'
 
     },
