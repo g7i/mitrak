@@ -12,12 +12,12 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
+import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
 //-------------------
 import PeopleIcon from "@mui/icons-material/People";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import BusinessIcon from '@mui/icons-material/Business';
+import BusinessIcon from "@mui/icons-material/Business";
 import { ImageLogo, ListItemMainWrapper } from "./Styles";
 import { Link, useParams, useHistory } from "react-router-dom";
 
@@ -26,9 +26,12 @@ const sidePanelData = [
     title: "Admin Profile",
     icon: <PeopleIcon />,
   },
-
   {
     title: "Upload Notes",
+    icon: <MenuBookIcon />,
+  },
+  {
+    title: "Manage Notes",
     icon: <MenuBookIcon />,
   },
   {
@@ -36,23 +39,35 @@ const sidePanelData = [
     icon: <NotificationsIcon />,
   },
   {
-    title: "Placements",
+    title: "Manage Notice",
+    icon: <NotificationsIcon />,
+  },
+  {
+    title: "Upload Placements",
     icon: <BusinessIcon />,
   },
   {
-    title: "News",
+    title: "Manage Placements",
     icon: <BusinessIcon />,
   },
-    {
-        title: "Contact Messages",
-        icon: <MarkEmailUnreadIcon />,
-    },
+  {
+    title: "Upload News",
+    icon: <BusinessIcon />,
+  },
+  {
+    title: "Manage News",
+    icon: <BusinessIcon />,
+  },
+  {
+    title: "Contact Messages",
+    icon: <MarkEmailUnreadIcon />,
+  },
 ];
 
 const drawerWidth = 240;
 
 function SidePanel(props) {
-  const { child , child2 } = useParams();
+  const { child, child2 } = useParams();
   const history = useHistory();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -95,7 +110,6 @@ function SidePanel(props) {
                       [item.title]: !listOpen[item.title],
                     });
                   }}
-
                 >
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.title} />
