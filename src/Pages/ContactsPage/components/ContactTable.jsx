@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import { Colors } from '../../../constants/UiConstants'
 
 const ContactTable = ({ data }) => {
-
-    console.log('data', data)
     return (
         <ContactContainer>
             <ContactHeader>
