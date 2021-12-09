@@ -6,6 +6,12 @@ export type Link = {
     url: URL,
 }
 
+export const NewsType = [
+    {name : "Useful Links" , value : "usefullLinks"},
+    {name : "new" , value : "new"},
+]
+
+
 export type News = {
     id: string,
     title: string,
@@ -13,6 +19,7 @@ export type News = {
     description: string,
     links: Link[],
     createdAt: Number,
+    type : "usefullLinks" | "new" 
 }
 
 export async function addNews(data: Omit<News, "id">): Promise<string> {

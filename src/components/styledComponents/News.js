@@ -78,7 +78,7 @@ export const ItemWrapper = styled.div`
 `;
 
 export const NewsBox = styled.div`
-  width: 33%;
+  width: 48%;
   padding-bottom: 0.5rem;
   background-color: ${Colors.DETAILS_BACKGROUND};
   @media (max-width: 768px) {
@@ -100,3 +100,4 @@ export const NewsContainer = styled.div`
   align-items: center;
   margin-top: 0.5rem;
 `;
+

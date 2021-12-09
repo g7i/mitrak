@@ -4,15 +4,15 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import DeleteIcon from "@mui/icons-material/Delete";
 import styled from "styled-components";
 const MultipleInput = (props) => {
-  const { onChange, label, id, variant } = props;
-  const [data, setData] = useState([]);
+  const { onChange, label, id, variant, value } = props;
   const [text, setText] = useState("");
   const onHandleChange = (e) => {
     setText(e.target.value);
   };
   const onDelete = (text) => {
-    setData(data.filter((item) => item !== text));
-    onChange(data.filter((item) => item !== text));
+    if (value) {
+      onChange(value.filter((item) => item !== text));
+    }
   };
   return (
     <div style={{ width: "100%" }}>
@@ -26,8 +26,9 @@ const MultipleInput = (props) => {
         onKeyDown={(e) => {
           if (e.key == "Enter") {
             if (text) {
-              setData([...data, text]);
-              onChange([...data, text]);
+              if (value) {
+                onChange([...value, text]);
+              }
               setText("");
             }
           }
@@ -40,8 +41,9 @@ const MultipleInput = (props) => {
                 color="primary"
                 onClick={() => {
                   if (text) {
-                    setData([...data, text]);
-                    onChange([...data, text]);
+                    if (value) {
+                      onChange([...value, text]);
+                    }
                     setText("");
                   }
                 }}
@@ -50,7 +52,7 @@ const MultipleInput = (props) => {
           ),
         }}
       />
-      {data.map((item) => (
+      {value?.map((item) => (
         <DataPointComponent text={item} onDelete={onDelete} />
       ))}
     </div>
