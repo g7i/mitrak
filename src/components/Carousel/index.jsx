@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { IndicatorWrapper, Dot, Wrapper, Slide, ChildrenWrapper, Gradient, SlideTextWrapper, SlideHeading, SlideSubHeading } from '../styledComponents/Carousel';
+import Fade from 'react-reveal/Fade'
 
 const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
     return (
@@ -93,10 +94,13 @@ const ImageSlider = ({
                 >
                 </Slide>
             ))}
+
             <SlideTextWrapper currentSlide={currentSlide}>
-                <SlideHeading>
-                    {SlideTextData[currentSlide]?.title || SlideTextData[0].title}
-                </SlideHeading>
+                <Fade top cascade>
+                    <SlideHeading>
+                        {SlideTextData[currentSlide]?.title || SlideTextData[0].title}
+                    </SlideHeading>
+                </Fade>
                 <SlideSubHeading>{SlideTextData[currentSlide]?.subtitle || SlideTextData[0].subtitle}</SlideSubHeading>
             </SlideTextWrapper>
             <Gradient />
