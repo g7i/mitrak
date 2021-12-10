@@ -19,8 +19,10 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { IoMdSend } from "react-icons/io";
+import {useHistory} from "react-router-dom";
 
 const Footer = () => {
+  const history = useHistory();
   return (
     <FooterMainContainer>
       <FooterSecondMainContainer>
@@ -35,19 +37,42 @@ const Footer = () => {
         <FooterSectionContainer>
           <SectionHeading>Quick Links</SectionHeading>
           <FooterSecondSectionContainer numberOfRow={1}>
-            <SectionText>Home</SectionText>
-            <SectionText>Events</SectionText>
-            <SectionText>Contact</SectionText>
-            <SectionText>Courses</SectionText>
+            <SectionText onClick={() => history.push("/")}>Home</SectionText>
+            <SectionText
+              onClick={() =>
+                history.push("/campus-life/events-gallery/curricular")
+              }
+            >
+              Events
+            </SectionText>
+            <SectionText onClick={() => history.push("/contact")}>
+              Contact
+            </SectionText>
+            <SectionText onClick={() => history.push("/academics/courses")}>
+              Courses
+            </SectionText>
           </FooterSecondSectionContainer>
         </FooterSectionContainer>
 
         <FooterSectionContainer>
           <SectionHeading>Programs</SectionHeading>
           <FooterSecondSectionContainer numberOfRow={1}>
-            <SectionText>Air Frieght</SectionText>
-            <SectionText>Ocean frieght</SectionText>
-            <SectionText>Large projects</SectionText>
+            {/* <SectionText>Air Frieght</SectionText>
+            <SectionText>Ocean frieght</SectionText> */}
+            <SectionText
+              onClick={() =>
+                history.push("/campus-life/studentaffair/grievance")
+              }
+            >
+              Committe
+            </SectionText>
+            <SectionText
+              onClick={() =>
+                history.push("/campus-life/studentaffair/grievance")
+              }
+            >
+              Complaint
+            </SectionText>
           </FooterSecondSectionContainer>
         </FooterSectionContainer>
 

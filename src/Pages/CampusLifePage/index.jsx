@@ -42,8 +42,7 @@ const CampusLife = () => {
             { title: "Identity Card" },
             { title: "Safety & Security" },
             { title: "Substance Abuse" },
-            { title: "Grievance Redressal" },
-            { title: "Complaint of Caste Base Descrimination" },
+            { title: "Grievance" },
             { title: "Medicare" },
             { title: "Student Wellbeing" },
             { title: "College Commitees" }
@@ -92,7 +91,7 @@ const CampusLife = () => {
                         ))
                     }
                     {
-                        (child === 'grievance redressal' || child ===  'complaint of caste base descrimination') && (<ComplaintForm title={child} />)
+                        (child === 'grievance' || child ===  'complaint of caste base descrimination') && (<ComplaintForm title={child} />)
                     }
                 </PageContainer>
             </PagesLayout>
