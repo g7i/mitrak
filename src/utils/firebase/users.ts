@@ -68,7 +68,7 @@ export async function getUser(id: string): Promise<User> {
     if (docSnap.exists()) {
         return {...docSnap.data(), id} as User;
     } else {
-        throw new Error('No such document!')
+        // throw new Error('No such document!')
     }
 }
 

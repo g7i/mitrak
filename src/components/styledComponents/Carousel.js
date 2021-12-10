@@ -59,8 +59,10 @@ export const SlideTextWrapper = styled.div`
   max-width: max-content;
   padding: 1rem 3rem;
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: ${({currentSlide}) => (currentSlide * Math.random() * 10)}%;
+  left: ${({currentSlide}) => (currentSlide * 4)}%;
+  animation-delay: 2s;
+  animation: ease-in-out 2s alternate;
 
   @media (max-width:768px) {
     top: 40%;
