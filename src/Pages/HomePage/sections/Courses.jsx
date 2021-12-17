@@ -12,13 +12,14 @@ import { Heading } from "../../../components/styledComponents/GlobalComponents";
 import BTechImage from "../../../assets/images/btech.webp";
 import MTechImage from "../../../assets/images/mtech.jpg";
 import MbaImage from "../../../assets/images/mba.png";
+import { Link } from 'react-router-dom'
 
 export default function Courses() {
   return (
     <Container>
-      <Heading style={{textAlign: 'center'}}>Courses We Offer</Heading>
+      <Heading style={{ textAlign: 'center' }}>Courses We Offer</Heading>
       <Wrapper>
-        <CardWrapper>
+        <CardWrapper href="/academics/courses/b.tech">
           <ImageWrapper>
             <CardImage src={BTechImage} />
           </ImageWrapper>
@@ -31,7 +32,7 @@ export default function Courses() {
             offer the course to aspiring students.
           </CardContent>
         </CardWrapper>
-        <CardWrapper>
+        <CardWrapper href="/academics/courses/m.tech">
           <ImageWrapper>
             <CardImage src={MTechImage} />
           </ImageWrapper>
@@ -43,7 +44,7 @@ export default function Courses() {
             a specific branch of engineering.
           </CardContent>
         </CardWrapper>
-        <CardWrapper>
+        <CardWrapper href="/academics/courses/mba">
           <ImageWrapper>
             <CardImage src={MbaImage} />
           </ImageWrapper>

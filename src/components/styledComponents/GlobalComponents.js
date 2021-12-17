@@ -106,7 +106,7 @@ export const Paragraph = styled.p`
   /* text-align: center; */
   text-align: ${({ align }) => align ? align : 'justify'};
   line-height: 2rem;
-
+  text-decoration: none;
   font-family: "DejaVu Sans";
   margin-top: ${props=>props.marginTop || "1rem"};
   color: ${({ color }) => color ?? Colors.TEXT_PRIMARY};
@@ -128,7 +128,7 @@ export const BannerTextContainer = styled.div`
 `;
 
 export const BannerHeading = styled.h1`
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Bebas Neue", cursive;
   color: ${Colors.WHITE};
   letter-spacing: 2px;

@@ -1,13 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
-
-import {
-  CardContent,
-  CardImage,
-  CardTitle,
-  CardWrapper,
-  ImageWrapper,
-} from "../../../components/styledComponents/Courses";
 import {
   LeftArrowContainer,
   NextIcon,
@@ -27,7 +18,7 @@ import {
   Heading,
   Paragraph,
 } from "../../../components/styledComponents/GlobalComponents";
-import { NewsImage } from "../component";
+import { Link } from 'react-router-dom'
 import { listNews, NewsType } from "../../../utils/firebase/news";
 import { Modal } from "@mui/material";
 
@@ -91,7 +82,7 @@ export default function News() {
       listNews().then((data) => {
         setNewsList(data);
       });
-    } catch (error) {}
+    } catch (error) { }
   }, []);
   return (
     <Container>
@@ -126,6 +117,7 @@ export default function News() {
           <NewNewsContainer>
             {newsList
               ?.filter((item) => item.type == "new")
+              .slice(0, 2)
               .map((item) => (
                 <NewsComponent
                   news={item}
@@ -137,6 +129,11 @@ export default function News() {
                 />
               ))}
           </NewNewsContainer>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Link to="/news">
+              <Paragraph >Show More..</Paragraph>
+            </Link>
+          </div>
         </NewsBox>
         <NewsBox>
           <Heading style={{ fontSize: "1.4rem", textAlign: "center" }}>
@@ -157,7 +154,7 @@ export default function News() {
   );
 }
 
-const NewsComponent = (props) => {
+export const NewsComponent = (props) => {
   const [open, setOpen] = useState(false);
   const handleClose = () => {
     setOpen(false);

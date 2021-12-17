@@ -32,13 +32,15 @@ export const CardContent = styled.p`
   font-size: 0.85em;
   line-height: 1.5em;
   text-transform: capitalize;
+  text-align: justify;
   color: ${Colors.SECONDARY};
 `;
 
-export const CardWrapper = styled.div`
+export const CardWrapper = styled.a`
   border: 1px solid rgba(128, 128, 128, 0.3);
   padding: 15px;
   border-radius: 3px;
+  text-decoration: none;
 `;
 
 export const ImageWrapper = styled.div`

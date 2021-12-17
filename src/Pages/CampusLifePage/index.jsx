@@ -69,7 +69,7 @@ const CampusLife = () => {
                     {
                         obj?.map(item => item.title === child && (
                             <>
-                                <FillImage src={item?.imageUrl} alt="mitrc image" />
+                                {item?.imageUrl && (<FillImage src={item?.imageUrl} alt="mitrc image" />)}
                                 {
                                     Object.keys(item).map(key => (
                                         <>

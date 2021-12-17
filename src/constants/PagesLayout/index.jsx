@@ -9,7 +9,7 @@ const PagesLayout = ({ children, rightNavLinks, currentRoute, pageName }) => {
   
   return (
     <Container>
-      <div style={{ width: "75%" }}>{children}</div>
+      <Content>{children}</Content>
       <RightNav>
         <Heading>Related Links</Heading>
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -79,6 +79,10 @@ export default PagesLayout;
 const Container = styled.div`
   flex: 1;
   display: flex;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const RightNav = styled.div`
@@ -86,4 +90,15 @@ const RightNav = styled.div`
   background-color: #f7f6f2;
   width: 25%;
   padding: 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const Content = styled.div`
+  width: 75%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;

@@ -9,7 +9,7 @@ const Banner = ({bannerHeading, bannerDescription}) => {
             <BannerTextContainer style={{zIndex: 999}}>
                 <BannerHeading>{bannerHeading}</BannerHeading>
                 <Paragraph color="#FFFFFF">
-                    {bannerDescription}
+                    {/* {bannerDescription} */}
                 </Paragraph>
             </BannerTextContainer>
             <div style={{width: '100%', height: '100%', position: 'absolute', backgroundColor: 'rgba(0,0,0,0.6)'}}></div>

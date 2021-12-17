@@ -8,49 +8,49 @@ const studentData = [
     {
         id: '2',
         name: 'Dilip Thakkar',
-        package: '5.7lpa',
+        package: '5.7 LPA',
         image: require('../../../assets/studentsplaced/dilip.jpg').default,
         company: 'Metacube'
     },
     {
         id: '3',
         name: 'Sakshi Gopalia',
-        package: '8.2lpa',
+        package: '8.2 LPA',
         image: require("../../../assets/studentsplaced/sakshi.jpeg").default,
         company: 'Teltonika'
     },
     {
         id: '4',
         name: 'Priyanka Jaiswal',
-        package: '5.82lpa',
+        package: '5.82 LPA',
         image: require("../../../assets/studentsplaced/prianka.jpeg").default,
         company: 'Hike Education'
     },
     {
         id: '5',
         name: 'Sapna yadav',
-        package: '5.58lpa',
+        package: '5.58 LPA',
         image: require("../../../assets/studentsplaced/sapna.jpeg").default,
         company: 'Hike Education'
     },
     {
         id: '6',
         name: 'Vaibhav Goyal',
-        package: '5.2lpa',
+        package: '5.2 LPA',
         image: require("../../../assets/studentsplaced/vaibhav.jpeg").default,
         company: 'Metacube'
     },
     {
         id: '7',
         name: 'Alpesh Yadav',
-        package: '5.2lpa',
+        package: '5.2 LPA',
         image: require("../../../assets/studentsplaced/alpesh.jpeg").default,
         company: 'Metacube'
     },
     {
         id: '8',
         name: 'Anshul Yadav',
-        package: '5lpa',
+        package: '5 LPA',
         image: require("../../../assets/studentsplaced/anshul.jpeg").default,
         company: 'Solveda'
 
@@ -58,21 +58,21 @@ const studentData = [
     {
         id: '9',
         name: 'Devendra Kumar',
-        package: '5lpa',
+        package: '5 LPA',
         image: require("../../../assets/studentsplaced/devendra.jpg").default,
         company: 'Solveda'
     },
     {
         id: '10',
         name: 'Diksha Chopra',
-        package: '5lpa',
+        package: '5 LPA',
         image: require('../../../assets/studentsplaced/Diksha.jpeg').default,
         company: 'Solveda'
     },
     {
         id: '11',
         name: 'Manish Gupta',
-        package: '5lpa',
+        package: '5 LPA',
         image: require('../../../assets/studentsplaced/manish.jpeg').default,
         company: 'Solveda'
     },
