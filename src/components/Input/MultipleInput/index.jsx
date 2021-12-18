@@ -77,4 +77,7 @@ const DataPoints = styled.div`
   background-color: #89cff010;
   display: flex;
   justify-content: space-between;
+  p {
+    word-break : break-all;
+  }
 `;
