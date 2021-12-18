@@ -92,17 +92,17 @@ const ImageSlider = ({
                         objectFit: 'contain'
                     }}
                 >
+                    <SlideTextWrapper currentSlide={index}>
+                        <Fade top cascade>
+                            <SlideHeading>
+                                {SlideTextData[index]?.title || SlideTextData[0].title}
+                            </SlideHeading>
+                        </Fade>
+                        <SlideSubHeading>{SlideTextData[index]?.subtitle || SlideTextData[0].subtitle}</SlideSubHeading>
+                    </SlideTextWrapper>
                 </Slide>
             ))}
 
-            <SlideTextWrapper currentSlide={currentSlide}>
-                <Fade top cascade>
-                    <SlideHeading>
-                        {SlideTextData[currentSlide]?.title || SlideTextData[0].title}
-                    </SlideHeading>
-                </Fade>
-                <SlideSubHeading>{SlideTextData[currentSlide]?.subtitle || SlideTextData[0].subtitle}</SlideSubHeading>
-            </SlideTextWrapper>
             <Gradient />
             <Indicator
                 currentSlide={currentSlide}

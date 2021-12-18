@@ -119,44 +119,46 @@ const Navbar = () => {
 
         <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">Apply For Admission</MenuLink>
       </Menu>
-      {!user && (
-        <Menu showMobileMenu={showMobileMenu}>
-          {/* <MenuLink>Apply for Admission</MenuLink> */}
-          <LoginButton onClick={() => push('/login')}>Login</LoginButton>
-        </Menu>
-      )}
-      {user &&  (
-        <PopupState variant="popover" popupId="demo-popup-menu">
-          {(popupState) => (
-            <React.Fragment>
-              {/* <Button variant="contained" {...bindTrigger(popupState)}>
-                  Dashboard
-                </Button> */}
-              <Avatar
-                alt="user profile image"
-                src={user?.photoURL}
-                style={{ cursor: "pointer" }}
-                {...bindTrigger(popupState)}
-              />
-              <MaterialMenu {...bindMenu(popupState)}>
-                <Link
-                  to="/student/dashboard"
-                  style={{ textDecoration: "none", color: "#000" }}
-                >
-                  <MenuItem onClick={popupState.close}>Profile</MenuItem>
-                </Link>
-                <Link
-                  to="/admin/dashboard"
-                  style={{ textDecoration: "none", color: "#000" }}
-                >
-                  <MenuItem onClick={popupState.close}>Admin Dashboard</MenuItem>
-                </Link>
-                <MenuItem onClick={() => handleSignOut(popupState)}>Logout</MenuItem>
-              </MaterialMenu>
-            </React.Fragment>
-          )}
-        </PopupState>
-      )}
+      {/*TODO: Remove Me*/}
+      <div></div>
+      {/*{!user && (*/}
+      {/*  <Menu showMobileMenu={showMobileMenu}>*/}
+      {/*    /!* <MenuLink>Apply for Admission</MenuLink> *!/*/}
+      {/*    <LoginButton onClick={() => push('/login')}>Login</LoginButton>*/}
+      {/*  </Menu>*/}
+      {/*)}*/}
+      {/*{user &&  (*/}
+      {/*  <PopupState variant="popover" popupId="demo-popup-menu">*/}
+      {/*    {(popupState) => (*/}
+      {/*      <React.Fragment>*/}
+      {/*        /!* <Button variant="contained" {...bindTrigger(popupState)}>*/}
+      {/*            Dashboard*/}
+      {/*          </Button> *!/*/}
+      {/*        <Avatar*/}
+      {/*          alt="user profile image"*/}
+      {/*          src={user?.photoURL}*/}
+      {/*          style={{ cursor: "pointer" }}*/}
+      {/*          {...bindTrigger(popupState)}*/}
+      {/*        />*/}
+      {/*        <MaterialMenu {...bindMenu(popupState)}>*/}
+      {/*          <Link*/}
+      {/*            to="/student/dashboard"*/}
+      {/*            style={{ textDecoration: "none", color: "#000" }}*/}
+      {/*          >*/}
+      {/*            <MenuItem onClick={popupState.close}>Profile</MenuItem>*/}
+      {/*          </Link>*/}
+      {/*          <Link*/}
+      {/*            to="/admin/dashboard"*/}
+      {/*            style={{ textDecoration: "none", color: "#000" }}*/}
+      {/*          >*/}
+      {/*            <MenuItem onClick={popupState.close}>Admin Dashboard</MenuItem>*/}
+      {/*          </Link>*/}
+      {/*          <MenuItem onClick={() => handleSignOut(popupState)}>Logout</MenuItem>*/}
+      {/*        </MaterialMenu>*/}
+      {/*      </React.Fragment>*/}
+      {/*    )}*/}
+      {/*  </PopupState>*/}
+      {/*)}*/}
     </Nav>
   );
 };

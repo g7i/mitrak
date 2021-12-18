@@ -33,6 +33,7 @@ export const Slide = styled.div`
   background-position: center;
   background-size: cover;
   transition: 750ms all ease-in-out;
+  position: relative;
 `;
 
 export const ChildrenWrapper = styled.div`
@@ -48,19 +49,23 @@ export const Gradient = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  //background-color: rgba(0, 0, 0, 0.1);
 `;
 
 export const SlideTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 10;
-  background: rgba(0,0,0,0.6);
-  max-width: max-content;
+  background: rgba(0,0,0,0.7);
+  box-shadow: 0 0 10px #ffffff90;
+  border-radius: 10px;
+  max-width: 60%;
   padding: 1rem 3rem;
   position: absolute;
-  top: ${({currentSlide}) => (currentSlide * Math.random() * 10)}%;
-  left: ${({currentSlide}) => (currentSlide * 4)}%;
+  // top: ${({currentSlide}) => (currentSlide * Math.random() * 10)}%;
+  // left: ${({currentSlide}) => (currentSlide * 4)}%;
+  top: 10%;
+  left: 10%;
   animation-delay: 2s;
   animation: ease-in-out 2s alternate;
 

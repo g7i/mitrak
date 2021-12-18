@@ -11,7 +11,8 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
   AiOutlineGooglePlus,
-  AiOutlineYoutube,
+  AiFillPhone,
+  AiOutlineYoutube
 } from "react-icons/ai";
 import { useHistory } from "react-router-dom";
 import { Colors } from "../../constants/UiConstants";
@@ -30,10 +31,10 @@ const ContactHeader = () => {
         </Wrapper>
         <Wrapper>
           <ContactHeaderLinksWrapper
-            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hr@mitrc.ac.in"
+            href="tel:+917597676193"
           >
-            <AiOutlineMail color={"#FFFFFF"} />
-            <Text color="#FFFFFF">hr@mitrc.ac.in</Text>
+            <AiFillPhone color={"#FFFFFF"} size={20} />
+            <Text color="#FFFFFF">+91 7597676193</Text>
           </ContactHeaderLinksWrapper>
         </Wrapper>
       </Wrapper>
