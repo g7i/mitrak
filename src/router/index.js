@@ -23,6 +23,7 @@ import HowToReach from "../Pages/HowToReachPage";
 import InstituteFunctionaries from "../Pages/ContactsPage/InstituteFunctionaries";
 import DivisionFunctionaries from "../Pages/ContactsPage/DivisionFunctionaries";
 import NewsScreen from "../Pages/NewsPage";
+import PlacementNewsScreen from "../Pages/PlacementNewsPage";
 
 const Router = () => {
   const {
@@ -46,16 +47,17 @@ const Router = () => {
 
     return (
       <BrowserRouter>
-        <Route exact
-            path={[
-              "/",
-              "/about",
-              "/contact",
-              "/placements/*",
-              "/campus-life/*",
-              "/academics/*",
-            ]}
-            component={Bot}
+        <Route
+          exact
+          path={[
+            "/",
+            "/about",
+            "/contact",
+            "/placements/*",
+            "/campus-life/*",
+            "/academics/*",
+          ]}
+          component={Bot}
         />
         <Switch>
           {/* Authentication Routes */}
@@ -67,21 +69,66 @@ const Router = () => {
           <Route path="/how-to-reach" exact component={HowToReach} />
           <Route path="/contact" exact component={ContactsPage} />
           <Route path="/news" exact component={NewsScreen} />
-          <Route path="/institute-functionaries" exact component={InstituteFunctionaries} />
-          <Route path="/division-functionaries" exact component={DivisionFunctionaries} />
-          <Route path="/campus-life/collegedaze" exact component={MagazinePage} />
-          <Route path="/campus-life/events-gallery/:child" exact component={EventGallery} />
+          <Route path="/placement-news" exact component={PlacementNewsScreen} />
+          <Route
+            path="/institute-functionaries"
+            exact
+            component={InstituteFunctionaries}
+          />
+          <Route
+            path="/division-functionaries"
+            exact
+            component={DivisionFunctionaries}
+          />
+          <Route
+            path="/campus-life/collegedaze"
+            exact
+            component={MagazinePage}
+          />
+          <Route
+            path="/campus-life/events-gallery/:child"
+            exact
+            component={EventGallery}
+          />
           <Route path="/placements" exact component={PlacementPage} />
-          <Route path="/campus-life/:routename/:child" exact component={CampusLife} />
-          <Route path="/placements/:routename" exact component={PlacementPage} />
+          <Route
+            path="/campus-life/:routename/:child"
+            exact
+            component={CampusLife}
+          />
+          <Route
+            path="/placements/:routename"
+            exact
+            component={PlacementPage}
+          />
           <Route path="/admin/dashboard" exact component={AdminDashboard} />
-          <Route path="/admin/dashboard/:child" exact component={AdminDashboard} />
-          <Route path="/admin/dashboard/:child/:child2" exact component={AdminDashboard} />
+          <Route
+            path="/admin/dashboard/:child"
+            exact
+            component={AdminDashboard}
+          />
+          <Route
+            path="/admin/dashboard/:child/:child2"
+            exact
+            component={AdminDashboard}
+          />
           <Route path="/student/dashboard" exact component={StudentDashboard} />
-          <Route path="/academics/madatory-disclosures" exact component={MandatoryDisclosuresPage} />
-          <Route path="/academics/departments/:child" exact component={DepartmentsPage} />
+          <Route
+            path="/academics/madatory-disclosures"
+            exact
+            component={MandatoryDisclosuresPage}
+          />
+          <Route
+            path="/academics/departments/:child"
+            exact
+            component={DepartmentsPage}
+          />
           <Route path="/academics/courses" exact component={CoursesPage} />
-          <Route path="/academics/courses/:child" exact component={CoursesPage} />
+          <Route
+            path="/academics/courses/:child"
+            exact
+            component={CoursesPage}
+          />
         </Switch>
       </BrowserRouter>
     );

@@ -9,7 +9,9 @@ import {
   TextField,
 } from "@mui/material";
 import React from "react";
-import styled from "styled-components"
+import styled from "styled-components";
+import { LoadingButton } from "@mui/lab";
+
 import {
   FormHeader,
   FormInnerWrapper,
@@ -19,6 +21,7 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DesktopDatePicker from "@mui/lab/DesktopDatePicker";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import MultipleInput from "../../../../components/Input/MultipleInput";
+import { addPlacement } from "../../../../utils/firebase/placements";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -46,6 +49,7 @@ const PlacementsPage = () => {
     applyLink: "",
     canApply: [],
   });
+  const [loading , setLoading ] = React.useState(false);
   const onHandleChange = (name) => (e) => {
     if (name == "requirements") {
     } else if (name == "canApply") {
@@ -63,6 +67,17 @@ const PlacementsPage = () => {
       ...placementObj,
       canApply: typeof value === "string" ? value.split(",") : value,
     });
+  };
+  const onSubmit = async(e) => {
+    console.log(placementObj);
+    setLoading(true);
+    await addPlacement({
+      ...placementObj,
+      startAt: placementObj.startAt.getTime(),
+      endAt: placementObj.endAt.getTime(),
+    });
+    setLoading(false);
+
   };
 
   return (
@@ -116,6 +131,7 @@ const PlacementsPage = () => {
                 onChange={(arr) => {
                   setPlacementObj({ ...placementObj, requirements: arr });
                 }}
+                value={placementObj.requirements}
               />
               <FormControl>
                 <InputLabel id="demo-multiple-name-label">Semester</InputLabel>
@@ -149,7 +165,15 @@ const PlacementsPage = () => {
                 onChange={onHandleChange("endAt")}
                 renderInput={(params) => <TextField {...params} />}
               />
-              <Button variant="contained">Upload</Button>
+              <LoadingButton
+                variant="contained"
+                onClick={() => {
+                  onSubmit();
+                }}
+                loading={loading}
+              >
+                Upload
+              </LoadingButton>
             </FormInnerWrapper>
           </FormWrapper>
         </LocalizationProvider>
@@ -161,7 +185,7 @@ const PlacementsPage = () => {
 export default PlacementsPage;
 
 const MenuItemStyled = styled(MenuItem)`
-  .Mui-selected{
+  .Mui-selected {
     background-color: red;
   }
 `;
