@@ -17,25 +17,25 @@ const AdminProfile = () => {
     return (
         <PageContainer>
             <ProfileImage
-                src={user.photoURL ?? defaultImg}
+                src={user?.photoURL ?? defaultImg}
                 alt="student profile image"
             />
             <div style={{ width: '75%' }}>
                 <Form>
                     <FormHead>Full Name</FormHead>
-                    <FormItem>{user.displayName}</FormItem>
+                    <FormItem>{user?.displayName}</FormItem>
                 </Form>
                 <Form>
                     <FormHead>Email</FormHead>
-                    <FormItem>{user.email}</FormItem>
+                    <FormItem>{user?.email}</FormItem>
                 </Form>
                 <Form>
                     <FormHead>Contact</FormHead>
-                    <FormItem>{user.contact}</FormItem>
+                    <FormItem>{user?.contact}</FormItem>
                 </Form>
                 <Form>
                     <FormHead>Role</FormHead>
-                    <FormItem>{user.role}</FormItem>
+                    <FormItem>{user?.role}</FormItem>
                 </Form>
             </div>
         </PageContainer>

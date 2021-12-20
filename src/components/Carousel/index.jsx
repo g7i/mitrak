@@ -56,9 +56,9 @@ const ImageSlider = ({
         'https://www.admissionfever.com/Media/clgimg/gallery/2934_img8884798266738968.png',
         'https://www.campusoption.com/images/colleges/gallery/28_12_16_111345_18.jpg',
         'https://pbs.twimg.com/media/EspGBh8VEAILE67.jpg',
-        'https://www.mitrc.ac.in/wp-content/uploads/2020/07/AIF3-1140x680.jpg',
-        'https://www.mitrc.ac.in/wp-content/uploads/2020/07/mitrc_alwar6a-1140x680.jpg',
-        'https://www.mitrc.ac.in/wp-content/uploads/2020/08/IMG_6469.jpg'
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-7%2FAIF3-1140x680.jpg?alt=media&token=b8651cc5-44b2-475d-a4eb-4f59b9289dc8',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-7%2Fmitrc_alwar6a-1140x680.jpg?alt=media&token=d7e9a558-1923-422f-bd83-c43e7f655238',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FIMG_6469.jpg?alt=media&token=f93c5af7-59f3-4d94-8267-64f705b070f6'
     ],
     autoPlay = true,
     autoPlayTime = 3000,

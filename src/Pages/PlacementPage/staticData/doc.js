@@ -51,72 +51,89 @@ export const data = [
     title: "Placement Activities",
     images: [
       {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2021/05/sarvika-15may.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FAU-small-finance-bank-12feb-512x400.jpg?alt=media&token=66dba608-4463-42a4-b852-edf7d2682638",
         size: "small",
       },
       {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2021/05/ceasefire_mba-17may.jpeg",
-        size: "small",
-      },
-      {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2021/05/webbyte-technologies-22May.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FConsolebit-13april-512x400.jpg?alt=media&token=ab612cee-15a1-4c26-85f9-53ffbacb46ce",
         size: "small",
       },
       /************** */
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/05/Indusind-Bank-07april-1024x1024.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FIndusind-Bank-07april-scaled.jpg?alt=media&token=2028998d-92df-4230-ab4e-aa106f166b54",
         size: "small",
       },
       {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2021/05/Consolebit-13april.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FJust-Dial-selection-512x400.jpg?alt=media&token=e6441dd1-ae4b-47ca-b7b6-cb77bb763ffc",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/05/dianapps-24april.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FNJ-20mar-512x400.jpg?alt=media&token=9955bd99-4c7d-4e1b-86b6-fc02a9e22208",
         size: "small",
       },
       /************ */
 
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/05/AU-small-finance-bank-12feb.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FNational_Webinar_on-Tracing-the-path-from-acad-to-ind-1024x707.jpeg?alt=media&token=1a24e743-6aaf-4065-b1e8-e2b9f22673f8",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/05/NJ-20mar.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fceasefire_mba-17may-370x190.jpeg?alt=media&token=44072aa9-c5a0-4d83-9a41-29b6627b77eb",
+        size: "small",
+      },
+
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fdianapps-24april-512x400.jpg?alt=media&token=3923e75d-d223-4ceb-b5b0-de5609a2eb80",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/05/INNOVATIONM-06april.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fsarvika-15may-512x400.jpg?alt=media&token=98bc1018-dcd1-46ef-a901-e97bf82cd242",
+        size: "small",
+      },
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fwebbyte-technologies-22May-512x400.jpg?alt=media&token=58f1301c-96f6-4d64-9235-2e0e041fbff4",
+        size: "small",
+      },
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fwebinar-kajal-sarmah_thumb-314x190.jpeg?alt=media&token=aeb6a25c-e139-4bdb-8abc-35ac5e86195b",
+        size: "small",
+      },
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fwebinar_ce_s-314x190.jpeg?alt=media&token=f850256a-dd06-441d-8105-99fbbe0e8248",
+        size: "small",
+      },
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fwebinar_mba_s-314x190.jpeg?alt=media&token=d4c4d311-9dff-4920-80e0-2cc2dc8d527f",
         size: "small",
       },
 
       /************ */
 
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/03/Fexle_04Feb.png",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2FFexle_04Feb-526x400.png?alt=media&token=3e5c73ab-9e53-4e7c-82c3-7f3ecd944c58",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/03/hike.png",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2Fhike-550x400.png?alt=media&token=7501a555-60d8-4260-963b-568218266de6",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/03/plankspart.png",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2Fplankspart-546x400.png?alt=media&token=e86524ba-e968-4a7c-a0ea-50d212e8e2e6",
         size: "small",
       },
 
       /************ */
 
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/03/Nivesh-Facebook-Image-4-1024x1024.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2FNivesh-Facebook-Image-4-1140x680.jpg?alt=media&token=f8e0caae-cf3a-44f1-aa1d-ef4156ee412b",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/03/eshikha-facebook-image-1024x1024.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2Feshikha-facebook-image-1140x680.jpg?alt=media&token=960f9750-147b-4a76-ac52-8ec8dc33130c",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/03/eshikha-facebook-image-1024x1024.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2FMuskan-550x400.png?alt=media&token=7bbf4a50-f634-47be-ab0a-a5b1a7915803",
         size: "small",
       },
 
@@ -367,68 +384,69 @@ export const data = [
     images: [
       /*********** */
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/05/Sanchit-Khandelwal.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FSanchit-Khandelwal-512x400.jpg?alt=media&token=1013ce3a-eb4d-414e-b546-86f790e2e4cf",
         size: "small",
       },
       {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2021/05/ekta_saurabh.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fekta_saurabh-512x400.jpg?alt=media&token=db48340a-2fbc-421a-8a0d-3b27b167c25d",
         size: "small",
       },
+
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/06/InnovationM_-success_story_j_50_1_50.jpg",
-        size: "small",
-      },
-      /*********** */
-      {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/05/Just-Dial-selection.jpg",
-        size: "small",
-      },
-      {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/05/fexle_selection.jpg",
-        size: "small",
-      },
-      {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2021/05/sarvjeet_singh.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FINNOVATIONM-06april-512x400.jpg?alt=media&token=d5fc815e-e93b-4e7a-98c9-00490abccf0c",
         size: "small",
       },
       /*********** */
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/03/ICICI_Bank_Sucess_story.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2FJust-Dial-selection-512x400.jpg?alt=media&token=e6441dd1-ae4b-47ca-b7b6-cb77bb763ffc",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2021/03/Metacube.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Ffexle_selection-370x190.jpg?alt=media&token=38067c6f-5bd3-475f-bc72-f094a883a381",
         size: "small",
       },
       {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2021/03/Muskan.png",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-5%2Fsarvjeet_singh-512x400.jpg?alt=media&token=b4882b2d-484b-497f-9b93-6068bd8e5f91",
         size: "small",
       },
       /*********** */
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/12/Prachi_Agarwal_cse.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2FICICI_Bank_Sucess_story-550x400.jpg?alt=media&token=a50ea32f-344e-459c-80f4-fa41cbdf1ebe",
         size: "small",
       },
       {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2020/12/Dhritika_Chopra.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2FMetacube-550x400.jpg?alt=media&token=26b28343-c8f6-4748-80b7-5f9e05fe86cf",
         size: "small",
       },
       {
-        url: "	https://www.mitrc.ac.in/wp-content/uploads/2020/12/muskan_ankit-1024x619.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2021-3%2FMuskan-550x400.png?alt=media&token=7bbf4a50-f634-47be-ab0a-a5b1a7915803",
+        size: "small",
+      },
+      /*********** */
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-12%2FPrachi_Agarwal_cse-512x400.jpg?alt=media&token=a9ef04f5-9bce-4b73-a449-f541b2495841",
+        size: "small",
+      },
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-12%2FDhritika_Chopra-512x400.jpg?alt=media&token=bb6e6e08-137f-4ecc-b4c8-3830ebc8222f",
+        size: "small",
+      },
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-12%2Fmuskan_ankit-1140x680.jpg?alt=media&token=f7540e9c-8c9f-4987-a7ae-bdb562351168",
         size: "small",
       },
 
       /*********** */
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/10/Kartik-Jain_r.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-10%2FKartik-Jain_r-512x400.jpg?alt=media&token=85f44f41-5171-401c-a5cb-487a4b02a3c6",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/10/website_Ankit-Vijay_r.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-10%2Fwebsite_Ankit-Vijay_r-512x400.jpg?alt=media&token=ae1a8091-f316-4a4e-9eac-e582c9b5e6f1",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/10/website_Harshit-Sharma_r.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-10%2Fwebsite_Harshit-Sharma_r-512x400.jpg?alt=media&token=e6eb6635-0b73-495e-8d03-c18fc65ecb7f",
         size: "small",
       },
 
