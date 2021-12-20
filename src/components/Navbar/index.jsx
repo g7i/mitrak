@@ -92,9 +92,7 @@ const Navbar = () => {
     <Nav>
       <Link to="/">
         <ImgLogo
-          src={
-            "https://www.mitrc.ac.in/wp-content/uploads/2019/05/mitrc_logo_small.png"
-          }
+          src={logo}
           alt="Mitrc Logo"
         />
       </Link>

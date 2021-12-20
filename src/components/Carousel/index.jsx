@@ -30,11 +30,11 @@ const SlideTextData = [
     },
     {
         title: "Start Here Go Anywhere",
-        subtitle: "Highly professional and skilled teaching assitance throughout the journey"
+        subtitle: "Highly professional and skilled teaching assistance throughout the journey"
     },
     {
         title: "Where Concepts Meets The Real World",
-        subtitle: "Research Oriented Evironment"
+        subtitle: "Research Oriented Environment"
     },
     {
         subtitle: "Creative, Collaborative, and Practical Solutions to your engineering challenges from concept to production",

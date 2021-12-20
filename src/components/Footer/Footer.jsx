@@ -20,6 +20,7 @@ import {
 } from "react-icons/fa";
 import { IoMdSend } from "react-icons/io";
 import {useHistory} from "react-router-dom";
+import logo from "../../assets/images/mitrc.png";
 
 const Footer = () => {
   const history = useHistory();
@@ -28,10 +29,9 @@ const Footer = () => {
       <FooterSecondMainContainer>
         <FooterSectionContainer>
           <LogoImage
-            src={
-              "https://www.mitrc.ac.in/wp-content/uploads/2019/05/mitrc_logo_small.png"
-            }
+            src={logo}
             alt={"mitrc-logo"}
+            style={{ backgroundColor: 'white', padding: '5px 0' }}
           />
         </FooterSectionContainer>
         <FooterSectionContainer>

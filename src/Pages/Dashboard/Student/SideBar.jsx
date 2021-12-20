@@ -21,6 +21,7 @@ import LocalActivityIcon from "@mui/icons-material/LocalActivity";
 import { ImageLogo } from "../Admin/Styles";
 import { Link } from 'react-router-dom'
 import { Colors } from '../../../constants/UiConstants'
+import logo from "../../../assets/images/mitrc.png";
 
 const sidePanelData = [
   { title: "Profile", icon: <PeopleIcon /> },
@@ -43,9 +44,7 @@ function SideBar(props) {
       <Toolbar>
         <Link to="/">
           <ImageLogo
-            src={
-              "https://www.mitrc.ac.in/wp-content/uploads/2019/05/mitrc_logo_small.png"
-            }
+            src={logo}
             alt={"mitrc-logo"}
           />
         </Link>
