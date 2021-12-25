@@ -17,24 +17,34 @@ import { Link } from 'react-router-dom'
 export default function Courses() {
   return (
     <Container>
-      <Heading style={{ textAlign: 'center' }}>Courses We Offer</Heading>
+      <Heading style={{ textAlign: "center" }}>Courses We Offer</Heading>
       <Wrapper>
         <CardWrapper href="/academics/courses/b.tech">
           <ImageWrapper>
-            <CardImage src={BTechImage} />
+            <CardImage
+              src={
+                "https://www.bmu.edu.in/wp-content/uploads/2017/05/dual-specialisation-in-BTech-810x540.jpg"
+              }
+            />
           </ImageWrapper>
           <CardTitle>Bachelors of Technology</CardTitle>
           <CardContent>
-            Bachelor of Technology (BTech) is a professional undergraduate
-            engineering degree programme awarded to candidates after they
-            complete four years of study in the field. Engineering is one of the
-            most popular courses in India and there are many institutes that
-            offer the course to aspiring students.
+            <ul>
+              <li>AI & DS</li>
+              <li>Civil</li>
+              <li>Computer Science</li>
+              <li>Mechanical</li>
+              <li>Electrical</li>
+            </ul>
           </CardContent>
         </CardWrapper>
         <CardWrapper href="/academics/courses/m.tech">
           <ImageWrapper>
-            <CardImage src={MTechImage} />
+            <CardImage
+              src={
+                "https://leverageedu.com/blog/wp-content/uploads/2020/03/Types-of-Research-Design.jpg"
+              }
+            />
           </ImageWrapper>
           <CardTitle>Masters of Technology</CardTitle>
           <CardContent>
@@ -46,7 +56,11 @@ export default function Courses() {
         </CardWrapper>
         <CardWrapper href="/academics/courses/mba">
           <ImageWrapper>
-            <CardImage src={MbaImage} />
+            <CardImage
+              src={
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVY4-a9s00pYmU8D9Hfw-s0wxQle-XeJ15A&usqp=CAU"
+              }
+            />
           </ImageWrapper>
           <CardTitle>MBA</CardTitle>
           <CardContent>

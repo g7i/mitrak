@@ -9,16 +9,17 @@ import ApplyForAdmission from '../../components/Banner/ApplyForAdmission';
 
 const LandingPage = () => {
     return (
-        <>
-            <AboutUsSection />
-            <Courses />
-            <ExploreMore />
-                <News />
-            <Placements />
-            <StudentsPlaced />
-            <ApplyForAdmission />
-        </>
-    )
+      <>
+        <AboutUsSection />
+        <Courses />
+        <ExploreMore />
+        <Placements />
+        <StudentsPlaced />
+        <News />
+
+        <ApplyForAdmission />
+      </>
+    );
 }
 
 export default LandingPage;

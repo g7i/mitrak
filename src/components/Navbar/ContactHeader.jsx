@@ -23,10 +23,10 @@ const ContactHeader = () => {
       <Wrapper>
         <Wrapper>
           <ContactHeaderLinksWrapper
-            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@mitrc.ac.in"
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=admin@mitrc.ac.in"
           >
             <AiOutlineMail color={"#FFFFFF"} />
-            <Text color="#FFFFFF">info@mitrc.ac.in</Text>
+            <Text color="#FFFFFF">admin@mitrc.ac.in</Text>
           </ContactHeaderLinksWrapper>
         </Wrapper>
         <Wrapper>

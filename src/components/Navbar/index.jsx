@@ -92,7 +92,9 @@ const Navbar = () => {
     <Nav>
       <Link to="/">
         <ImgLogo
-          src={logo}
+          src={
+            "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Falwar-285x75.png?alt=media&token=4698e854-49a1-4937-907c-c0fb868d7b16"
+          }
           alt="Mitrc Logo"
         />
       </Link>
@@ -115,7 +117,9 @@ const Navbar = () => {
           <MenuLink href="#">Placements</MenuLink>
         </DropDown>
 
-        <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">Apply For Admission</MenuLink>
+        <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">
+          Apply For Admission
+        </MenuLink>
       </Menu>
       {/*TODO: Remove Me*/}
       <div></div>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Colors}  from '../../constants/UiConstants'
+import { Colors } from "../../constants/UiConstants";
 
 export const Container = styled.div`
   margin: 20px 10px;
@@ -34,6 +34,12 @@ export const CardContent = styled.p`
   text-transform: capitalize;
   text-align: justify;
   color: ${Colors.SECONDARY};
+  ul {
+    margin-left: 50px;
+    li {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const CardWrapper = styled.a`

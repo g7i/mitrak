@@ -22,22 +22,43 @@ import {
 } from "../../../components/styledComponents/GlobalComponents";
 import PartnerSlider from "../PartnerSlider";
 import styled from "styled-components";
-import {getPlacements} from "../../../utils/firebase/placements";
+import { getPlacements } from "../../../utils/firebase/placements";
 import ExploreMore from "../../../components/ExploreMore/ExploreMore";
-import {useHistory}  from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import ModalImage from "../../../components/ModalImage";
+import StackGrid from "react-stack-grid";
+import useMediaQuery from "@mui/material/useMediaQuery";
+const placementPoster = [
+  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F10-RTU-Merit-from-MITRC.jpg?alt=media&token=86ecb569-4302-47a2-b910-5efcc9f1e251",
+  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F2nd-Image-1-1140x680.jpg?alt=media&token=388f36ea-9f99-4b4c-85c9-9c8c1bb7675c",
+  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F10-RTU-Merit-from-MITRC.jpg?alt=media&token=86ecb569-4302-47a2-b910-5efcc9f1e251",
+  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F2nd-Image-1-1140x680.jpg?alt=media&token=388f36ea-9f99-4b4c-85c9-9c8c1bb7675c",
+  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F10-RTU-Merit-from-MITRC.jpg?alt=media&token=86ecb569-4302-47a2-b910-5efcc9f1e251",
+  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F2nd-Image-1-1140x680.jpg?alt=media&token=388f36ea-9f99-4b4c-85c9-9c8c1bb7675c",
+];
 
 export default function Placements() {
-    const [placements, setPlacements] = useState([]);   
-    const history = useHistory();
-    React.useEffect(()=>{
-        getPlacements().then(data=>{setPlacements(data)})
-    } , [])
+  const [placements, setPlacements] = useState([]);
+  const history = useHistory();
+  const mediaQuery = useMediaQuery("(max-width:768px)");
+  React.useEffect(() => {
+    getPlacements().then((data) => {
+      setPlacements(data);
+    });
+  }, []);
   return (
     <Container>
       <Heading style={{ textAlign: "center" }}>Placements</Heading>
+      <div style={{marginTop : "40px"}}>
+        <StackGrid columnWidth={mediaQuery ? 320 :  520}>
+          {placementPoster.map((item, index) => (
+            <ModalImage src={item} width={"500px"} smWidth={"300px"} onClickOpen margin={"0px auto"}/>
+          ))}
+        </StackGrid>
+      </div>
       <PartnerSlider />
       <div style={{ marginTop: "4rem" }} />
-      <PlacementFlex gap={70} wrap={"wrap"} justify={"space-around"}>
+      {/* <PlacementFlex gap={70} wrap={"wrap"} justify={"space-around"}>
         {placements.slice(0, 3).map((item) => (
           <PlacementCard key={item.id} onClick={()=>{history.push("placement-news");}}>
             <CardWrapper>
@@ -69,7 +90,7 @@ export default function Placements() {
             </div>
           </div>
         ) : null}
-      </PlacementFlex>
+      </PlacementFlex> */}
     </Container>
   );
 }
@@ -89,7 +110,6 @@ const PlacementCard = styled(ItemWrapper)`
 `;
 
 const PlacementFlex = styled(FlexContainer)`
-
   @media screen and (max-width: 1120px) {
     justify-content: center;
     align-items: center;
