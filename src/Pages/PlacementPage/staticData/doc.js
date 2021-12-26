@@ -527,7 +527,7 @@ export const data = [
     title: "Recruitment partner",
     images: [
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2019/05/Company-Logo-2018.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2FCompany-Logo-2018-768x1627.jpg?alt=media&token=b198e53d-86d8-411d-8be9-8fc3a4c872a0",
         size: "large",
       },
     ],

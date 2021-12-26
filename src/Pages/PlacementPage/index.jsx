@@ -20,16 +20,16 @@ const PlacementPage = () => {
   const { routename, child } = useParams();
 
   const relatedLinks = [
-    { title: "From TPO Desk", routeName: "tpodesk" },
+    // { title: "From TPO Desk", routeName: "tpodesk" },
     { title: "Placement Activities", routeName: "placementactivities" },
     { title: "Government Selection", routeName: "governmentselections" },
     { title: "Placement Highlight", routeName: "placementhighlight" },
-    { title: "Coporate feedback", routeName: "coporatefeedback" },
-    { title: "Recent Achievments", routeName: "recentachievments" },
+    // { title: "Coporate feedback", routeName: "coporatefeedback" },
+    // { title: "Recent Achievments", routeName: "recentachievments" },
     { title: "Recruitment partner", routeName: "recruitmentpartner" },
-    { title: "Testimonials", routeName: "testimonials" },
-    { title: "gallery", routeName: "recentachievments" },
-    { title: "Placement Summary", routeName: "placementsummary" },
+    // { title: "Testimonials", routeName: "testimonials" },
+    // { title: "gallery", routeName: "recentachievments" },
+    // { title: "Placement Summary", routeName: "placementsummary" },
     { title: "Alumini", routeName: "recentachievments" },
   ];
 
