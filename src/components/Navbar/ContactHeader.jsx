@@ -71,15 +71,16 @@ const ContactHeader = () => {
           />
         </ContactHeaderLinksWrapper>
         <ContactHeaderLinksWrapper>
-          <AiOutlineGooglePlus
+          <AiFillFacebook
             color="#FFFFFF"
             style={{ marginLeft: "1rem" }}
             size={20}
             onClick={() => {
-              window.location.href = "https://www.mitrc.ac.in";
+              window.location.href = "https://www.facebook.com/tpo.mitrc";
             }}
           />
         </ContactHeaderLinksWrapper>
+        
         <ContactHeaderLinksWrapper>
           <AiOutlineYoutube
             color="#FFFFFF"

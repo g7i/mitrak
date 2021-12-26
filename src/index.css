@@ -58,6 +58,7 @@ code {
 .animate {
   animation: swing ease-out 5s forwards;
   float: left;
+  
 }
 
 .contactContainer {
@@ -75,7 +76,7 @@ code {
 }
 
 .contentContaner {
-  padding-right: 2rem;
+  padding-right: 5rem;
 }
 
 .center__div {

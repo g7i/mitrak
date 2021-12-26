@@ -18,32 +18,15 @@ const ContactsPage = () => {
                     <Heading>Mailing Address</Heading>
                     <Paragraph>
                         <bold>Address: </bold>
-                        6th Mile Stone Delhi – Tijara State Highway, Sirmoli Road ,Village Jharkhera , Alwar, Rajasthan ,  India
-                    </Paragraph>
-                    <Paragraph>
-                        <bold>Post Office: </bold>
-                        Bhadarpur- Chikani, Alwar
-                    </Paragraph>
-                    <Paragraph>
-                        <bold>Pin Code: </bold>
-                        301028
+                        6th Mile Stone Delhi – Tijara State Highway, Sirmoli Road ,Village Jharkhera , Alwar, Rajasthan ,  301001
                     </Paragraph>
                     <Paragraph>
                         <bold>Phone: </bold>
                         +91 (144) 2731596, 2980643, +917597676193
                     </Paragraph>
                     <Paragraph>
-                        <bold>Fax: </bold>
-                        +91 (144) 2980643
-                    </Paragraph>
-                    <Paragraph>
                         <bold>Email: </bold>
                         admin@mitrc.ac.in, admission@mitrc.ac.in, hr@mitrc.ac.in
-                    </Paragraph>
-                    <Heading>Working Hours</Heading>
-                    <Paragraph>
-                        9:00 a.m to 5:00 p.m (Monday to Saturday)
-                        (See holiday list below)
                     </Paragraph>
                     <Heading>
                         Institute Functionaries (Directors, Deans, Placement Officer, Human Resource Manager)
