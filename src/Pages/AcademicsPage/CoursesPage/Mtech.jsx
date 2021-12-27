@@ -9,7 +9,8 @@ import {
   Paragraph,
   SubHeading,
 } from "../../../components/styledComponents/GlobalComponents";
-import MTechImg from '../../../assets/images/mtech.jpg'
+const MTechImg =
+  "https://leverageedu.com/blog/wp-content/uploads/2020/03/Types-of-Research-Design.jpg";
 
 const MtechPage = () => {
   return (
@@ -48,10 +49,10 @@ const MtechPage = () => {
           -2021.
         </Paragraph>
 
-        <HalfImage
+        {/* <HalfImage
           src={"https://www.mitrc.ac.in/wp-content/uploads/2021/09/1.png"}
           alt="content-img"
-        />
+        /> */}
 
         <SubHeading margin={"4vh 0 0 0 "}>Note:</SubHeading>
         <Paragraph>
@@ -66,11 +67,11 @@ const MtechPage = () => {
         <SubHeading margin={"4vh 0 0 0 "}>Age limit</SubHeading>
         <Paragraph>No Age limit is Applicable.</Paragraph>
 
-        <SubHeading>SEAT INTAKE FOR SESSION 2021</SubHeading>
+        {/* <SubHeading>SEAT INTAKE FOR SESSION 2021</SubHeading>
         <HalfImage
           src={"https://www.mitrc.ac.in/wp-content/uploads/2021/09/2.png"}
           alt="content-img"
-        />
+        /> */}
 
         <Heading margin={"4vh 0 0 0 "}>FEES STRUCTURE </Heading>
 

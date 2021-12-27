@@ -11,7 +11,7 @@ import {
 } from "../../../components/styledComponents/GlobalComponents";
 import { Wrapper } from "../../../components/styledComponents/Navbar";
 import { OR_Span, Table, TableData, TableHeading, TableRow } from "./styles";
-import BTechImg from '../../../assets/images/btech.webp';
+const BTechImg = "https://www.bmu.edu.in/wp-content/uploads/2017/05/dual-specialisation-in-BTech-810x540.jpg";
 
 const BtechPage = () => {
   return (
@@ -212,13 +212,13 @@ const BtechPage = () => {
           </FlexContainer>
           Passed D.Voc. Stream in the same or allied sector.
         </Paragraph>
-        <SubHeading>SEAT INTAKE FOR SESSION 2021</SubHeading>
+        {/* <SubHeading>SEAT INTAKE FOR SESSION 2021</SubHeading>
         <HalfImage
           src={
             "https://www.mitrc.ac.in/wp-content/uploads/2021/09/Untitled.png"
           }
           alt="content-img"
-        />
+        /> */}
 
         {/* section 6 */}
         <Heading margin={"4vh 0 0 0 "}>FEES STRUCTURE </Heading>

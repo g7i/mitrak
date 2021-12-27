@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, HalfImage, Heading, Paragraph, SubHeading } from '../../components/styledComponents/GlobalComponents'
 import Layout from '../../constants/Layout';
-import MitrcLogo from '../../assets/images/mitrc.png';
+const MitrcLogo = "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Falwar-285x75.png?alt=media&token=4698e854-49a1-4937-907c-c0fb868d7b16";
 
 const HowToReach = () => {
     return (

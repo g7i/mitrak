@@ -9,7 +9,8 @@ import {
   Paragraph,
   SubHeading,
 } from "../../../components/styledComponents/GlobalComponents";
-import MbaImg from '../../../assets/images/mba.png'
+const MbaImg =
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVY4-a9s00pYmU8D9Hfw-s0wxQle-XeJ15A&usqp=CAU";
 
 const MbaPage = () => {
   return (
