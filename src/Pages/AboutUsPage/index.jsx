@@ -456,17 +456,8 @@ const AboutUsPage = () => {
           <Paragraph>
             The AIASSAER undertook the task of spreading the light of knowledge
             & values at Alwar, a city of parks, and widely known as “The
-            Singhdwar of Rajasthan”. A small city located, on the one hand,
-            amidst the beautiful landscape of
+            Singhdwar of Rajasthan”. Alwar is also known as the Lion Gate of Rajasthan, Scotland of Rajasthan and Kashmir of East Rajasthan.
           </Paragraph>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <SmallText>
-              6th Mile Stone, Delhi – Tijara HighwayVillage – Jhaharkhera,
-              Sirmoli Road Alwar – 301028 (Rajasthan) INDIA
-            </SmallText>
-            <SmallText>Phone: +91 (144) – 2980851, 2980852</SmallText>
-            <SmallText>Email: society@mitrc.ac.in</SmallText>
-          </div>
         </Container>
       </Layout>
     );

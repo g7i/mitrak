@@ -302,7 +302,7 @@ export const clubandactivities = [
     },
     {
         title: "healthfulness science & spirituality club",
-        imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2019/07/HSS_CLUB3-1024x768.png",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2FHSS_CLUB3-1024x768.png?alt=media&token=a3db2784-829c-4cdb-ae9f-44e6b91b3372",
         contentPara1: {
             para: "We are happy to inform you that on the occasion of International Youth Day at 12 August, 2017 we inaugurate Heartfulness Science & Spirituality Club (HSSC) at MITRC Engineering College at Alwar, Rajasthan. HSSC Club inaugurated by the chief guest Mr. Parvender Pal Sing (ADJ, Behror) and Mr. Kamal Sharma (Heartfulness Center coordinator, Alwar) and Mr. Yogendra Bhardwaj (PRO, Jaipur). Mr. Parvender Pal Sing & Mr. Kamal Sharma address the student and staff member of college and discuss the issue related with youth and importance of balanced life for the overall progress of student, Value based spiritual education. In the auspicious occasion director of MITRC, (Prof) Dr. S. K Sharma, Dean Examination Mr. Neeraj Jain, Dean Students Affairs Mr. Vikas Mahalawat, H.O.D of Electronics & Communication Engineering Mr. Deepak Sharma of MITRC were present. On this special day 145 Students and 5 faculty member experienced the Heartfulness Relaxation technique."
         }
@@ -380,14 +380,14 @@ export const clubandactivities = [
     },
     {
         title: "ignight robotics club",
-        imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/EE_Club2-1024x768.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FEE_Club2.jpg?alt=media&token=794252e2-7972-48dd-8ddc-69b76105fcd9",
         contentPara1: {
             para: "IGNIGHT ROBOTICS CLUB at Electrical Engineering Department, MITRC is an undergraduate student organization that provides ideas and resources to develop different types of robots. This club offers guidance, workshops and tutorials along with tools, components and workspace.  Club members participate in many technical events organized in different colleges."
         }
     },
     {
         title: "tech wizard club",
-        imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2019/07/tech_wizard3A.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2Ftech_wizard3A.jpg?alt=media&token=f129ae93-e459-4747-904f-3b183a59b07a",
         contentPara1: {
             contentHeading: "Mission  & Vision of TECH WIZARD",
             list: [
@@ -427,7 +427,7 @@ export const clubandactivities = [
     },
     {
         title: "electrocrew club",
-        imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2019/07/ElectroCrew_logo.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2FElectroCrew_logo.jpg?alt=media&token=549b03ee-e25c-48d6-adad-c960a032a603",
         contentPara1: {
             para: "ECE DEPARTMENT FORMED A CLUB NAMED “ElectroCrew” for the students of computer science department. Club is organizing a seminar on recent trends Electronics & Communications Engineering "
         },
@@ -481,7 +481,7 @@ export const eventsGallery = [
         title: 'Plantation',
         images: [
             'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation4.jpeg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation3.jpeg', 
+            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation3.jpeg',
             'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation1.jpeg',
             'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation-HDFC-Bank-8-July-2020-1024x722.jpg',
             'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Save-Bird-Campaign-1024x606.jpg'

@@ -42,10 +42,10 @@ const DropDownContent = {
       link: "/campus-life/clubandactivities/aadharclub",
     },
     { title: "College Daze- the magzine", link: "/campus-life/collegedaze" },
-    {
-      title: "Events And Gallery",
-      link: "/campus-life/events-gallery/curricular",
-    },
+    // {
+    //   title: "Events And Gallery",
+    //   link: "/campus-life/events-gallery/curricular",
+    // },
   ],
 
   placements: [
