@@ -136,18 +136,20 @@ export default function News() {
           </div>
         </NewsBox>
         <NewsBox>
-          <Heading style={{ fontSize: "1.4rem", textAlign: "center" }}>
+          <Heading style={{ fontSize: "1.4rem", textAlign: "center", marginBottom: '10px' }}>
             Useful Links
           </Heading>
-          {newsList
-            ?.filter((item) => item.type == "usefullLinks")
-            .map((item) => (
-              <NewsContainer>
-                <a target={"_blank"} href={item.links[0]}>
-                  {item.title}
-                </a>
-              </NewsContainer>
-            ))}
+          <marquee direction = "up" style={{ height: '80%' }} scrollAmount={5} onMouseOver={e => e.target.stop?.()} onMouseOut={e => e.target.start?.()}>
+            {newsList
+              ?.filter((item) => item.type == "usefullLinks")
+              .map((item) => (
+                <NewsContainer>
+                  <a target={"_blank"} href={item.links[0]}>
+                    {item.title}
+                  </a>
+                </NewsContainer>
+              ))}
+          </marquee>
         </NewsBox>
       </Container>
     </Container>
@@ -287,6 +289,9 @@ const NewsContainer = styled.div`
   width: 90%;
   margin: 0 auto;
   a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: block;
+    text-decoration: none;
   }
 `;

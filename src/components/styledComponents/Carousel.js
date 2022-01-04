@@ -68,6 +68,7 @@ export const SlideTextWrapper = styled.div`
   left: 10%;
   animation-delay: 2s;
   animation: ease-in-out 2s alternate;
+  overflow: hidden;
 
   @media (max-width:768px) {
     top: 40%;

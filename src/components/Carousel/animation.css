@@ -1,9 +1,9 @@
 .animateSliderText{
-    animation: slideInLeft 4s;
+    animation: slideInLeft 2s;
 }
 .animateSliderText .animateSliderText{
     animation: slideInLeft 3s infinite;
-    
+
 }
 @keyframes slideInLeft {
     0% {
@@ -15,4 +15,4 @@
         transform: translateX(0);
     }
 }
-    
+
