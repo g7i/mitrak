@@ -88,4 +88,5 @@ const Image = styled.img`
   @media (max-width: 768px) {
     width: ${(props) => `${props.smWidth}` || "50%"};
   }
+  cursor: pointer;
 `;

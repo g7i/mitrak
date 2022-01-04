@@ -6,7 +6,7 @@ import {
 } from "../../components/styledComponents/GlobalComponents";
 import { Link } from "react-router-dom";
 const PagesLayout = ({ children, rightNavLinks, currentRoute, pageName }) => {
-  
+
   return (
     <Container>
       <Content>{children}</Content>
@@ -18,7 +18,7 @@ const PagesLayout = ({ children, rightNavLinks, currentRoute, pageName }) => {
               <Link
                 className={"hyperlink"}
                 key={link?.title}
-                to={`/${pageName}/${currentRoute}/${link.title.toLowerCase()}`}
+                to={`/${currentRoute === "madatory-disclosures" ? "academics" : pageName}/${currentRoute}/${link.title.toLowerCase()}`}
               >
                 {link?.title}
               </Link>

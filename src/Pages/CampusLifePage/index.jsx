@@ -15,7 +15,7 @@ const CampusLife = () => {
     useEffect(() => {
         if (routename === 'amenities')
             setObj(amenities);
-        else if (routename === 'studentaffair')
+        else if (routename === 'studentaffair' || routename === "madatory-disclosures")
             setObj(studentaffair)
         else if (routename === 'clubandactivities')
             setObj(clubandactivities)
@@ -47,6 +47,17 @@ const CampusLife = () => {
             { title: "Student Wellbeing" },
             { title: "College Commitees" }
         ],
+        "madatory-disclosures": [
+            { title: "Anti Ragging" },
+            { title: "Dress Code" },
+            { title: "Identity Card" },
+            { title: "Safety & Security" },
+            { title: "Substance Abuse" },
+            { title: "Grievance" },
+            { title: "Medicare" },
+            { title: "Student Wellbeing" },
+            { title: "College Commitees" }
+        ],
         "clubandactivities": [
             { title: "AadharClub" },
             { title: "Healthfulness Science & Spirituality Club" },
@@ -61,7 +72,7 @@ const CampusLife = () => {
     return (
         <Layout>
             <Banner
-                bannerHeading="Campus Life @MITRC"
+                bannerHeading={routename === "madatory-disclosures" ? "Mandatory Disclosures" : "Campus Life @MITRC"}
                 bannerDescription={routename}
             />
             <PagesLayout rightNavLinks={relatedLinks[routename]} currentRoute={routename} pageName='campus-life'>

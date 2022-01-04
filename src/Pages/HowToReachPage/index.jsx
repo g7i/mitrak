@@ -6,7 +6,7 @@ const MitrcLogo = "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.
 const HowToReach = () => {
     return (
         <Layout>
-            <Container>
+            <Container style={{ marginBottom: '50px' }}>
                 <div className="center__div">
                     <HalfImage
                         src={MitrcLogo}

@@ -114,11 +114,6 @@ const Router = () => {
           />
           <Route path="/student/dashboard" exact component={StudentDashboard} />
           <Route
-            path="/academics/madatory-disclosures"
-            exact
-            component={MandatoryDisclosuresPage}
-          />
-          <Route
             path="/academics/departments/:child"
             exact
             component={DepartmentsPage}
@@ -128,6 +123,12 @@ const Router = () => {
             path="/academics/courses/:child"
             exact
             component={CoursesPage}
+          />
+          <Route
+            path="/academics/:routename/:child"
+            exact
+            component={CampusLife}
+            // component={MandatoryDisclosuresPage}
           />
         </Switch>
       </BrowserRouter>

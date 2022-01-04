@@ -139,7 +139,7 @@ export default function News() {
           <Heading style={{ fontSize: "1.4rem", textAlign: "center", marginBottom: '10px' }}>
             Useful Links
           </Heading>
-          <marquee direction = "up" style={{ height: '80%' }} scrollAmount={5} onMouseOver={e => e.target.stop?.()} onMouseOut={e => e.target.start?.()}>
+          <marquee direction = "up" style={{ height: '80%' }} scrollAmount={5} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
             {newsList
               ?.filter((item) => item.type == "usefullLinks")
               .map((item) => (
@@ -289,7 +289,7 @@ const NewsContainer = styled.div`
   width: 90%;
   margin: 0 auto;
   a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 10px 0;
     display: block;
     text-decoration: none;

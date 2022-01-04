@@ -25,13 +25,15 @@ const MagazinePage = () => {
               }}
             >
               <Paragraph>
-                “You don’t write because you want to say something… you write
-                because you have something to say.”
+                <i>
+                  “You don’t write because you want to say something… you write
+                  because you have something to say.”
+                </i>
               </Paragraph>
-              <Paragraph>–Scott Fitzgerald</Paragraph>
+              <Paragraph><strong>–Scott Fitzgerald</strong></Paragraph>
               <Paragraph>
                 One more year of another new edition of college magazine
-                “College Daze”. It is an ideal forum for exchange of information
+                <i><strong> “College Daze”</strong></i>. It is an ideal forum for exchange of information
                 for faculties, staff members, students and the anonymous readers
                 with a collection of inspiring and instructive articles about
                 the college and up-coming technological breakthroughs.
@@ -43,72 +45,83 @@ const MagazinePage = () => {
                 a souvenir for recording events, fond memories and creative
                 writing which is informative and resourceful.
               </Paragraph>
-              <Paragraph>
-                “Growth is never by mere chance; it is the result of forces
-                working together.”
-              </Paragraph>
-              <Paragraph>–James Cash Penny</Paragraph>
-              <Paragraph>
-                Keeping the above lines, the Editorial Board of College Daze is
-                committed to inspire and motivate the young minds and to tune
-                them into future engineers and budding managers.
-              </Paragraph>
             </div>
           </FlexContainer>
+        </Container>
+        <Container>
+          <Paragraph>
+            <i>
+              “Growth is never by mere chance; it is the result of forces
+              working together.”
+            </i>
+          </Paragraph>
+          <Paragraph><strong>–James Cash Penny</strong></Paragraph>
+          <Paragraph>
+            Keeping the above lines, the Editorial Board of College Daze is
+            committed to inspire and motivate the young minds and to tune
+            them into future engineers and budding managers.
+          </Paragraph>
         </Container>
         <Container
           style={{
             display: "flex",
             flexDirection: "column",
             marginTop: "3vh",
-            paddingBottom: "2vh",
+            paddingBottom: "4vh",
           }}
         >
-          <Paragraph color="#32404D">Patron</Paragraph>
-          <Paragraph>Smt. Bimala Devi</Paragraph>
-          <Paragraph color="#32404D">Advisors</Paragraph>
-          <Paragraph>Mr. Ashok Agarwal (Executive Director)</Paragraph>
-          <Paragraph>Mr. Amit Choudhary (Executive Director)</Paragraph>
-          <Paragraph>Prof. S. K. Sharma (Director)</Paragraph>
-          <Paragraph>Mr. Neeraj Jain (Dean Academics)</Paragraph>
-          <Paragraph>Mr. Vikas Mahalawat (Dean Student’s Affairs)</Paragraph>
-          <Paragraph color="#32404D">Editor-in-chief</Paragraph>
-          <Paragraph>
+          <Heading color="#32404D" style={{ fontSize: '1.5rem' }}>Patron</Heading>
+          <Paragraph style={{ marginTop: '5px' }}>Smt. Bimala Devi</Paragraph>
+          <Heading color="#32404D" style={{ fontSize: '1.5rem', marginTop: '3vh' }}>Advisors</Heading>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '50% 50%',
+          }}>
+            <Paragraph style={{ marginTop: '5px' }}>Mr. Ashok Agarwal (Executive Director)</Paragraph>
+            <Paragraph style={{ marginTop: '5px' }}>Mr. Amit Choudhary (Executive Director)</Paragraph>
+            <Paragraph style={{ marginTop: 0 }}>Prof. S. K. Sharma (Director)</Paragraph>
+            <Paragraph style={{ marginTop: 0 }}>Mr. Neeraj Jain (Dean Academics)</Paragraph>
+            <Paragraph style={{ marginTop: 0 }}>Mr. Vikas Mahalawat (Dean Student’s Affairs)</Paragraph>
+          </div>
+          <Heading color="#32404D" style={{ fontSize: '1.5rem', marginTop: '3vh' }}>Editor-in-chief</Heading>
+          <Paragraph style={{ marginTop: '5px' }}>
             Mr. Rahul Bhattacharya (Asst. Prof., Department of Applied Science &
             Humanities )
           </Paragraph>
-          <Paragraph color="#32404D">Editor</Paragraph>
-          <Paragraph>Ms. Richa Gautam</Paragraph>
-          <Paragraph>(Asst. Prof., Department of CSE)</Paragraph>
-          <Paragraph>
-            Ms. Vineeta Singh (Asst. Prof., Department of EE)
-          </Paragraph>
-          <Paragraph>
-            Ms. Parul Gupta (Asst. Prof., Department of ECE)
-          </Paragraph>
-          <Paragraph>
-            Mr. Ranjan Patel (Asst. Prof., Department of ME)
-          </Paragraph>
-          <Paragraph>
-            Mr. Rajesh Kumar (Asst. Prof., Department of Management Studies)
-          </Paragraph>
-          <Paragraph>
-            Mr. Pawan Taneja (Asst. Prof., Department of CE)
-          </Paragraph>
-          <Paragraph>Ms. Vaishali Gupta (TPO)</Paragraph>
-          <Paragraph color="#32404D">Creative Design</Paragraph>
-          <Paragraph>
+          <Heading color="#32404D" style={{ fontSize: '1.5rem', marginTop: '3vh' }}>Editor</Heading>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '50% 50%',
+          }}>
+            <Paragraph style={{ marginTop: '5px' }}>Ms. Richa Gautam (Asst. Prof., Department of CSE)</Paragraph>
+            <Paragraph style={{ marginTop: '5px' }}>
+              Ms. Vineeta Singh (Asst. Prof., Department of EE)
+            </Paragraph>
+            <Paragraph style={{ marginTop: 0 }}>
+              Ms. Parul Gupta (Asst. Prof., Department of ECE)
+            </Paragraph>
+            <Paragraph style={{ marginTop: 0 }}>
+              Mr. Ranjan Patel (Asst. Prof., Department of ME)
+            </Paragraph>
+            <Paragraph style={{ marginTop: 0 }}>
+              Mr. Rajesh Kumar (Asst. Prof., Department of Management Studies)
+            </Paragraph>
+            <Paragraph style={{ marginTop: 0 }}>
+              Mr. Pawan Taneja (Asst. Prof., Department of CE)
+            </Paragraph>
+            <Paragraph style={{ marginTop: 0 }}>Ms. Vaishali Gupta (TPO)</Paragraph>
+          </div>
+          <Heading color="#32404D" style={{ fontSize: '1.5rem', marginTop: '3vh' }}>Creative Design</Heading>
+          <Paragraph style={{ marginTop: '5px' }}>
             Mr. Rahul Bhattacharya (Asst. Prof., Department of Applied Science &
             Humanities )
           </Paragraph>
-          <Paragraph>
+          <Paragraph style={{ marginTop: 0 }}>
             Mr. Sanjay Babu Sharrma (Asst. Prof., Department of CSE )
           </Paragraph>
-          <Paragraph>Mr. Sudhir Ram (Graphics Designer )</Paragraph>
-          <Paragraph color="#32404D">Publisher</Paragraph>
-          <Paragraph>Dr. S. K. Sharma (Director)</Paragraph>
-          <Paragraph>Vill. Jharkhera, Sirmoli Road, 6th Mile Stone,</Paragraph>
-          <Paragraph>Tijara Road, Alwar Rajasthan – 301028</Paragraph>
+          <Paragraph style={{ marginTop: 0 }}>Mr. Sudhir Ram (Graphics Designer )</Paragraph>
+          <Heading color="#32404D" style={{ fontSize: '1.5rem', marginTop: '3vh' }}>Publisher</Heading>
+          <Paragraph style={{ marginTop: '5px' }}>Dr. S. K. Sharma (Director)</Paragraph>
         </Container>
       </Layout>
     );

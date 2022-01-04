@@ -18,7 +18,7 @@ const NewsScreen = () => {
 
     return (
         <Layout>
-            <Container>
+            <Container style={{ marginBottom: '4vh' }}>
                 <Heading>Latest News From The Campus</Heading>
                 <GridContainer>
                     {newsList

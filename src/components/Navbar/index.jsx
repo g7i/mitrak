@@ -29,14 +29,14 @@ const DropDownContent = {
       title: "Departments",
       link: "/academics/departments/electrical%20engineering",
     },
-    { title: "Mendatory disclosures", link: "/academics/madatory-disclosures" },
+    { title: "Mendatory disclosures", link: "/academics/madatory-disclosures/anti%20ragging" },
   ],
   campusLife: [
     { title: "Amenities", link: "/campus-life/amenities/hostel" },
-    {
-      title: "Students Affair",
-      link: "/campus-life/studentaffair/anti%20ragging",
-    },
+    // {
+    //   title: "Students Affair",
+    //   link: "/campus-life/studentaffair/anti%20ragging",
+    // },
     {
       title: "Clubs and Activities",
       link: "/campus-life/clubandactivities/aadharclub",

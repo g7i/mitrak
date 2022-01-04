@@ -13,35 +13,35 @@ export const data = [
     title: "Government Selections",
     images: [
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/Image7-1.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FImage7-1.jpg?alt=media&token=148e3afa-ce66-4732-b95c-06a7b4adf67b",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/Image6-1.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FImage6-1.jpg?alt=media&token=be951bc8-e1e6-4db2-9e45-a7326007e604",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/Image5-1.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FImage5-1.jpg?alt=media&token=d381f990-fbb1-42c4-84e2-14a73688f9a0",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/Image2-1.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FImage2-1.jpg?alt=media&token=73a5bc3d-e1d2-45e5-b732-e848f6e0c205",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/Image3-1.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FImage3-1.jpg?alt=media&token=925b5b15-61c2-4481-aee9-a30c2826b639",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/Image4-1.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FImage4-1.jpg?alt=media&token=65723a1a-0cc7-489a-a918-2f09b42a2247",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/Image1-1.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FImage1-1.jpg?alt=media&token=d21c2a34-f058-47b8-913b-7e77cb41e068",
         size: "small",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/10/website_Indian-Railways.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-10%2Fwebsite_Indian-Railways-512x400.jpg?alt=media&token=b89a58e1-1dc9-4a02-bf25-08dfd64ebe88",
         size: "small",
       },
     ],
@@ -285,11 +285,11 @@ export const data = [
     title: "Placement Highlights",
     images: [
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/placement_highlights.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Fplacement_highlights.jpg?alt=media&token=202ec1ff-77c3-43dc-b4cc-c4781e9b455a",
         size: "large",
       },
       {
-        url: "https://www.mitrc.ac.in/wp-content/uploads/2020/08/top-recruiters.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Ftop-recruiters.jpg?alt=media&token=4ff63492-692e-43d6-834c-e10c194de7fd",
         size: "large",
       },
     ],

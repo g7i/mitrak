@@ -73,7 +73,7 @@ const CivilDepartment = () => {
       <>
         <FillImage
           src={
-            "https://www.mitrc.ac.in/wp-content/uploads/2020/08/front-1024x502.jpg"
+            "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Ffront-1024x502.jpg?alt=media&token=9a736de7-a30f-4faf-a4a5-e7b05bc41fef"
           }
         />
         <Heading>{"About the Civil Engineering:"}</Heading>

@@ -39,7 +39,7 @@ const ContactsPage = () => {
                     <Paragraph>
                         National callers use the city code along with the STD access code (0): 0144.
                     </Paragraph>
-                    <Paragraph><Link to="/division-functionaries">Click on this link</Link> to view the contact details</Paragraph>
+                    {/*<Paragraph><Link to="/division-functionaries">Click on this link</Link> to view the contact details</Paragraph>*/}
                 </div>
                 <div>
                     <div className="contactForm">

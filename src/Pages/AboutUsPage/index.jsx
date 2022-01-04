@@ -34,11 +34,11 @@ const boardMembers = [
         name: 'Shri Purshottam Gupta',
         designation: 'Member'
     },
-    {
-        id: 5,
-        name: 'Shri Piyush Gupta',
-        designation: 'Member'
-    },
+    // {
+    //     id: 5,
+    //     name: 'Shri Piyush Gupta',
+    //     designation: 'Member'
+    // },
     {
         id: 6,
         name: 'Shri Amit Choudhary',
@@ -363,24 +363,34 @@ const AboutUsPage = () => {
           <Heading style={{ textAlign: "center", marginTop: 0 }}>
             Governing Board
           </Heading>
-          <FlexContainer>
-            <Box>
-              <Paragraph>
+          <FlexContainer style={{ marginTop: 0 }}>
+            <Box style={{ width: '80vw' }}>
+              <Paragraph style={{ textAlign: "center", width: '100%' }}>
                 The Governing Board reviews are scheduled on regular basis in
                 MITRC Alwar.
               </Paragraph>
-              <Paragraph>
+              <Paragraph style={{ fontSize: '1.2rem', textAlign: "center", width: '100%' }}>
                 <strong>The Governing Board Members</strong>
               </Paragraph>
-              {boardMembers.map((member) => (
-                <Paragraph key={member.id} color="#32404D">
-                  {member.id}. {member.name} ({member.designation})
-                </Paragraph>
-              ))}
+              <ul style={{
+                width: '100%',
+                display: 'grid',
+                gridTemplateColumns: '50% 50%',
+                listStylePosition: "inside",
+                marginTop: '10px',
+                color: '#2B2B2B',
+                lineHeight: '1.8rem',
+              }}>
+                {boardMembers.map((member) => (
+                  <li key={member.id} style={{ fontFamily: "DejaVu Sans", paddingLeft: '10vw' }}>
+                    {member.name} ({member.designation})
+                  </li>
+                ))}
+              </ul>
             </Box>
-            <Box>
-              <FillImage src={students} alt="governing board mitrc" />
-            </Box>
+            {/*<Box>*/}
+            {/*  <FillImage src={students} alt="governing board mitrc" />*/}
+            {/*</Box>*/}
           </FlexContainer>
         </Container>
         <Container>
@@ -391,25 +401,28 @@ const AboutUsPage = () => {
           <BoxHeading style={{ marginTop: "5vh", textAlign: "center" }}>
             Board Members
           </BoxHeading>
-          {advisoryBoard.map((item) => (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
-              <Paragraph key={item.id}>
-                <strong style={{ fontSize: "1.4rem" }}>{item.name}</strong>
-              </Paragraph>
-              {item.positions.map((item) => (
-                <Paragraph key={item.id} color="#32404D">
-                  {item.position}
+          <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', paddingTop: '20px' }}>
+            {advisoryBoard.map((item) => (
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  marginTop: '10px'
+                }}
+              >
+                <Paragraph key={item.id}>
+                  <strong style={{ fontSize: "1.4rem" }}>{item.name}</strong>
                 </Paragraph>
-              ))}
-              <Paragraph>{item.email}</Paragraph>
-            </div>
-          ))}
+                {item.positions.map((item) => (
+                  <div key={item.id} style={{ color: '#32404D', fontFamily: "DejaVu Sans", lineHeight: '1.3rem', fontSize: "0.9rem"}}>
+                    {item.position}
+                  </div>
+                ))}
+                <div style={{ color: '#32404D', fontFamily: "DejaVu Sans", lineHeight: '1.3rem', fontSize: "0.9rem" }}>{item.email}</div>
+              </div>
+            ))}
+          </div>
         </Container>
         <Container
           style={{

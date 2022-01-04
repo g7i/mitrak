@@ -68,12 +68,13 @@ const BtechPage = () => {
 
         <HyperLink
           href={"https://www.reap2021.com/documents/REAP_2021_booklet.pdf"}
+          style={{ textDecoration: 'none', fontSize: '1.4rem', marginTop: '16px', display: 'block' }}
         >
           REAP 2021 Booklet
         </HyperLink>
         {/* section2 */}
 
-        <Heading margin={"4vh 0 0 0 "}>
+        <Heading margin={"5vh 0 0 0 "}>
           Priorities of Admission for B.Tech. Courses
         </Heading>
         <Paragraph>
@@ -82,7 +83,7 @@ const BtechPage = () => {
           obtained in class 10+2 (12th )
           <br />
           <FlexContainer justify={"center"} margin={"0px"}>
-            <Heading margin={"10px auto"} color={"blue"}>
+            <Heading margin={"10px auto"} color={"blue"} style={{ fontSize: '1rem' }}>
               OR
             </Heading>
           </FlexContainer>
@@ -97,7 +98,7 @@ const BtechPage = () => {
         <Table>
           <TableRow>
             <TableHeading>S.No</TableHeading>
-            <TableHeading>Basic of Addmistion</TableHeading>
+            <TableHeading>Basic of Admission</TableHeading>
             <TableHeading>Priority</TableHeading>
           </TableRow>
           <TableRow>
@@ -196,7 +197,7 @@ const BtechPage = () => {
           Approved Universities.
           <br />
           <FlexContainer justify={"center"} margin={"0px"}>
-            <Heading margin={"10px auto"} color={"blue"}>
+            <Heading margin={"10px auto"} color={"blue"} style={{ fontSize: '1rem' }}>
               OR
             </Heading>
           </FlexContainer>
@@ -206,7 +207,7 @@ const BtechPage = () => {
           and PwD) and passed 10+2 examination with Mathematics as a subject.
           <br />
           <FlexContainer justify={"center"} margin={"0px"}>
-            <Heading margin={"10px auto"} color={"blue"}>
+            <Heading margin={"10px auto"} color={"blue"} style={{ fontSize: '1rem' }}>
               OR
             </Heading>
           </FlexContainer>

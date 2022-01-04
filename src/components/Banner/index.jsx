@@ -1,7 +1,7 @@
 import React from 'react'
 import { BannerContainer, BannerHeading, Paragraph, BannerTextContainer } from '../styledComponents/GlobalComponents'
 import img from '../../assets/images/college.jpg'
-const bgImg = 'https://www.mitrc.ac.in/wp-content/uploads/2020/08/DSC_0002.jpg'
+const bgImg = 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FDSC_0002.jpg?alt=media&token=6e33af7a-8a36-404d-be62-78f21b526173'
 
 const Banner = ({bannerHeading, bannerDescription}) => {
     return (

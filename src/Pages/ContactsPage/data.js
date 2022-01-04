@@ -7,54 +7,54 @@ export const instituteFunctionaries = [
      email: 'director@mitrc.ac.in',
      extensionNumber: '221'
  }   ,
- {
-     id: '2',
-     unit: 'Academic Programmes',
-     designation: 'Dean Academics',
-     name: 'Dr.Vikas Thada',
-     email: 'deanacademics@mitrc.ac.in',
-     extensionNumber: '205'
- },
- {
-     id: '3',
-     unit: 'Examination Unit',
-     designation: 'Dean Exam',
-     name: 'Dr. Neeraj Jain',
-     email: 'deanexam@mitrc.ac.in',
-     extensionNumber: '231'
- },
- {
-     id: '4',
-     unit: 'Student Affairs',
-     designation: 'Dean Student Affairs',
-     name: 'Dr. Vikas Mehlawat',
-     email: 'deansa@mitrc.ac.in',
-     extensionNumber: '280'
- },
- {
-     id: '5',
-     unit: 'Training & Placement & Alumni & Corporate Relation',
-     designation: 'Training & Placement Officer',
-     name: 'Ms. Shivani',
-     email: 'tpo@mitrc.ac.in',
-     extensionNumber: '244'
- },
- {
-     id: '6',
-     unit: 'Human Resource & Faculty Affairs',
-     designation: 'Human Resource Manager',
-     name: 'Mrs. Chhavi Nagpal',
-     email: 'hr@mitrc.ac.in',
-     extensionNumber: '200'
- },
- {
-     id: '7',
-     unit: 'Finance & External Affairs',
-     designation: 'Senior Accounts Officer',
-     name: 'Mr. Anil Gupta',
-     email: 'accounts@mitrc.ac.in',
-     extensionNumber: '223'
- }
+ // {
+ //     id: '2',
+ //     unit: 'Academic Programmes',
+ //     designation: 'Dean Academics',
+ //     name: 'Dr.Vikas Thada',
+ //     email: 'deanacademics@mitrc.ac.in',
+ //     extensionNumber: '205'
+ // },
+ // {
+ //     id: '3',
+ //     unit: 'Examination Unit',
+ //     designation: 'Dean Exam',
+ //     name: 'Dr. Neeraj Jain',
+ //     email: 'deanexam@mitrc.ac.in',
+ //     extensionNumber: '231'
+ // },
+ // {
+ //     id: '4',
+ //     unit: 'Student Affairs',
+ //     designation: 'Dean Student Affairs',
+ //     name: 'Dr. Vikas Mehlawat',
+ //     email: 'deansa@mitrc.ac.in',
+ //     extensionNumber: '280'
+ // },
+ // {
+ //     id: '5',
+ //     unit: 'Training & Placement & Alumni & Corporate Relation',
+ //     designation: 'Training & Placement Officer',
+ //     name: 'Ms. Shivani',
+ //     email: 'tpo@mitrc.ac.in',
+ //     extensionNumber: '244'
+ // },
+ // {
+ //     id: '6',
+ //     unit: 'Human Resource & Faculty Affairs',
+ //     designation: 'Human Resource Manager',
+ //     name: 'Mrs. Chhavi Nagpal',
+ //     email: 'hr@mitrc.ac.in',
+ //     extensionNumber: '200'
+ // },
+ // {
+ //     id: '7',
+ //     unit: 'Finance & External Affairs',
+ //     designation: 'Senior Accounts Officer',
+ //     name: 'Mr. Anil Gupta',
+ //     email: 'accounts@mitrc.ac.in',
+ //     extensionNumber: '223'
+ // }
 ]
 
 export const divisionFunctionaries = [
