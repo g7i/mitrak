@@ -31,10 +31,11 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 const placementPoster = [
   "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F10-RTU-Merit-from-MITRC.jpg?alt=media&token=86ecb569-4302-47a2-b910-5efcc9f1e251",
   "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FIMG_20220104_190707.jpg?alt=media&token=7001f05e-2e9f-460f-9fe9-fe1c5c6465b3",
-  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F10-RTU-Merit-from-MITRC.jpg?alt=media&token=86ecb569-4302-47a2-b910-5efcc9f1e251",
-  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FIMG_20220104_190707.jpg?alt=media&token=7001f05e-2e9f-460f-9fe9-fe1c5c6465b3",
-  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F10-RTU-Merit-from-MITRC.jpg?alt=media&token=86ecb569-4302-47a2-b910-5efcc9f1e251",
-  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FIMG_20220104_190707.jpg?alt=media&token=7001f05e-2e9f-460f-9fe9-fe1c5c6465b3",
+  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-12%2Fmuskan_ankit-1140x680.jpg?alt=media&token=f7540e9c-8c9f-4987-a7ae-bdb562351168",
+  // "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F10-RTU-Merit-from-MITRC.jpg?alt=media&token=86ecb569-4302-47a2-b910-5efcc9f1e251",
+  // "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FIMG_20220104_190707.jpg?alt=media&token=7001f05e-2e9f-460f-9fe9-fe1c5c6465b3",
+  // "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2F10-RTU-Merit-from-MITRC.jpg?alt=media&token=86ecb569-4302-47a2-b910-5efcc9f1e251",
+  // "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FIMG_20220104_190707.jpg?alt=media&token=7001f05e-2e9f-460f-9fe9-fe1c5c6465b3",
 ];
 
 export default function Placements() {

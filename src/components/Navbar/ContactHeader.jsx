@@ -71,6 +71,16 @@ const ContactHeader = () => {
           />
         </ContactHeaderLinksWrapper>
         <ContactHeaderLinksWrapper>
+          <AiFillFacebook
+            color="#FFFFFF"
+            style={{ marginLeft: "1rem" }}
+            size={20}
+            onClick={() => {
+              window.location.href = "https://www.facebook.com/mitrc.alwar.1";
+            }}
+          />
+        </ContactHeaderLinksWrapper>
+        <ContactHeaderLinksWrapper>
           <AiOutlineYoutube
             color="#FFFFFF"
             style={{ marginLeft: "1rem" }}
