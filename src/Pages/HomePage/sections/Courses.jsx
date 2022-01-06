@@ -19,14 +19,14 @@ const btech = [
   'Computer Science Engineering (CSE)',
   'Civil Engineering (CE)',
   'Electrical Engineering (EE)',
-  'Electronics & Communication Engineering (ECE)',
+  // 'Electronics & Communication Engineering (ECE)',
   'Mechanical Engineering (ME)'
 ]
 
 const mtech = [
-  'Specialization in Computer Science Engineering',
-  'Specialization in Digital Communication',
-  'Specialization in Production Engineering'
+  'M.Tech in Computer Science & Engineering',
+  // 'M.Tech in Digital Communication',
+  'M.Tech in Production Engineering'
 ]
 
 const mba = [
@@ -43,18 +43,16 @@ export default function Courses() {
           <ImageWrapper>
             <CardImage
               src={
-                "https://www.bmu.edu.in/wp-content/uploads/2017/05/dual-specialisation-in-BTech-810x540.jpg"
+                "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcourses%2FEngineering-Courses-After-12th.jpg?alt=media&token=2161e519-77ff-4c74-a374-287b5295c3f7"
               }
             />
           </ImageWrapper>
           <CardTitle>Bachelors of Technology</CardTitle>
           <CardContent>
             <ul>
-              {
-                btech.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))
-              }
+              {btech.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </CardContent>
         </CardWrapper>
@@ -62,18 +60,18 @@ export default function Courses() {
           <ImageWrapper>
             <CardImage
               src={
-                "https://leverageedu.com/blog/wp-content/uploads/2020/03/Types-of-Research-Design.jpg"
+                "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcourses%2F4a38ff96-f980-4399-8d9c-11331229fc47.png?alt=media&token=e25aed6b-fd91-4870-803f-f52a88594f91"
               }
             />
           </ImageWrapper>
           <CardTitle>Masters of Technology</CardTitle>
           <CardContent>
             <ul>
-              {
-                mtech.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))
-              }
+              {mtech.map((item, index) => (
+                <li key={index} style={{ textTransform: "none" }}>
+                  {item}
+                </li>
+              ))}
             </ul>
           </CardContent>
         </CardWrapper>
@@ -88,11 +86,9 @@ export default function Courses() {
           <CardTitle>MBA</CardTitle>
           <CardContent>
             <ul>
-              {
-                mba.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))
-              }
+              {mba.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </CardContent>
         </CardWrapper>
