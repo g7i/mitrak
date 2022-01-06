@@ -76,6 +76,8 @@ const boardMembers = [
     }
 ]
 
+
+
 const advisoryBoard = [
     {
         id: 1,
@@ -204,7 +206,7 @@ const AboutUsPage = () => {
             Modern Institute of Technology and Research Center
           </Heading>
           <Paragraph style={{ textAlign: "center" }}>
-            (Approved By AICTE, Affiliated to B.T.U.)
+            (Approved By AICTE and Affiliated to B.T.U.)
           </Paragraph>
           <Paragraph>
             Alwar- the City of Parks has always been proud of its rich heritage
@@ -224,7 +226,7 @@ const AboutUsPage = () => {
           </Paragraph>
           <FillImage
             src={
-              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Falwar_bd2-770x351.jpg?alt=media&token=6822179f-ca83-47c3-988d-714cb56f8623"
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FDSC00012.JPG?alt=media&token=ee467461-8d9b-496a-9876-fa16de55cb75"
             }
             alt="mitrc alwar rajasthan"
           />
@@ -242,13 +244,11 @@ const AboutUsPage = () => {
           {/*<Heading style={{ textAlign: "center", marginTop: 0 }}>*/}
           {/*  Our Vision and Mission*/}
           {/*</Heading>*/}
-          <FlexContainer>
+          <FlexContainer style={{ alignItems: 'flex-start' }}>
             <Box>
               <BoxHeading>Vision</BoxHeading>
               <Paragraph>
-                MITRC aims at motivating directing the Engineering minds of the
-                young students to become the trendsetters in developing, shaping
-                and preserving the society and the world at large.
+                  To produce  well trained professionals and leaders for  serving society and nation through excellence in academics, research, development and innovations.
               </Paragraph>
               <br />
               <br />
@@ -256,12 +256,12 @@ const AboutUsPage = () => {
             <Box>
               <BoxHeading>Mission</BoxHeading>
               <Paragraph>
-                MITRC emphasizes on all round development of its students. It
-                not only aims at equipping the students with the latest
-                Engineering skills knowledge to successfully meet the challenges
-                posed by globalization, but also to be good worthy citizens of
-                this great country aiding it in its overall progress
-                development.
+                <ul>
+                    <li>To provide state of the art facility for academic excellence. </li>
+                    <li>To identify emerging areas of technology and management that caters to regional,national and global challenges.</li>
+                    <li>To provide an environment of industry oriented research and development </li>
+                    <li>To inculcate core values of professional ethics, team-work , inter personal skills and life-long learning for sustainable development of the society.</li>
+                </ul>
               </Paragraph>
             </Box>
           </FlexContainer>
@@ -270,11 +270,11 @@ const AboutUsPage = () => {
           <Heading style={{ textAlign: "center", marginTop: 0 }}>
             Chairman's Desk
           </Heading>
-          <FlexContainer>
+          <FlexContainer style={{ alignItems: 'flex-start' }}>
               <Box>
                   <FillImage
                       src={
-                          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Falwar_bd2-770x351.jpg?alt=media&token=6822179f-ca83-47c3-988d-714cb56f8623"
+                          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F5_6244351392857720050.jpg?alt=media&token=ce6d5fa0-b7e5-4660-9945-3ba4a393b029"
                       }
                       alt="chairman mitrc alwar"
                   />
@@ -303,7 +303,6 @@ const AboutUsPage = () => {
               </Paragraph>
                 <div style={{ display: "flex", flexDirection: "column" }}>
                     <SmallText style={{ fontSize: '1.4rem' }}>Mrs. Vimla Devi</SmallText>
-                    <SmallText style={{ margin: '0.5rem 0' }}>Number: +91 9413106857</SmallText>
                 </div>
             </Box>
           </FlexContainer>
@@ -312,7 +311,7 @@ const AboutUsPage = () => {
           <Heading style={{ textAlign: "center", marginTop: 0 }}>
             Director's Desk
           </Heading>
-          <FlexContainer>
+          <FlexContainer style={{ alignItems: 'flex-start' }}>
             <Box>
               <FillImage
                 src={
@@ -342,28 +341,16 @@ const AboutUsPage = () => {
                     who are actively engaged in the academic fineness. Our students are
                     innovators, engineers, mangers, entrepreneurs and aspiring leaders.
                 </Paragraph>
+                <br />
+
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                    <SmallText style={{ fontSize: '1.4rem' }}>Dr. SK Sharma</SmallText>
+                    <SmallText>( Director MITRC )</SmallText>
+                    <SmallText style={{ margin: '0.5rem 0' }}>Number: +91 9413106857</SmallText>
+                    <SmallText>E-mail: director@mitrc.ac.in</SmallText>
+                </div>
             </Box>
           </FlexContainer>
-
-
-          {/*<Paragraph>*/}
-          {/*  MITRC is a vibrant education community that encourages three-way*/}
-          {/*  collaboration between students, parents and institution. The*/}
-          {/*  strength of this collaboration is reflected in the success of our*/}
-          {/*  students.*/}
-          {/*</Paragraph>*/}
-          {/*<Paragraph>*/}
-          {/*  We welcome the young aspirants of excellence to join us in this*/}
-          {/*  journey to foster the value based education.*/}
-          {/*</Paragraph>*/}
-          {/*<Paragraph>Thank you for selecting us for your ward.</Paragraph>*/}
-          <br />
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <SmallText style={{ fontSize: '1.4rem' }}>Dr. SK Sharma</SmallText>
-            <SmallText>( Director MITRC )</SmallText>
-            <SmallText style={{ margin: '0.5rem 0' }}>Number: +91 9413106857</SmallText>
-            <SmallText>E-mail: director@mitrc.ac.in</SmallText>
-          </div>
         </Container>
         <Container>
           <Heading style={{ textAlign: "center", marginTop: 0 }}>

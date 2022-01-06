@@ -19,7 +19,7 @@ import { Colors } from "../../constants/UiConstants";
 const ContactHeader = () => {
   const history = useHistory();
   return (
-    <Nav background={Colors.PRIMARY} flexType="space-around">
+    <Nav background={Colors.BLUE} flexType="space-around">
       <Wrapper>
         <Wrapper>
           <ContactHeaderLinksWrapper

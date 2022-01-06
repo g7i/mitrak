@@ -21,6 +21,7 @@ import {
 import { Link } from 'react-router-dom'
 import { listNews, NewsType } from "../../../utils/firebase/news";
 import { Modal } from "@mui/material";
+import { impArticles } from './news.data'
 
 const SlickArrowRight = ({ onClick, className }) => {
   if (className.includes("slick-disabled")) return null;
@@ -151,6 +152,24 @@ export default function News() {
               ))}
           </marquee>
         </NewsBox>
+        <NewsBox>
+          <Heading style={{ fontSize: "1.4rem", textAlign: "center", marginBottom: '10px' }}>
+            Important Articles
+          </Heading>
+          <marquee direction = "up" style={{ height: '80%' }} scrollAmount={5} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
+            {impArticles
+                .map((item) => (
+                    <NewsContainer key={item.link}>
+                      {/*<Paragraph>Title:</Paragraph>*/}
+                      {/*<a target={"_blank"} href={item.link>*/}
+                      {/*  {item.link}*/}
+                      {/*</a>*/}
+                      <Paragraph>{item.label}</Paragraph>
+                      <a target={item.link} href={item.link}>{item.link}</a>
+                    </NewsContainer>
+                ))}
+          </marquee>
+        </NewsBox>
       </Container>
     </Container>
   );
@@ -172,7 +191,7 @@ export const NewsComponent = (props) => {
       >
         <ModalBodyWrapper>
           <ModalBodySecondWrapper>
-            <img src={news.image} />
+            <img src={news.image}  />
             <h3>{news.title}</h3>
             <h5>{news.description}</h5>
             {news.links?.map((item) => (

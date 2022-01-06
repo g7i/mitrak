@@ -32,32 +32,42 @@ const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
 const SlideTextData = [
   {
     title: "MITRC",
-    subtitle: "Yearn To Learn",
+    subtitle: "Believe in Good Academics with Well Discipline",
   },
   {
     title: "Think placement think MITRC",
-    subtitle: "Yearn To Explore",
+    subtitle: "Committed to Excellence & to Build Better",
   },
   {
-    title: "Start Here Go Anywhere",
+    title: "A Place To Bring Your Ideas And Innovations To Life",
     subtitle:
-      "Highly professional and skilled teaching assistance throughout the journey",
+      "Yearn To Learn",
   },
   {
-    title: "Where Concepts Meets The Real World",
-    subtitle: "Research Oriented Environment",
+    title: "Start From Here, Go Anywhere",
+    subtitle: "Highly Professional & Skilled Teaching Assistance Throughout The Journey",
   },
   {
+    title: "Where Concepts & Innovation Meets The Real World",
     subtitle:
-      "Creative, Collaborative, and Practical Solutions to your engineering challenges from concept to production",
+      "Research Oriented Environment",
   },
   {
-    title: "We Give Wings To Your Aspirations",
-    subtitle: "Yearn To Innovate",
+    title: "Building The Future On A Foundation Of Excellence",
+    subtitle: "Creative, Collaborative & Practical Solutions to your Engineering Challenges from Concept to Production",
   },
   {
-    title: "Yearn To Research",
+    title: "Engineering With Value",
+    subtitle: "Yearn To Explore"
   },
+  {
+    title: "Your life, Your College, Your way",
+    subtitle: "Lets You Shine With Skills"
+  },
+  {
+    title: "We Give Wings to Your Aspirations",
+    subtitle: "Yearn To Innovate"
+  }
 ];
 
 const ImageSlider = ({
@@ -66,6 +76,9 @@ const ImageSlider = ({
     "https://www.admissionfever.com/Media/clgimg/gallery/2934_img8884798266738968.png",
     "https://www.campusoption.com/images/colleges/gallery/28_12_16_111345_18.jpg",
     // "https://pbs.twimg.com/media/EspGBh8VEAILE67.jpg",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fnight.JPG?alt=media&token=4d14429f-86d8-49dd-a3f0-868f49901c53",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Faerial.jpg?alt=media&token=738e9748-c03f-4c8d-a03c-37254ba048f6",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Finner.JPG?alt=media&token=27d03fc6-5945-47ac-a249-f5e6c10fcf48",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-7%2FAIF3-1140x680.jpg?alt=media&token=b8651cc5-44b2-475d-a4eb-4f59b9289dc8",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-7%2Fmitrc_alwar6a-1140x680.jpg?alt=media&token=d7e9a558-1923-422f-bd83-c43e7f655238",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FIMG_6469.jpg?alt=media&token=f93c5af7-59f3-4d94-8267-64f705b070f6",
@@ -96,7 +109,7 @@ const ImageSlider = ({
   function nextSlide(slideIndex = currentSlide + 1) {
     const newSlideIndex = slideIndex >= images.length ? 0 : slideIndex;
     refArray.map((item, index) => {
-      if (slideIndex % 6 === index) {
+      if (slideIndex % 9 === index) {
         item.current.classList.add("animateSliderText");
       } else {
         item.current.classList.remove("animateSliderText");

@@ -78,7 +78,8 @@ export const ItemWrapper = styled.div`
 `;
 
 export const NewsBox = styled.div`
-  width: 48%;
+  width: 32%;
+  max-height: 40vh;
   padding-bottom: 0.5rem;
   background-color: ${Colors.DETAILS_BACKGROUND};
   @media (max-width: 768px) {

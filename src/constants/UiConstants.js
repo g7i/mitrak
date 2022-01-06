@@ -6,5 +6,6 @@ export const Colors = {
     LINK_COLOR: '#176699',
     BORDER_COLOR: '#DDDDDD',
     TEXT_PRIMARY: '#212121',
-    TEXT_SECONDARY: '#2B2B2B'
+    TEXT_SECONDARY: '#2B2B2B',
+    BLUE: '#1C6DD0'
 }
