@@ -21,7 +21,7 @@ const boardMembers = [
     },
     {
         id: 2,
-        name: 'Shri Ashok Afarwal',
+        name: 'Shri Ashok Agarwal',
         designation: 'Secretary'
     },
     {
@@ -32,6 +32,11 @@ const boardMembers = [
     {
         id: 4,
         name: 'Shri Purshottam Gupta',
+        designation: 'Member'
+    },
+    {
+        id: 4,
+        name: 'Shri Piyush Gupta',
         designation: 'Member'
     },
     // {
@@ -199,7 +204,7 @@ const AboutUsPage = () => {
             Modern Institute of Technology and Research Center
           </Heading>
           <Paragraph style={{ textAlign: "center" }}>
-            (Affiliated By AICTE)
+            (Approved By AICTE, Affiliated to B.T.U.)
           </Paragraph>
           <Paragraph>
             Alwar- the City of Parks has always been proud of its rich heritage
@@ -234,9 +239,9 @@ const AboutUsPage = () => {
           </div>
         </Container>
         <Container>
-          <Heading style={{ textAlign: "center", marginTop: 0 }}>
-            Our Vision and Mission
-          </Heading>
+          {/*<Heading style={{ textAlign: "center", marginTop: 0 }}>*/}
+          {/*  Our Vision and Mission*/}
+          {/*</Heading>*/}
           <FlexContainer>
             <Box>
               <BoxHeading>Vision</BoxHeading>
@@ -266,6 +271,14 @@ const AboutUsPage = () => {
             Chairman's Desk
           </Heading>
           <FlexContainer>
+              <Box>
+                  <FillImage
+                      src={
+                          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Falwar_bd2-770x351.jpg?alt=media&token=6822179f-ca83-47c3-988d-714cb56f8623"
+                      }
+                      alt="chairman mitrc alwar"
+                  />
+              </Box>
             <Box>
               <Paragraph>
                 As we are moving ahead in twenty first century, a realization
@@ -288,18 +301,10 @@ const AboutUsPage = () => {
                 evaluate, analyze, solve the challenges and write new stories of
                 success.
               </Paragraph>
-              <Paragraph color="#32404D">
-                <strong>Smt. Vimala Devi</strong>
-                <small> (Chairperson of MITRC Alwar)</small>
-              </Paragraph>
-            </Box>
-            <Box>
-              <FillImage
-                src={
-                  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Falwar_bd2-770x351.jpg?alt=media&token=6822179f-ca83-47c3-988d-714cb56f8623"
-                }
-                alt="chairman mitrc alwar"
-              />
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                    <SmallText style={{ fontSize: '1.4rem' }}>Mrs. Vimla Devi</SmallText>
+                    <SmallText style={{ margin: '0.5rem 0' }}>Number: +91 9413106857</SmallText>
+                </div>
             </Box>
           </FlexContainer>
         </Container>
@@ -317,8 +322,6 @@ const AboutUsPage = () => {
               />
             </Box>
             <Box>
-              <BoxHeading>Message From Director</BoxHeading>
-
               <Paragraph>
                 We are extremely delighted to introduce you to MITRC, Alwar.
                 From its origin in 2007, MITRC has served our nation’s flagship
@@ -328,49 +331,49 @@ const AboutUsPage = () => {
                 in teaching, research, on-site industry executive training and
                 service
               </Paragraph>
+                <Paragraph>
+                    Our campus is situated in a beautiful landscape. Our distinguished
+                    faculty with extensive ties to leading engineering and research
+                    community are able to bring the best engineers and managers into our
+                    programs as visiting faculty and guest speakers.
+                </Paragraph>
+                <Paragraph>
+                    Our faculties are renowned scholars and accomplished practitioners
+                    who are actively engaged in the academic fineness. Our students are
+                    innovators, engineers, mangers, entrepreneurs and aspiring leaders.
+                </Paragraph>
             </Box>
           </FlexContainer>
-          <Paragraph>
-            Our campus is situated in a beautiful landscape. Our distinguished
-            faculty with extensive ties to leading engineering and research
-            community are able to bring the best engineers and managers into our
-            programs as visiting faculty and guest speakers.
-          </Paragraph>
-          <Paragraph>
-            Our faculties are renowned scholars and accomplished practitioners
-            who are actively engaged in the academic fineness. Our students are
-            innovators, engineers, mangers, entrepreneurs and aspiring leaders.
-          </Paragraph>
-          <Paragraph>
-            MITRC is a vibrant education community that encourages three-way
-            collaboration between students, parents and institution. The
-            strength of this collaboration is reflected in the success of our
-            students.
-          </Paragraph>
-          <Paragraph>
-            We welcome the young aspirants of excellence to join us in this
-            journey to foster the value based education.
-          </Paragraph>
-          <Paragraph>Thank you for selecting us for your ward.</Paragraph>
+
+
+          {/*<Paragraph>*/}
+          {/*  MITRC is a vibrant education community that encourages three-way*/}
+          {/*  collaboration between students, parents and institution. The*/}
+          {/*  strength of this collaboration is reflected in the success of our*/}
+          {/*  students.*/}
+          {/*</Paragraph>*/}
+          {/*<Paragraph>*/}
+          {/*  We welcome the young aspirants of excellence to join us in this*/}
+          {/*  journey to foster the value based education.*/}
+          {/*</Paragraph>*/}
+          {/*<Paragraph>Thank you for selecting us for your ward.</Paragraph>*/}
           <br />
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <SmallText>Dr. SK Sharma (Director MITRC)</SmallText>
-            <SmallText>Mobile No.: +91 9413106857</SmallText>
+            <SmallText style={{ fontSize: '1.4rem' }}>Dr. SK Sharma</SmallText>
+            <SmallText>( Director MITRC )</SmallText>
+            <SmallText style={{ margin: '0.5rem 0' }}>Number: +91 9413106857</SmallText>
             <SmallText>E-mail: director@mitrc.ac.in</SmallText>
           </div>
         </Container>
         <Container>
           <Heading style={{ textAlign: "center", marginTop: 0 }}>
-            Governing Board
+            Board Of Governors
           </Heading>
           <FlexContainer style={{ marginTop: 0 }}>
             <Box style={{ width: '80vw' }}>
               <Paragraph style={{ textAlign: "center", width: '100%' }}>
                 The Governing Board reviews are scheduled on regular basis in
                 MITRC Alwar.
-              </Paragraph>
-              <Paragraph style={{ fontSize: '1.2rem', textAlign: "center", width: '100%' }}>
-                <strong>The Governing Board Members</strong>
               </Paragraph>
               <ul style={{
                 width: '100%',
@@ -397,10 +400,6 @@ const AboutUsPage = () => {
           <Heading style={{ textAlign: "center", marginTop: 0 }}>
             Advisory Board
           </Heading>
-          <FillImage src={advisory} alt="advisory board mitrc" />
-          <BoxHeading style={{ marginTop: "5vh", textAlign: "center" }}>
-            Board Members
-          </BoxHeading>
           <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', paddingTop: '20px' }}>
             {advisoryBoard.map((item) => (
               <div
@@ -431,10 +430,6 @@ const AboutUsPage = () => {
             marginBottom: "4rem",
           }}
         >
-          <Heading style={{ textAlign: "center", marginTop: 0 }}>
-            Society
-          </Heading>
-          <FillImage src={society} alt="society mitrc alwar" />
           <BoxHeading style={{ textAlign: "center", fontSize: "1.5rem" }}>
             “All India Arya Samajis Society for Advance Education & Research”
             (AIASSAER)

@@ -67,6 +67,7 @@ const Router = () => {
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
           <Route path="/how-to-reach" exact component={HowToReach} />
+          <Route path="/academics/madatory-disclosures" exact component={MandatoryDisclosuresPage} />
           <Route path="/contact" exact component={ContactsPage} />
           <Route path="/news" exact component={NewsScreen} />
           <Route path="/placement-news" exact component={PlacementNewsScreen} />

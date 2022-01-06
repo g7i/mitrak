@@ -35,7 +35,7 @@ export const CardContent = styled.p`
   text-align: justify;
   color: ${Colors.SECONDARY};
   ul {
-    margin-left: 50px;
+    margin-left: 30px;
     li {
       //font-size: 1.5rem;
     }

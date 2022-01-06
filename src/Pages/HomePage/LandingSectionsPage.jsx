@@ -15,13 +15,13 @@ const LandingPage = () => {
       <AboutUsSection />
       <Courses />
       {/* <ExploreMore /> */}
-      <Placements />
-      <StudentsPlaced />
+      {/*<Placements />*/}
+      {/*<StudentsPlaced />*/}
       <News />
-      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <Heading>Testimonials</Heading>
-      </div>
-      <Testimonials />
+      {/*<div style={{ textAlign: 'center', marginBottom: '2rem' }}>*/}
+      {/*  <Heading>Testimonials</Heading>*/}
+      {/*</div>*/}
+      {/*<Testimonials />*/}
       <ApplyForAdmission />
     </>
   );

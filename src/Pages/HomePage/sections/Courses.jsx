@@ -14,6 +14,26 @@ import MTechImage from "../../../assets/images/mtech.jpg";
 import MbaImage from "../../../assets/images/mba.png";
 import { Link } from 'react-router-dom'
 
+const btech = [
+  'Artificial Intelligence & Data Science Engineering (AI & DS)',
+  'Computer Science Engineering (CSE)',
+  'Civil Engineering (CE)',
+  'Electrical Engineering (EE)',
+  'Electronics & Communication Engineering (ECE)',
+  'Mechanical Engineering (ME)'
+]
+
+const mtech = [
+  'Specialization in Computer Science Engineering',
+  'Specialization in Digital Communication',
+  'Specialization in Production Engineering'
+]
+
+const mba = [
+  'MBA from Human Resource',
+  'MBA from Finance'
+]
+
 export default function Courses() {
   return (
     <Container>
@@ -30,11 +50,11 @@ export default function Courses() {
           <CardTitle>Bachelors of Technology</CardTitle>
           <CardContent>
             <ul>
-              <li>AI & DS</li>
-              <li>Civil</li>
-              <li>Computer Science</li>
-              <li>Mechanical</li>
-              <li>Electrical</li>
+              {
+                btech.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))
+              }
             </ul>
           </CardContent>
         </CardWrapper>
@@ -48,10 +68,13 @@ export default function Courses() {
           </ImageWrapper>
           <CardTitle>Masters of Technology</CardTitle>
           <CardContent>
-            MTech is a professional postgraduate engineering master degree
-            programme awarded to candidates after completion of two years of
-            study in the discipline of engineering. This degree is predicated in
-            a specific branch of engineering.
+            <ul>
+              {
+                mtech.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))
+              }
+            </ul>
           </CardContent>
         </CardWrapper>
         <CardWrapper href="/academics/courses/mba">
@@ -64,10 +87,13 @@ export default function Courses() {
           </ImageWrapper>
           <CardTitle>MBA</CardTitle>
           <CardContent>
-            he MBA (Master of Business Administration) is an internationally
-            recognised and geographically portable post-graduate,
-            post-experience academic course in a number of subjects that
-            together can be said to constitute the science of management.
+            <ul>
+              {
+                mba.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))
+              }
+            </ul>
           </CardContent>
         </CardWrapper>
       </Wrapper>

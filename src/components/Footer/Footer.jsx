@@ -21,6 +21,8 @@ import {
 import { IoMdSend } from "react-icons/io";
 import {useHistory} from "react-router-dom";
 import logo from "../../assets/images/mitrc.png";
+import { quickLinks, programs, resources } from './footer.data'
+
 
 const Footer = () => {
   const history = useHistory();
@@ -37,51 +39,33 @@ const Footer = () => {
         <FooterSectionContainer>
           <SectionHeading>Quick Links</SectionHeading>
           <FooterSecondSectionContainer numberOfRow={1}>
-            <SectionText onClick={() => history.push("/")}>Home</SectionText>
-            <SectionText
-              onClick={() =>
-                history.push("/campus-life/events-gallery/curricular")
-              }
-            >
-              Events
-            </SectionText>
-            <SectionText onClick={() => history.push("/contact")}>
-              Contact
-            </SectionText>
-            <SectionText onClick={() => history.push("/academics/courses")}>
-              Courses
-            </SectionText>
+            {
+              quickLinks.map((item, index) => (
+                  <SectionText key={index} onClick={() => history.push(item.path)}>{item.label}</SectionText>
+              ))
+            }
           </FooterSecondSectionContainer>
         </FooterSectionContainer>
 
         <FooterSectionContainer>
           <SectionHeading>Programs</SectionHeading>
           <FooterSecondSectionContainer numberOfRow={1}>
-            {/* <SectionText>Air Frieght</SectionText>
-            <SectionText>Ocean frieght</SectionText> */}
-            <SectionText
-              onClick={() =>
-                history.push("/campus-life/studentaffair/grievance")
-              }
-            >
-              Committe
-            </SectionText>
-            <SectionText
-              onClick={() =>
-                history.push("/campus-life/studentaffair/grievance")
-              }
-            >
-              Complaint
-            </SectionText>
+            {
+              programs.map((item, index) => (
+                  <SectionText key={index} onClick={() => history.push(item.path)}>{item.label}</SectionText>
+              ))
+            }
           </FooterSecondSectionContainer>
         </FooterSectionContainer>
 
         <FooterSectionContainer>
           <SectionHeading>Resources</SectionHeading>
           <FooterSecondSectionContainer numberOfRow={1}>
-            <SectionText>FAQ</SectionText>
-            <SectionText>Submit Ticket</SectionText>
-            <SectionText>Contact Us</SectionText>
+            {
+              resources.map((item, index) => (
+                  <SectionText key={index} onClick={() => history.push(item.path)}>{item.label}</SectionText>
+              ))
+            }
           </FooterSecondSectionContainer>
         </FooterSectionContainer>
 
