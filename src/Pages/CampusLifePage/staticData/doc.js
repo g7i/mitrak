@@ -88,7 +88,8 @@ export const amenities = [
   },
   {
     title: "mess",
-    imageUrl: null,
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Fmess.JPG?alt=media&token=96e1dfbe-71dc-4ba8-aa92-a3642004eef7",
     contentPara1: {
       para: "Mess facility is an integral part of the college, which provides wholesome, nutritious & homely food to all hostelers, faculty & staff members of MITRC Alwar.",
     },
@@ -104,7 +105,8 @@ export const amenities = [
   },
   {
     title: "gym",
-    // imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2019/05/Gym.jpg",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Fgym.JPG?alt=media&token=303ae0c3-8441-4fb9-a3ea-9d122769458e",
     contentPara1: {
       para: "MITRC Alwar also facilitates its students with a fully-fledged gymnasium having all modern equipments needed to keep the students fit and healthy. The Campus comes into the liveliest mode when hundreds of students staying in hostels are found enjoying the pleasure of these sports as players and audience in evening. The gym will be closed at certain times for cleaning",
     },
@@ -121,7 +123,8 @@ export const amenities = [
   },
   {
     title: "medical",
-    imageUrl: "",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Fmedical.JPG?alt=media&token=71854e0e-01fa-46c3-8c9a-2f2f6c6bcef4",
     contentPara1: {
       para: "Health is Wealth and only if your body is healthy your mind would be productive. Knowing and preaching this simple concept of wellbeing we make the student feel home away from home within campus. ",
     },
@@ -142,8 +145,8 @@ export const amenities = [
   },
   {
     title: "language lab",
-    // imageUrl:
-    //   "https://www.mitrc.ac.in/wp-content/uploads/2019/05/language-lab.jpg",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Flanguage-lab.JPG?alt=media&token=6881fdef-6847-4628-b0b8-85820217d207",
     contentPara1: {
       para: "In today’s world of technology Language Lab is considered as one of the best ways to prepare the students to meet the upcoming challenges. It is conducted for the enrichment of oral skills. The motto is not only to groom the students at oral skills but to inculcate business ethics as well. In Indian scenario where coming out of shackles of hesitation vis-à-vis the foreign tongue. All the three languages English, German and French is commixed in one room, a mammoth task where communication lab comes to its aid.   For this different tools are used like English Deluxe by which students are able to learn the correct pronunciation & can listen to their recorded voice as well .",
     },
