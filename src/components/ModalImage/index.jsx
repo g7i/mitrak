@@ -3,7 +3,17 @@ import React from "react";
 import styled from "styled-components";
 import CancelIcon from "@mui/icons-material/Cancel";
 const ModalImage = (props) => {
-  const { src, width, height, onClickOpen, objectFit, margin, filter , smWidth } = props;
+  const {
+    src,
+    width,
+    height,
+    onClickOpen,
+    objectFit,
+    margin,
+    filter,
+    smWidth,
+    modalObjectFit,
+  } = props;
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -23,8 +33,9 @@ const ModalImage = (props) => {
               width={"600px"}
               smWidth={smWidth}
               height={"600px"}
-              objectFit={objectFit}
+              objectFit={modalObjectFit || objectFit}
               margin={margin}
+              modalObjectFit={modalObjectFit}
             />
             <CloseIcon fontSize={"large"} onClick={handleClose} />
           </ModalImageSecondWrapper>
@@ -79,6 +90,7 @@ const Image = styled.img`
   /* width: ${(props) => props.width || "50%"}; */
   margin: ${(props) => props.margin || "0 auto"};
   object-fit: ${(props) => props.objectFit || "contain"};
+  
   ${(props) => props.height && `height : ${props.height}`};
   background-color: cornsilk;
   border-radius: ${(props) => props.objectFit === "cover" && "10px"};

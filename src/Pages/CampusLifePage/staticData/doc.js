@@ -244,7 +244,8 @@ export const studentaffair = [
   },
   {
     title: "medicare",
-    imageUrl: "",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Fmedical.JPG?alt=media&token=71854e0e-01fa-46c3-8c9a-2f2f6c6bcef4",
     contentPara1: {
       para: "Health is Wealth and only if your body is healthy your mind would be productive. Knowing and preaching this simple concept of wellbeing we make the student feel home away from home within campus. To ensure the same we have well defined first support medical room within the campus. ",
     },
@@ -280,274 +281,237 @@ export const studentaffair = [
 ];
 
 export const clubandactivities = [
-    {
-        title: "aadharclub",
-        imageUrl: "",
-        contentPara1: {
-            para: "We are a non-profit student organization which facilitates the overall development of students by providing them a platform to showcase their talent and sharpen their skills through a variety of planned events and activities."
-        },
-        contentPara2: {
-            contentHeading: "WHAT WE DO",
-            list: [
-                "Workshop",
-                "Publications",
-                "Survey Camps",
-                "Software Trainings on Stadd Pro, Revit, Primavera etc",
-                "Site Visits (Major construction projects including Dams & Power Plants",
-                "Guest Lecture",
-                "National/International Seminar",
-                "Quiz Competition",
-                "Sports/Atheletes",
-                "Project & Model Competition",
-                "Picnic / Historic Monuments"
-            ]
-        }
+  {
+    title: "aadharclub",
+    imageUrl: "",
+    contentPara1: {
+      para: "We are a non-profit student organization which facilitates the overall development of students by providing them a platform to showcase their talent and sharpen their skills through a variety of planned events and activities.",
     },
-    {
-        title: "healthfulness science & spirituality club",
-        imageUrl: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2FHSS_CLUB3-1024x768.png?alt=media&token=a3db2784-829c-4cdb-ae9f-44e6b91b3372",
-        contentPara1: {
-            para: "We are happy to inform you that on the occasion of International Youth Day at 12 August, 2017 we inaugurate Heartfulness Science & Spirituality Club (HSSC) at MITRC Engineering College at Alwar, Rajasthan. HSSC Club inaugurated by the chief guest Mr. Parvender Pal Sing (ADJ, Behror) and Mr. Kamal Sharma (Heartfulness Center coordinator, Alwar) and Mr. Yogendra Bhardwaj (PRO, Jaipur). Mr. Parvender Pal Sing & Mr. Kamal Sharma address the student and staff member of college and discuss the issue related with youth and importance of balanced life for the overall progress of student, Value based spiritual education. In the auspicious occasion director of MITRC, (Prof) Dr. S. K Sharma, Dean Examination Mr. Neeraj Jain, Dean Students Affairs Mr. Vikas Mahalawat, H.O.D of Electronics & Communication Engineering Mr. Deepak Sharma of MITRC were present. On this special day 145 Students and 5 faculty member experienced the Heartfulness Relaxation technique."
-        }
+    contentPara2: {
+      contentHeading: "WHAT WE DO",
+      list: [
+        "Workshop",
+        "Publications",
+        "Survey Camps",
+        "Software Trainings on Stadd Pro, Revit, Primavera etc",
+        "Site Visits (Major construction projects including Dams & Power Plants",
+        "Guest Lecture",
+        "National/International Seminar",
+        "Quiz Competition",
+        "Sports/Atheletes",
+        "Project & Model Competition",
+        "Picnic / Historic Monuments",
+      ],
     },
-    {
-        title: "mech. contours club",
-        imageUrl: "",
-        contentPara1: {
-            contentHeading: "Objectives",
-            list: [
-                "To organize skill development activities.",
-                "Organizing workshops, seminars & conferences.",
-                "Creating team spirit & healthy competition among students through contests/quizzes.",
-                "Coordination of sports & cultural activities.",
-                "To organize debate, group discussions & personality development programs."
-            ]
-        },
-        contentPara2: {
-            contentHeading: "Membership Requirements",
-            list: [
-                "Being a student of mechanical branch of institute.",
-                "Attending and participating in all meetings/activities.",
-                "Contributing to the preparation and the coordination of the club’s activities."
-            ]
-        },
-        contentPara3: {
-            contentHeading: "Membership Advantages",
-            list: [
-                "The priority to attend sessions and activities.",
-                "Obtaining certificates of attendance for courses or workshops attended.",
-                "Getting support from institute when you show special skills."
-            ]
-        },
-        contentPara4: {
-            contentHeading: "Student Coordinators",
-            list: [
-                "Keshav Saini",
-                "Gourav Saini",
-                "Dilip Thakkar",
-                "Apurv Gupta"
-            ]
-        },
-        contentPara5: {
-            contentHeading: "Chief Patrons",
-            list: [
-                "Shri Ashok Aggarwal (Executive Director)",
-                "Shri Amit Choudhary (Secretary)"
-            ]
-        },
-        contentPara6: {
-            contentHeading: "Advisory Group",
-            list: [
-                "Prof.(Dr.) S. K Sharma (Director)",
-                "Mr. Sanjay Babu Sharma ( Dean Academics)",
-                "Mr. Neeraj Jain (Dean Exam)",
-                "Mr. Vikas Mahalawat (Dean Student Affairs)",
-                "Mrs. Chhavi Nagpal (HR Executive)",
-                "Ms. Vaishali Gupta (TPO)",
-                "Mr. Mukesh Choudhary (HOD-ME)"
-            ]
-        },
-        contentPara7: {
-            contentHeading: "Faculty Coordinator",
-            list: [
-                "Mr. Kalyan Singh"
-            ]
-        },
-        contentPara8: {
-            contentHeading: "Faculty Members",
-            list: [
-                "Mr. Surendra Kumar",
-                "Mr. Sushil Kumar Maurya"
-            ]
-        }
+  },
+  {
+    title: "healthfulness science & spirituality club",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2FHSS_CLUB3-1024x768.png?alt=media&token=a3db2784-829c-4cdb-ae9f-44e6b91b3372",
+    contentPara1: {
+      para: "We are happy to inform you that on the occasion of International Youth Day at 12 August, 2017 we inaugurate Heartfulness Science & Spirituality Club (HSSC) at MITRC Engineering College at Alwar, Rajasthan. HSSC Club inaugurated by the chief guest Mr. Parvender Pal Sing (ADJ, Behror) and Mr. Kamal Sharma (Heartfulness Center coordinator, Alwar) and Mr. Yogendra Bhardwaj (PRO, Jaipur). Mr. Parvender Pal Sing & Mr. Kamal Sharma address the student and staff member of college and discuss the issue related with youth and importance of balanced life for the overall progress of student, Value based spiritual education. In the auspicious occasion director of MITRC, (Prof) Dr. S. K Sharma, Dean Examination Mr. Neeraj Jain, Dean Students Affairs Mr. Vikas Mahalawat, H.O.D of Electronics & Communication Engineering Mr. Deepak Sharma of MITRC were present. On this special day 145 Students and 5 faculty member experienced the Heartfulness Relaxation technique.",
     },
-    {
-        title: "ignight robotics club",
-        imageUrl: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FEE_Club2.jpg?alt=media&token=794252e2-7972-48dd-8ddc-69b76105fcd9",
-        contentPara1: {
-            para: "IGNIGHT ROBOTICS CLUB at Electrical Engineering Department, MITRC is an undergraduate student organization that provides ideas and resources to develop different types of robots. This club offers guidance, workshops and tutorials along with tools, components and workspace.  Club members participate in many technical events organized in different colleges."
-        }
+  },
+  {
+    title: "mech. contours club",
+    imageUrl: "",
+    contentPara1: {
+      contentHeading: "Objectives",
+      list: [
+        "To organize skill development activities.",
+        "Organizing workshops, seminars & conferences.",
+        "Creating team spirit & healthy competition among students through contests/quizzes.",
+        "Coordination of sports & cultural activities.",
+        "To organize debate, group discussions & personality development programs.",
+      ],
     },
-    {
-        title: "tech wizard club",
-        imageUrl: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2Ftech_wizard3A.jpg?alt=media&token=f129ae93-e459-4747-904f-3b183a59b07a",
-        contentPara1: {
-            contentHeading: "Mission  & Vision of TECH WIZARD",
-            list: [
-                "To motivate and provides excellence knowledge of young and dynamic computer science students to become as technology innovative leader, shape and preserve society with world class research environment.",
-                "Develop the students with core and basic conception of programming with most modern computer engineering knowledge.",
-                "Provides prospective approach to promote leadership skills in students with global IT Challenges .",
-                "To make the students good and worthy citizens of India serve superior digitalization revolution in the our society"
-            ]
-        },
-        contentPara2: {
-            contentHeading: "Motive Of TECH WIZARDS",
-            list: [
-                "Students are encourage to become more active.",
-                "Promote student Learning and Achievements.",
-                "Encourage the development of critical thinking skills.",
-                "It enhances Social skills Interactions.",
-                "Learning Outcomes are improved.",
-                "It can save time and requires a shared Workload.",
-                "Students get the chance to work on large projects"
-            ]
-        },
-        contentPara3: {
-            contentHeading: "Activities",
-            list: [
-                "Online Quiz",
-                "Code Debugging",
-                "Model/project competition",
-                "Departmental Social activities",
-                "Programming wars",
-                "Spoken tutorial",
-                "Fundamental",
-                "Programming Test",
-                "Online Aptitude Test",
-                "National Technical conference"
-            ]
-        }
+    contentPara2: {
+      contentHeading: "Membership Requirements",
+      list: [
+        "Being a student of mechanical branch of institute.",
+        "Attending and participating in all meetings/activities.",
+        "Contributing to the preparation and the coordination of the club’s activities.",
+      ],
     },
-    {
-        title: "electrocrew club",
-        imageUrl: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2FElectroCrew_logo.jpg?alt=media&token=549b03ee-e25c-48d6-adad-c960a032a603",
-        contentPara1: {
-            para: "ECE DEPARTMENT FORMED A CLUB NAMED “ElectroCrew” for the students of computer science department. Club is organizing a seminar on recent trends Electronics & Communications Engineering "
-        },
-        contentPara2: {
-            para: "Here are some precious moments from the inauguration of our club…."
-        },
-        contentPara3: {
-            para: "#ElectroCrew⚡"
-        },
-        contentPara4: {
-            para: "Workshop conducted by Mr.Deepak Pandey from Autronicals Infotech Pvt Ltd,Delhi organised by ElectroCrew."
-        },
-        contentPara5: {
-            para: "In presence of MITRC Director Dr.S.K Sharma , Club President Mr. Neeraj Jain , Club Vice President Mr.  Deepak Sharma and Department of Electronics and Communications  of MITRC Alwar"
-        }
-    }
-]
+    contentPara3: {
+      contentHeading: "Membership Advantages",
+      list: [
+        "The priority to attend sessions and activities.",
+        "Obtaining certificates of attendance for courses or workshops attended.",
+        "Getting support from institute when you show special skills.",
+      ],
+    },
+    contentPara4: {
+      contentHeading: "Student Coordinators",
+      list: ["Keshav Saini", "Gourav Saini", "Dilip Thakkar", "Apurv Gupta"],
+    },
+    contentPara5: {
+      contentHeading: "Chief Patrons",
+      list: [
+        "Shri Ashok Aggarwal (Executive Director)",
+        "Shri Amit Choudhary (Secretary)",
+      ],
+    },
+    contentPara6: {
+      contentHeading: "Advisory Group",
+      list: [
+        "Prof.(Dr.) S. K Sharma (Director)",
+        "Mr. Sanjay Babu Sharma ( Dean Academics)",
+        "Mr. Neeraj Jain (Dean Exam)",
+        "Mr. Vikas Mahalawat (Dean Student Affairs)",
+        "Mrs. Chhavi Nagpal (HR Executive)",
+        "Ms. Vaishali Gupta (TPO)",
+        "Mr. Mukesh Choudhary (HOD-ME)",
+      ],
+    },
+    contentPara7: {
+      contentHeading: "Faculty Coordinator",
+      list: ["Mr. Kalyan Singh"],
+    },
+    contentPara8: {
+      contentHeading: "Faculty Members",
+      list: ["Mr. Surendra Kumar", "Mr. Sushil Kumar Maurya"],
+    },
+  },
+  {
+    title: "ignight robotics club",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2FEE_Club2.jpg?alt=media&token=794252e2-7972-48dd-8ddc-69b76105fcd9",
+    contentPara1: {
+      para: "IGNIGHT ROBOTICS CLUB at Electrical Engineering Department, MITRC is an undergraduate student organization that provides ideas and resources to develop different types of robots. This club offers guidance, workshops and tutorials along with tools, components and workspace.  Club members participate in many technical events organized in different colleges.",
+    },
+  },
+  {
+    title: "tech wizard club",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2Ftech_wizard3A.jpg?alt=media&token=f129ae93-e459-4747-904f-3b183a59b07a",
+    contentPara1: {
+      contentHeading: "Mission  & Vision of TECH WIZARD",
+      list: [
+        "To motivate and provides excellence knowledge of young and dynamic computer science students to become as technology innovative leader, shape and preserve society with world class research environment.",
+        "Develop the students with core and basic conception of programming with most modern computer engineering knowledge.",
+        "Provides prospective approach to promote leadership skills in students with global IT Challenges .",
+        "To make the students good and worthy citizens of India serve superior digitalization revolution in the our society",
+      ],
+    },
+    contentPara2: {
+      contentHeading: "Motive Of TECH WIZARDS",
+      list: [
+        "Students are encourage to become more active.",
+        "Promote student Learning and Achievements.",
+        "Encourage the development of critical thinking skills.",
+        "It enhances Social skills Interactions.",
+        "Learning Outcomes are improved.",
+        "It can save time and requires a shared Workload.",
+        "Students get the chance to work on large projects",
+      ],
+    },
+    contentPara3: {
+      contentHeading: "Activities",
+      list: [
+        "Online Quiz",
+        "Code Debugging",
+        "Model/project competition",
+        "Departmental Social activities",
+        "Programming wars",
+        "Spoken tutorial",
+        "Fundamental",
+        "Programming Test",
+        "Online Aptitude Test",
+        "National Technical conference",
+      ],
+    },
+  },
+  {
+    title: "electrocrew club",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2019-7%2FElectroCrew_logo.jpg?alt=media&token=549b03ee-e25c-48d6-adad-c960a032a603",
+    contentPara1: {
+      para: "ECE DEPARTMENT FORMED A CLUB NAMED “ElectroCrew” for the students of computer science department. Club is organizing a seminar on recent trends Electronics & Communications Engineering ",
+    },
+    contentPara2: {
+      para: "Here are some precious moments from the inauguration of our club….",
+    },
+    contentPara3: {
+      para: "#ElectroCrew⚡",
+    },
+    contentPara4: {
+      para: "Workshop conducted by Mr.Deepak Pandey from Autronicals Infotech Pvt Ltd,Delhi organised by ElectroCrew.",
+    },
+    contentPara5: {
+      para: "In presence of MITRC Director Dr.S.K Sharma , Club President Mr. Neeraj Jain , Club Vice President Mr.  Deepak Sharma and Department of Electronics and Communications  of MITRC Alwar",
+    },
+  },
+];
 
 export const eventsGallery = [
-    {
-        title: "Curricular",
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/National-Workshop-CETPA-CSE-27-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Online-Workshop-on-Virtual-Labs-4-Aug.-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Webinar-Entrepreneurship-Talk-Prabandtosav-29-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Literacy-Activity-22-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Manodarpan-21-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/National-Webinar-by-BTU-16-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Fun-with-Science-webinar-15-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Gender-Equality-Webinar-16-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Human-Values-E-Certificates-Distribution-by-BTU-9-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/International-Webinar-Be-the-Change-10-July-2020-703x1024.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/International-Webinar-Dr.-Shaikh-Abdul-Azeem-30-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Leadership-Talk-11-July-2020.jpg'
-        ]
-    },
-    {
-        title: "CoCurricular",
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Webinar-Joy-of-Living-Session-2-29-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Webinar-Joy-of-Living-24-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Webinar-Joy-of-Giving-Session-3-31-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Manodarpan-21-July-2020-1-712x1024.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Prabandtosav-Career-Talk-31-July-2020-1024x712.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Leadership-Talk-11-July-2020-1-1024x712.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Fun-with-Science-webinar-15-July-2020-1-1024x712.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Human-Values-E-Certificates-Distribution-by-BTU-9-July-2020-1-1024x768.jpg'
-        ]
-    },
-    {
-        title: 'Plantation',
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation4.jpeg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation3.jpeg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation1.jpeg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Plantation-HDFC-Bank-8-July-2020-1024x722.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Save-Bird-Campaign-1024x606.jpg'
-        ]
-    },
-    {
-        title: 'Sports',
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/sports.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/sports.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/07/DSC_5828-1140x680.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/07/DSC_2317-1140x680-1024x611.jpg'
-        ]
-    },
-    {
-        title: 'CSRActivities',
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/2-Literacy-Activity-22-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/1-Gender-Equality-Webinar-16-July-2020.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/SVI-5-Feb-csr.jpg'
-        ]
-    },
-    {
-        title: 'CulturalActivities',
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/07/invincible-T20.jpeg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Fare.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Diwali-Celebration.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/convocation2.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/convocation1.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/convocation3.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/celebration1.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Winner-1-1024x682.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Singing-3-1-1024x682.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Ramp-Walk-1-1-1024x682.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Singing-2-1-1024x682.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/farewell2.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/farewell.jpg',
-            ''
-        ]
-    },
-    {
-        title: 'SIH',
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/SIH-2020-1-3-Aug.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/SIH-1.jpeg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/National-Hackathon-MUJ-16-17-Dec.-2019.jpg'
-        ]
-    },
-    {
-        title: 'HealthAndWelfare',
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Gandhi-Jyanti-Celebration-2-Oct.-2019.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/blood-donation2.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/blood-donation.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/blood-donation3.jpg'
-        ]
-    },
-    {
-        title: 'Picnic',
-        images: [
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/picnic-1-1.jpg',
-            'https://www.mitrc.ac.in/wp-content/uploads/2020/08/Wow2.jpg'
-        ]
-    }
-]
+  {
+    title: "Curricular",
+    images: [],
+  },
+  {
+    title: "CoCurricular",
+    images: [],
+  },
+  {
+    title: "Plantation",
+    images: [],
+  },
+  {
+    title: "Sports",
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fsports%2FDSC_6328.JPG?alt=media&token=c13a8a6f-480e-415f-9b25-8f9dc316fc5a",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fsports%2FDSC_6345.JPG?alt=media&token=a148f675-91e1-4885-b3c5-03993285a071",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fsports%2FDSC_6372.JPG?alt=media&token=6e323cd5-bdd8-4455-9254-e9f05ccf3c30",
+      
+    ],
+  },
+  {
+    title: "CSRActivities",
+    images: [],
+  },
+  {
+    title: "CulturalActivities",
+    images: [],
+  },
+  // {
+  //   title: "SIH",
+  //   images: [],
+  // },
+  {
+    title: "HealthAndWelfare",
+    images: [],
+  },
+  {
+    title: "Hackathon",
+    images: [
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FImage.jpg?alt=media&token=32ff0fd9-92af-425b-bfc4-61698ce5dbc1",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto1.jpg?alt=media&token=62f5de81-01a0-4451-a4fc-7ed107ec3166",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto10.jpg?alt=media&token=cf8f41c0-1808-4969-ba21-e9d0ff8aa4da",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto12.jpg?alt=media&token=4425b302-13e5-487f-b355-23fad125b788",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto13.jpg?alt=media&token=150745c0-cb9f-41e3-a8d7-c0c18cebbb05",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto14.jpg?alt=media&token=f618a67a-d499-4eb2-96f7-fa0f3fc98ddb",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto15.jpg?alt=media&token=1b24aa8a-cd20-42d3-92f2-a3e5ede4a85f",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto18.jpg?alt=media&token=1372e9ad-7014-47bf-a39c-ab481b758e5a",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto2.jpg?alt=media&token=f3a86998-cf37-490e-a7a1-5a91dddafd48",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto20.jpg?alt=media&token=ddc6322e-c583-4efd-b603-cf570793913d",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto21.jpg?alt=media&token=c9e8ba9b-2094-4718-9d8a-8e44bf3adca8",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto22.jpg?alt=media&token=68d1501d-340d-46ed-838d-82638e7c9217",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto23.jpg?alt=media&token=851f9bab-7ee2-416c-8c25-3ed4549b9f9c",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto24.jpg?alt=media&token=e7c032ec-550b-4d49-be42-b756312df128",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto26.jpg?alt=media&token=b882a12a-c857-43cf-9150-c63f849b3876",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto27.jpg?alt=media&token=6fdb97dc-fec8-48b7-bb8e-5b80ad66f2a5",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto29.jpg?alt=media&token=2718b3d4-3afa-4506-86c3-b616423c9969",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto3.jpg?alt=media&token=edf1dacf-bd06-401d-8f68-0def1fbeb6eb",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto30.jpg?alt=media&token=f08477b7-42eb-4dcd-a060-932a57e76008",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto4.jpg?alt=media&token=4d3dca13-e1f5-4ddd-b121-b30331fd99c1",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto5.jpg?alt=media&token=8711a2d5-b32d-4739-8845-727c69a9874f",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto7.jpg?alt=media&token=e0453932-2f3e-4c87-a2f9-c7877f6b6308",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto8.jpg?alt=media&token=1e377d39-b0a6-43bf-acf0-2ba081247fb9",
+    ],
+  },
+  {
+    title: "Picnic",
+    images: [],
+  },
+];
