@@ -17,6 +17,7 @@ import directorImg from "../../assets/images/director.png";
 import students from "../../assets/images/students.jpg";
 import advisory from "../../assets/images/advisory.jpg";
 import society from "../../assets/images/society.jpg";
+import styled from "styled-components";
 
 const staticData = {
   heading: "About MITRC Alwar",
@@ -28,26 +29,35 @@ const boardMembers = [
     id: 1,
     name: "Smt Bimla Devi",
     designation: "Chairperson",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp3.jpg?alt=media&token=eabf3dcc-041c-4444-a9c1-cbde6853fed2",
   },
   {
     id: 2,
     name: "Shri Ashok Agarwal",
     designation: "Secretary",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp2.jpg?alt=media&token=335fd395-0395-414b-b866-9463e5175271",
   },
   {
     id: 3,
     name: "Dr. G.K. Agarwal",
     designation: "Member",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp16.jpg?alt=media&token=fab6c1b3-ec60-4bb7-b24b-78bfaa2000d6",
   },
   {
     id: 4,
     name: "Shri Purshottam Gupta",
     designation: "Member",
+    image: "",
   },
   {
     id: 4,
     name: "Shri Piyush Gupta",
     designation: "Member",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp17.jpg?alt=media&token=071a9d6a-ea05-4f3c-b7ed-557fe8b02b1c",
   },
   // {
   //     id: 5,
@@ -58,31 +68,43 @@ const boardMembers = [
     id: 6,
     name: "Shri Amit Choudhary",
     designation: "Member",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp1.jpg?alt=media&token=42ad68b6-ba18-4c70-ab34-336a828ceb99",
   },
   {
     id: 7,
     name: "Shri Arvind Agarwal",
     designation: "Member",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp14.jpg?alt=media&token=f4ad5d47-a89f-42e2-83f4-d203870e0286",
   },
   {
     id: 8,
     name: "Dr. Rajeev Gupta",
     designation: "Member (Nominated by RTU)",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp12.jpg?alt=media&token=67a0ff99-710c-4ab3-88bc-665f5ebd8cc0",
   },
   {
     id: 9,
     name: "Dr. S.K. Sharma",
     designation: "Principal",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fdirector.png?alt=media&token=beacf5f4-e555-4e47-875b-f85626ebb1a9",
   },
   {
     id: 10,
     name: "Dr. Raish Mohammad",
     designation: "Member",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp19.jpg?alt=media&token=5bd62fb8-742a-469c-9fdf-9f30ffa442a6",
   },
   {
     id: 11,
     name: "Sh. Vikas Mehlawat",
     designation: "Member",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp18.jpg?alt=media&token=d822fad1-8143-4a46-88ef-87c69bbb85b7",
   },
 ];
 
@@ -90,8 +112,10 @@ const advisoryBoard = [
   {
     id: 1,
     name: "Mr. Rohit Goel (B.Tech. 1995)",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp5.jpg?alt=media&token=9d918112-d6fe-4885-83ac-c0c7e35649e0",
     designation:
-      "Computer Science From Indian Institute of Technology “IIT” , Kanpur –(INDIA)",
+      "Electronics & Communication Engineering From Indian Institute of Technology “IIT” , Kharagpur –(INDIA)",
     positions: [
       {
         id: 11,
@@ -107,7 +131,15 @@ const advisoryBoard = [
       },
       {
         id: 44,
-        position: "Director, IBA Craft Pvt. Ltd.",
+        position: "Software Engineer at Hughes Software Systems",
+      },
+      {
+        id: 55,
+        position: "Co-Founder/Producer at Buddha Organics Pvt. Ltd.",
+      },
+      {
+        id: 66,
+        position: "Cofounder, Manchitra Services Pvt. Ltd.",
       },
     ],
     email: "rohitgoel.mitrc@gmail.com",
@@ -115,15 +147,26 @@ const advisoryBoard = [
   {
     id: 2,
     name: "Mr. Rishi Chandra (B. Tech. 1995)",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp6.jpg?alt=media&token=9f16a3b6-930a-4f3f-81b8-ddf48944d4bc",
+    designation:
+      "Computer Science From Indian Institute of Technology “IIT” , Kanpur –(INDIA)",
     positions: [
       {
         id: 12,
-        position:
-          "Computer Science From Indian Institute of Technology “IIT” , Kanpur –(INDIA)",
+        position: "Director, Maza Learn Pvt. Ltd. Bangaluru",
       },
       {
         id: 13,
-        position: "Director, Rishi Chalchitra Pvt. Ltd.",
+        position: "Confluencer, Tradometry",
+      },
+      {
+        id: 14,
+        position: "Organic Farmer(Himalaya)",
+      },
+      {
+        id: 15,
+        position: "Director,Rishi Chalchitra Pvt. Ltd.,Mumbai",
       },
     ],
     email: "rishichandra.mitrc@gmail.com",
@@ -131,6 +174,7 @@ const advisoryBoard = [
   {
     id: 3,
     name: "Mr. Ashish Mohan (B. Tech. 1996)",
+    image: "",
     positions: [
       {
         id: 21,
@@ -141,12 +185,33 @@ const advisoryBoard = [
         id: 22,
         position: "Senior consultant, Clicksoftware India Pvt. Ltd.",
       },
+      {
+        id: 23,
+        position: "Director Engineering, Indepay | Setara Networks Worldwide",
+      },
+
+      {
+        id: 24,
+        position: "Director &amp; FSM Consultant,ATWorkForce",
+      },
+
+      {
+        id: 25,
+        position: "Senior Solutions Architect, Selelo",
+      },
+
+      {
+        id: 26,
+        position: "Solution Architect, Manchitra Services Pvt Ltd",
+      },
     ],
     email: "ashishmohan.mitrc@gmail.com",
   },
   {
     id: 4,
     name: "Mrs. Shalu Goel (B. Tech. 2000) ",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp4.jpg?alt=media&token=dc91f907-b7ae-4968-b0c1-8df5a0cd0d79",
     positions: [
       {
         id: 31,
@@ -158,12 +223,26 @@ const advisoryBoard = [
         position:
           "Head, Business Development, Whitelotus Consultants Pvt. Ltd.",
       },
+      {
+        id: 33,
+        position: "System Analyst,IBM",
+      },
+      {
+        id: 34,
+        position: "System Analyst, Birlasoft Ltd.",
+      },
+      {
+        id: 35,
+        position: "System Analyst, Motherson Sumi System Ltd.",
+      },
     ],
     email: "shalugoel.mitrc@gmail.com",
   },
   {
     id: 5,
     name: "Mr. Manish Bansal (B. Tech. 2002) ",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp10.jpg?alt=media&token=2335f68f-d39a-46a3-81af-014b517c7c69",
     positions: [
       {
         id: 41,
@@ -175,12 +254,32 @@ const advisoryBoard = [
   },
   {
     id: 6,
-    name: "Dr. G. K. Aggrawal (orthopaedician ) ",
+    name: "Dr. G. K. Aggrawal (orthopaedic and Joint Replacement Surgeon)) ",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp16.jpg?alt=media&token=fab6c1b3-ec60-4bb7-b24b-78bfaa2000d6",
     positions: [
       {
         id: 51,
         position:
-          "Head of the Department of orthopaedic Agaawal Hospital , New Delhi –(INDIA)",
+          "Head of the Department of Orthopaedic Aggarwal Hospital , New Delhi –(INDIA)",
+      },
+      {
+        id: 52,
+        position: "Consultant, Fortis Hospital, Shalimar Bagh, New Delhi",
+      },
+      {
+        id: 53,
+        position:
+          "Consultant, Al-Gamhooria Teaching Hospital, University of Aden",
+      },
+      {
+        id: 54,
+        position:
+          "Honour of being the Ex-Orthopaedic Surgeon to the President of Yemen.",
+      },
+      {
+        id: 55,
+        position: "MS from AIIMS,New Delhi (1973)",
       },
     ],
     email: "drgkaggrawal.mitrc@gmail.com",
@@ -188,10 +287,12 @@ const advisoryBoard = [
   {
     id: 7,
     name: "Dr. Arvind Aggrawal (orthopaedician ) ",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp14.jpg?alt=media&token=f4ad5d47-a89f-42e2-83f4-d203870e0286",
     positions: [
       {
         id: 61,
-        position: "orthopaedician in Agaawal Hospital , New Delhi –(INDIA)",
+        position: "Orthopaedician in Aggarwal Hospital , New Delhi –(INDIA)",
       },
     ],
     email: "drarvind.mitrc@gmail.com",
@@ -199,6 +300,7 @@ const advisoryBoard = [
   {
     id: 8,
     name: "Mr. Manjeet Choudhary (MBA 2009) ",
+    image : "",
     positions: [
       {
         id: 71,
@@ -414,7 +516,7 @@ const AboutUsPage = () => {
               style={{
                 width: "100%",
                 display: "grid",
-                gridTemplateColumns: "50% 50%",
+                gridTemplateColumns: "40% 40%",
                 listStylePosition: "inside",
                 marginTop: "10px",
                 color: "#2B2B2B",
@@ -424,9 +526,26 @@ const AboutUsPage = () => {
               {boardMembers.map((member) => (
                 <li
                   key={member.id}
-                  style={{ fontFamily: "DejaVu Sans", paddingLeft: "10vw" }}
+                  style={{
+                    fontFamily: "DejaVu Sans",
+                    paddingLeft: "10vw",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginTop: "30px",
+                  }}
                 >
-                  {member.name} ({member.designation})
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <BoardMemberImage src={member.image} />
+                    {member.name} ({member.designation})
+                  </div>
                 </li>
               ))}
             </ul>
@@ -456,6 +575,7 @@ const AboutUsPage = () => {
                 marginTop: "10px",
               }}
             >
+              <BoardMemberImage src={item.image}/>
               <Paragraph key={item.id}>
                 <strong style={{ fontSize: "1.4rem" }}>{item.name}</strong>
               </Paragraph>
@@ -539,3 +659,9 @@ const AboutUsPage = () => {
 };
 
 export default AboutUsPage;
+
+const BoardMemberImage = styled.img`
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+`;
