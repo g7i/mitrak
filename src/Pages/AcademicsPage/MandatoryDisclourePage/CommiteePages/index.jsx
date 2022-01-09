@@ -58,6 +58,7 @@ const LeftPannel = styled.div`
   flex-direction: column;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   align-items: center;
+  margin : 30px 0px 20px 30px;
 `;
 const LeftLink = styled(Link)`
   color: black;
