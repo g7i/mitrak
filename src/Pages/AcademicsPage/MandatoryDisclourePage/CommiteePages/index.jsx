@@ -10,12 +10,11 @@ import { Colors } from "../../../../constants/UiConstants";
 import { ListItem } from "./../../departments/components/imageSlider";
 import { RoutingData, commitesList } from "./../data";
 import styled from "styled-components";
-import { useHistory , useParams } from "react-router-dom";
-
+import { useHistory, useParams } from "react-router-dom";
 
 const CommitteePage = () => {
   const history = useHistory();
-  const {child} = useParams();
+  const { child } = useParams();
   return (
     <Layout>
       <Banner bannerHeading="Mandatory Disclosures" />
@@ -28,11 +27,9 @@ const CommitteePage = () => {
           textAlign: "center",
         }}
       >
-          {
-              RoutingData.map(item=>{
-                  item.link===child && item.component()
-              })
-          }
+        {RoutingData.map((item) => {
+          return item.link === child && item.component;
+        })}
       </PageContainer>
     </Layout>
   );

@@ -5,7 +5,7 @@ import {
 } from "../../../../components/styledComponents/GlobalComponents";
 import { ComplaintButton, Heading2 } from "./styles";
 
-const AntiRaggingPage = () => {
+const SgrcPage = () => {
   return (
     <div>
       <Heading>Prevention of Ragging</Heading>
@@ -66,7 +66,9 @@ const AntiRaggingPage = () => {
         Revised procedure for students to file online Anti Ragging Affidavit.
       </Paragraph>
       <ComplaintButton
-        onClick={()=>{window.location.href = "https://forms.gle/NX25Em56kCs7GxKS9"}}
+        onClick={() => {
+          window.location.href = "https://forms.gle/NX25Em56kCs7GxKS9";
+        }}
       >
         Click here to complaint
       </ComplaintButton>
@@ -74,4 +76,4 @@ const AntiRaggingPage = () => {
   );
 };
 
-export default AntiRaggingPage;
+export default SgrcPage;
