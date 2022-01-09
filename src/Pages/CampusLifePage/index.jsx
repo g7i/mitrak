@@ -6,11 +6,14 @@ import { useParams } from 'react-router-dom';
 import { amenities, studentaffair, clubandactivities } from './staticData/doc';
 import { FillImage, HalfImage, Heading, HyperLink, ListItem, PageContainer, Paragraph } from '../../components/styledComponents/GlobalComponents';
 import ComplaintForm from './ComplaintForm';
+import BusChart from "./BusChart";
 
 const CampusLife = () => {
 
     const { routename, child } = useParams();
     const [obj, setObj] = useState();
+
+    console.log('child', child);
 
     useEffect(() => {
         if (routename === 'amenities')
@@ -34,6 +37,7 @@ const CampusLife = () => {
             { title: "Gym" },
             { title: "Medical"},
             { title: "Library"},
+            { title: "Seminar Hall"},
             { title: "Language Lab"},
         ],
         "studentaffair": [
@@ -68,6 +72,15 @@ const CampusLife = () => {
         ]
     }
 
+    const hostelLinks = [
+        {title: "HOSTEL REGISTRATION", path: "/campus-life/hostel-registeration"},
+        {title: "HOSTEL RULES", path: "/"},
+        {title: "HOSTEL NOTICES", path: "/"},
+        {title: "HOSTEL NEWS & ACTIVITIES", path: "/"},
+        {title: "PERMISSION FOR ACCESSORIES & CELEBRATIONS", path: "/campus-life/pacform"},
+        {title: "PERMISSION FOR GOING OUTSIDE /HOME", path: "/campus-life/permission-going-outside"},
+        {title: "HOSTEL GRIEVANCE", path: "/campus-life/hostel-grievance"},
+    ]
 
     return (
         <Layout>
@@ -75,7 +88,7 @@ const CampusLife = () => {
                 bannerHeading={routename === "madatory-disclosures" ? "Mandatory Disclosures" : "Campus Life @MITRC"}
                 bannerDescription={routename}
             />
-            <PagesLayout rightNavLinks={relatedLinks[routename]} currentRoute={routename} pageName='campus-life'>
+            <PagesLayout rightNavLinks={relatedLinks[routename]} currentRoute={routename} pageName='campus-life' secondaryLinks={child === "hostel" && hostelLinks}>
                 <PageContainer>
                     {
                         obj?.map(item => item.title === child && (
@@ -103,6 +116,9 @@ const CampusLife = () => {
                     }
                     {
                         (child === 'grievance' || child ===  'complaint of caste base descrimination') && (<ComplaintForm title={child} />)
+                    }
+                    {
+                        child === 'conveyance' && <BusChart />
                     }
                 </PageContainer>
             </PagesLayout>

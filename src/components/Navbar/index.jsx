@@ -32,7 +32,7 @@ const DropDownContent = {
     { title: "Mendatory disclosures", link: "/academics/madatory-disclosures" },
   ],
   campusLife: [
-    { title: "Amenities", link: "/campus-life/amenities/hostel" },
+    { title: "Amenities", link: "/campus-life/amenities" },
     {
       title: "Students Affair",
       link: "/campus-life/studentaffair/anti%20ragging",
