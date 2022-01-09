@@ -3,8 +3,7 @@ import {
   Heading,
   Paragraph,
 } from "../../../../components/styledComponents/GlobalComponents";
-import { ComplaintButton, Heading2 } from "./styles";
-
+import { ComplaintButton, Heading2, PdfLinks } from "./styles";
 const AntiRaggingPage = () => {
   return (
     <div>
@@ -37,36 +36,68 @@ const AntiRaggingPage = () => {
         ways to curb and to root out ragging in all its forms.
       </Paragraph>
 
-      <Heading2>
+      <PdfLinks
+        target="_blank"
+        href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FFOR%20MORE%20INFORMATION%20-ANTI%20RAGGING%20COMITTE%20%26%20ANTI%20RAGGING%20SQUAD.pdf?alt=media&token=dc7468d8-3b57-42dd-a2a7-ee02499a8666"
+      >
         FOR MORE INFORMATION ABOUT ANTI RAGGING COMMITTEE PLEASE CLICK ON IT
-      </Heading2>
+      </PdfLinks>
 
-      <Paragraph>
-        Please report to Hostel Warden and Dean Student Affairs/Committee
-        Members about any ragging incident.  <br /> The details of anti-ragging
-        policy can be found in the following documents:
-      </Paragraph>
+      {/* <Heading2>
+        FOR MORE INFORMATION ABOUT ANTI RAGGING COMMITTEE PLEASE CLICK ON IT
+      </Heading2> */}
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <Paragraph>
+          Please report to Hostel Warden and Dean Student Affairs/Committee
+          Members about any ragging incident.  <br /> The details of
+          anti-ragging policy can be found in the following documents:
+        </Paragraph>
 
-      <Paragraph>
-        Supreme Court of India Orders - Curbing Ragging in Educational
-        Institutions
-      </Paragraph>
-      <Paragraph>
-        UGC Notice reg.:"Curbing the menace of ragging in Higher Educational
-        Institutions"
-      </Paragraph>
-      <Paragraph>
-        UGC Letter reg.:"Curbing the menace of ragging in Higher Educational
-        Institutions"
-      </Paragraph>
-      <Paragraph>
-        Some Points to remember about Ragging UGC Letter regarding:
-      </Paragraph>
-      <Paragraph>
-        Revised procedure for students to file online Anti Ragging Affidavit.
-      </Paragraph>
+        <PdfLinks
+          target={"_blank"}
+          href={
+            "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FSupreme-court-Judgment-2009-03-06-21.pdf?alt=media&token=649d6b2f-c441-4eb1-84ac-37f7c6cd72de"
+          }
+        >
+          Supreme Court of India Orders - Curbing Ragging in Educational
+          Institutions
+        </PdfLinks>
+        <PdfLinks
+          target={"_blank"}
+          href={
+            "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FUGC%20Notice%20reg.Curbing%20the%20menace%20of%20ragging%20in%20Higher%20Educational%20Institutions.pdf?alt=media&token=5d7c4ed9-1277-4bd2-8b98-788985d55a33"
+          }
+        >
+          UGC Notice reg.:"Curbing the menace of ragging in Higher Educational
+          Institutions"
+        </PdfLinks>
+        <PdfLinks
+          target={"_blank"}
+          href={
+            "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FUGC%20Letter%20reg.Curbing%20the%20menace%20of%20ragging%20in%20Higher%20Educational%20Institutions.pdf?alt=media&token=247a5a40-9dd5-4abb-a94d-9ec03e55d68c"
+          }
+        >
+          UGC Letter reg.:"Curbing the menace of ragging in Higher Educational
+          Institutions"
+        </PdfLinks>
+        <PdfLinks
+          target="_blank"
+          href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FSome%20points%20to%20remember%20about%20Ragging.pdf?alt=media&token=008b9958-c3b3-4cfc-9b12-87a5d9d4ee3c"
+        >
+          Some Points to remember about Ragging UGC Letter regarding
+        </PdfLinks>
+        <PdfLinks
+          target="_blank"
+          href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FPOSTER-ANTI%20RAGGING.pdf?alt=media&token=92c1fbaf-351f-4d58-b3b2-229fba054a15"
+        >
+          Posters that aware about Anti Ragging.
+        </PdfLinks>
+      </div>
+
       <ComplaintButton
-        onClick={()=>{window.location.href = "https://forms.gle/NX25Em56kCs7GxKS9"}}
+        onClick={() => {
+          window.location.href = "https://forms.gle/NX25Em56kCs7GxKS9";
+        }}
       >
         Click here to complaint
       </ComplaintButton>

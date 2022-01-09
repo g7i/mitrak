@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Colors } from '../../constants/UiConstants'
-
+import { Colors } from "../../constants/UiConstants";
+import { Link } from "react-router-dom";
 export const Nav = styled.div`
   padding: 0.5rem 2rem;
   display: flex;
@@ -44,6 +44,22 @@ export const ImgLogo = styled.img`
   padding-left: 2.5rem;
   @media (max-width: 768px) {
     padding-left: 0;
+  }
+`;
+
+export const ImageLogoLink = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  p {
+    font-size: 0.5rem;
+    text-decoration: none;
+    width: 10rem;
+    text-align: center;
+    padding-left: 30px;
+    color : black;
   }
 `;
 

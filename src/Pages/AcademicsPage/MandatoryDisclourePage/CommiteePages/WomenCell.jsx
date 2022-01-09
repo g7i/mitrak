@@ -3,7 +3,7 @@ import {
   Heading,
   Paragraph,
 } from "../../../../components/styledComponents/GlobalComponents";
-import { ComplaintButton, Heading2 } from "./styles";
+import { ComplaintButton, Heading2, PdfLinks } from "./styles";
 import styled from "styled-components";
 
 const scholarship = [
@@ -108,7 +108,7 @@ const WomenCellPage = () => {
       </Paragraph>
 
       {scholarship.map((item) => (
-        <div style={{marginTop : "50px"}}>
+        <div style={{ marginTop: "50px" }}>
           <Paragraph>{item.name}</Paragraph>
           <ScholSecndContainer>
             <HeadingSchol>Provider Details:</HeadingSchol>
@@ -128,6 +128,13 @@ const WomenCellPage = () => {
           </ScholSecndContainer>
         </div>
       ))}
+
+      <PdfLinks
+        target="_blank"
+        href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FFOR%20MORE%20INFORMATION%20-WOMEN%20CELL.pdf?alt=media&token=db766934-76f7-426c-9549-c38049400093"
+      >
+        FOR MORE INFORMATION REGARDING WOMEN CELL CLICK ON IT
+      </PdfLinks>
 
       {/* <ComplaintButton
         onClick={() => {

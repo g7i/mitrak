@@ -8,17 +8,20 @@ export const Heading2 = styled.h3`
 
 export const ComplaintButton = styled.button`
   width: ${(props) => props.width || "400px"};
-  height: ${(props) => props.height || "50px"};
+  height: ${(props) => props.height || "fit-content"};
   background-color: blue;
   border: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin: 0.5rem 0 ;
+  margin: 0.5rem 0;
   color: white;
   font-size: 1rem;
-  padding : 10px ; 
+  padding: 10px 30px;
+  :hover {
+    background-color: #4169e1;
+  }
 `;
 
 export const BulletPoint = styled.ul`
@@ -29,3 +32,16 @@ export const BulletPoint = styled.ul`
     color : rgba(0,0,0,0.7); 
   }
 `
+
+export const PdfLinks = styled.a`
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: blue;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  margin : 20px 0;
+  :hover {
+    color: #434892;
+  }
+`;

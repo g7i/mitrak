@@ -3,7 +3,7 @@ import {
   Heading,
   Paragraph,
 } from "../../../../components/styledComponents/GlobalComponents";
-import { BulletPoint, ComplaintButton, Heading2 } from "./styles";
+import { BulletPoint, ComplaintButton, Heading2, PdfLinks } from "./styles";
 
 const InternalComplaintCommitteePage = () => {
   return (
@@ -79,6 +79,13 @@ const InternalComplaintCommitteePage = () => {
         Do not stay silent because you are afraid that no one will believe you.
       </Heading>
       <Heading>Do not stay silent  because you fear ridicule.</Heading>
+
+      <PdfLinks
+        target="_blank"
+        href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FFOR%20MORE%20INFORMATION%20-ICC.pdf?alt=media&token=31d332a8-afc9-4340-bd5f-02eb514c8541"
+      >
+        FOR MORE INFORMATION REGARDING ICC CLICK ON IT
+      </PdfLinks>
 
       <ComplaintButton
         onClick={() => {

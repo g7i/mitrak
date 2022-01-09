@@ -38,7 +38,7 @@ const MandatoryDisclosuresPage = () => {
               >
                 {item.title}
               </h3>
-              <Button>View</Button>
+              <Button onClick={()=>{window.location.href = item.pdf }}>View</Button>
             </CommiteeWrapper>
           ))}
         </TableWrapper>
@@ -49,7 +49,7 @@ const MandatoryDisclosuresPage = () => {
 
 const TableWrapper = styled.div`
   padding: 30px;
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 30px;
