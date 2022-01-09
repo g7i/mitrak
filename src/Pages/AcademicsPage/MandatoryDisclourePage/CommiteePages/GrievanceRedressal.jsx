@@ -4,7 +4,7 @@ import {
   Heading,
   Paragraph,
 } from "../../../../components/styledComponents/GlobalComponents";
-import { ComplaintButton, Heading2 } from "./styles";
+import { ComplaintButton, Heading2, PdfLinks } from "./styles";
 
 const GriReadressalPage = () => {
   return (
@@ -38,6 +38,13 @@ const GriReadressalPage = () => {
         Methods etc, if and when they arise. The GRC convenes meetings
         periodically and takes steps to redress the grievance.
       </Paragraph>
+
+      <PdfLinks
+        target="_blank"
+        href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FFOR%20MORE%20INFORMATION%20-GRIEVANCE%20REDRESSAL%20MECHANISM.pdf?alt=media&token=be2e72c6-8ed2-4f7c-9744-e710dc92188a"
+      >
+        FOR MORE INFORMATION CLICK ON IT.
+      </PdfLinks>
 
       <Paragraph>
         Grievances may also be sent through e-mail to the Member/Officer

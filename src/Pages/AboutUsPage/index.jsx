@@ -490,7 +490,7 @@ const AboutUsPage = () => {
 
             <div style={{ display: "flex", flexDirection: "column" }}>
               <SmallText style={{ fontSize: "1.4rem" }}>
-                Dr. SK Sharma ( B.E, M.Tech,P.hD,MBA,P.hD)
+                {`Dr. SK Sharma ( B.E, MBA, M.Tech, P.hD(computer Science), P.hD(Maths) )`}
               </SmallText>
               <SmallText style={{ marginTop: "0.5rem" }}>Director</SmallText>
               <SmallText style={{ marginTop: "0.5rem" }}>MITRC</SmallText>
@@ -575,7 +575,7 @@ const AboutUsPage = () => {
                 marginTop: "10px",
               }}
             >
-              <BoardMemberImage src={item.image}/>
+              <BoardMemberImage src={item.image} />
               <Paragraph key={item.id}>
                 <strong style={{ fontSize: "1.4rem" }}>{item.name}</strong>
               </Paragraph>
