@@ -8,7 +8,7 @@ import MagazinePage from '../Pages/CampusLifePage/MagazinePage/index';
 import AdminDashboard from "../Pages/Dashboard/Admin/AdminDashBorad";
 import EventGallery from "../Pages/CampusLifePage/EventGallery";
 import DepartmentsPage from "../Pages/AcademicsPage/DepartmentsPage";
-import MandatoryDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclosuresPage";
+import MandatoryDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclourePage/MandatoryDisclosuresPage.jsx";
 import CoursesPage from "../Pages/AcademicsPage/CoursesPage";
 import StudentDashboard from "../Pages/Dashboard/Student/StudentDashboard";
 import Login from "../Pages/AuthPage/Login";
@@ -24,7 +24,7 @@ import InstituteFunctionaries from "../Pages/ContactsPage/InstituteFunctionaries
 import DivisionFunctionaries from "../Pages/ContactsPage/DivisionFunctionaries";
 import NewsScreen from "../Pages/NewsPage";
 import PlacementNewsScreen from "../Pages/PlacementNewsPage";
-
+import CommiteePage from "../Pages/AcademicsPage/MandatoryDisclourePage/CommiteePages/index";
 const Router = () => {
   const {
     actions: { updateUser }
@@ -67,7 +67,16 @@ const Router = () => {
           <Route path="/" exact component={App} />
           <Route path="/about" exact component={AboutUsPage} />
           <Route path="/how-to-reach" exact component={HowToReach} />
-          <Route path="/academics/madatory-disclosures" exact component={MandatoryDisclosuresPage} />
+          <Route
+            path="/academics/madatory-disclosures"
+            exact
+            component={MandatoryDisclosuresPage}
+          />
+          <Route
+            path="/academics/madatory-disclosures/:child"
+            exact
+            component={CommiteePage}
+          />
           <Route path="/contact" exact component={ContactsPage} />
           <Route path="/news" exact component={NewsScreen} />
           <Route path="/placement-news" exact component={PlacementNewsScreen} />
