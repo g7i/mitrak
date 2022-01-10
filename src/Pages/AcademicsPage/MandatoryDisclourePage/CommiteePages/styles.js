@@ -9,7 +9,7 @@ export const Heading2 = styled.h3`
 export const ComplaintButton = styled.button`
   width: ${(props) => props.width || "400px"};
   height: ${(props) => props.height || "fit-content"};
-  background-color: blue;
+  background-color: #6050dc;
   border: 0;
   display: flex;
   justify-content: center;

@@ -1,16 +1,19 @@
 export const amenitiesPage = {
   title: "Amenities",
-  para: "Most of us might have heard of tales from our parents and grandparents about how they would travel for kilometers barefoot to go to schools/college.\n" +
+  para1: "Most of us might have heard of tales from our parents and grandparents about how they would travel for kilometers barefoot to go to schools/college.\n" +
       "To them, having a toilet within accessible range was considered to be a luxury. Today, all of these things are of the past. Those luxuries have become a basic amenity and college campus facilities extend way beyond that.\n" +
-      "Today, all of these things are of the past. Those luxuries have become a basic amenity and school or college campus facilities extend way beyond that.\n" +
-      "\n" +
-      "While some people of the older generation might agree that all of this is a direct result of commercialization of education, the fact is that these campus facilities play a pivotal role in improving the work efficiency of both teachers and students. In such a situation, it will be wise on our part to analyze the role of the different campus amenities and discuss the part they play in building the bright future of the students\n" +
+
+      "With holistic development taking a prominent place in the contemporary education system, MITRC gearing up to include state-of-the-art facilities and infrastructure in the campus. Emphasis is not only given on curricular aspects but going beyond the classrooms, teachers are encouraging the students to participate in extra-curricular activities which require ample facilities. \n" +
+      "From spacious sports space to well-stocked libraries and ventilated classrooms to modern cafeterias, the management of the institute is compelled to design the campus according to the needs of the students today.\n" +
+      "",
+  para2: "Today, all of these things are of the past. Those luxuries have become a basic amenity and school or college campus facilities extend way beyond that.",
+  para3: "While some people of the older generation might agree that all of this is a direct result of commercialization of education, the fact is that these campus facilities play a pivotal role in improving the work efficiency of both teachers and students. In such a situation, it will be wise on our part to analyze the role of the different campus amenities and discuss the part they play in building the bright future of the students\n" +
       "\n" +
       "Therefore choosing the right college becomes the focus of every applying student out there. The focus will range from the courses available to the cost of living. But deciding between various institutes often comes down to where they will live and student amenities on offer.\n" +
       "\n" +
-      "With holistic development taking a prominent place in the contemporary education system, MITRC gearing up to include state-of-the-art facilities and infrastructure in the campus. Emphasis is not only given on curricular aspects but going beyond the classrooms, teachers are encouraging the students to participate in extra-curricular activities which require ample facilities. \n" +
-      "From spacious sports space to well-stocked libraries and ventilated classrooms to modern cafeterias, the management of the institute is compelled to design the campus according to the needs of the students today.\n" +
-      "Amenities include Student Services and Activities, Sports and Facilities.\n" +
+      "With holistic development taking a prominent place in the contemporary education system, MITRC gearing up to include state-of-the-art facilities and infrastructure in the campus. Emphasis is not only given on curricular aspects but going beyond the classrooms, teachers are encouraging the students to participate in extra-curricular activities which require ample facilities. ",
+  para4: "From spacious sports space to well-stocked libraries and ventilated classrooms to modern cafeterias, the management of the institute is compelled to design the campus according to the needs of the students today.",
+  para5: "Amenities include Student Services and Activities, Sports and Facilities" +
       "In MITRC, basic amenities are : ",
   facilities: [
       "Hostel",
@@ -41,6 +44,16 @@ export const amenitiesPage = {
 export const amenities = [
   {
     title: "hostel",
+    images: [
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fhostel%2FSLIDER%201.JPG?alt=media&token=9d33b576-01d8-4891-9cb8-1eb7d7a3d685',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fhostel%2FSLIDER%2010.JPG?alt=media&token=c19ce755-a0e1-4f2c-ac15-4a6ca617041b',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fhostel%2FSLIDER%2011.JPG?alt=media&token=dfdc0f48-229e-4e4e-bdd5-a7197fece6ce',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fhostel%2FSLIDER%2012.JPG?alt=media&token=39ce335a-a737-4de6-bef3-7fb4537e594f',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fhostel%2FSLIDER%2014.JPG?alt=media&token=8b2567a0-4383-484f-b7f2-bd07290e2fd8',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fhostel%2FSLIDER%2016.jpg?alt=media&token=da415f6e-cc96-4b48-8bf2-5afd8d02ed86',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fhostel%2FSLIDER%202.JPG?alt=media&token=222b7e89-6790-425e-a71f-2e8d3ae8cc69',
+        ''
+    ],
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2FHOSTEL.jpg?alt=media&token=a2985446-aa7c-414d-8875-b3d53c0d826c",
     contentPara1: {
@@ -127,26 +140,12 @@ export const amenities = [
         "Other Useful Accessories"
       ]
     },
-    contentPara9: {
-      contentHeading: "Warden Information",
-    },
-    contentPara10: {
-      contentHeading: "Mr. DEEPAK SHARMA (BOY'S HOSTEL WARDEN)",
-      list: [
-          "NUMBER: 9461319751",
-          "E MAIL : hostel@mitrc.ac.in"
-      ]
-    },
-    contentPara11: {
-      contentHeading: "Ms. AKANSHA SRIVASTAVA (GIRLS'S HOSTEL WARDEN)",
-      list: [
-        "NUMBER: 8178586605",
-        "E MAIL : hostel@mitrc.ac.in"
-      ]
-    }
   },
   {
     title: "laundary",
+    images: [
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Flaundry%2Fcollage%20(1).jpg?alt=media&token=155f0dc3-e653-4be2-936c-6feddb48fca4'
+    ],
     // imageUrl: "https://www.mitrc.ac.in/wp-content/uploads/2019/05/laundry.jpg",
     contentPara1: {
       para: "At MITRC hostels we are taking every step to make students comfortable and feel at home. The Laundry facility has been made available for the student living inside campus. In a day the laundry can wash, dry and press huge load.",
@@ -157,9 +156,10 @@ export const amenities = [
   },
   {
     title: "conveyance",
-    imageUrl:
+    images:[
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2FBUS-1140x680.jpg?alt=media&token=444b7dca-05b6-485d-b332-fef4a6f2134e",
-    contentPara1: {
+    ],
+      contentPara1: {
       para: "MITRC Alwar have our own network of buses which are designed as per the government norms and driven by trained and skilled drivers. Our bus network cover all nearby neighborhoods, including local communities and townships (Alwar).\n" +
           "We provides safe and secure bus facility to pick-up and drops our students at notified timings and scheduled stops. ",
     },
@@ -179,6 +179,12 @@ export const amenities = [
   },
   {
     title: "canteen",
+    images: [
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fcanteen%2FSLIDER-1.jpg?alt=media&token=48ecaec7-9da4-42ba-be1e-10945478d586',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fcanteen%2FSLIDER-2.JPG?alt=media&token=e2f8ddf0-a78a-4381-bb8f-732689f32ef4',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fcanteen%2FSLIDER-3.JPG?alt=media&token=f330ba6d-6a0c-4151-9cd6-18555ffb3d69',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fcanteen%2FTOP-1.jpg?alt=media&token=063e20bd-9319-4e63-913a-501dea90d0f5'
+    ],
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2F67-1140x680.jpg?alt=media&token=572dc1a3-d9a3-4c87-a71e-5fab887811b4",
     contentPara1: {
@@ -216,6 +222,13 @@ export const amenities = [
   },
   {
     title: "mess",
+    images: [
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fmess%2FSLIDER%202.JPG?alt=media&token=9de25fca-e8ea-47a8-8dd5-65cd2a3bc20c',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fmess%2FSLIDER%203.JPG?alt=media&token=d80cd216-b89c-476a-b6dc-99f1aa900467',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fmess%2FSLIDER%204.JPG?alt=media&token=f060c431-7e86-477d-8a4c-b7f4b62d1f62',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fmess%2FSLIDER-1.JPG?alt=media&token=a030bc48-fdf9-4de9-9655-8a1e3b461323',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fmess%2FTOP-1.JPG?alt=media&token=ba6a0fcc-d7be-42af-9618-9ec35f05cc17'
+    ],
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Fmess.JPG?alt=media&token=96e1dfbe-71dc-4ba8-aa92-a3642004eef7",
     contentPara1: {
@@ -269,8 +282,9 @@ export const amenities = [
   },
   {
     title: "gym",
-    imageUrl:
+    images:[
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Fgym.JPG?alt=media&token=303ae0c3-8441-4fb9-a3ea-9d122769458e",
+        ],
     contentPara1: {
       para: "The importance of exercise cannot be neglected for good physical and mental health. Benefits of gyms are numerous as it helps to increase the cardiovascular fitness, stronger muscles, better mood, better brain function, stronger bones, more flexibility, increased longevity, decreased weight, decreased risk of many cancers and improved appearance.",
     },
@@ -292,8 +306,9 @@ export const amenities = [
   },
   {
     title: "medical",
-    imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Fmedical.JPG?alt=media&token=71854e0e-01fa-46c3-8c9a-2f2f6c6bcef4",
+    images:
+     [ "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Fmedical.JPG?alt=media&token=71854e0e-01fa-46c3-8c9a-2f2f6c6bcef4",
+    ],
     contentPara1: {
       para: "Health is Wealth and only if your body is healthy your mind would be productive. Knowing and preaching this simple concept of wellbeing we make the student feel home away from home within campus. ",
     },
@@ -303,6 +318,13 @@ export const amenities = [
   },
   {
     title: "library",
+    images: [
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Flibrary%2FSLIDER%202.JPG?alt=media&token=dba87a34-2b36-4e8e-92c1-7eafe269491b',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Flibrary%2FSLIDER-1.jpg?alt=media&token=a8dd0ae6-20b6-417a-82af-ce6a8f565cb3',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Flibrary%2FSLIDER-2.JPG?alt=media&token=7f9f9c37-530e-4c01-a387-664c748a3d47',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Flibrary%2FSLIDER-3.JPG?alt=media&token=993a4c19-309d-4f39-8376-3b5e7ec4f9dc',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Flibrary%2FSLIDER-6.JPG?alt=media&token=99f90807-c93d-4fac-89b6-cef0286c71fb'
+    ],
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2F56-1140x680.jpg?alt=media&token=b12068cf-53a0-43cc-a2fa-c1414cf395c3",
     contentPara1: {
@@ -336,6 +358,15 @@ export const amenities = [
   },
   {
     title: "seminar hall",
+    images: [
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fseminar%2FSLIDER-%20%203.JPG?alt=media&token=2dafd374-1308-4abe-8fb7-47264806111c',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fseminar%2FSLIDER-%201.JPG?alt=media&token=a354dfb7-8da1-418c-a5ba-fe542d3479ce',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fseminar%2FSLIDER-1.jpg?alt=media&token=88b37a24-9ede-48c3-9bf5-95f2a161b9f4',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fseminar%2FSLIDER-2.jpg?alt=media&token=476a3158-d186-4dcb-adb6-79c337e06e07',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fseminar%2FSLIDER-5.JPG?alt=media&token=947c6286-cd03-4e94-bb81-55b725646297',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fseminar%2FSLIDER-6.JPG?alt=media&token=de4f0739-9851-47f5-a321-a755a5522846',
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Fseminar%2FTOP-1.JPG?alt=media&token=a4fc3c66-7985-4bfe-83ba-3c4c16cd5692'
+    ],
     contentPara1: {
       para: "In todays scenario, lots of research is going on. To discuss about these research, technical aspects, & to upgrade the faculties and students lot of activities like  Seminars, Conferences ,FDP, etc. carried out. So keeping this in mind, MITRC Alwar  has a well-equipped auditorium & Seminar Halls & Conference Room with a combine seating capacity of over 300 people. "
     },
@@ -348,6 +379,9 @@ export const amenities = [
   },
   {
     title: "language lab",
+    images: [
+        'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/amenities%2Flanguagelab%2FTOP.jpg?alt=media&token=ba25de40-7704-4562-9a7a-6ea0a3b92b68'
+    ],
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Famenities%2Flanguage-lab.JPG?alt=media&token=6881fdef-6847-4628-b0b8-85820217d207",
     contentPara1: {

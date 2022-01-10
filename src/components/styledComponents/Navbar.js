@@ -38,9 +38,9 @@ export const Hamburger = styled.div`
 `;
 
 export const ImgLogo = styled.img`
-  width: 11rem;
+  width: 14rem;
   height: auto;
-  padding: 0.2rem;
+  padding: 0.5rem;
   padding-left: 2.5rem;
   @media (max-width: 768px) {
     padding-left: 0;
@@ -54,8 +54,9 @@ export const ImageLogoLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     text-decoration: none;
+    font-weight : bold;
     width: 10rem;
     text-align: center;
     padding-left: 30px;

@@ -81,14 +81,14 @@ const boardMembers = [
   {
     id: 8,
     name: "Dr. Rajeev Gupta",
-    designation: "Member (Nominated by RTU)",
+    designation: "Member",
     image:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp12.jpg?alt=media&token=67a0ff99-710c-4ab3-88bc-665f5ebd8cc0",
   },
   {
     id: 9,
     name: "Dr. S.K. Sharma",
-    designation: "Principal",
+    designation: "Member",
     image:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fdirector.png?alt=media&token=beacf5f4-e555-4e47-875b-f85626ebb1a9",
   },
@@ -115,7 +115,7 @@ const advisoryBoard = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp5.jpg?alt=media&token=9d918112-d6fe-4885-83ac-c0c7e35649e0",
     designation:
-      "Electronics & Communication Engineering From Indian Institute of Technology “IIT” , Kharagpur –(INDIA)",
+      "Electronics & Communication Engineering From Indian Institute of Technology “IIT” , Kharagpur",
     positions: [
       {
         id: 11,
@@ -150,11 +150,11 @@ const advisoryBoard = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp6.jpg?alt=media&token=9f16a3b6-930a-4f3f-81b8-ddf48944d4bc",
     designation:
-      "Computer Science From Indian Institute of Technology “IIT” , Kanpur –(INDIA)",
+      "Computer Science From Indian Institute of Technology “IIT” , Kanpur",
     positions: [
       {
         id: 12,
-        position: "Director, Maza Learn Pvt. Ltd. Bangaluru",
+        position: "Director, Maza Learn Pvt. Ltd. Bengaluru",
       },
       {
         id: 13,
@@ -174,12 +174,13 @@ const advisoryBoard = [
   {
     id: 3,
     name: "Mr. Ashish Mohan (B. Tech. 1996)",
-    image: "",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FWhatsApp%20Image%202022-01-10%20at%2011.23.35%20AM.jpeg?alt=media&token=ef428162-2411-4c38-bc1f-8b6875064099",
     positions: [
       {
         id: 21,
         position:
-          "Computer Science From Indian Institute of Technology “IIT” , Kharagpur –(INDIA)",
+          "Computer Science From Indian Institute of Technology “IIT” , Kharagpur",
       },
       {
         id: 22,
@@ -216,7 +217,7 @@ const advisoryBoard = [
       {
         id: 31,
         position:
-          "Electrical Engineering From Jamia Millia Islamia “JMI” , New Delhi –(INDIA)",
+          "Electrical Engineering From Jamia Millia Islamia “JMI” , New Delhi",
       },
       {
         id: 32,
@@ -247,21 +248,21 @@ const advisoryBoard = [
       {
         id: 41,
         position:
-          "Computer Science From Indian Institute of Technology “IIT” , New Delhi –(INDIA )",
+          "Computer Science From Indian Institute of Technology “IIT” , New Delhi ",
       },
     ],
     email: "manishbansal.mitrc@gmail.com",
   },
   {
     id: 6,
-    name: "Dr. G. K. Aggrawal (orthopaedic and Joint Replacement Surgeon)) ",
+    name: "Dr. G. K. Aggrawal (orthopaedic ) ",
     image:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp16.jpg?alt=media&token=fab6c1b3-ec60-4bb7-b24b-78bfaa2000d6",
     positions: [
       {
         id: 51,
         position:
-          "Head of the Department of Orthopaedic Aggarwal Hospital , New Delhi –(INDIA)",
+          "Head of the Department of Orthopaedic Aggarwal Hospital , New Delhi",
       },
       {
         id: 52,
@@ -286,13 +287,13 @@ const advisoryBoard = [
   },
   {
     id: 7,
-    name: "Dr. Arvind Aggrawal (orthopaedician ) ",
+    name: "Dr. Arvind Aggrawal (orthopaedician) ",
     image:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp14.jpg?alt=media&token=f4ad5d47-a89f-42e2-83f4-d203870e0286",
     positions: [
       {
         id: 61,
-        position: "Orthopaedician in Aggarwal Hospital , New Delhi –(INDIA)",
+        position: "Orthopaedician in Aggarwal Hospital , New Delhi",
       },
     ],
     email: "drarvind.mitrc@gmail.com",
@@ -300,7 +301,8 @@ const advisoryBoard = [
   {
     id: 8,
     name: "Mr. Manjeet Choudhary (MBA 2009) ",
-    image : "",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp15.jpg?alt=media&token=45db63be-34b2-4338-992f-24f73c3047f0",
     positions: [
       {
         id: 71,
@@ -348,9 +350,9 @@ const AboutUsPage = () => {
           alt="mitrc alwar rajasthan"
         />
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <SmallText>
+          <SmallText wt={700} color={"#000"}>
             Address: 6th Mile Stone Delhi – Tijara State Highway, Sirmoli Road
-            ,Village Jharkhera , Alwar, Rajasthan, 301028
+            ,Village Jharkhera , Alwar, Rajasthan - 301028
           </SmallText>
           <div style={{ marginTop: "0.8rem" }}></div>
 
@@ -408,9 +410,9 @@ const AboutUsPage = () => {
           <Box>
             <FillImage
               src={
-                "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F5_6244351392857720050.jpg?alt=media&token=ce6d5fa0-b7e5-4660-9945-3ba4a393b029"
+                "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FWhatsApp%20Image%202022-01-10%20at%2011.23.35%20AM%20(1).jpeg?alt=media&token=b63729e8-a1ef-4732-a8cc-de711ea5a5e8"
               }
-              alt="chairman mitrc alwar"
+              alt="chairperson mitrc alwar"
             />
           </Box>
           <Box>
@@ -438,10 +440,9 @@ const AboutUsPage = () => {
               <SmallText style={{ fontSize: "1.4rem" }}>
                 Mrs. Bimla Devi
               </SmallText>
-              <SmallText style={{ marginTop: "0.5rem" }}>Chairman</SmallText>
+              <SmallText style={{ marginTop: "0.5rem" }}>Chairperson</SmallText>
               <SmallText style={{ marginTop: "0.5rem" }}>
-                MITRC & AIll India Arya Samajis Society for Advance Education &
-                Research
+                MITRC & AIASSAER
               </SmallText>
               <SmallText style={{ margin: "0.5rem 0" }}>
                 Number: +91 9414063671
@@ -579,6 +580,16 @@ const AboutUsPage = () => {
               <Paragraph key={item.id}>
                 <strong style={{ fontSize: "1.4rem" }}>{item.name}</strong>
               </Paragraph>
+              <div
+                style={{
+                  color: "#32404D",
+                  fontFamily: "DejaVu Sans",
+                  lineHeight: "1.3rem",
+                  fontSize: "0.9rem",
+                }}
+              >
+                {item.designation}
+              </div>
               {item.positions.map((item) => (
                 <div
                   key={item.id}
@@ -646,11 +657,12 @@ const AboutUsPage = () => {
         >
           <SmallText>
             Address: 6th Mile Stone Delhi – Tijara State Highway, Sirmoli Road
-            ,Village Jharkhera , Alwar, Rajasthan, 301028
+            ,Village Jharkhera , Alwar, Rajasthan - 301028
           </SmallText>
           <div style={{ marginTop: "0.8rem" }}></div>
 
           <SmallText>Phone: +91 9414063671</SmallText>
+          <div style={{ marginTop: "0.8rem" }}></div>
           <SmallText>E-mail: aiassaer@gmail.com</SmallText>
         </div>
       </Container>

@@ -47,7 +47,7 @@ export default function Courses() {
               }
             />
           </ImageWrapper>
-          <CardTitle>Bachelors of Technology</CardTitle>
+          <CardTitle>Bachelor Of Technology</CardTitle>
           <CardContent>
             <ul>
               {btech.map((item, index) => (
@@ -64,7 +64,7 @@ export default function Courses() {
               }
             />
           </ImageWrapper>
-          <CardTitle>Masters of Technology</CardTitle>
+          <CardTitle>Master Of Technology</CardTitle>
           <CardContent>
             <ul>
               {mtech.map((item, index) => (

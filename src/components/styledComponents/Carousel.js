@@ -82,8 +82,8 @@ export const SlideHeading = styled.h1`
   font-weight: bold;
   color: white;
   margin-bottom: 0.5rem;
-
-  @media (max-width:768px) {
+  text-transform: capitalize;
+  @media (max-width: 768px) {
     font-size: 1.8rem;
     text-align: center;
   }

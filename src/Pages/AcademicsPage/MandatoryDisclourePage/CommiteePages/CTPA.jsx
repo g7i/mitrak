@@ -43,7 +43,7 @@ const CtpaPage = () => {
 
       <BulletPoint>
         <li>
-          1. Tobacco products cannot be sold to person below the age of 18
+          Tobacco products cannot be sold to person below the age of 18
           years, and in places within 100 yards radius from the outer boundary
           of institute Protection of Section-6b
         </li>

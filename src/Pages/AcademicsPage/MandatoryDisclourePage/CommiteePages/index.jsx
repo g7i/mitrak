@@ -70,6 +70,7 @@ const LeftLink = styled(Link)`
   &:hover {
     color: #2c7ec6;
   }
+  text-transform: capitalize;
 `;
 
 const LeftPanelHeading = styled.div`

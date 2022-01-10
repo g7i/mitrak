@@ -64,7 +64,7 @@ const scholarship = [
 const WomenCellPage = () => {
   return (
     <div>
-      <Heading>Prevention of Ragging</Heading>
+      <Heading>Women Cell</Heading>
       <Paragraph>
         Women Empowerment and Gender Equality are the most important
         requirements for the upliftment and progress of our nation. In the
@@ -109,7 +109,9 @@ const WomenCellPage = () => {
 
       {scholarship.map((item) => (
         <div style={{ marginTop: "50px" }}>
-          <Paragraph>{item.name}</Paragraph>
+          <Paragraph style={{ fontWeight: 800, color: "#2C7EC6" }}>
+            {item.name}
+          </Paragraph>
           <ScholSecndContainer>
             <HeadingSchol>Provider Details:</HeadingSchol>
             {item.provider}

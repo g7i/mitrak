@@ -7,7 +7,7 @@ import { ComplaintButton, Heading2, PdfLinks } from "./styles";
 const AntiRaggingPage = () => {
   return (
     <div>
-      <Heading>Prevention of Ragging</Heading>
+      <Heading>Anti Ragging Committee</Heading>
       <Paragraph>
         Ragging at MITRC Campus is strictly prohibited and is a punishable
         offense as per institute honor code. There are strict guidelines from
