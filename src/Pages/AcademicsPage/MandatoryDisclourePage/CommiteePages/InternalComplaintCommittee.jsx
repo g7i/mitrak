@@ -8,6 +8,7 @@ import { BulletPoint, ComplaintButton, Heading2, PdfLinks } from "./styles";
 const InternalComplaintCommitteePage = () => {
   return (
     <div>
+      <Heading>Internal Complaint Committee</Heading>
       <Paragraph>
         MITRC endeavours to create a sustainable, equal-opportunity environment
         conducive to an all-round development of women members of the campus

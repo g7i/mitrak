@@ -38,7 +38,7 @@ export const RoutingData = [
     pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Forganization-chart-mitrc.jpg?alt=media&token=b298fd5d-282d-43de-b786-1cd86e37af8c",
   },
   {
-    title: "Grievance redressal mechanism for faculty and students",
+    title: "Grievance redressal mechanism (SGRC)",
     component: <GriReadressalPage />,
     link: "grievance-redressal-mechanism-for-faculty-and-students",
   },
@@ -56,7 +56,7 @@ export const RoutingData = [
   },
   {
     title: "Anti ragging squad",
-    component: <AntiRaggingSquad />,
+    component: <AntiRaggingPage />,
     link: "anti-ragging-squad",
     pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FAnti%20Ragging%20Squad.pdf?alt=media&token=cbb1cbb7-c3f6-4434-b408-021e3978730a",
   },
@@ -93,12 +93,12 @@ export const RoutingData = [
     link: "kashmiri-students-grievance-redressal",
     pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FKashmiri%20Students%20Grievance%20Redressal.pdf?alt=media&token=d4354ab2-f844-4643-aa0c-69cd42ef94cc",
   },
-  {
-    title: "SGRC",
-    component: <SgrcPage />,
-    link: "sgrc",
-    pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FSGRC.pdf?alt=media&token=7e017ecd-d67c-4f88-80bc-cb27dc9ca14e",
-  },
+  // {
+  //   title: "SGRC",
+  //   component: <SgrcPage />,
+  //   link: "sgrc",
+  //   pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FSGRC.pdf?alt=media&token=7e017ecd-d67c-4f88-80bc-cb27dc9ca14e",
+  // },
   ////////////////////
 
   {

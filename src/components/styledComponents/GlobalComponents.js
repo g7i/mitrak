@@ -101,7 +101,8 @@ export const HyperLink = styled.a`
 `;
 
 export const SmallText = styled.span`
-  color: ${Colors.SECONDARY}
+  color: ${props=>props.color || Colors.SECONDARY}
+  font-weight : ${props=>props.wt || "normal"}
 `;
 
 export const Paragraph = styled.p`

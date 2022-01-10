@@ -11,13 +11,13 @@ const studentData = [
     name: "Zahoor khan",
     father: "mohd iliyaz khan",
     course: "b.tech",
-    address: "poonch,j&k",
+    address: "poonch, j&k",
   },
   {
     name: "Maqsood Ahmad tali",
     father: "mohd akbar tali",
     course: "b.tech",
-    address: "baramulla,j&k",
+    address: "baramulla, j&k",
   },
   {
     name: "Mohit sharma",
@@ -47,13 +47,13 @@ const studentData = [
     name: "Sahid Aziz",
     father: "mohd. Aziz",
     course: "b.tech",
-    address: "Poonch,j&k",
+    address: "Poonch, j&k",
   },
   {
     name: "Shahor khan",
     father: "mohd. iliyaz khan",
     course: "b.tech",
-    address: "Poonch,j&k",
+    address: "Poonch, j&k",
   },
 ];
 
@@ -81,14 +81,14 @@ const KashmiriStudentPage = () => {
         </tr>
         {studentData.map((item) => (
           <tr>
-            <td>{item.name}</td>
-            <td>{item.father}</td>
-            <td>{item.course}</td>
-            <td>{item.address}</td>
+            <td style={{ textTransform: "uppercase" }}>{item.name}</td>
+            <td style={{ textTransform: "uppercase" }}>{item.father}</td>
+            <td style={{ textTransform: "uppercase" }}>{item.course}</td>
+            <td style={{ textTransform: "uppercase" }}>{item.address}</td>
           </tr>
         ))}
       </Table>
-      <div style={{marginTop : "40px"}}></div>
+      <div style={{ marginTop: "40px" }}></div>
       <ComplaintButton
         onClick={() => {
           window.location.href = "https://forms.gle/sPdHZnHpiUh9VRi67";

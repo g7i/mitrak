@@ -82,6 +82,8 @@ const ContactsPage = () => {
             src={
               "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fgoogle-earth.png?alt=media&token=d1284315-09b1-49b5-a734-06ada21c187d"
             }
+            onClick={()=>{window.location.href =
+              "https://earth.google.com/web/search/MITRC+College+Campus,+Sirmoli+Road,+Jahar+Khera,+Rajasthan/@27.63370465,76.64956745,267.8754726a,436.75831862d,35y,0h,45t,0r/data=CqUBGnsSdQolMHgzOTcyOTdmMTBiOTJiMGU3OjB4NjQ5ZTFiMTEyOGRmMGRjNBlqEyf3O6I7QCGp1fydkilTQCo6TUlUUkMgQ29sbGVnZSBDYW1wdXMsIFNpcm1vbGkgUm9hZCwgSmFoYXIgS2hlcmEsIFJhamFzdGhhbhgCIAEiJgokCTwcY-pDczJAETscY-pDczLAGSjrH-G5dyRAIeJn4LCKJ1bAKAI";}}
           />
         </GoogleEarthImageWrapper>
       </Layout>

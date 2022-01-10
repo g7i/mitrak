@@ -9,7 +9,7 @@ import { ComplaintButton, Heading2, PdfLinks } from "./styles";
 const GriReadressalPage = () => {
   return (
     <div>
-      <Heading>ORGANIZATIONAL CHART AND PROCESSES</Heading>
+      <Heading>Grievance Redressal Committee (SGRC)</Heading>
       <Paragraph>
         As per the F.No. 1-103/AICTE/GRC/Regulation/2021 of the All-India
         Council for Technical Education, notification dated March 22, 2021, ‘A
@@ -21,7 +21,7 @@ const GriReadressalPage = () => {
         office.
       </Paragraph>
 
-      <Heading>Grievance Redressal Committee</Heading>
+      {/* <Heading>Grievance Redressal Committee</Heading> */}
       <Paragraph>
         It is good to air a grievance rather than to keep it bottled up.
         Protection of human rights is essential for all round development of an

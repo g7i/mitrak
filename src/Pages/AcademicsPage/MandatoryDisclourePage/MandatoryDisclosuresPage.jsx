@@ -26,7 +26,7 @@ const MandatoryDisclosuresPage = () => {
         }}
       >
         <TableWrapper>
-          <Heading style={{ color: Colors.BLUE, marginBottom: "3rem" }}>
+          <Heading style={{ color: "#8a2be2", marginBottom: "3rem" }}>
             Mendatory Disclosures
           </Heading>
           {RoutingData.map((item) => (
@@ -35,10 +35,17 @@ const MandatoryDisclosuresPage = () => {
                 onClick={() =>
                   history.push(`/academics/madatory-disclosures/${item.link}`)
                 }
+                style={{textTransform : 'capitalize'}}
               >
                 {item.title}
               </h3>
-              <Button onClick={()=>{window.location.href = item.pdf }}>View</Button>
+              <Button
+                onClick={() => {
+                  window.location.href = item.pdf;
+                }}
+              >
+                View
+              </Button>
             </CommiteeWrapper>
           ))}
         </TableWrapper>
