@@ -116,9 +116,7 @@ const Navbar = () => {
         <DropDown content={DropDownContent.campusLife}>
           <MenuLink href="#">Campus Life</MenuLink>
         </DropDown>
-        <DropDown content={DropDownContent.placements}>
-          <MenuLink href="#">Placements</MenuLink>
-        </DropDown>
+        <MenuLink href="/placements">Placements</MenuLink>
 
         <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">
           Apply For Admission

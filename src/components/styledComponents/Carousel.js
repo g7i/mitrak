@@ -56,7 +56,7 @@ export const SlideTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   z-index: 10;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.3);
   //box-shadow: 0 0 10px #ffffff90;
   border-radius: 10px;
   max-width: 60%;

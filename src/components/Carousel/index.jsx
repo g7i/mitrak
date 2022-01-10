@@ -35,7 +35,7 @@ const SlideTextData = [
     subtitle: "Believe in Good Academics with Well Discipline",
   },
   {
-    title: "Think placement think MITRC",
+    title: "Think Placement Think MITRC",
     subtitle: "Committed to Excellence & to Build Better",
   },
   {

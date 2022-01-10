@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { Colors } from "../../constants/UiConstants";
 
 export const FullScreenContainer = styled.div`
@@ -116,6 +116,11 @@ export const Paragraph = styled.p`
   @media (max-width: 768px) {
     font-size: 1rem;
     text-align: ${({align}) => align ? align : 'justify'};
+  }
+  @media screen and (max-width: 1024px) {
+    ${({center}) => center && css`
+      text-align: center;
+    `}
   }
 `;
 
