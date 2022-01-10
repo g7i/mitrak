@@ -1,16 +1,19 @@
 export const amenitiesPage = {
   title: "Amenities",
-  para: "Most of us might have heard of tales from our parents and grandparents about how they would travel for kilometers barefoot to go to schools/college.\n" +
+  para1: "Most of us might have heard of tales from our parents and grandparents about how they would travel for kilometers barefoot to go to schools/college.\n" +
       "To them, having a toilet within accessible range was considered to be a luxury. Today, all of these things are of the past. Those luxuries have become a basic amenity and college campus facilities extend way beyond that.\n" +
-      "Today, all of these things are of the past. Those luxuries have become a basic amenity and school or college campus facilities extend way beyond that.\n" +
-      "\n" +
-      "While some people of the older generation might agree that all of this is a direct result of commercialization of education, the fact is that these campus facilities play a pivotal role in improving the work efficiency of both teachers and students. In such a situation, it will be wise on our part to analyze the role of the different campus amenities and discuss the part they play in building the bright future of the students\n" +
+
+      "With holistic development taking a prominent place in the contemporary education system, MITRC gearing up to include state-of-the-art facilities and infrastructure in the campus. Emphasis is not only given on curricular aspects but going beyond the classrooms, teachers are encouraging the students to participate in extra-curricular activities which require ample facilities. \n" +
+      "From spacious sports space to well-stocked libraries and ventilated classrooms to modern cafeterias, the management of the institute is compelled to design the campus according to the needs of the students today.\n" +
+      "",
+  para2: "Today, all of these things are of the past. Those luxuries have become a basic amenity and school or college campus facilities extend way beyond that.",
+  para3: "While some people of the older generation might agree that all of this is a direct result of commercialization of education, the fact is that these campus facilities play a pivotal role in improving the work efficiency of both teachers and students. In such a situation, it will be wise on our part to analyze the role of the different campus amenities and discuss the part they play in building the bright future of the students\n" +
       "\n" +
       "Therefore choosing the right college becomes the focus of every applying student out there. The focus will range from the courses available to the cost of living. But deciding between various institutes often comes down to where they will live and student amenities on offer.\n" +
       "\n" +
-      "With holistic development taking a prominent place in the contemporary education system, MITRC gearing up to include state-of-the-art facilities and infrastructure in the campus. Emphasis is not only given on curricular aspects but going beyond the classrooms, teachers are encouraging the students to participate in extra-curricular activities which require ample facilities. \n" +
-      "From spacious sports space to well-stocked libraries and ventilated classrooms to modern cafeterias, the management of the institute is compelled to design the campus according to the needs of the students today.\n" +
-      "Amenities include Student Services and Activities, Sports and Facilities.\n" +
+      "With holistic development taking a prominent place in the contemporary education system, MITRC gearing up to include state-of-the-art facilities and infrastructure in the campus. Emphasis is not only given on curricular aspects but going beyond the classrooms, teachers are encouraging the students to participate in extra-curricular activities which require ample facilities. ",
+  para4: "From spacious sports space to well-stocked libraries and ventilated classrooms to modern cafeterias, the management of the institute is compelled to design the campus according to the needs of the students today.",
+  para5: "Amenities include Student Services and Activities, Sports and Facilities" +
       "In MITRC, basic amenities are : ",
   facilities: [
       "Hostel",

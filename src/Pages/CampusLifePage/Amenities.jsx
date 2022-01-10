@@ -29,7 +29,11 @@ const Amenities = () => {
             />
             <PagesLayout rightNavLinks={rightNavLinks} pageName='amenities'>
                 <PageContainer>
-                    <Paragraph>{amenitiesPage.para}</Paragraph>
+                    <Paragraph>{amenitiesPage.para1}</Paragraph>
+                    <Paragraph>{amenitiesPage.para2}</Paragraph>
+                    <Paragraph>{amenitiesPage.para3}</Paragraph>
+                    <Paragraph>{amenitiesPage.para4}</Paragraph>
+                    <Paragraph>{amenitiesPage.para5}</Paragraph>
                     {
                         amenitiesPage.facilities.map((item, index) => (
                             <ListItem key={index}>{item}</ListItem>
