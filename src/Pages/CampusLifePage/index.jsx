@@ -6,11 +6,17 @@ import { useParams } from 'react-router-dom';
 import { amenities, studentaffair, clubandactivities } from './staticData/doc';
 import { FillImage, HalfImage, Heading, HyperLink, ListItem, PageContainer, Paragraph } from '../../components/styledComponents/GlobalComponents';
 import ComplaintForm from './ComplaintForm';
+import BusChart from "./BusChart";
+import {getImagesFromStorage} from "../../utils/firebase/images";
+import Slider from "react-slick";
 
 const CampusLife = () => {
 
     const { routename, child } = useParams();
     const [obj, setObj] = useState();
+    const [index, setIndex] = useState(0);
+
+console.log('child', child)
 
     useEffect(() => {
         if (routename === 'amenities')
@@ -24,6 +30,19 @@ const CampusLife = () => {
         }
     }, [routename])
 
+    useEffect(() => {
+        if(child === 'hostel') setIndex(0)
+        else if(child === 'laundary') setIndex(1)
+        else if(child === 'conveyance') setIndex(2)
+        else if(child === 'canteen') setIndex(3)
+        else if(child === 'mess') setIndex(4)
+        else if(child === 'gym') setIndex(5)
+        else if(child === 'medical') setIndex(6)
+        else if(child === 'library') setIndex(7)
+        else if(child === 'seminar hall') setIndex(8)
+        else if(child === 'language lab') setIndex(9)
+    },[child])
+
     const relatedLinks = {
         "amenities": [
             { title: "Hostel" },
@@ -34,6 +53,7 @@ const CampusLife = () => {
             { title: "Gym" },
             { title: "Medical"},
             { title: "Library"},
+            { title: "Seminar Hall"},
             { title: "Language Lab"},
         ],
         "studentaffair": [
@@ -68,6 +88,27 @@ const CampusLife = () => {
         ]
     }
 
+    const hostelLinks = [
+        {title: "HOSTEL REGISTRATION", path: "/campus-life/hostel-registeration"},
+        {title: "HOSTEL RULES", path: "/"},
+        {title: "HOSTEL NOTICES", path: "/"},
+        {title: "HOSTEL NEWS & ACTIVITIES", path: "/"},
+        {title: "PERMISSION FOR ACCESSORIES & CELEBRATIONS", path: "/campus-life/pacform"},
+        {title: "PERMISSION FOR GOING OUTSIDE /HOME", path: "/campus-life/permission-going-outside"},
+        {title: "WARDEN INFORMATION", path: "/campus-life/hostel-warden"},
+        {title: "HOSTEL GRIEVANCE", path: "/campus-life/hostel-grievance"},
+    ]
+
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true
+    };
 
     return (
         <Layout>
@@ -75,12 +116,20 @@ const CampusLife = () => {
                 bannerHeading={routename === "madatory-disclosures" ? "Mandatory Disclosures" : "Campus Life @MITRC"}
                 bannerDescription={routename}
             />
-            <PagesLayout rightNavLinks={relatedLinks[routename]} currentRoute={routename} pageName='campus-life'>
+            <PagesLayout rightNavLinks={relatedLinks[routename]} currentRoute={routename} pageName='campus-life' secondaryLinks={child === "hostel" && hostelLinks}>
                 <PageContainer>
+                    <Slider {...settings}>
+                        {
+                            amenities[index]?.images?.map(item => (
+                                <HalfImage src={item} alt="image carousel" />
+                            ))
+                        }
+
+                    </Slider>
                     {
                         obj?.map(item => item.title === child && (
                             <>
-                                {item?.imageUrl && (<FillImage src={item?.imageUrl} alt="mitrc image" />)}
+                                {/*{item?.imageUrl && (<FillImage src={item?.imageUrl} alt="mitrc image" />)}*/}
                                 {
                                     Object.keys(item).map(key => (
                                         <>
@@ -103,6 +152,9 @@ const CampusLife = () => {
                     }
                     {
                         (child === 'grievance' || child ===  'complaint of caste base descrimination') && (<ComplaintForm title={child} />)
+                    }
+                    {
+                        child === 'conveyance' && <BusChart />
                     }
                 </PageContainer>
             </PagesLayout>

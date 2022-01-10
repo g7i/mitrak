@@ -25,6 +25,13 @@ import DivisionFunctionaries from "../Pages/ContactsPage/DivisionFunctionaries";
 import NewsScreen from "../Pages/NewsPage";
 import PlacementNewsScreen from "../Pages/PlacementNewsPage";
 import CommiteePage from "../Pages/AcademicsPage/MandatoryDisclourePage/CommiteePages/index";
+import Amenities from '../Pages/CampusLifePage/Amenities';
+import HostelRegistration from "../Pages/CampusLifePage/Forms/HostelRegistration";
+import PACForm from "../Pages/CampusLifePage/Forms/PACForm";
+import PermissionGoingOutsideForm from "../Pages/CampusLifePage/Forms/PermissionGoingOutsideForm";
+import HostelGrievanceForm from "../Pages/CampusLifePage/Forms/HostelGrievanceForm";
+import WardenPage from "../Pages/CampusLifePage/WardenPage";
+
 const Router = () => {
   const {
     actions: { updateUser }
@@ -90,6 +97,8 @@ const Router = () => {
             exact
             component={DivisionFunctionaries}
           />
+
+          {/*Campus Life */}
           <Route
             path="/campus-life/collegedaze"
             exact
@@ -100,17 +109,53 @@ const Router = () => {
             exact
             component={EventGallery}
           />
-          <Route path="/placements" exact component={PlacementPage} />
           <Route
-            path="/campus-life/:routename/:child"
+            path="/campus-life/amenities"
             exact
-            component={CampusLife}
+            component={Amenities}
           />
+          <Route
+              path="/campus-life/:routename/:child"
+              exact
+              component={CampusLife}
+          />
+          <Route
+              path="/campus-life/hostel-registeration"
+              exact
+              component={HostelRegistration}
+          />
+          <Route
+              path="/campus-life/pacform"
+              exact
+              component={PACForm}
+          />
+          <Route
+              path="/campus-life/permission-going-outside"
+              exact
+              component={PermissionGoingOutsideForm}
+          />
+          <Route
+              path="/campus-life/hostel-grievance"
+              exact
+              component={HostelGrievanceForm}
+          />
+          <Route
+              path="/campus-life/hostel-warden"
+              exact
+              component={WardenPage}
+          />
+
+
+
+          {/*Placements*/}
+          <Route path="/placements" exact component={PlacementPage} />
           <Route
             path="/placements/:routename"
             exact
             component={PlacementPage}
           />
+
+          {/*Dashboard*/}
           <Route path="/admin/dashboard" exact component={AdminDashboard} />
           <Route
             path="/admin/dashboard/:child"

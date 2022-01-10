@@ -5,24 +5,48 @@ import {
   HyperLink,
 } from "../../components/styledComponents/GlobalComponents";
 import { Link } from "react-router-dom";
-const PagesLayout = ({ children, rightNavLinks, currentRoute, pageName }) => {
+const PagesLayout = ({ children, rightNavLinks, currentRoute, pageName, secondaryLinks }) => {
+    console.log('right', secondaryLinks)
 
   return (
     <Container>
       <Content>{children}</Content>
       <RightNav>
-        <Heading>Related Links</Heading>
+        <Heading style={{ fontSize: '1.5rem' }}>Related Links</Heading>
         <div style={{ display: "flex", flexDirection: "column" }}>
           {pageName === "campus-life" &&
             rightNavLinks?.map((link) => (
-              <Link
-                className={"hyperlink"}
-                key={link?.title}
-                to={`/${currentRoute === "madatory-disclosures" ? "academics" : pageName}/${currentRoute}/${link.title.toLowerCase()}`}
-              >
-                {link?.title}
-              </Link>
+                <React.Fragment>
+                    <Link
+                        className={"hyperlink"}
+                        key={link?.title}
+                        to={`/${currentRoute === "madatory-disclosures" ? "academics" : pageName}/${currentRoute}/${link.title.toLowerCase()}`}
+                    >
+                        {link?.title}
+                    </Link>
+                </React.Fragment>
             ))}
+            {
+                secondaryLinks && secondaryLinks?.map((link, index) => (
+                    <Link
+                        className={"hyperlink"}
+                        key={index}
+                        to={link.path}
+                    >
+                        {link?.title}
+                    </Link>
+                ))
+            }
+            {pageName === "amenities" &&
+                rightNavLinks?.map((link) => (
+                    <Link
+                        className={"hyperlink"}
+                        key={link?.title}
+                        to={`/campus-life/amenities/${link.title.toLowerCase()}`}
+                    >
+                        {link?.title}
+                    </Link>
+                ))}
           {pageName === "events-gallery" &&
             rightNavLinks?.map((item) => (
               // console.log(item)
@@ -90,7 +114,7 @@ const RightNav = styled.div`
   background-color: #f7f6f2;
   width: 25%;
   padding: 2rem;
-
+  
   @media (max-width: 768px) {
     width: 100%;
   }
