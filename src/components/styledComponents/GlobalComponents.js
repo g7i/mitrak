@@ -206,10 +206,11 @@ export const BannerContainer = styled.div`
 `;
 
 export const ListItem = styled.li`
-  color: ${Colors.TEXT_SECONDARY};
   margin-top: 1vh;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
+  font-weight: lighter;
+  color: #212121;
 `;
 
 export const FormInput = styled.input`

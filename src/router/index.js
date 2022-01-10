@@ -30,6 +30,7 @@ import HostelRegistration from "../Pages/CampusLifePage/Forms/HostelRegistration
 import PACForm from "../Pages/CampusLifePage/Forms/PACForm";
 import PermissionGoingOutsideForm from "../Pages/CampusLifePage/Forms/PermissionGoingOutsideForm";
 import HostelGrievanceForm from "../Pages/CampusLifePage/Forms/HostelGrievanceForm";
+import WardenPage from "../Pages/CampusLifePage/WardenPage";
 
 const Router = () => {
   const {
@@ -137,6 +138,11 @@ const Router = () => {
               path="/campus-life/hostel-grievance"
               exact
               component={HostelGrievanceForm}
+          />
+          <Route
+              path="/campus-life/hostel-warden"
+              exact
+              component={WardenPage}
           />
 
 
