@@ -17,6 +17,7 @@ import {
   FaTwitter,
   FaYoutube,
   FaLinkedinIn,
+  FaInstagram,
 } from "react-icons/fa";
 import { IoMdSend } from "react-icons/io";
 import {useHistory} from "react-router-dom";
@@ -94,6 +95,9 @@ const Footer = () => {
           </SocialMediaIcon>
           <SocialMediaIcon href="https://www.youtube.com/watch?v=MMzFcZ3aIGI">
             <FaYoutube />
+          </SocialMediaIcon>
+          <SocialMediaIcon href="https://www.instagram.com/mitrcalwar/">
+            <FaInstagram />
           </SocialMediaIcon>
         </SocailMediaContainer>
       </FooterSecondMainContainer>

@@ -15,11 +15,12 @@ const ContactsPage = () => {
       <Layout>
         <div className="contactContainer">
           <div className="contentContaner">
-            <Heading>Mailing Address</Heading>
+            <bold>Welcome to</bold>
+            <Heading>MODERN INSTITUTE OF TECHNOLOGY & RESEARCH CENTRE, ALWAR (RAJ)</Heading>
             <Paragraph>
               <bold>Address: </bold>
-              6th Mile Stone Delhi – Tijara State Highway, Sirmoli Road ,Village
-              Jharkhera , Alwar, Rajasthan , 301001
+              6th Mile Stone Delhi – Tijara State Highway, Sirmoli Road, Village
+              Jharkhera, Alwar, Rajasthan, 301001
             </Paragraph>
             <Paragraph>
               <bold>Phone: </bold>

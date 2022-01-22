@@ -12,7 +12,7 @@ import {
   AiFillTwitterCircle,
   AiOutlineGooglePlus,
   AiFillPhone,
-  AiOutlineYoutube,
+  AiOutlineYoutube, AiFillInstagram,
 } from "react-icons/ai";
 import { useHistory } from "react-router-dom";
 import { Colors } from "../../constants/UiConstants";
@@ -62,6 +62,16 @@ const ContactHeader = () => {
             onClick={() => {
               window.location.href =
                 "https://www.linkedin.com/school/mitrc-college-alwar/";
+            }}
+          />
+        </ContactHeaderLinksWrapper>
+        <ContactHeaderLinksWrapper>
+          <AiFillInstagram
+            color="#FFFFFF"
+            style={{ marginLeft: "1rem" }}
+            size={20}
+            onClick={() => {
+              window.location.href = "https://www.instagram.com/mitrcalwar/";
             }}
           />
         </ContactHeaderLinksWrapper>

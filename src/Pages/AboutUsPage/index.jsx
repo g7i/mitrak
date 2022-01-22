@@ -50,7 +50,7 @@ const boardMembers = [
     id: 4,
     name: "Shri Purshottam Gupta",
     designation: "Member",
-    image: "",
+    image: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fphoto6293833647106666454.jpg?alt=media&token=b119e581-1f43-4700-807a-8bc1d990c7bd",
   },
   {
     id: 4,
@@ -368,7 +368,7 @@ const AboutUsPage = () => {
         {/*</Heading>*/}
         <FlexContainer style={{ alignItems: "flex-start" }}>
           <Box>
-            <BoxHeading>Vision</BoxHeading>
+            <BoxHeading style={{ fontSize: '1.8rem' }}>Vision</BoxHeading>
             <Paragraph>
               To produce well trained professionals and leaders for serving
               society and nation through excellence in academics, research,
@@ -378,7 +378,7 @@ const AboutUsPage = () => {
             <br />
           </Box>
           <Box>
-            <BoxHeading>Mission</BoxHeading>
+            <BoxHeading style={{ fontSize: '1.8rem' }}>Mission</BoxHeading>
             <Paragraph>
               <ul>
                 <li>
@@ -403,7 +403,7 @@ const AboutUsPage = () => {
         </FlexContainer>
       </Container>
       <Container style={{ marginTop: "5vh" }}>
-        <Heading style={{ textAlign: "center", marginTop: 0 }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.8rem' }}>
           Chairman's Desk
         </Heading>
         <FlexContainer style={{ alignItems: "flex-start" }}>
@@ -453,7 +453,7 @@ const AboutUsPage = () => {
         </FlexContainer>
       </Container>
       <Container>
-        <Heading style={{ textAlign: "center", marginTop: 0 }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.8rem' }}>
           Director's Desk
         </Heading>
         <FlexContainer style={{ alignItems: "flex-start" }}>
@@ -504,7 +504,7 @@ const AboutUsPage = () => {
         </FlexContainer>
       </Container>
       <Container>
-        <Heading style={{ textAlign: "center", marginTop: 0 }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.8rem' }}>
           Board Of Governors
         </Heading>
         <FlexContainer style={{ marginTop: 0 }}>
@@ -557,7 +557,7 @@ const AboutUsPage = () => {
         </FlexContainer>
       </Container>
       <Container>
-        <Heading style={{ textAlign: "center", marginTop: 0 }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.8rem' }}>
           Advisory Board
         </Heading>
         <div

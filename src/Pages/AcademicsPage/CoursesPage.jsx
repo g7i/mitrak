@@ -21,7 +21,7 @@ const CoursesPage = () => {
 
   return (
     <Layout>
-      <Banner bannerHeading="Courses" />
+      <Banner bannerHeading="PROGRAMMES OFFERED" />
       <PagesLayout rightNavLinks={CoursesPageSections} pageName="courses">
         <PageContainer>
           {child === undefined && <BtechPage />}

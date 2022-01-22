@@ -37,7 +37,7 @@ const mba = [
 export default function Courses() {
   return (
     <Container>
-      <Heading style={{ textAlign: "center" }}>Courses We Offer</Heading>
+      <Heading style={{ textAlign: "center" }}>PROGRAMMES OFFERED</Heading>
       <Wrapper>
         <CardWrapper href="/academics/courses/b.tech">
           <ImageWrapper>

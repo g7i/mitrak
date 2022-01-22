@@ -25,12 +25,12 @@ const DropDownContent = {
     { title: "How To Reach", link: "/how-to-reach" }
   ],
   academics: [
-    { title: "Courses", link: "/academics/courses" },
+    { title: "Programmes Offered", link: "/academics/courses" },
     {
       title: "Departments",
       link: "/academics/departments/electrical%20engineering",
     },
-    { title: "Mendatory disclosures", link: "/academics/madatory-disclosures" },
+    { title: "Mandatory Disclosures", link: "/academics/madatory-disclosures" },
   ],
   campusLife: [
     { title: "Amenities", link: "/campus-life/amenities" },

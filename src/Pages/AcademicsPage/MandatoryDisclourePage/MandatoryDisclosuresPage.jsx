@@ -27,7 +27,7 @@ const MandatoryDisclosuresPage = () => {
       >
         <TableWrapper>
           <Heading style={{ color: "#8a2be2", marginBottom: "3rem" }}>
-            Mendatory Disclosures
+            Mandatory Disclosures
           </Heading>
           {RoutingData.map((item) => (
             <CommiteeWrapper key={item}>

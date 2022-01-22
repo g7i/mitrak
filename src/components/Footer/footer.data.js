@@ -10,7 +10,7 @@ export const quickLinks = [
         path: '/campus-life/events-gallery/curricular'
     },
     {
-        label: 'Courses',
+        label: 'Programmes Offered',
         path: '/academics/courses'
     }
 ]
