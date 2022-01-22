@@ -82,8 +82,8 @@ export function About() {
         At Training and Placement Cell, we foster a climate where collaboration with industry thrives, generating breakthrough discoveries that can support continuous innovation and growth. With a perfect track record of very productive relationships with organisations of all sizes, from startups, growth stage to successful enterprises, our institutions provide the students perfect blend of technical education, soft skills development, and entrepreneurial mindset to make them industry ready. <br />
         Globalization and technological transformation has a big impact on economy of the country and needs to be kept in view since engineers and managers happen to be the engines of the economy of any nation. MITRC has been continuously putting efforts to understand the needs of the industry in order to prepare engineers and managers for facing the emerging challenges. Cooperation of the industry sought in this regard has proved very helpful and students are getting placed in reputed companies in good numbers.
       </p>
-      <H4>Total Placements (2021 Batch): 662 and counting</H4>
-      <H4>Highest Package Offered: 18.0 LPA</H4>
+      <H4>Total Placements (2021 Batch): 120 and counting</H4>
+      <H4>Highest Package Offered: 12.0 LPA</H4>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Ftop-recruiters.jpg?alt=media&token=4ff63492-692e-43d6-834c-e10c194de7fd"
         alt="Placement"/>

@@ -40,7 +40,7 @@ const DropDownContent = {
     },
     {
       title: "Clubs and Activities",
-      link: "/campus-life/clubandactivities/aadharclub",
+      link: "/campus-life/club-and-activities/clubAct",
     },
     { title: "College Daze- the magzine", link: "/campus-life/collegedaze" },
     {

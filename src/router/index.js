@@ -31,6 +31,7 @@ import PACForm from "../Pages/CampusLifePage/Forms/PACForm";
 import PermissionGoingOutsideForm from "../Pages/CampusLifePage/Forms/PermissionGoingOutsideForm";
 import HostelGrievanceForm from "../Pages/CampusLifePage/Forms/HostelGrievanceForm";
 import WardenPage from "../Pages/CampusLifePage/WardenPage";
+import ClubAndActivities from "../Pages/CampusLifePage/ClubAndActivities";
 
 const Router = () => {
   const {
@@ -113,6 +114,11 @@ const Router = () => {
             path="/campus-life/amenities"
             exact
             component={Amenities}
+          />
+          <Route
+            path="/campus-life/club-and-activities/:route"
+            exact
+            component={ClubAndActivities}
           />
           <Route
               path="/campus-life/:routename/:child"
