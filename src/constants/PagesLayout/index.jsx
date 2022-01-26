@@ -6,8 +6,6 @@ import {
 } from "../../components/styledComponents/GlobalComponents";
 import { Link } from "react-router-dom";
 const PagesLayout = ({ children, rightNavLinks, currentRoute, pageName, secondaryLinks }) => {
-    console.log('right', secondaryLinks)
-
   return (
     <Container>
       <Content>{children}</Content>

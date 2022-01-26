@@ -32,6 +32,7 @@ import PermissionGoingOutsideForm from "../Pages/CampusLifePage/Forms/Permission
 import HostelGrievanceForm from "../Pages/CampusLifePage/Forms/HostelGrievanceForm";
 import WardenPage from "../Pages/CampusLifePage/WardenPage";
 import ClubAndActivities from "../Pages/CampusLifePage/ClubAndActivities";
+import StudentAffair from "../Pages/CampusLifePage/StudentAffair";
 
 const Router = () => {
   const {
@@ -110,11 +111,8 @@ const Router = () => {
             exact
             component={EventGallery}
           />
-          <Route
-            path="/campus-life/amenities"
-            exact
-            component={Amenities}
-          />
+          <Route exact path="/campus-life/amenities/:route" component={Amenities}/>
+          <Route exact path="/campus-life/student-affair/:route" component={StudentAffair}/>
           <Route
             path="/campus-life/club-and-activities/:route"
             exact
