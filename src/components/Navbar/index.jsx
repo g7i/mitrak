@@ -28,7 +28,7 @@ const DropDownContent = {
     { title: "Programmes Offered", link: "/academics/courses" },
     {
       title: "Departments",
-      link: "/academics/departments/electrical%20engineering",
+      link: "/academics/departments/",
     },
     { title: "Mandatory Disclosures", link: "/academics/madatory-disclosures" },
   ],

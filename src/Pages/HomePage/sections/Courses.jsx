@@ -39,7 +39,7 @@ export default function Courses() {
     <Container>
       <Heading style={{ textAlign: "center" }}>PROGRAMMES OFFERED</Heading>
       <Wrapper>
-        <CardWrapper href="/academics/courses/b.tech">
+        <CardWrapper href="/academics/courses/bTech">
           <ImageWrapper>
             <CardImage
               src={
@@ -56,7 +56,7 @@ export default function Courses() {
             </ul>
           </CardContent>
         </CardWrapper>
-        <CardWrapper href="/academics/courses/m.tech">
+        <CardWrapper href="/academics/courses/mTech">
           <ImageWrapper>
             <CardImage
               src={

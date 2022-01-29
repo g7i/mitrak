@@ -1,92 +1,43 @@
 import React from "react";
 import Banner from "../../../components/Banner";
-import {
-  Heading,
-  PageContainer,
-  Paragraph,
-} from "../../../components/styledComponents/GlobalComponents";
 import Layout from "../../../constants/Layout";
-import { Colors } from "../../../constants/UiConstants";
-import { ListItem } from "./../departments/components/imageSlider";
-import { RoutingData, commitesList } from "./data";
-import styled from "styled-components";
-import { useHistory } from "react-router-dom";
+import {RoutingData} from "./data";
+import {Link, useHistory} from "react-router-dom";
+import {Cont, Event, PageHead, Wrapper} from "../../../components/styledComponents/New";
+
 const MandatoryDisclosuresPage = () => {
   const history = useHistory();
+
+  const handleClick = (e, link) => {
+    e.stopPropagation();
+    e.preventDefault();
+    window.location.href = link;
+  }
+
   return (
     <Layout>
-      <Banner bannerHeading="Mandatory Disclosures" />
-      <PageContainer
-        style={{
-          paddingLeft: "2rem",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-      >
-        <TableWrapper>
-          <Heading style={{ color: "#8a2be2", marginBottom: "3rem" }}>
-            Mandatory Disclosures
-          </Heading>
-          {RoutingData.map((item) => (
-            <CommiteeWrapper key={item}>
-              <h3
-                onClick={() =>
-                  history.push(`/academics/madatory-disclosures/${item.link}`)
-                }
-                style={{textTransform : 'capitalize'}}
+      <Banner bannerHeading="Mandatory Disclosures"/>
+      <Wrapper>
+        <Cont className="content full">
+          <PageHead>Mandatory Disclosures</PageHead>
+          <br/>
+          <div className="grid">
+            {RoutingData.map((item) => (
+              <Event
+                key={item.link}
+                onClick={() => history.push(`/academics/madatory-disclosures/${item.link}`)}
               >
-                {item.title}
-              </h3>
-              <Button
-                onClick={() => {
-                  window.location.href = item.pdf;
-                }}
-              >
-                View
-              </Button>
-            </CommiteeWrapper>
-          ))}
-        </TableWrapper>
-      </PageContainer>
+                <div className="title">{item.title}</div>
+                <div className="foot">
+                  <Link to="#" onClick={e => handleClick(e, item.pdf)}>View</Link>
+                </div>
+              </Event>
+            ))}
+          </div>
+        </Cont>
+      </Wrapper>
     </Layout>
   );
 };
-
-const TableWrapper = styled.div`
-  padding: 30px;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-`;
-
-const CommiteeWrapper = styled.div`
-  width: 100%;
-  border: 1px solid blue;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  h3 {
-    color: #5cb861;
-    font-size: 1.5rem;
-    &:hover {
-      cursor: pointer;
-      color: blue;
-    }
-  }
-`;
-const Button = styled.button`
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  background-color: #1c6dd0;
-  color: white;
-`;
 
 export default MandatoryDisclosuresPage;

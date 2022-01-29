@@ -1,78 +1,10 @@
-import styled from "styled-components";
-import {
-    FillImage,
-  Heading,
-  Paragraph,
-} from "../../components/styledComponents/GlobalComponents";
 import {
   govtSelectionImages,
   placementActivitiesImages,
   studentPlacementImages,
   testimonialImages
 } from "./staticData/doc";
-
-export const CoporateFeedback = ({ feedback }) => {
-  const { name, company, imageUrl, description } = feedback;
-  return (
-    <FeedBackMainContainer>
-      <FeedbackImage src={imageUrl} alt="recruiter-image" />
-      <FeedBackSecondContainer>
-        <Heading style={{ paddingTop: 0, marginTop: 0 }}>{name}</Heading>
-        <Paragraph style={{ fontSize: "1.7rem", fontWeight: 700 }}>
-          {company}
-        </Paragraph>
-        <Paragraph>{description}</Paragraph>
-      </FeedBackSecondContainer>
-    </FeedBackMainContainer>
-  );
-};
-
-const FeedBackMainContainer = styled.div`
-  display: flex;
-  width: 80%;
-  background-color: #fff;
-
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  box-shadow: 5px 2px 10px 4px #888888;
-  margin: 20px auto;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-`;
-const FeedbackImage = styled.img`
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-`;
-
-const FeedBackSecondContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-  flex: 1;
-`;
-
-export const PlcaementSummary = ({obj}) => {
-    const {heading , description , imageUrl} = obj;
-  return (
-    <PlacementSummaryContainer>
-      <Heading>{heading}</Heading>
-      <Paragraph>{description}</Paragraph>
-      <FillImage src={imageUrl} alt={"placement-image"}/>
-    </PlacementSummaryContainer>
-  );
-};
-
-const PlacementSummaryContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-`;
+import {Cont, H4, PageHead} from "../../components/styledComponents/New";
 
 export function About() {
   return (
@@ -93,71 +25,6 @@ export function About() {
     </Cont>
   );
 }
-
-const PageHead = styled.div`
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px grey;
-  border: 1px solid black;
-  font-size: 22px;
-  width: fit-content;
-  padding: 5px 20px;
-  font-family: Arial, serif;
-  font-weight: 500;
-  font-style: italic;
-`;
-const H4 = styled.h4`
-  border-left: 5px solid #1c2f46;
-  box-shadow: 1px 1px 6px -2px;
-  color: #1c2f46;
-  display: table;
-  font-family: serif;
-  font-size: 22px;
-  font-style: italic;
-  font-weight: 700;
-  margin: 10px 0;
-  padding: 7px;
-`;
-
-const Cont = styled.section`
-  margin: 30px 0 50px;
-  p {
-    font-weight: 400;
-    font-family: serif;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 15px 0 20px;
-    text-align: justify;
-  }
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin-top: 15px;
-  }
-  ul {
-    margin-left: 20px;
-  }
-  li {
-    list-style-position: inside;
-    font-weight: 400;
-    font-family: serif;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 5px;
-    
-    img.loaded {
-      background-color: #324a8a;
-      height: 100%;
-    }
-  }
-  @media screen and (max-width: 1024px) {
-    margin-bottom: 20px;
-  }
-`;
 
 export function CRT() {
   return (

@@ -10,6 +10,7 @@ import EventGallery from "../Pages/CampusLifePage/EventGallery";
 import DepartmentsPage from "../Pages/AcademicsPage/DepartmentsPage";
 import MandatoryDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclourePage/MandatoryDisclosuresPage.jsx";
 import CoursesPage from "../Pages/AcademicsPage/CoursesPage";
+import Offered from "../Pages/AcademicsPage/CoursesPage/Offered";
 import StudentDashboard from "../Pages/Dashboard/Student/StudentDashboard";
 import Login from "../Pages/AuthPage/Login";
 import Register from "../Pages/AuthPage/Register";
@@ -33,6 +34,7 @@ import HostelGrievanceForm from "../Pages/CampusLifePage/Forms/HostelGrievanceFo
 import WardenPage from "../Pages/CampusLifePage/WardenPage";
 import ClubAndActivities from "../Pages/CampusLifePage/ClubAndActivities";
 import StudentAffair from "../Pages/CampusLifePage/StudentAffair";
+import Departments from "../Pages/AcademicsPage/departments/Departments";
 
 const Router = () => {
   const {
@@ -172,17 +174,10 @@ const Router = () => {
             component={AdminDashboard}
           />
           <Route path="/student/dashboard" exact component={StudentDashboard} />
-          <Route
-            path="/academics/departments/:child"
-            exact
-            component={DepartmentsPage}
-          />
-          <Route path="/academics/courses" exact component={CoursesPage} />
-          <Route
-            path="/academics/courses/:child"
-            exact
-            component={CoursesPage}
-          />
+          <Route path="/academics/departments/" exact component={Departments}/>
+          <Route path="/academics/departments/:route" exact component={Departments}/>
+          <Route path="/academics/courses" exact component={Offered} />
+          <Route path="/academics/courses/:route" exact component={Offered}/>
           <Route
             path="/academics/:routename/:child"
             exact
