@@ -87,6 +87,9 @@ export const NewsBox = styled.div`
     margin-top: 2rem;
     padding: 1rem;
   }
+  a {
+    pointer-events: auto !important;
+  }
 `;
 
 export const NewsLink = styled.a`

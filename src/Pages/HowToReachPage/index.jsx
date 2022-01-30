@@ -20,7 +20,7 @@ const HowToReach = () => {
         {/*        src={MitrcLogo}*/}
         {/*    />*/}
         {/*</div>*/}
-        <Heading>How To Reach Us?</Heading>
+        <Heading style={{ color: 'red' }}>How To Reach Us?</Heading>
         {/* <SubHeading>RAILWAY ROUTE :</SubHeading>
                 <Paragraph>
                     NEAREST RAILWAY STATION : ALWAR JUNCTION
@@ -44,8 +44,8 @@ const HowToReach = () => {
                 </Paragraph> */}
       </Container>
       <Container style={{ paddingBottom: "0rem"  }}>
-        <Heading style={{ color: Colors.BLUE }}>
-          Alwar junction to MITRC
+        <Heading style={{ color: Colors.BLUE, fontSize: '1.7rem' }}>
+          Alwar Junction to MITRC
         </Heading>
         {/* <Paragraph>
           <strong style={{ color: Colors.BLUE }}>
@@ -69,7 +69,8 @@ const HowToReach = () => {
       </Container>
 
       <Container style={{paddingBottom : "4rem"}}>
-        <Heading style={{ color: Colors.BLUE }}>Bus stand to MITRC</Heading>
+        <Heading style={{ color: Colors.BLUE, fontSize: '1.7rem' }}>
+          Bus Stand to MITRC</Heading>
         <div className="mapContainer">
           <iframe
             style={{

@@ -50,7 +50,7 @@ const boardMembers = [
     id: 4,
     name: "Shri Purshottam Gupta",
     designation: "Member",
-    image: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fphoto6293833647106666454.jpg?alt=media&token=b119e581-1f43-4700-807a-8bc1d990c7bd",
+    image: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2FPurshottam.jpg?alt=media&token=094eeb54-acba-4476-b5d5-77a4411e76d2",
   },
   {
     id: 4,
@@ -90,7 +90,7 @@ const boardMembers = [
     name: "Dr. S.K. Sharma",
     designation: "Member",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fdirector.png?alt=media&token=beacf5f4-e555-4e47-875b-f85626ebb1a9",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2FDirector.jpg?alt=media&token=1d09b239-70b3-4a2a-949a-d4471404a247",
   },
   {
     id: 10,
@@ -175,7 +175,7 @@ const advisoryBoard = [
     id: 3,
     name: "Mr. Ashish Mohan (B. Tech. 1996)",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FWhatsApp%20Image%202022-01-10%20at%2011.23.35%20AM.jpeg?alt=media&token=ef428162-2411-4c38-bc1f-8b6875064099",
+      "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2FAashish%20Mohan.jpg?alt=media&token=6d76349f-ee6a-42ca-9066-f87791297883",
     positions: [
       {
         id: 21,
@@ -255,14 +255,14 @@ const advisoryBoard = [
   },
   {
     id: 6,
-    name: "Dr. G. K. Aggrawal (orthopaedic ) ",
+    name: "Dr. G. K. Aggrawal (Orthopedics) ",
     image:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp16.jpg?alt=media&token=fab6c1b3-ec60-4bb7-b24b-78bfaa2000d6",
     positions: [
       {
         id: 51,
         position:
-          "Head of the Department of Orthopaedic Aggarwal Hospital , New Delhi",
+          "Head of the Department of Orthopedics Aggarwal Hospital , New Delhi",
       },
       {
         id: 52,
@@ -276,7 +276,7 @@ const advisoryBoard = [
       {
         id: 54,
         position:
-          "Honour of being the Ex-Orthopaedic Surgeon to the President of Yemen.",
+          "Honour of being the Ex-Orthopedics Surgeon to the President of Yemen.",
       },
       {
         id: 55,
@@ -287,13 +287,13 @@ const advisoryBoard = [
   },
   {
     id: 7,
-    name: "Dr. Arvind Aggrawal (orthopaedician) ",
+    name: "Dr. Arvind Aggrawal (Orthopedics) ",
     image:
       "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fadvisory-board%2Fp14.jpg?alt=media&token=f4ad5d47-a89f-42e2-83f4-d203870e0286",
     positions: [
       {
         id: 61,
-        position: "Orthopaedician in Aggarwal Hospital , New Delhi",
+        position: "Orthopedics in Aggarwal Hospital , New Delhi",
       },
     ],
     email: "drarvind.mitrc@gmail.com",
@@ -321,7 +321,7 @@ const AboutUsPage = () => {
         bannerDescription={staticData.description}
       />
       <Container style={{ marginTop: "4vh" }}>
-        <Heading style={{ textAlign: "center", marginTop: 0 }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '2.2rem', color: 'purple' }}>
           Modern Institute of Technology and Research Center
         </Heading>
         <Paragraph style={{ textAlign: "center" }}>
@@ -368,7 +368,7 @@ const AboutUsPage = () => {
         {/*</Heading>*/}
         <FlexContainer style={{ alignItems: "flex-start" }}>
           <Box>
-            <BoxHeading style={{ fontSize: '1.8rem' }}>Vision</BoxHeading>
+            <BoxHeading style={{ fontSize: '1.6rem' }}>Vision</BoxHeading>
             <Paragraph>
               To produce well trained professionals and leaders for serving
               society and nation through excellence in academics, research,
@@ -378,7 +378,7 @@ const AboutUsPage = () => {
             <br />
           </Box>
           <Box>
-            <BoxHeading style={{ fontSize: '1.8rem' }}>Mission</BoxHeading>
+            <BoxHeading style={{ fontSize: '1.6rem' }}>Mission</BoxHeading>
             <Paragraph>
               <ul>
                 <li>
@@ -403,7 +403,7 @@ const AboutUsPage = () => {
         </FlexContainer>
       </Container>
       <Container style={{ marginTop: "5vh" }}>
-        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.8rem' }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.5rem' }}>
           Chairman's Desk
         </Heading>
         <FlexContainer style={{ alignItems: "flex-start" }}>
@@ -453,7 +453,7 @@ const AboutUsPage = () => {
         </FlexContainer>
       </Container>
       <Container>
-        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.8rem' }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.5rem' }}>
           Director's Desk
         </Heading>
         <FlexContainer style={{ alignItems: "flex-start" }}>
@@ -504,7 +504,7 @@ const AboutUsPage = () => {
         </FlexContainer>
       </Container>
       <Container>
-        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.8rem' }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.6rem' }}>
           Board Of Governors
         </Heading>
         <FlexContainer style={{ marginTop: 0 }}>
@@ -557,7 +557,7 @@ const AboutUsPage = () => {
         </FlexContainer>
       </Container>
       <Container>
-        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.8rem' }}>
+        <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.6rem' }}>
           Advisory Board
         </Heading>
         <div
@@ -624,13 +624,11 @@ const AboutUsPage = () => {
           marginBottom: "4rem",
         }}
       >
-        <BoxHeading style={{ textAlign: "center", fontSize: "1.5rem" }}>
+        <BoxHeading style={{ textAlign: "center", fontSize: "2.2rem", color: 'brown' }}>
           “All India Arya Samajis Society for Advance Education & Research”
-          (AIASSAER)
         </BoxHeading>
         <Paragraph>
-          “All India Arya Samajis Society for Advance Education & Research”
-          (AIASSAER) was formed in 1999 by a group of prominent people who
+          “All India Arya Samajis Society for Advance Education & Research” was formed in 1999 by a group of prominent people who
           wanted to provide a breeding ground for ideas & talent to keep pace
           with the ever changing world of science and technology. It was the
           heartfelt desire of the members to provide meaningful education to
