@@ -1,143 +1,106 @@
-import React, {useState} from 'react'
-import Banner from '../../../components/Banner'
-import Layout from '../../../constants/Layout'
-import {Cont, H4, PageHead, Wrapper} from "../../../components/styledComponents/New";
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import Banner from "../../../components/Banner";
+import Layout from "../../../constants/Layout";
 import {
-  Abhi,
-  Annual,
-  Convocation,
-  ETSEM1,
-  ETSEM2,
-  Farewell,
-  FDP1,
-  FDP2,
-  Fresher,
-  IAF,
-  ISRO,
-  MIH,
-  Teacher,
-  Women
-} from "./Components";
+  Cont,
+  H4,
+  PageHead,
+  Wrapper,
+} from "../../../components/styledComponents/New";
+import { Link } from "react-router-dom";
+import {
+  NationalLevelEvents18_19,
+  NationalLevelEvents19_20,
+  NationalLevelEvents20_21,
+  NationalLevelEvents21_22,
+} from "../EventGallery/Components";
 
 const data = [
   {
-    title: "IAF-IPEV Exhibition by DISHA Cell(Indian Airforce)",
-    component: <IAF />,
+    title: "event participation in 2021-22",
+    component: <NationalLevelEvents21_22 />,
   },
   {
-    title: "ISRO –Vikram Sarabhai Space Exhibition",
-    component: <ISRO />,
+    title: "event participation in 2020-21",
+    component: <NationalLevelEvents20_21 />,
   },
   {
-    title: "MIH 2020-Internal Hackathon",
-    component: <MIH />,
+    title: "event participation in 2019-20",
+    component: <NationalLevelEvents19_20 />,
   },
   {
-    title: "FDPs",
-    sub: [
-      { title: "FDP on Latex & MATLAB", component: <FDP1 /> },
-      { title: "FDP on Python", component: <FDP2 /> },
-    ],
-  },
-  {
-    title: "International /National Conferences",
-    sub: [
-      { title: "ETSEM 2019", component: <ETSEM1 /> },
-      { title: "ETSEM 2018", component: <ETSEM2 /> },
-    ],
-  },
-  {
-    title: "Annual Function",
-    sub: [
-      { title: "Invincible T-20", component: <Annual /> },
-      { title: "Invincible T-19", component: <Annual /> },
-      { title: "Invincible T-18", component: <Annual /> },
-    ],
-  },
-  {
-    title: "Fresher’s (Aarambh)",
-    component: <Fresher />,
-  },
-  {
-    title: "Teacher’s Day",
-    component: <Teacher />,
-  },
-  {
-    title: "Farewell Party",
-    component: <Farewell />,
-  },
-  {
-    title: "Convocation",
-    component: <Convocation />,
-  },
-  {
-    title: "Women Day Celebration",
-    component: <Women />,
-  },
-  {
-    title: "Abhinandan Return Celebration",
-    component: <Abhi />,
+    title: "event participation in 2018-19",
+    component: <NationalLevelEvents18_19 />,
   },
 ];
 
 const EventGallery = () => {
   const [sel, setSel] = useState(null);
 
-  const renderItem = item => {
-    if (!item.sub) return (
-      <li key={item.title} onClick={() => setSel(item.component)}>
-        <Link to="#">{item.title}</Link>
-      </li>
-    );
+  const renderItem = (item) => {
+    if (!item.sub)
+      return (
+        <li key={item.title} onClick={() => setSel(item.component)}>
+          <Link to="#">{item.title}</Link>
+        </li>
+      );
     return (
       <li key={item.title}>
         {item.title}
-        <ul>
-          {item.sub.map(renderItem)}
-        </ul>
+        <ul>{item.sub.map(renderItem)}</ul>
       </li>
     );
   };
 
   return (
     <Layout>
-      <Banner bannerHeading="Events Gallery @MITRC"/>
+      <Banner bannerHeading="Events Gallery @MITRC" />
       <Wrapper>
         <Cont className="content full">
-          <PageHead>Events & Gallery</PageHead>
-          <p>In the engineering college life first of all you start getting knowledge of different subjects, different
-            theories. Your outlook start expanding. But of course you have lot many questions like what am I to do on
-            completion of engineering, what kind of jobs are there, what way qualified engineer will be different, what
-            future, how much you will earn etc. still you have no exposure to industry.</p>
-          <p>Technical events like exhibitions, seminars, workshops by senior experts in various subjects give more
-            ideas. It expand your thinking. It is said that thinking power when stretched does not come back to original
-            state. More you grasp more you learn. Such events give you lot of new knowledge. Certain learning can
-            influence you to change.</p>
-          <p>There is vast gap in education and actual skills required in industry. Knowledge gained in technical events
-            make you smarter and is useful for interviews at later date. It give you more information on career options
-            thereby expand your choice. Interactive workshops give you opportunities to express yourself, enhance
-            communication skills, open up leadership qualities.</p>
-          <p>It is not only engineering knowledge but smartness, communication quality, public speaking skills,
-            influential interactions are equally important to succeed in life.</p>
-          <p>In our opinion exposure to behavior science is a must before you enter actual adult life. In a long way
-            this teach you flexibility in thinking and interest to positive life</p>
-          <p>So we organize several events for students and faculty development.</p>
+          <PageHead>NATIONAL & STATE LEVEL EVENTS PARTICIPATION</PageHead>
+          <p>
+            Participation in Technical Events at National Level & State Level
+            helps in improving the technical skills of students and students
+            learn from the challenges which they face during these events .
+          </p>
+          <p>
+            To create a innovative and learning environment for developing the
+            technical skills , Students has been motivated by faculties to
+            participate in various national level and state level technical
+            competition such as Hackathon, Vishwakarma Award , Manthan 2021 etc.
+          </p>
+          <p>
+            The main motto of the participation is to bring students out of
+            stage fear and also improve their communication skills. It also
+            helps the students to think, create and develop about the real time
+            problem’s solutions. It also provides you an opportunity to learn in
+            detailed about a core subject which is a part of curriculum and
+            develop effective presentation skills.
+          </p>
+          <p>
+            MITRC students participated in many national level and state level
+            events like various Hackathons, and got selected in Grand Finale in
+            many competitions.
+          </p>
+
           <H4>Followings are</H4>
-          <ul>
-            {data.map(renderItem)}
-          </ul>
+          <ul>{data.map(renderItem)}</ul>
           {sel}
           <div className="grid three">
-            {images.map(item => (
-              <img key={item} src={item} alt={item} onLoad={e => e.target.classList.add('loaded')}/>
+            {images.map((item) => (
+              <img
+                key={item}
+                src={item}
+                alt={item}
+                onLoad={(e) => e.target.classList.add("loaded")}
+              />
             ))}
           </div>
         </Cont>
       </Wrapper>
     </Layout>
   );
-}
+};
 
 const images = [
   "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fsports%2FDSC_6328.JPG?alt=media&token=c13a8a6f-480e-415f-9b25-8f9dc316fc5a",
@@ -164,6 +127,6 @@ const images = [
   "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fsports%2FDSC_6372.JPG?alt=media&token=6e323cd5-bdd8-4455-9254-e9f05ccf3c30",
   "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto30.jpg?alt=media&token=f08477b7-42eb-4dcd-a060-932a57e76008",
   "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcampus-life%2Fgallery%2Fhackathon%2FPhoto18.jpg?alt=media&token=1372e9ad-7014-47bf-a39c-ab481b758e5a",
-]
+];
 
-export default EventGallery
+export default EventGallery;

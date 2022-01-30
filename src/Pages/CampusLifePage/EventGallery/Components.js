@@ -4,6 +4,7 @@ import {
   H4,
   H5,
   PageHead,
+UL
 } from "../../../components/styledComponents/New";
 
 export function IAF() {
@@ -505,7 +506,7 @@ export function NationalLevelEvents() {
           </H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>MANTHAN 2021 (NATIONAL LEVEL
+              <strong>EVENT NAME : </strong>MANTHAN 2021 (NATIONAL LEVEL
               HACKATHON)
             </li>
             <li>
@@ -551,7 +552,7 @@ export function NationalLevelEvents() {
           </H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>TOYCATHON (NATIONAL LEVEL HACKATHON)
+              <strong>EVENT NAME : </strong>TOYCATHON (NATIONAL LEVEL HACKATHON)
             </li>
             <li>
               <strong>ORGANISED BY : </strong>AICTE & MHRD & MIC
@@ -579,7 +580,7 @@ export function NationalLevelEvents() {
           <H5>GRAND FINALE RUNNER UP IN CODETHON 2021</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>CODETHON 2021 (NATIONAL LEVEL
+              <strong>EVENT NAME : </strong>CODETHON 2021 (NATIONAL LEVEL
               HACKATHON)
             </li>
             <li>
@@ -621,7 +622,7 @@ export function NationalLevelEvents() {
           <H5>SELECTION OF STUDENT’S IDEA IN CHAATRA VISHWAKARMA AWARD 2021</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>TCHHATRA VISHWAKARMA 2020 (NATIONAL
+              <strong>EVENT NAME : </strong>TCHHATRA VISHWAKARMA 2020 (NATIONAL
               LEVEL HACKATHON)
             </li>
             <li>
@@ -650,7 +651,7 @@ export function NationalLevelEvents() {
           </H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>SMART INDIA HACKATHON 2020 (NATIONAL
+              <strong>EVENT NAME : </strong>SMART INDIA HACKATHON 2020 (NATIONAL
               LEVEL HACKATHON)
             </li>
             <li>
@@ -691,7 +692,7 @@ export function NationalLevelEvents() {
           <H5>1 TEAM SELECTED IN SAMADHAN- INDIA FIGHT WITH CORONA</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>SAMADHAAN ( NATIONAL LEVEL
+              <strong>EVENT NAME : </strong>SAMADHAAN ( NATIONAL LEVEL
               HACKATHON)
             </li>
             <li>
@@ -720,7 +721,7 @@ export function NationalLevelEvents() {
           <H5>1 TEAM SELECTED IN IDEATHON- INDIA FIGHT WITH CORONA</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>IDEATHON ( NATIONAL LEVEL HACKATHON)
+              <strong>EVENT NAME : </strong>IDEATHON ( NATIONAL LEVEL HACKATHON)
             </li>
             <li>
               <strong>ORGANISED BY : </strong>AICTE & MIC& FORGE
@@ -748,7 +749,7 @@ export function NationalLevelEvents() {
           <H5>5 TEAMS SELECTED IN CHATRA VISHWAKARMA AWARD 2019</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>CHHATRA VISHWAKARMA 2019 (NATIONAL
+              <strong>EVENT NAME : </strong>CHHATRA VISHWAKARMA 2019 (NATIONAL
               LEVEL HACKATHON)
             </li>
             <li>
@@ -788,7 +789,7 @@ export function NationalLevelEvents() {
           <H5>13 TEAMS SELECTED FOR SIH 2020 BY INTERNAL HACKATHON MIH-2020</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>MITRC INTERNAL HACKATHON 2020 (INTRA
+              <strong>EVENT NAME : </strong>MITRC INTERNAL HACKATHON 2020 (INTRA
               COLLEGE LEVEL HACKATHON)
             </li>
             <li>
@@ -821,7 +822,7 @@ export function NationalLevelEvents() {
           <H5>5 TEAMS SELECTED FOR BUSINESS HACKATHON AT MANIPAL UNIVERSITY</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>BUSINESS HACKATHON
+              <strong>EVENT NAME : </strong>BUSINESS HACKATHON
             </li>
             <li>
               <strong>ORGANISED BY : </strong>MANIPAL UNIVERSITY,JAIPUR
@@ -854,7 +855,7 @@ export function NationalLevelEvents() {
           <H5>1 TEAM SELECTED IN IDEATHON- INDIA FIGHT WITH CORONA</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>IDEATHON ( NATIONAL LEVEL HACKATHON)
+              <strong>EVENT NAME : </strong>IDEATHON ( NATIONAL LEVEL HACKATHON)
             </li>
             <li>
               <strong>ORGANISED BY : </strong>AICTE & MIC& FORGE
@@ -885,7 +886,7 @@ export function NationalLevelEvents() {
           <H5>SMART INDIA HACKATHON 2019 (NATIONAL LEVEL HACKATHON)</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>SAMADHAAN ( NATIONAL LEVEL
+              <strong>EVENT NAME : </strong>SAMADHAAN ( NATIONAL LEVEL
               HACKATHON)
             </li>
             <li>
@@ -922,7 +923,7 @@ export function NationalLevelEvents() {
           <H5>1 TEAM SELECTED IN BUSINESS HACKATHON FINALE</H5>
           <ul>
             <li>
-              <strong>Event Name : </strong>BUSINEESS HACKATHON 2019
+              <strong>EVENT NAME : </strong>BUSINEESS HACKATHON 2019
               (NATIONALLEVEL HACKATHON)
             </li>
             <li>
@@ -952,31 +953,6 @@ export function NationalLevelEvents() {
 export function NationalLevelEvents21_22() {
   return (
     <Cont>
-      <PageHead>NATIONAL & STATE LEVEL EVENTS PARTICIPATION</PageHead>
-      <p>
-        Participation in Technical Events at National Level & State Level helps
-        in improving the technical skills of students and students learn from
-        the challenges which they face during these events .
-      </p>
-      <p>
-        To create a innovative and learning environment for developing the
-        technical skills , Students has been motivated by faculties to
-        participate in various national level and state level technical
-        competition such as Hackathon, Vishwakarma Award , Manthan 2021 etc.
-      </p>
-      <p>
-        The main motto of the participation is to bring students out of stage
-        fear and also improve their communication skills. It also helps the
-        students to think, create and develop about the real time problem’s
-        solutions. It also provides you an opportunity to learn in detailed
-        about a core subject which is a part of curriculum and develop effective
-        presentation skills.
-      </p>
-      <p>
-        MITRC students participated in many national level and state level
-        events like various Hackathons, and got selected in Grand Finale in many
-        competitions.
-      </p>
       <H4>EVENTS PARTICIPATION IN 2021-22</H4>
       <ul style={{ listStyle: "none" }}>
         <li>
@@ -984,9 +960,9 @@ export function NationalLevelEvents21_22() {
             GRAND FINALE SELECTION IN MANTHAN 2021 – LETS CODE FOR COUNTRY
             SECURITY
           </H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>MANTHAN 2021 (NATIONAL LEVEL
+              <strong>EVENT NAME : </strong>MANTHAN 2021 (NATIONAL LEVEL
               HACKATHON)
             </li>
             <li>
@@ -1019,7 +995,7 @@ export function NationalLevelEvents21_22() {
               MANTHAN 2021 – LETS CODE FOR COUNTRY SECURITY ORGANISED BY BPRD &
               MIC & AICTE IN DECEMBER 2021 .
             </li>
-          </ul>
+          </UL>
         </li>
       </ul>
     </Cont>
@@ -1030,31 +1006,6 @@ export function NationalLevelEvents21_22() {
 export function NationalLevelEvents20_21() {
   return (
     <Cont>
-      <PageHead>NATIONAL & STATE LEVEL EVENTS PARTICIPATION</PageHead>
-      <p>
-        Participation in Technical Events at National Level & State Level helps
-        in improving the technical skills of students and students learn from
-        the challenges which they face during these events .
-      </p>
-      <p>
-        To create a innovative and learning environment for developing the
-        technical skills , Students has been motivated by faculties to
-        participate in various national level and state level technical
-        competition such as Hackathon, Vishwakarma Award , Manthan 2021 etc.
-      </p>
-      <p>
-        The main motto of the participation is to bring students out of stage
-        fear and also improve their communication skills. It also helps the
-        students to think, create and develop about the real time problem’s
-        solutions. It also provides you an opportunity to learn in detailed
-        about a core subject which is a part of curriculum and develop effective
-        presentation skills.
-      </p>
-      <p>
-        MITRC students participated in many national level and state level
-        events like various Hackathons, and got selected in Grand Finale in many
-        competitions.
-      </p>
       <H4>EVENTS PARTICIPATION IN 2020-21</H4>
       <ul style={{ listStyle: "none" }}>
         <li>
@@ -1062,9 +1013,9 @@ export function NationalLevelEvents20_21() {
             GRAND FINALE SELECTION IN TOYCATHON – LETS CODE DIGITAL TOYS FOR
             LEARNING
           </H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>TOYCATHON (NATIONAL LEVEL HACKATHON)
+              <strong>EVENT NAME : </strong>TOYCATHON (NATIONAL LEVEL HACKATHON)
             </li>
             <li>
               <strong>ORGANISED BY : </strong>AICTE & MHRD & MIC
@@ -1085,14 +1036,14 @@ export function NationalLevelEvents20_21() {
               <strong>ACHIEVEMENT : </strong>2 TEAMS SELECTED FOR GRAND FINALE
               IN TOYCATHON 2021 .
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
           <H5>GRAND FINALE RUNNER UP IN CODETHON 2021</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>CODETHON 2021 (NATIONAL LEVEL
+              <strong>EVENT NAME : </strong>CODETHON 2021 (NATIONAL LEVEL
               HACKATHON)
             </li>
             <li>
@@ -1127,14 +1078,14 @@ export function NationalLevelEvents20_21() {
               WINNING TEAM LEADER IS SANCHIT MANGAL 7 CSE & TITLE OF INNOVATION
               WAS AUTOMATIC ALERT TO SAFETY OFFICER
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
           <H5>SELECTION OF STUDENT’S IDEA IN CHAATRA VISHWAKARMA AWARD 2021</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>TCHHATRA VISHWAKARMA 2020 (NATIONAL
+              <strong>EVENT NAME : </strong>TCHHATRA VISHWAKARMA 2020 (NATIONAL
               LEVEL HACKATHON)
             </li>
             <li>
@@ -1152,7 +1103,7 @@ export function NationalLevelEvents20_21() {
             <li>
               <strong>IDEAS SELECTED FOR REGIONAL LEVEL : </strong>1
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
@@ -1161,9 +1112,9 @@ export function NationalLevelEvents20_21() {
             TEAMS FOR SIH 2020-HARDWARE EDITION STUDENT’S IDEA IN CHAATRA
             VISHWAKARMA AWARD 2021
           </H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>SMART INDIA HACKATHON 2020 (NATIONAL
+              <strong>EVENT NAME : </strong>SMART INDIA HACKATHON 2020 (NATIONAL
               LEVEL HACKATHON)
             </li>
             <li>
@@ -1194,7 +1145,7 @@ export function NationalLevelEvents20_21() {
               DEPTH RESPECTIVELY , LAND MONITORING OF USAGE USING SATELLITE IN
               REAL TIME, SMART TRIP PLANNER, MOBILE BASED LASER VIBRATOMETER
             </li>
-          </ul>
+          </UL>
         </li>
       </ul>
     </Cont>
@@ -1205,38 +1156,13 @@ export function NationalLevelEvents20_21() {
 export function NationalLevelEvents19_20() {
   return (
     <Cont>
-      <PageHead>NATIONAL & STATE LEVEL EVENTS PARTICIPATION</PageHead>
-      <p>
-        Participation in Technical Events at National Level & State Level helps
-        in improving the technical skills of students and students learn from
-        the challenges which they face during these events .
-      </p>
-      <p>
-        To create a innovative and learning environment for developing the
-        technical skills , Students has been motivated by faculties to
-        participate in various national level and state level technical
-        competition such as Hackathon, Vishwakarma Award , Manthan 2021 etc.
-      </p>
-      <p>
-        The main motto of the participation is to bring students out of stage
-        fear and also improve their communication skills. It also helps the
-        students to think, create and develop about the real time problem’s
-        solutions. It also provides you an opportunity to learn in detailed
-        about a core subject which is a part of curriculum and develop effective
-        presentation skills.
-      </p>
-      <p>
-        MITRC students participated in many national level and state level
-        events like various Hackathons, and got selected in Grand Finale in many
-        competitions.
-      </p>
       <H4>EVENTS PARTICIPATION IN 2019-20</H4>
       <ul style={{ listStyle: "none" }}>
         <li>
           <H5>1 TEAM SELECTED IN SAMADHAN- INDIA FIGHT WITH CORONA</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>SAMADHAAN ( NATIONAL LEVEL
+              <strong>EVENT NAME : </strong>SAMADHAAN ( NATIONAL LEVEL
               HACKATHON)
             </li>
             <li>
@@ -1258,14 +1184,14 @@ export function NationalLevelEvents19_20() {
               <strong>IDEAS SELECTED IS : </strong>AN APP FOR CORONA & PUBLIC
               AWARENESS DURING CORONA
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
           <H5>1 TEAM SELECTED IN IDEATHON- INDIA FIGHT WITH CORONA</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>IDEATHON ( NATIONAL LEVEL HACKATHON)
+              <strong>EVENT NAME : </strong>IDEATHON ( NATIONAL LEVEL HACKATHON)
             </li>
             <li>
               <strong>ORGANISED BY : </strong>AICTE & MIC& FORGE
@@ -1286,14 +1212,14 @@ export function NationalLevelEvents19_20() {
               <strong>IDEAS SELECTED IS : </strong>AN APP FOR CORONA & PUBLIC
               AWARENESS DURING CORONA
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
           <H5>5 TEAMS SELECTED IN CHATRA VISHWAKARMA AWARD 2019</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>CHHATRA VISHWAKARMA 2019 (NATIONAL
+              <strong>EVENT NAME : </strong>CHHATRA VISHWAKARMA 2019 (NATIONAL
               LEVEL HACKATHON)
             </li>
             <li>
@@ -1326,14 +1252,14 @@ export function NationalLevelEvents19_20() {
               Heart Vibes was selected for National Convention to be held at
               AICTE, Headquater.
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
           <H5>13 TEAMS SELECTED FOR SIH 2020 BY INTERNAL HACKATHON MIH-2020</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>MITRC INTERNAL HACKATHON 2020 (INTRA
+              <strong>EVENT NAME : </strong>MITRC INTERNAL HACKATHON 2020 (INTRA
               COLLEGE LEVEL HACKATHON)
             </li>
             <li>
@@ -1359,14 +1285,14 @@ export function NationalLevelEvents19_20() {
               <strong>IDEAS ARE: </strong>TIME TABLE MANAGEMENT, VSAT SAARTHI,
               MEDICINE APP, AUTOMATIC ALERT TO SAFETY OFFICER, CHILD WELFARE.
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
           <H5>5 TEAMS SELECTED FOR BUSINESS HACKATHON AT MANIPAL UNIVERSITY</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>BUSINESS HACKATHON
+              <strong>EVENT NAME : </strong>BUSINESS HACKATHON
             </li>
             <li>
               <strong>ORGANISED BY : </strong>MANIPAL UNIVERSITY,JAIPUR
@@ -1392,14 +1318,14 @@ export function NationalLevelEvents19_20() {
               MINI CNC MACHINE, ONLINE JOB PORTAL, E-COMMERCE FOR TRIBAL PROPLE
               PRODUCTS.
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
           <H5>1 TEAM SELECTED IN IDEATHON- INDIA FIGHT WITH CORONA</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>IDEATHON ( NATIONAL LEVEL HACKATHON)
+              <strong>EVENT NAME : </strong>IDEATHON ( NATIONAL LEVEL HACKATHON)
             </li>
             <li>
               <strong>ORGANISED BY : </strong>AICTE & MIC& FORGE
@@ -1420,7 +1346,7 @@ export function NationalLevelEvents19_20() {
               <strong>IDEAS SELECTED IS : </strong>AN APP FOR CORONA & PUBLIC
               AWARENESS DURING CORONA
             </li>
-          </ul>
+          </UL>
         </li>
       </ul>
     </Cont>
@@ -1433,38 +1359,13 @@ export function NationalLevelEvents19_20() {
 export function NationalLevelEvents18_19() {
   return (
     <Cont>
-      <PageHead>NATIONAL & STATE LEVEL EVENTS PARTICIPATION</PageHead>
-      <p>
-        Participation in Technical Events at National Level & State Level helps
-        in improving the technical skills of students and students learn from
-        the challenges which they face during these events .
-      </p>
-      <p>
-        To create a innovative and learning environment for developing the
-        technical skills , Students has been motivated by faculties to
-        participate in various national level and state level technical
-        competition such as Hackathon, Vishwakarma Award , Manthan 2021 etc.
-      </p>
-      <p>
-        The main motto of the participation is to bring students out of stage
-        fear and also improve their communication skills. It also helps the
-        students to think, create and develop about the real time problem’s
-        solutions. It also provides you an opportunity to learn in detailed
-        about a core subject which is a part of curriculum and develop effective
-        presentation skills.
-      </p>
-      <p>
-        MITRC students participated in many national level and state level
-        events like various Hackathons, and got selected in Grand Finale in many
-        competitions.
-      </p>
       <H4>EVENTS PARTICIPATION IN 2018-19</H4>
       <ul style={{ listStyle: "none" }}>
         <li>
           <H5>SMART INDIA HACKATHON 2019 (NATIONAL LEVEL HACKATHON)</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>SAMADHAAN ( NATIONAL LEVEL
+              <strong>EVENT NAME : </strong>SAMADHAAN ( NATIONAL LEVEL
               HACKATHON)
             </li>
             <li>
@@ -1494,14 +1395,14 @@ export function NationalLevelEvents18_19() {
               MEDICINES, SAVE LIFE, TIME TABLE MANAGEMENT, REPOSITORY FOR SPORTS
               PERSON, RESPOSITORY FOR PROJECTS.
             </li>
-          </ul>
+          </UL>
         </li>
 
         <li>
           <H5>1 TEAM SELECTED IN BUSINESS HACKATHON FINALE</H5>
-          <ul>
+          <UL>
             <li>
-              <strong>Event Name : </strong>BUSINEESS HACKATHON 2019
+              <strong>EVENT NAME : </strong>BUSINEESS HACKATHON 2019
               (NATIONALLEVEL HACKATHON)
             </li>
             <li>
@@ -1519,7 +1420,7 @@ export function NationalLevelEvents18_19() {
             <li>
               <strong>IDEAS SELECTED FOR S/W FINALE : </strong>1
             </li>
-          </ul>
+          </UL>
         </li>
       </ul>
     </Cont>

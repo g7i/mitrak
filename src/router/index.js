@@ -37,6 +37,7 @@ import StudentAffair from "../Pages/CampusLifePage/StudentAffair";
 import Departments from "../Pages/AcademicsPage/departments/Departments";
 import MandatoryPublicDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclourePage/MandatoryPublicDisclosure";
 import FeeStructurePage from "../Pages/AcademicsPage/FeeStructurePage";
+import NationalLevelEvents from "../Pages/CampusLifePage/NationalLevelEvents/index";
 
 const Router = () => {
   const {
@@ -91,9 +92,9 @@ const Router = () => {
             component={FeeStructurePage}
           />
           <Route
-              path="/academics/madatory-disclosures/public"
-              exact
-              component={MandatoryPublicDisclosuresPage}
+            path="/academics/madatory-disclosures/public"
+            exact
+            component={MandatoryPublicDisclosuresPage}
           />
           <Route
             path="/academics/madatory-disclosures/:child"
@@ -125,45 +126,52 @@ const Router = () => {
             exact
             component={EventGallery}
           />
-          <Route exact path="/campus-life/amenities/:route" component={Amenities}/>
-          <Route exact path="/campus-life/student-affair/:route" component={StudentAffair}/>
+          <Route
+            path="/campus-life/national-level-events"
+            exact
+            component={NationalLevelEvents}
+          />
+          <Route
+            exact
+            path="/campus-life/amenities/:route"
+            component={Amenities}
+          />
+          <Route
+            exact
+            path="/campus-life/student-affair/:route"
+            component={StudentAffair}
+          />
           <Route
             path="/campus-life/club-and-activities/:route"
             exact
             component={ClubAndActivities}
           />
           <Route
-              path="/campus-life/:routename/:child"
-              exact
-              component={CampusLife}
+            path="/campus-life/:routename/:child"
+            exact
+            component={CampusLife}
           />
           <Route
-              path="/campus-life/hostel-registeration"
-              exact
-              component={HostelRegistration}
+            path="/campus-life/hostel-registeration"
+            exact
+            component={HostelRegistration}
+          />
+          <Route path="/campus-life/pacform" exact component={PACForm} />
+          <Route
+            path="/campus-life/permission-going-outside"
+            exact
+            component={PermissionGoingOutsideForm}
           />
           <Route
-              path="/campus-life/pacform"
-              exact
-              component={PACForm}
+            path="/campus-life/hostel-grievance"
+            exact
+            component={HostelGrievanceForm}
           />
           <Route
-              path="/campus-life/permission-going-outside"
-              exact
-              component={PermissionGoingOutsideForm}
+            path="/campus-life/hostel-warden"
+            exact
+            component={WardenPage}
           />
-          <Route
-              path="/campus-life/hostel-grievance"
-              exact
-              component={HostelGrievanceForm}
-          />
-          <Route
-              path="/campus-life/hostel-warden"
-              exact
-              component={WardenPage}
-          />
-
-
 
           {/*Placements*/}
           <Route path="/placements" exact component={PlacementPage} />
@@ -186,10 +194,14 @@ const Router = () => {
             component={AdminDashboard}
           />
           <Route path="/student/dashboard" exact component={StudentDashboard} />
-          <Route path="/academics/departments/" exact component={Departments}/>
-          <Route path="/academics/departments/:route" exact component={Departments}/>
+          <Route path="/academics/departments/" exact component={Departments} />
+          <Route
+            path="/academics/departments/:route"
+            exact
+            component={Departments}
+          />
           <Route path="/academics/courses" exact component={Offered} />
-          <Route path="/academics/courses/:route" exact component={Offered}/>
+          <Route path="/academics/courses/:route" exact component={Offered} />
           <Route
             path="/academics/:routename/:child"
             exact

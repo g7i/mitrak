@@ -22,7 +22,7 @@ const DropDownContent = {
   aboutUs: [
     { title: "About Us", link: "/about" },
     { title: "Contact Us", link: "/contact" },
-    { title: "How To Reach", link: "/how-to-reach" }
+    { title: "How To Reach", link: "/how-to-reach" },
   ],
   academics: [
     { title: "Programmes Offered", link: "/academics/courses" },
@@ -32,8 +32,16 @@ const DropDownContent = {
       link: "/academics/departments/",
     },
     { title: "Mandatory Disclosures", link: "/academics/madatory-disclosures" },
-    { title: "Mandatory Public Disclosures", link: "/academics/madatory-disclosures/public" },
-    { title: "Academic Calender", link: "#", redirectLink: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FAcademic%20Calendar%2FAcademic%20Calendar.pdf?alt=media&token=c85823ed-4c5c-4b0e-a762-f5fd7f48d403' },
+    {
+      title: "Mandatory Public Disclosures",
+      link: "/academics/madatory-disclosures/public",
+    },
+    {
+      title: "Academic Calender",
+      link: "#",
+      redirectLink:
+        "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FAcademic%20Calendar%2FAcademic%20Calendar.pdf?alt=media&token=c85823ed-4c5c-4b0e-a762-f5fd7f48d403",
+    },
   ],
   campusLife: [
     { title: "Amenities", link: "/campus-life/amenities/main" },
@@ -49,6 +57,10 @@ const DropDownContent = {
     {
       title: "Events And Gallery",
       link: "/campus-life/events-gallery/curricular",
+    },
+    {
+      title: "National & State Level Events",
+      link: "/campus-life/national-level-events",
     },
   ],
 

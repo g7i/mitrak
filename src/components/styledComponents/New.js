@@ -290,3 +290,9 @@ export const A = styled(Link)`
     border: 1px solid #324a8a;
   `}
 `;
+
+export const UL = styled.ul`
+  li{
+    margin : 5px 0px;
+  }
+`
