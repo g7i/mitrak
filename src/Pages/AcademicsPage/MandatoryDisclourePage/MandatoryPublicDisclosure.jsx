@@ -58,8 +58,8 @@ const MandatoryPublicDisclosuresPage = () => {
                                         table.tableData.map(td => (
                                             <tr>
                                                 {
-                                                    td.map(d => (
-                                                        <td>{d}</td>
+                                                    td.map((d, index) => (
+                                                        <td style={{textAlign: index === 0 || table.center === index || table.center2 === index ? 'center' : ''}}>{d}</td>
                                                     ))
                                                 }
                                             </tr>
