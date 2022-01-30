@@ -16,6 +16,11 @@ import {
   IAF,
   ISRO,
   MIH,
+  NationalLevelEvents,
+  NationalLevelEvents18_19,
+  NationalLevelEvents19_20,
+  NationalLevelEvents20_21,
+  NationalLevelEvents21_22,
   Teacher,
   Women
 } from "./Components";
@@ -35,19 +40,22 @@ const data = [
   },
   {
     title: "FDPs",
-    sub: [{title: "FDP on Latex & MATLAB", component: <FDP1 />}, { title: "FDP on Python", component: <FDP2 /> }],
+    sub: [
+      { title: "FDP on Latex & MATLAB", component: <FDP1 /> },
+      { title: "FDP on Python", component: <FDP2 /> },
+    ],
   },
   {
     title: "International /National Conferences",
     sub: [
-      {title: "ETSEM 2019", component: <ETSEM1 />},
+      { title: "ETSEM 2019", component: <ETSEM1 /> },
       { title: "ETSEM 2018", component: <ETSEM2 /> },
     ],
   },
   {
     title: "Annual Function",
     sub: [
-      {title: "Invincible T-20", component: <Annual />},
+      { title: "Invincible T-20", component: <Annual /> },
       { title: "Invincible T-19", component: <Annual /> },
       { title: "Invincible T-18", component: <Annual /> },
     ],
@@ -75,6 +83,27 @@ const data = [
   {
     title: "Abhinandan Return Celebration",
     component: <Abhi />,
+  },
+  {
+    title: "National & State Level events participation",
+    sub: [
+      {
+        title: "event participation in 2021-22",
+        component: <NationalLevelEvents21_22 />,
+      },
+      {
+        title: "event participation in 2020-21",
+        component: <NationalLevelEvents20_21 />,
+      },
+      {
+        title: "event participation in 2019-20",
+        component: <NationalLevelEvents19_20 />,
+      },
+      {
+        title: "event participation in 2018-19",
+        component: <NationalLevelEvents18_19 />,
+      },
+    ],
   },
 ];
 
