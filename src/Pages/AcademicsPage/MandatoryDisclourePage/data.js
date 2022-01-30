@@ -102,7 +102,7 @@ export const RoutingData = [
   ////////////////////
 
   {
-    title: "Student disciplianry counsil",
+    title: "Student disciplianry council",
     component: <StudentDisciplinaryCounsilPage />,
     link: "student-disciplianry-counsil",
     pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FStudent%20Disciplinary%20Council.pdf?alt=media&token=2521dab5-e05c-4807-a0d0-503cae2075a2",
@@ -236,6 +236,7 @@ export const publicTables = [
       "INFORMATION",
       "DETAILS"
     ],
+    center: 2,
     tableData: [
       [
         "1",
@@ -250,17 +251,20 @@ export const publicTables = [
         "    • B.Tech in Civil Engineering (UG)\n" +
         "    • B.Tech in Electrical Engineering (UG)\n" +
         "    • B.Tech in Mechanical Engineering (UG)\n" +
-        "    • M.Tech in Computer Science Engineering (PG)"
+        "    • M.Tech in Computer Science Engineering (PG)\n"+
+        "    • M.Tech in Production Engineering\n"
       ]
     ]
   },
   {
     heading: "PROGRAMMES DETAIL",
     header: [
-      "PROGRAM",
+      "PROGRAMME",
       "DURATION",
       "ANNUAL FEE"
     ],
+    center: 1,
+    center2: 2,
     tableData: [
       [
         "B.TECH-AI&DS (60 INTAKE)",
@@ -306,6 +310,7 @@ export const publicTables = [
       "INFORMATION",
       "DETAILS"
     ],
+    center: 2,
     tableData: [
       [
         "1",
@@ -395,17 +400,17 @@ export const publicTables = [
       [
         "2",
         "NUMBER OF CLASS ROOMS & CLASS ROOM SIZE",
-        "28 & 66 Square Meter"
+        "28 & 66 Square Meter EACH"
       ],
       [
         "3",
         "NUMBER OF LABORATORIES &  SIZE",
-        "41 & 33 Square Meter"
+        "41 & 33 Square Meter EACH"
       ],
       [
         "4",
         "NUMBER OF DRAWING HALLS & SIZE",
-        "2 & 132 Square meter"
+        "2 & 132 Square meter EACH"
       ],
       [
         "5",
@@ -415,7 +420,7 @@ export const publicTables = [
       [
         "6",
         "INTERNET FACILTY",
-        "YEAS ( 500 Mbps) with Fibre"
+        "YES ( 500 Mbps) with Fibre"
       ],
       [
         "7",
