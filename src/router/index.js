@@ -35,6 +35,8 @@ import WardenPage from "../Pages/CampusLifePage/WardenPage";
 import ClubAndActivities from "../Pages/CampusLifePage/ClubAndActivities";
 import StudentAffair from "../Pages/CampusLifePage/StudentAffair";
 import Departments from "../Pages/AcademicsPage/departments/Departments";
+import MandatoryPublicDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclourePage/MandatoryPublicDisclosure";
+import FeeStructurePage from "../Pages/AcademicsPage/FeeStructurePage";
 
 const Router = () => {
   const {
@@ -82,6 +84,16 @@ const Router = () => {
             path="/academics/madatory-disclosures"
             exact
             component={MandatoryDisclosuresPage}
+          />
+          <Route
+            path="/academics/fees-structure"
+            exact
+            component={FeeStructurePage}
+          />
+          <Route
+              path="/academics/madatory-disclosures/public"
+              exact
+              component={MandatoryPublicDisclosuresPage}
           />
           <Route
             path="/academics/madatory-disclosures/:child"

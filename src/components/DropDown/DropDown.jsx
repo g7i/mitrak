@@ -34,7 +34,11 @@ const DropDown = ({ children, content }) => {
         <DropDownList>
           {content?.map((item , i) => (
             <li key={i}>
-              <Link to={item.link}>{item.title}</Link>
+              {
+                item?.redirectLink ? (<a href={item.redirectLink}>{item.title}</a>) : (
+                    <Link to={item.link}>{item.title}</Link>
+                )
+              }
             </li>
           ))}
         </DropDownList>

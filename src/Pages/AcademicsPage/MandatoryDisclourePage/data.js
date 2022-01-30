@@ -121,3 +121,322 @@ export const RoutingData = [
     pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fmandatory-disclosure%2FWomen%20Cell.pdf?alt=media&token=cf3c51a0-d510-476f-acc8-ad0bfff8272c",
   },
 ];
+
+
+export const publicRoutingData = [
+  {
+    title: "Extension of Approval by AICTE",
+    pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2FEOA_Report%2021-22.PDF?alt=media&token=1e3d9ce4-699d-4164-b6ad-c398ae3a1958"
+  },
+  {
+    title: "Building Safety Certificate",
+    pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2Fbuilding%20safety%20up%20to%20Feb%2024.jpg?alt=media&token=309245bc-a6e7-4cef-882c-8bd1e0c3d88d"
+  },
+  {
+    title: "Fire Safety Certificate",
+    pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2Fbuilding%20safety%20up%20to%20Feb%2024.jpg?alt=media&token=309245bc-a6e7-4cef-882c-8bd1e0c3d88d"
+  },
+  {
+    title: "Land Certificate",
+    pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2Farchitect%20certificate%20new.pdf?alt=media&token=14925f2a-b00e-49ba-bc6c-9fd7fb950ed5"
+  },
+  {
+    title: "Water Quality Certificate",
+    pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2Fwater%20testing%2017-18%20001.jpg?alt=media&token=3f011ed7-689a-4b20-9bbc-f62fdda6499e"
+  },
+  {
+    title: "NOC issued by Govt",
+    pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2Farchitect%20certificate%20new.pdf?alt=media&token=14925f2a-b00e-49ba-bc6c-9fd7fb950ed5"
+  }
+]
+
+export const publicTables = [
+  {
+    heading: "INSTITUTE GENERAL INFORMATION",
+    header: [
+        "SL. No.",
+        "INFORMATION",
+        "DETAILS"
+    ],
+    tableData: [
+      [
+        "1",
+        "NAME OF THE INSTITUTE",
+        "MODERN INSTITUTE OF TECHNOLOGY & RESEARCH CENTRE ALWAR"
+      ],
+      [
+          "2",
+          "PERMANENT ID",
+          "1-4331903"
+      ],
+        [
+            "3",
+            "REAP CODE",
+            "060"
+        ],
+        [
+            "4",
+            "COMPLETE ADDRESS WITH PIN CODE",
+            "6TH MILE STONE,  DELHI-TIJARA STATE HIGHWAY,SIRMOLI ROAD-VILLAGE JHARKHERA, ALWAR(RAJASTHAN-301028)"
+        ],
+        [
+            "5",
+            "PRINCIPAL NAME & QUALIFICATION",
+            "Dr. S.K. Sharma (B.E, MBA,M.TECH,Phd(CSE) & Phd(Maths)"
+        ],
+        [
+            "6",
+            "SCHOOL EMAIL ID",
+            "min@mitrc.ac.in,mitrcindia@gmail.com"
+        ]
+    ]
+  },
+  {
+    heading: "SOCIETY GENERAL INFORMATION",
+    header: [
+      "SL. No.",
+      "INFORMATION",
+      "DETAILS"
+    ],
+    tableData: [
+      [
+        "1",
+        "NAME OF THE SOCIETY",
+        "All India Arya Samajis Society for Advance Education & Research” (AIASSAER)"
+      ],
+      [
+        "2",
+        "COMPLETE ADDRESS WITH PIN CODE",
+        "6TH MILE STONE,  DELHI-TIJARA STATE HIGHWAY,SIRMOLI ROAD-VILLAGE JHARKHERA, ALWAR(RAJASTHAN-301028)"
+      ],
+      [
+        "3",
+        "CHAIRPERSON NAME",
+        "Mrs. Bimla Devi bimla.chairmanmitrc@gmail.com\n" +
+        "Address : Shivaji Park, Alwar- 301001\n" +
+        "\n" +
+        "\n"
+      ],
+      [
+        "4",
+        "SOCIETY EMAIL ID",
+        "aiassaer@gmail.com"
+      ],
+      [
+        "5",
+        "CONTACT DETAILS (LANDLINE/MOBILE)",
+        "0144-2980851/52,9414063671"
+      ]
+    ]
+  },
+  {
+    heading: "PROGRAMMES\t INFORMATION",
+    header: [
+      "SL. No.",
+      "INFORMATION",
+      "DETAILS"
+    ],
+    tableData: [
+      [
+        "1",
+        "TOTAL PROGRAMMES ACCREDIATED BY AICTE",
+        "07"
+      ],
+      [
+        "2",
+        "NAME OF  PROGRAMMES ACCREDIATED BY AICTE",
+        "    • B.Tech in Artificial Intelligence & Data Science (UG)\n" +
+        "    • B.Tech in Computer Science Engineering (UG)\n" +
+        "    • B.Tech in Civil Engineering (UG)\n" +
+        "    • B.Tech in Electrical Engineering (UG)\n" +
+        "    • B.Tech in Mechanical Engineering (UG)\n" +
+        "    • M.Tech in Computer Science Engineering (PG)"
+      ]
+    ]
+  },
+  {
+    heading: "PROGRAMMES DETAIL",
+    header: [
+      "PROGRAM",
+      "DURATION",
+      "ANNUAL FEE"
+    ],
+    tableData: [
+      [
+        "B.TECH-AI&DS (60 INTAKE)",
+        "4 YEARS",
+        "70,000 per Annumn"
+      ],
+      [
+        "B.TECH-CSE (120 INTAKE)",
+        "4 YEARS",
+        "70,000 per Annumn"
+      ],
+      [
+        "B.TECH-CE (90 INTAKE)",
+        "4 YEARS",
+        "70,000 per Annumn"
+      ],
+      [
+        "B.TECH-EE (30 INTAKE)",
+        "4 YEARS",
+        "70,000 per Annumn"
+      ],
+      [
+        "B.TECH-ME (30 INTAKE)",
+        "4 YEARS",
+        "70,000 per Annumn"
+      ],
+      [
+        "M.TECH-CSE (18 INTAKE)",
+        "2 YEARS",
+        "70,000 per Annumn"
+      ],
+      [
+        "M.TECH-ME (18 INTAKE)",
+        "2 YEARS",
+        "70,000 per Annumn"
+      ],
+    ]
+  },
+  {
+    heading: "FACULTY DETAILS",
+    header: [
+      "SL. No.",
+      "INFORMATION",
+      "DETAILS"
+    ],
+    tableData: [
+      [
+        "1",
+        "TOTAL FACULTIES",
+        "110"
+      ],
+      [
+        "2",
+        "FACULTY : STUDENT RATIO",
+        "1:20"
+      ],
+      [
+        "3",
+        "TOTAL FACULTIES FOR PG PROGRAMMES",
+        "24"
+      ],
+      [
+        "4",
+        "TOTAL FACULTIES FOR UG PROGRAMMES",
+        "110"
+      ]
+    ]
+  },
+  {
+    heading: "DIRECTOR PROFILE INFORMATION",
+    header: [
+      "SL. No.",
+      "INFORMATION",
+      "DETAILS"
+    ],
+    tableData: [
+      [
+        "1",
+        "NAME OF THE DIRECTOR",
+        "Dr. S.K. Sharma"
+      ],
+      [
+        "2",
+        "UNIQUE  ID",
+        "0658"
+      ],
+      [
+        "3",
+        "DATE OF BIRTH",
+        "01/07/1968"
+      ],
+      [
+        "4",
+        "EDUCATION QUALIFICATION",
+        "(B.E, MBA,M.TECH,Phd(CSE) & Phd(Maths)"
+      ],
+      [
+        "5",
+        "WORK EXPERIENCE",
+        "26 YEARS"
+      ],
+      [
+        "6",
+        "SPECIALIZATION",
+        "INFORMATION SECURITY"
+      ],
+      [
+        "7",
+        "RESEARCH PAPERS",
+        "National Journals: 25+, International Journals: 25+, Conferences: 30+"
+      ],
+      [
+        "8",
+        "RESEARCH GUIDANCE",
+        "10+"
+      ]
+    ]
+  },
+  {
+    heading: "INSTITUTE INFRASTRUCTURE INFORMATION",
+    header: [
+      "SL. No.",
+      "INFORMATION",
+      "DETAILS"
+    ],
+    tableData: [
+      [
+        "1",
+        "TOTAL CAMPUS AREA",
+        "27 Acres"
+      ],
+      [
+        "2",
+        "NUMBER OF CLASS ROOMS & CLASS ROOM SIZE",
+        "28 & 66 Square Meter"
+      ],
+      [
+        "3",
+        "NUMBER OF LABORATORIES &  SIZE",
+        "41 & 33 Square Meter"
+      ],
+      [
+        "4",
+        "NUMBER OF DRAWING HALLS & SIZE",
+        "2 & 132 Square meter"
+      ],
+      [
+        "5",
+        "NUMBER OF COMPUTER LABS",
+        "25"
+      ],
+      [
+        "6",
+        "INTERNET FACILTY",
+        "YEAS ( 500 Mbps) with Fibre"
+      ],
+      [
+        "7",
+        "WI FI FACILITY",
+        "YES ( WHOLE CAMPUS)"
+      ],
+      [
+        "8",
+        "TOTAL TOILETS ( MALE)",
+        "20"
+      ],
+      [
+        "9",
+        "TOTAL TOILETS ( FEMALE)",
+        "20"
+      ],
+      [
+        "10",
+        "ONLINE LIBRARY RESOURCE",
+        "YES"
+      ]
+    ]
+  },
+]
