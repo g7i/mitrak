@@ -11,7 +11,7 @@ import {
 } from "../../../components/styledComponents/News";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { FcDocument } from "react-icons/fc";
-
+import Linkify from 'react-linkify';
 import styled from "styled-components";
 import {
   FillImage,
@@ -109,19 +109,20 @@ export default function News() {
           </ItemWrapper>
         ))}
       </Slider> */}
-      <Heading style={{ textAlign: "center" }}>Important Update</Heading>
+      <Heading style={{ textAlign: "center" }}>Important Updates</Heading>
       <Container style={{ display: "flex", justifyContent: "space-between" }}>
         <NewsBox>
           <Heading style={{ fontSize: "1.4rem", textAlign: "center" }}>
             Latest News
           </Heading>
-          <NewNewsContainer>
+          <marquee direction = "up" style={{ height: '80%' }} scrollAmount={5} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
             {newsList
               ?.filter((item) => item.type == "new")
-              .slice(0, 2)
+              // .slice(0, 2)
               .map((item) => (
                 <NewsComponent
                   news={item}
+                  link
                   width={
                     newsList?.filter((item) => item.type == "new").length === 1
                       ? "100%"
@@ -129,12 +130,12 @@ export default function News() {
                   }
                 />
               ))}
-          </NewNewsContainer>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Link to="/news">
-              <Paragraph >Show More..</Paragraph>
-            </Link>
-          </div>
+          </marquee>
+          {/*<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>*/}
+          {/*  <Link to="/news">*/}
+          {/*    <Paragraph >Show More..</Paragraph>*/}
+          {/*  </Link>*/}
+          {/*</div>*/}
         </NewsBox>
         <NewsBox>
           <Heading style={{ fontSize: "1.4rem", textAlign: "center", marginBottom: '10px' }}>
@@ -156,18 +157,195 @@ export default function News() {
           <Heading style={{ fontSize: "1.4rem", textAlign: "center", marginBottom: '10px' }}>
             Important Articles
           </Heading>
-          <marquee direction = "up" style={{ height: '80%' }} scrollAmount={5} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
-            {impArticles
-                .map((item) => (
-                    <NewsContainer key={item.link}>
-                      {/*<Paragraph>Title:</Paragraph>*/}
-                      {/*<a target={"_blank"} href={item.link>*/}
-                      {/*  {item.link}*/}
-                      {/*</a>*/}
-                      <Paragraph>{item.label}</Paragraph>
-                      <a target={item.link} href={item.link}>{item.link}</a>
-                    </NewsContainer>
-                ))}
+          <marquee direction="up" style={{ height: '80%' }} scrollAmount={6} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
+            <div style={{ pointerEvents: 'none' }}>
+              <Linkify>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>GOVERNMENT EDUCATION BODIES</div>
+                <pre>{`
+          ALL INDIA COUNCIL OF TECHNICAL EDUCATION
+          www.aicte-india.org
+          
+          NATIONAL BOARD OF ACCREDITATION
+          https://www.nbaind.org/
+          
+          MINISTRY OF EDUCATION
+          https://www.education.gov.in/
+          
+          DEPARTMENT OF SCIENCE & TECHNOLOGY
+          https://dst.gov.in/
+          
+          MHRD INNOVATION CELL
+          https://www.mic.gov.in/
+          
+          NITI AAYOG
+          http://www.niti.gov.in/
+          
+          UGC CARE
+          https://ugccare.unipune.ac.in/
+          
+          BTU,BIKANER
+          https://www.btu.ac.in/
+          
+          RTU,KOTA
+          https://www.rtu.ac.in/
+            `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>LINKS FOR STUDENT WELFARE SCHEMES</div>
+                <pre>{`
+          AICTE J&K PMSS SCHEME
+          https://aicte-jk-scholarship-gov.in/
+          
+          AICTE STUDENT DEVELOPMENT SCHEMES
+          https://www.aicte-india.org/schemes/students-development-schemes
+          
+          AICTE PRAGATI & SAKSHAM SCHOLARSHIP SCHEMES
+          https://www.aicte-pragati-saksham-gov.in/
+          
+          NATIONAL SCHOLARSHIP PORTAL
+          https://scholarships.gov.in/
+          
+          NATIONAL SCHOLARSHIP PORTAL
+          https://nsp.gov.in/
+          
+          SJE SCHOLARSHIP PORTAL-RAJASTHAN
+          https://www.sje.rajasthan.gov.in/Scholarship_Portal.aspx
+          
+          MINISTRY OF MINORITY AFFAIRS
+          https://www.minorityaffairs.gov.in/
+              `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>LINKS FOR STARTUPS/ INNOVATION / NATIONAL LEVEL EVENTS</div>
+                <pre>{`
+          SMART INDIA HACKATHON-2022
+          www.sih.gov.in
+          
+          MANTHAN- LET’S CODE FOR COUNTRY SECURITY
+          www.manthan.gov.in
+          
+          TOYCATHON
+          www.toycathon.gov.in
+          
+          AICTE VISHWAKARMA AWARD
+          https://www.aicte-india.org/AICTE%20Vishwakarma%20Award%2020
+          
+          INSTITUTE INNOVATION COUNCIL
+          https://mic.gov.in/innovation-council/iic
+          
+          YUKTI 2.0
+          http://yukti.mic.gov.in/
+          
+          MyGov.in
+          https://mygov.in/
+          
+          C-DAC
+          https://www.cdac.in/
+          
+          DIGILOCKER 
+          https://www.digilocker.gov.in/
+          
+          INNOVATION FOR DEFENCE EXCELLENCE 
+          https://idex.gov.in/
+              `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>STUDENTS & FACULTY ONLINE  LEARNING</div>
+                <pre>{`
+          SWAYAM COURSES 
+          https://swayam.gov.in/
+         
+          NPTEL COURSES
+          https://nptel.ac.in/
+         
+          MOOC
+          https://www.mooc.org/
+         
+          COURSERA
+          https://www.coursera.org/
+         
+          UDEMY
+          https://www.udemy.com/
+         
+          VIRTUAL LAB 
+          https://www.vlab.co.in/
+         
+          MITRC ONLINE LECTURES
+          https://www.youtube.com/channel/UCd1f3MgRP_sZjzOGLkTJKfg/featured
+         
+          ISRO-IIRS
+          https://elearning.iirs.gov.in/
+         
+          ATAL TRAINING & LEARNING ACADEMY
+          https://www.aicte-india.org/atal
+              `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>IMPORTANT COMPETITIVE EXAM LINKS</div>
+                <pre>{`
+          GATE 2022
+          https://gate.iitkgp.ac.in/
+          
+          STAFF SELECTION COMMISSION
+          https://ssc.nic.in/
+          
+          RAJASTHAN PUBLIC SERVICE COMMISSION
+          https://rpsc.rajasthan.gov.in/
+          
+          UNION PUBLIC SERVICE COMMISSION 
+          https://www.upsc.gov.in/
+          `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>EVENTS INITIATED BY MINISTRY OF EDUCATION</div>
+                <pre>{`
+          AZADI KA AMRIT MAHOTSAV
+          https://www.iitb.ac.in/en/azadi-ka-amrit-mahotsav
+          
+          EK BHARAT SHRESHTA BHARAT 
+          https://www.iitb.ac.in/en/ek-bharat-shreshtha-bharat
+          
+          INTERNATIONAL YOGA DAY 
+          https://www.iitb.ac.in/en/international-yoga-day
+          
+          CONSTITUTION DAY 
+          https://www.iitb.ac.in/en/constitution-day
+          
+          FIT INDIA PROGRAMME
+          https://www.iitb.ac.in/en/fit-india-programme
+          
+          NATIONAL EDUCATION POLICY
+          https://www.iitb.ac.in/en/national-education-policy
+          `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>PARIKSHA PE CHARCHA</div>
+                <img
+                  style={{
+                    width: '60%',
+                    marginTop: '10px',
+                    objectFit: 'contain',
+                    margin: 'auto',
+                    display: 'block',
+                  }}
+                  src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FHome%20Page%2FPPC_2022.jpg?alt=media&token=8b3efbf5-e06e-40ef-846c-19f8bc8818c0"
+                  alt="" />
+                <pre>{`
+          https://innovateindia.mygov.in/ppc-2022/
+              `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>ADVISORY ON COVID 19</div>
+                <pre>{`
+          http://www.rajswasthya.nic.in/
+              `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>CYBER CRIME REPORTING</div>
+                <pre>{`
+          https://cybercrime.gov.in/
+              `}</pre>
+                <div style={{textAlign: "center", textDecoration: 'underline'}}>AICTE ONLINE FEEDBACK</div>
+                <pre>{`
+          https://www.aicte-india.org/feedback/index.php
+              `}</pre>
+              </Linkify>
+            </div>
+            {/*{impArticles*/}
+            {/*    .map((item) => (*/}
+            {/*        <NewsContainer key={item.link}>*/}
+            {/*          /!*<Paragraph>Title:</Paragraph>*!/*/}
+            {/*          /!*<a target={"_blank"} href={item.link>*!/*/}
+            {/*          /!*  {item.link}*!/*/}
+            {/*          /!*</a>*!/*/}
+            {/*          <Paragraph>{item.label}</Paragraph>*/}
+            {/*          <a target={item.link} href={item.link}>{item.link}</a>*/}
+            {/*        </NewsContainer>*/}
+            {/*    ))}*/}
           </marquee>
         </NewsBox>
       </Container>
@@ -207,16 +385,27 @@ export const NewsComponent = (props) => {
         </ModalBodyWrapper>
       </Modal>
 
-      <NewNewsWrapper width={width}>
-        <div>
-          <FillImage src={news.image} />
-          <h3>{news.title}</h3>
-          <h5>{news.description}</h5>
-          <h5 className="read-more" onClick={() => setOpen(true)}>
-            Read More
-          </h5>
-        </div>
-      </NewNewsWrapper>
+      {props.link ? (
+        <NewsContainer>
+          <a target={"_blank"} href="#" onClick={(e) => {
+            e.preventDefault();
+            setOpen(true)
+          }}>
+            {news.title}
+          </a>
+        </NewsContainer>
+      ) : (
+        <NewNewsWrapper width={width}>
+          <div>
+            <FillImage src={news.image} />
+            <h3>{news.title}</h3>
+            <h5>{news.description}</h5>
+            <h5 className="read-more" onClick={() => setOpen(true)}>
+              Read More
+            </h5>
+          </div>
+        </NewNewsWrapper>
+      )}
     </>
   );
 };

@@ -15,8 +15,7 @@ const ContactsPage = () => {
       <Layout>
         <div className="contactContainer">
           <div className="contentContaner">
-            <bold>Welcome to</bold>
-            <Heading>MODERN INSTITUTE OF TECHNOLOGY & RESEARCH CENTRE, ALWAR (RAJ)</Heading>
+            <Heading style={{ fontSize: '1.8rem' }}>MODERN INSTITUTE OF TECHNOLOGY & RESEARCH CENTRE</Heading>
             <Paragraph>
               <bold>Address: </bold>
               6th Mile Stone Delhi – Tijara State Highway, Sirmoli Road, Village
@@ -45,7 +44,7 @@ const ContactsPage = () => {
           </div>
           <div>
             <div className="contactForm">
-              <Heading>Send us your enquiry</Heading>
+              <Heading style={{ fontSize: '1.8rem' }}>Send us your enquiry</Heading>
               <form action={submitContactForm}>
                 <TextField
                   title="Email Address"
@@ -80,8 +79,9 @@ const ContactsPage = () => {
 
         <GoogleEarthImageWrapper>
           <FillImage
+            style={{ cursor: "pointer" }}
             src={
-              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fgoogle-earth.png?alt=media&token=d1284315-09b1-49b5-a734-06ada21c187d"
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FHome%20Page%2FContact%20Us%2Fgoogle%20earth.png?alt=media&token=4c41989e-59f0-4d9c-9bf4-a2b0b5d81d7d"
             }
             onClick={()=>{window.location.href =
               "https://earth.google.com/web/search/MITRC+College+Campus,+Sirmoli+Road,+Jahar+Khera,+Rajasthan/@27.63370465,76.64956745,267.8754726a,436.75831862d,35y,0h,45t,0r/data=CqUBGnsSdQolMHgzOTcyOTdmMTBiOTJiMGU3OjB4NjQ5ZTFiMTEyOGRmMGRjNBlqEyf3O6I7QCGp1fydkilTQCo6TUlUUkMgQ29sbGVnZSBDYW1wdXMsIFNpcm1vbGkgUm9hZCwgSmFoYXIgS2hlcmEsIFJhamFzdGhhbhgCIAEiJgokCTwcY-pDczJAETscY-pDczLAGSjrH-G5dyRAIeJn4LCKJ1bAKAI";}}

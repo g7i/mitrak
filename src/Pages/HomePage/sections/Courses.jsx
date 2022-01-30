@@ -15,13 +15,22 @@ import MbaImage from "../../../assets/images/mba.png";
 import { Link } from 'react-router-dom'
 
 const btech = [
-  'Artificial Intelligence & Data Science Engineering (AI & DS)',
+  // 'Artificial Intelligence & Data Science Engineering (AI & DS)',
   'Computer Science Engineering (CSE)',
   'Civil Engineering (CE)',
   'Electrical Engineering (EE)',
   // 'Electronics & Communication Engineering (ECE)',
-  'Mechanical Engineering (ME)'
+  'Mechanical Engineering (ME)',
+  'Electronics & Communication (EC)',
 ]
+
+const links = [
+  '/academics/departments/cse',
+  '/academics/departments/ce',
+  '/academics/departments/ee',
+  '/academics/departments/me',
+  '/academics/departments/ec',
+];
 
 const mtech = [
   'M.Tech in Computer Science & Engineering',
@@ -51,7 +60,9 @@ export default function Courses() {
           <CardContent>
             <ul>
               {btech.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}>
+                  <Link to={links[index]}>{item}</Link>
+                </li>
               ))}
             </ul>
           </CardContent>
