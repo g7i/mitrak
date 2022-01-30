@@ -12,6 +12,18 @@ export const PageHead = styled.div`
   font-weight: 500;
   font-style: italic;
 `;
+export const H5 = styled.h5`
+  border-left: 3px solid #1c2f46;
+  box-shadow: 0.5px 0.5px 3px -1px;
+  color: #1c2f46;
+  display: table;
+  font-family: serif;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 700;
+  margin: 12px 0;
+  padding: 7px;
+`;
 export const H4 = styled.h4`
   border-left: 5px solid #1c2f46;
   box-shadow: 1px 1px 6px -2px;

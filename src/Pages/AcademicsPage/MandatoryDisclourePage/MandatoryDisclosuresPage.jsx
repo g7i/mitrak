@@ -27,7 +27,7 @@ const MandatoryDisclosuresPage = () => {
                 key={item.link}
                 onClick={() => history.push(`/academics/madatory-disclosures/${item.link}`)}
               >
-                <div className="title">{item.title}</div>
+                <div className="title" style={{ textTransform: 'capitalize' }}>{item.title}</div>
                 <div className="foot">
                   <Link to="#" onClick={e => handleClick(e, item.pdf)}>View</Link>
                 </div>

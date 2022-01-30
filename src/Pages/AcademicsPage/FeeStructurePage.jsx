@@ -95,9 +95,11 @@ const FeeStructurePage = () => {
                     </tbody>
                 </table>
                 <div style={{ marginTop: '2rem' }} />
-                <Heading style={{ fontSize: '1.6rem' }}>UDF : UNIVERSITY DEVELOPEMENT FEES </Heading>
+                <PageHead>UDF : UNIVERSITY DEVELOPEMENT FEES </PageHead>
                 <Paragraph>( ONE TIME -ONLY IN FIRST YEAR )</Paragraph>
-                <Heading style={{ fontSize: '1.6rem' }}>CM : CAUTION MONEY</Heading>
+                <div style={{ marginTop: '2rem' }} />
+
+                <PageHead>CM : CAUTION MONEY</PageHead>
                 <Paragraph>( ONE TIME – REFUNDABLE )</Paragraph>
             </Container>
         </Layout>
