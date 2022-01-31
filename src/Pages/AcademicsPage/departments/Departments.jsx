@@ -17,10 +17,10 @@ export default function Departments() {
       title: 'Electrical Engineering',
       component: <EE/>,
     },
-    ec: {
-      title: "Electronics & Communication",
-      component: <EC/>,
-    },
+    // ec: {
+    //   title: "Electronics & Communication",
+    //   component: <EC/>,
+    // },
     ce: {
       title: "Civil Engineering",
       component: <CE/>,

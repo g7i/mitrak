@@ -38,6 +38,7 @@ import Departments from "../Pages/AcademicsPage/departments/Departments";
 import MandatoryPublicDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisclourePage/MandatoryPublicDisclosure";
 import FeeStructurePage from "../Pages/AcademicsPage/FeeStructurePage";
 import NationalLevelEvents from "../Pages/CampusLifePage/NationalLevelEvents/index";
+import Department from "../Pages/AcademicsPage/departments/Department";
 
 const Router = () => {
   const {
@@ -199,6 +200,11 @@ const Router = () => {
             path="/academics/departments/:route"
             exact
             component={Departments}
+          />
+          <Route
+            path="/academics/departments/:route/:sub"
+            exact
+            component={Department}
           />
           <Route path="/academics/courses" exact component={Offered} />
           <Route path="/academics/courses/:route" exact component={Offered} />

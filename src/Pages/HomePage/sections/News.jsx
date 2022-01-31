@@ -160,7 +160,7 @@ export default function News() {
           <marquee direction="up" style={{ height: '80%' }} scrollAmount={6} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
             <div style={{ pointerEvents: 'none' }}>
               <Linkify>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>GOVERNMENT EDUCATION BODIES</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>GOVERNMENT EDUCATION BODIES</div>
                 <pre>{`
           ALL INDIA COUNCIL OF TECHNICAL EDUCATION
           www.aicte-india.org
@@ -189,7 +189,7 @@ export default function News() {
           RTU,KOTA
           https://www.rtu.ac.in/
             `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>LINKS FOR STUDENT WELFARE SCHEMES</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>LINKS FOR STUDENT WELFARE SCHEMES</div>
                 <pre>{`
           AICTE J&K PMSS SCHEME
           https://aicte-jk-scholarship-gov.in/
@@ -212,7 +212,7 @@ export default function News() {
           MINISTRY OF MINORITY AFFAIRS
           https://www.minorityaffairs.gov.in/
               `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>LINKS FOR STARTUPS/ INNOVATION / NATIONAL LEVEL EVENTS</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>LINKS FOR STARTUPS/ INNOVATION / NATIONAL LEVEL EVENTS</div>
                 <pre>{`
           SMART INDIA HACKATHON-2022
           www.sih.gov.in
@@ -244,7 +244,7 @@ export default function News() {
           INNOVATION FOR DEFENCE EXCELLENCE 
           https://idex.gov.in/
               `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>STUDENTS & FACULTY ONLINE  LEARNING</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>STUDENTS & FACULTY ONLINE  LEARNING</div>
                 <pre>{`
           SWAYAM COURSES 
           https://swayam.gov.in/
@@ -273,7 +273,7 @@ export default function News() {
           ATAL TRAINING & LEARNING ACADEMY
           https://www.aicte-india.org/atal
               `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>IMPORTANT COMPETITIVE EXAM LINKS</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>IMPORTANT COMPETITIVE EXAM LINKS</div>
                 <pre>{`
           GATE 2022
           https://gate.iitkgp.ac.in/
@@ -287,7 +287,7 @@ export default function News() {
           UNION PUBLIC SERVICE COMMISSION 
           https://www.upsc.gov.in/
           `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>EVENTS INITIATED BY MINISTRY OF EDUCATION</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>EVENTS INITIATED BY MINISTRY OF EDUCATION</div>
                 <pre>{`
           AZADI KA AMRIT MAHOTSAV
           https://www.iitb.ac.in/en/azadi-ka-amrit-mahotsav
@@ -307,7 +307,7 @@ export default function News() {
           NATIONAL EDUCATION POLICY
           https://www.iitb.ac.in/en/national-education-policy
           `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>PARIKSHA PE CHARCHA</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>PARIKSHA PE CHARCHA</div>
                 <img
                   style={{
                     width: '60%',
@@ -321,15 +321,15 @@ export default function News() {
                 <pre>{`
           https://innovateindia.mygov.in/ppc-2022/
               `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>ADVISORY ON COVID 19</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>ADVISORY ON COVID 19</div>
                 <pre>{`
           http://www.rajswasthya.nic.in/
               `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>CYBER CRIME REPORTING</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>CYBER CRIME REPORTING</div>
                 <pre>{`
           https://cybercrime.gov.in/
               `}</pre>
-                <div style={{textAlign: "center", textDecoration: 'underline'}}>AICTE ONLINE FEEDBACK</div>
+                <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>AICTE ONLINE FEEDBACK</div>
                 <pre>{`
           https://www.aicte-india.org/feedback/index.php
               `}</pre>

@@ -66,8 +66,12 @@ const MagazinePage = () => {
             <br/>
             <H3>Editions</H3>
             <ul>
-              <li>College Daze 2019 Edition</li>
-              <li>College Daze 2018 Edition</li>
+              <li>
+                <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FMagzine%202019.pdf?alt=media&token=366ef59b-08cf-46b4-bb00-2f32cf082d9a">College Daze 2020-21 Edition</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FMagzine%202020.pdf?alt=media&token=504121e2-8d54-4609-a7dc-421782884757">College Daze 2019-20 Edition</a>
+              </li>
             </ul>
           </Cont>
         </Wrapper>

@@ -1,105 +1,17 @@
 import {Cont, H4, PageHead} from "../../../components/styledComponents/New";
-import React from "react";
+import React, {useEffect} from "react";
 import {getImagesLab} from "../../../utils/firebase/department";
 import {Collections} from "../../../utils/firebase/storage";
 import ImageSlider from "./components/imageSlider";
+import {useHistory} from "react-router-dom";
 
-const Labs = [
-  "Data Structure Lab",
-  "DBMS Lab",
-  "OOP Lab",
-  "Software Engineering Lab",
-  "Computer Graphics Lab",
-  "Compiler Design Lab",
-  "Java Lab",
-  "Cyber Security Lab",
-  "IoT Lab",
-  "Python Lab",
-  "C Programming Lab",
-  "LSP Lab",
-  "Network Programming Lab",
-  "Android Lab",
-];
 
 export function CSE() {
-  const [labImages, setLabImages] = React.useState([]);
-  React.useEffect(() => {
-    getImagesLab(Collections.departments.computer).then((imageList) => {
-      setLabImages(imageList);
-    });
+  const {push} = useHistory();
+  useEffect(() => {
+    push('/academics/departments/cse/home');
   }, []);
-
-  return (
-    <Cont>
-      <PageHead>Computer Science & Engineering</PageHead>
-      <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis
-        of algorithms, programming languages, program design, software, and computer hardware.</p>
-      <p>Computer Science Engineering uses principles from Computer Science and Electrical Engineering to create
-        hardware (physical components) and firmware which are used in a wide range of areas: consumer electronics,
-        medical devices, communication systems, aircraft, self-driving cars, etc.</p>
-      <p>Computer Science Engineering students learn how to develop, prototype, and test microchips, circuits,
-        processors, conductors and any other component used in computer devices or systems (e.g. super computers, smart
-        phones, laptops, servers, IoT gadgets). They also develop firmware, an essential type of software that allows
-        operating systems and applications to take full advantage of the hardware.</p>
-      <p>Today we are speeding up towards the computerization and modernization in our entire social, professional,
-        occupational, defense and many other activities. Computer is now an essential part of our life and needs. It is
-        mainly because of the error free and fast operation, and no need to keep hard store and transport the data.
-        “Your time is in your one click”.</p>
-      <img src="/static/media/coding-platform-STEM-code.bb95b27d.jpg" alt="img"/>
-      <H4>About The Department</H4>
-      <p>The CSE Department of MITRC was started in the year 2007 with an intake of 30 students. Currently the
-        Department offers an under-graduate program (B. Tech) in Computer science and engineering with an intake of 180
-        students and post graduate program (M. Tech) in computer science and engineering with an intake of 18. The
-        department has highly qualified faculty members with minimum M. Tech qualification in Computer science and
-        engineering, Computer Technology and Software Engineering. Department of CSE is committed to impart Technical
-        and Research based quality education and to develop innovative skills among the students and to enrich the
-        academic activities through continual improvement in the teaching and learning processes. The department also
-        focuses on infusing confidence in the minds of students and to develop them as entrepreneurs.</p>
-      <p>It develops expertise for consultative activities by providing opportunities for company– institute
-        interaction. It is also constantly upgrading the technical expertise for producing competent professionals to
-        cater to the needs of society and to meet the global challenges. Much care is taken to involve the faculty in
-        the development of laboratories and to take an active interest in counselling the students. Students of our
-        department actively participate in National-level Student programs Contests being organized at IIT's, NITSs, and
-        various other Engineering Colleges. A good number of Students are well placed in reputed organizations.</p>
-      <H4>Salient Features</H4>
-      <ul>
-        {[
-          "Department organizes International Conference, Workshops, Faculty Development Programs, Short Term Training Program and Seminars for its students and Faculty",
-          "Various Hackathons have been organized and students won positions in outside participation as well",
-          "Empowered with IBM Software Center of Excellence",
-          "Microsoft Ed - Vantage Platinum Campus",
-          "Capegemini Certification Partner",
-          "Internet facility, Departmental library facility and classrooms equipped with smart boards and projectors",
-          "Apart from active participation in various extracurricular activities, students also work on live projects from industry and various professional bodies like DST, IE and AICTE etc.",
-          "Membership of CSI, ISTE, DELNET, Institute of Engineer.",
-        ].map(f => <li key={f}>{f}</li>)}
-      </ul>
-      <H4>CSE Labs at MITRC</H4>
-      <ul>
-        {Labs.map(f => <li key={f}>{f}</li>)}
-      </ul>
-      <ImageSlider imageArray={labImages}/>
-      <H4>Career in CSE</H4>
-      <p>Computer science job opportunities vary depending on the degree. Graduates with associate degrees often pursue
-        roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer
-        science careers in software development, database administration, and computer programming.</p>
-      <p>Employers typically expect computer and information research scientists to hold master’s degrees at minimum.
-        Since its inception during the Industrial Revolution, computer science has become essential to everyday life and
-        changed nearly every part of society: Cyber security experts protect companies from foreign and domestic
-        interference, while everyday people stream movies and connect with video conferencing technology.</p>
-      <H4>Job Profile</H4>
-      <p>For the Computer science engineering many profile are such as Application Analyst, Business Intelligence
-        Analyst, Computer Programmer, Data Architect, Database Manager, Data Warehouse Developer, Graphic Designer,
-        Information Security Analyst, IT Manager, Mobile App Developer, Network Security Engineer, Programmer Analyst,
-        Software Developer, Telecommunications Manager, Web Developer, Data Scientist, Data Engineer, Full Stack
-        Developer, and Technical Content Engineer etc.</p>
-      <H4>Start-Up Schemes for Engineers</H4>
-      <p>Startups are ideal for computer science graduates. Most of the startups are technology driven, and a computer
-        science graduate will understand it better. In fact, a computer science graduate is likely to make their start
-        ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for
-        computer science graduates.</p>
-    </Cont>
-  );
+  return null;
 }
 
 export function EE() {

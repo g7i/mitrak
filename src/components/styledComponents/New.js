@@ -56,6 +56,10 @@ export const Cont = styled.section`
     line-height: 20px;
     margin: 15px 0 20px;
     text-align: justify;
+    &.nomargin {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
     * {
       font-family: serif;
       font-size: 14px;
@@ -86,12 +90,15 @@ export const Cont = styled.section`
     margin-left: 20px;
   }
 
-  li {
+  li, pre {
     list-style-position: inside;
     font-weight: 400;
     font-family: serif;
     font-size: 14px;
     line-height: 20px;
+  }
+  pre {
+    margin-top: -10px;
   }
 
   .grid {
@@ -146,6 +153,10 @@ export const Cont = styled.section`
     th {
       font-weight: 600;
     }
+  }
+
+  sup {
+    font-size: 12px;
   }
 `;
 
@@ -265,6 +276,32 @@ export const Right = styled.aside`
 `;
 
 export const A = styled(Link)`
+  color: white;
+  background-color: #324a8a;
+  text-decoration: none;
+  user-select: none;
+  padding: 10px 12px;
+  line-height: 16px;
+  font-size: 12px;
+  min-height: 35px;
+  display: grid;
+  align-items: center;
+  transition: all 0.2s linear;
+  border: 1px solid white;
+
+  &:hover {
+    background-color: white;
+    color: #324a8a;
+    border: 1px solid #324a8a;
+  }
+
+  ${({active}) => active && css`
+    background-color: white;
+    color: #324a8a;
+    border: 1px solid #324a8a;
+  `}
+`;
+export const AUrl = styled.a`
   color: white;
   background-color: #324a8a;
   text-decoration: none;
