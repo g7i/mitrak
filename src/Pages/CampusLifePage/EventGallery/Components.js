@@ -568,6 +568,37 @@ export function Fresher() {
           <li>Ms. Fresher ( MBA): Ravleen Makar</li>
         </ul>
       </p>
+
+      <div className="grid three">
+        {[
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F1.jpg?alt=media&token=93a77c03-1b94-4476-bd54-640027105c44",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F2.jpg?alt=media&token=9eced808-2368-4d27-9849-ee45c52ccc1a",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F3.jpg?alt=media&token=3cc04d0a-d9ef-40ec-a328-c230245d5624",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F4.jpg?alt=media&token=9b61c01a-4b7d-4f02-a1fb-618e139e4010",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F5.jpg?alt=media&token=d3ee49c6-868c-4d7e-814c-e8aeeec0247a",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F6.jpg?alt=media&token=6895b230-8086-4020-8ed5-b266966dc5b7",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F7.jpg?alt=media&token=dd0735e0-a4d4-4fe2-97f7-4e0ce58a778c",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F8.jpg?alt=media&token=3af05298-fd0d-4409-85d8-e10302e1b662",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2F9.jpg?alt=media&token=aa681360-75ea-46e0-b344-ed269ef82ff5",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFRESHERS%2Fphoto.jpg?alt=media&token=3f2d2a1f-f040-4b27-8b66-3d661bddfa79",
+        ].map((item) => (
+          <img
+            key={item}
+            src={item}
+            alt={item}
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
+        ))}
+      </div>
     </Cont>
   );
 }
@@ -597,6 +628,34 @@ export function Teacher() {
         Many games, cultural activities carried out by teacher’s and students
         andstudents give title to their beloved faculty members.
       </p>
+      <div className="grid three">
+        {[
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2F2.jpg?alt=media&token=03974e70-d397-4026-881e-a0826d45a99b",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2F3.jpg?alt=media&token=e1ba00c7-8669-4869-961d-efe05a6d2b63",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2F4.jpg?alt=media&token=4af1cd1e-e94c-4d2d-b279-11f3bc1cdaab",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2F5.jpg?alt=media&token=2999d292-7131-44da-a16e-d39165ceb596",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2F6.jpg?alt=media&token=9f487180-e61f-4f82-b9e2-e31eb424db8f",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2F7.jpg?alt=media&token=045007e6-d9c4-41fe-bd6d-737e6a91c34b",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2F8.jpg?alt=media&token=01f73442-dfba-482c-9053-a4572fc2ab53",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2Fphoto.jpg?alt=media&token=1e1a90be-e884-45a5-a7ec-6117cd3b8445",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FISRO%20EXHIBITION%2FTEACHERS%20DAY%2Fteachers%20day.jpg?alt=media&token=04e8c1b4-63f5-46df-ac1a-486745094c01",
+        ].map((item) => (
+          <img
+            key={item}
+            src={item}
+            alt={item}
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
+        ))}
+      </div>
     </Cont>
   );
 }
@@ -628,6 +687,50 @@ export function Farewell() {
         Kajala ( HR manager, Havells india Pvt. Ltd.) Mr. Evening : Mihir
         Pradhan & Aarav Gupta (MBA) Ms. Evening : Harshita Gupta ( B.Tech)
       </p>
+      <div className="grid three">
+        {[
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2018%2F1.jpg?alt=media&token=80615137-3bf5-4bbb-8e6f-5b233e946398",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2018%2F2.jpg?alt=media&token=b9c01031-8655-4eef-8dae-1ed3414bff9b",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2018%2F3.jpg?alt=media&token=74a83da7-cfc6-41b1-b603-ea65df601e71",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2018%2F4.jpg?alt=media&token=8aaf84ab-61cb-496d-a20e-378001210639",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2018%2F5.jpg?alt=media&token=31d07e56-914c-44b3-bea9-64d11c56506f",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2018%2F6.jpg?alt=media&token=096683e3-1677-4365-a8c0-155759664d25",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2018%2F7.jpg?alt=media&token=e427cb4f-a6ee-4c46-b843-7bec76c7c047",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2018%2F8.jpg?alt=media&token=345b0b46-c985-4c07-bdd0-f808b3a117fb",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F1.jpg?alt=media&token=83b3eb6e-d3fe-46c8-b7b2-31074ab8922c",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F2.jpg?alt=media&token=f096ad4c-0f2e-4f11-be56-ad710c6b5e86",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F3.jpg?alt=media&token=3b123e41-600e-42cb-988c-d2f2b8a8ea8e",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F4.jpg?alt=media&token=40060a04-ea7d-4067-88b6-24c3d3f7bab3",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F5.jpg?alt=media&token=8762d1a6-fea3-46c6-bf95-dfc6b5bfa60c",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F6.jpg?alt=media&token=dc6ec1ff-29fc-40fb-86fb-b3f7c246c6b9",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F7.jpg?alt=media&token=704ca2f8-5973-4842-94ba-a6ee7114e5e1",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F8.jpg?alt=media&token=8adc9c10-ade2-4812-a39f-2d21110fed57",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FFAREWELL%2F2019%2F9.jpg?alt=media&token=6a2e29e8-78a5-4b84-a74a-9af9c31a3b19",
+        ].map((item) => (
+          <img
+            key={item}
+            src={item}
+            alt={item}
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
+        ))}
+      </div>
     </Cont>
   );
 }
@@ -640,6 +743,48 @@ export function Convocation() {
         MITRC College organize Convocation ceremony for the students who have
         completed their B.Tech & MBA Degree in 2011,2012,2013,2014,2015 & 2016.
       </p>
+      <div className="grid three">
+        {[
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2014%2F2.jpg?alt=media&token=abe7cf5b-df9f-441b-92cb-9dd53e55a392",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2014%2F3.jpg?alt=media&token=3c239d8a-24a7-4708-ae46-e5c9cc9981bd",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2014%2F4.jpg?alt=media&token=9a1ab69b-cb03-4aab-b80c-cba0d7397da8",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2014%2F5.jpg?alt=media&token=7d684583-86c9-47cc-aeb5-2a49dfdf8269",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2014%2Fphoto.jpg?alt=media&token=22024a65-e485-4d56-9b6b-11c594caa67b",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F216-17%2F1.jpg?alt=media&token=c8e50319-34fb-41b9-b182-4072619b4093",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F216-17%2F2.jpg?alt=media&token=d0fb3132-0ff6-4a29-a288-5a935ce1d260",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F216-17%2F3.jpg?alt=media&token=15e531bd-3262-43ff-81ae-0ea159a3cf11",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F216-17%2F4.jpg?alt=media&token=bda63c0e-71c2-4a5d-8791-36f418a8664e",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F216-17%2F5.jpg?alt=media&token=765d56d9-665a-4ff1-b14f-cec291105720",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F216-17%2F6.jpg?alt=media&token=8938478f-bc45-4f1e-95de-12c4e2df78c4",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2017-18%2F1.jpg?alt=media&token=8817b9b8-183e-4949-8e23-55060cfa8f43",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2017-18%2F1.jpg?alt=media&token=8817b9b8-183e-4949-8e23-55060cfa8f43",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2017-18%2F3.jpg?alt=media&token=3d452de2-a2c4-4a89-9454-e3e390c8b75f",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2017-18%2F4.jpg?alt=media&token=5cacc1c7-35a5-4dd2-833f-8166f11a7f3e",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FCONVOCATION%2F2017-18%2F5.jpg?alt=media&token=3688cccf-2e38-4b81-a9c8-8e04c4da140d",
+        ].map((item) => (
+          <img
+            key={item}
+            src={item}
+            alt={item}
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
+        ))}
+      </div>
     </Cont>
   );
 }
@@ -663,6 +808,25 @@ export function Women() {
         times.
       </p>
       <p>So MITRC organizes International Women Day Celebration every year.</p>
+
+      <div className="grid three">
+        {[
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FWOMEN%20DAY%20CELEBRATION%2F4.jpg?alt=media&token=6549b7f4-b13e-43b1-8803-1abee28e47f2",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FWOMEN%20DAY%20CELEBRATION%2Fwomen%20day-1.jpg?alt=media&token=86a3fbb9-3171-49bf-8e57-fd8d22c3b680",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FWOMEN%20DAY%20CELEBRATION%2Fwomen%20day-2.jpg?alt=media&token=16362361-6a3a-46a4-9257-6f09772e89e8",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2FWOMEN%20DAY%20CELEBRATION%2Fwomen%20day-3.jpg?alt=media&token=453f9cc8-9dc1-46b6-b8d1-90be86c3b19c",
+        ].map((item) => (
+          <img
+            key={item}
+            src={item}
+            alt={item}
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
+        ))}
+      </div>
     </Cont>
   );
 }
@@ -677,6 +841,26 @@ export function Abhi() {
         commander Abhinandan Varthaman’s imminent return from Pakistan at
         Company Garden along with soldiers.
       </p>
+      <div className="grid three">
+        {[
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2F1.jpg?alt=media&token=b074cfd1-03eb-4a1b-ba41-80fc9c9c4857",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2F2.jpg?alt=media&token=951b7e86-7b79-4d7f-888f-efd8f21f325c",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2F3.jpg?alt=media&token=4f928664-0364-4eaa-9f21-4e5f89f38250",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2F4.jpg?alt=media&token=7404dcda-6ac7-4b1c-8799-12fcb8e3948f",
+
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/Campus%20Life%2FEVENTS%2F5.jpg?alt=media&token=11154591-8d6b-4831-92e4-2796ba2ca3c5",
+        ].map((item) => (
+          <img
+            key={item}
+            src={item}
+            alt={item}
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
+        ))}
+      </div>
     </Cont>
   );
 }
