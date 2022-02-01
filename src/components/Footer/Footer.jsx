@@ -105,6 +105,17 @@ const Footer = () => {
       <CopyRightContainer>
         <h4>Copyright © 2021 MITRC. All rights reserved.</h4>
       </CopyRightContainer>
+      <div className="waveWrapper waveAnimation">
+        <div className="waveWrapperInner bgMiddle">
+          <div className="wave waveMiddle"/>
+        </div>
+        <div className="waveWrapperInner bgBottom">
+          <div className="wave waveBottom"/>
+        </div>
+        <div className="waveWrapperInner bgTop">
+          <div className="wave waveTop"/>
+        </div>
+      </div>
     </FooterMainContainer>
   );
 };

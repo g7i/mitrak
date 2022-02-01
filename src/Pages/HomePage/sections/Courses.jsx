@@ -21,7 +21,7 @@ const btech = [
   'Electrical Engineering (EE)',
   // 'Electronics & Communication Engineering (ECE)',
   'Mechanical Engineering (ME)',
-  'Electronics & Communication (EC)',
+  // 'Electronics & Communication (EC)',
 ]
 
 const links = [
