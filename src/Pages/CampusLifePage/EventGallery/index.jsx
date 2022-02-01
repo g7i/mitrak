@@ -128,11 +128,11 @@ const EventGallery = () => {
             {data.map(renderItem)}
           </ul>
           {sel}
-          <div className="grid three">
+          {/* <div className="grid three">
             {images.map(item => (
               <img key={item} src={item} alt={item} onLoad={e => e.target.classList.add('loaded')}/>
             ))}
-          </div>
+          </div> */}
         </Cont>
       </Wrapper>
     </Layout>
