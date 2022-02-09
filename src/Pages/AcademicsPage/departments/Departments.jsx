@@ -46,20 +46,20 @@ export default function Departments() {
         {[
           "Computer Science & Engineering",
           "Electrical Engineering",
-          "Electronics & Communication",
+          // "Electronics & Communication",
           "Civil Engineering",
           "Mechanical Engineering",
           // "Management Studies",
         ].map((f, i) => (
           <li key={f}>
-            <Link to={`/academics/departments/${Object.keys(relatedLinks)[i]}`}>{f}</Link>
+            <Link to={`/academics/departments/${Object.keys(relatedLinks)[i]}/home`}>{f}</Link>
           </li>
         ))}
       </ul>
       <br/>
     </Cont>
   );
-  if (relatedLinks[route]?.component) content = relatedLinks[route].component;
+  // if (relatedLinks[route]?.component) content = relatedLinks[route].component;
 
   return (
     <Layout>
@@ -73,7 +73,7 @@ export default function Departments() {
         <div className="related">Related Links</div>
         <Right>{
           Object.entries(relatedLinks).map(([k, v]) => (
-            <A to={`/academics/departments/${k}`} active={k === route}>{v.title}</A>
+            <A to={`/academics/departments/${k}/home`} active={k === route}>{v.title}</A>
           ))
         }</Right>
       </Wrapper>

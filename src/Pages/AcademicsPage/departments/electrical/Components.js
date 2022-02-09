@@ -7,72 +7,48 @@ import {ActData} from "../../../CampusLifePage/ClubAndActivities/data";
 import {AData} from "./data";
 
 const Labs = [
-  "Data Structure Lab",
-  "DBMS Lab",
-  "OOP Lab",
-  "Software Engineering Lab",
-  "Computer Graphics Lab",
-  "Compiler Design Lab",
-  "Java Lab",
-  "Cyber Security Lab",
-  "IoT Lab",
-  "Python Lab",
-  "C Programming Lab",
-  "LSP Lab",
-  "Network Programming Lab",
-  "Android Lab",
+  "Machine Lab", "High Voltage Engg. Lab", "Power System Lab", "Control System Lab", "EEE Lab", "Measurement Lab", "Power Electronics Lab", "Circuit Analysis Lab etc"
 ];
 
 export function Home() {
   return (
     <Cont>
-      <PageHead>Computer Science & Engineering</PageHead>
+      <PageHead>Electrical Engineering</PageHead>
+      <p>Electrical power and systems are at the heart of modern society – and so too are electrical and electronics engineers. Engineers specializing in these fields have transformed the 21st century with technologies such as universal electric power systems, television, radio and medical imaging to name just a few examples.</p>
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcse1.png?alt=media&token=9d8edf35-b1fd-4ad1-8497-344c266d576b"
-        alt="img"/>
-      <p>Computer science is the scientific approach to computation, along with its wide range of applications. Computer scientists study the feasibility and mechanisation of procedures, known as algorithms, which underlie the acquisition, processing, storage and communication of data.</p>
-      <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
-      <p>Computer Science Engineering uses principles from Computer Science and Electrical Engineering to create hardware (physical components) and firmware which are used in a wide range of areas: consumer electronics, medical devices, communication systems, aircraft, self-driving cars, etc.</p>
-      <p>Computer Science Engineering students learn how to develop, prototype, and test microchips, circuits, processors, conductors and any other component used in computer devices or systems (e.g. super computers, smart phones, laptops, servers, IoT gadgets). They also develop firmware, an essential type of software that allows operating systems and applications to take full advantage of the hardware.</p>
-      <p>Today we are speeding up towards the computerization and modernization in our entire social, professional, occupational, defense and many other activities. Computer is now an essential part of our life and needs. It is mainly because of the error free and fast operation, and no need to keep hard store and transport the data. “Your time is in your one click”.</p>
-      <img src="/static/media/coding-platform-STEM-code.bb95b27d.jpg" alt="img"/>
-      <H4>Career in CSE</H4>
-      <p>Computer science job opportunities vary depending on the degree. Graduates with associate degrees often pursue roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer science careers in software development, database administration, and computer programming.</p>
-      <p>Employers typically expect computer and information research scientists to hold master’s degrees at minimum. Since its inception during the Industrial Revolution, computer science has become essential to everyday life and changed nearly every part of society: Cyber security experts protect companies from foreign and domestic interference, while everyday people stream movies and connect with video conferencing technology</p>
-      <H5>Top Jobs for CSE Engineer</H5>
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2FIMG_20180915_153603035.jpg?alt=media&token=1dc74059-154a-43bd-9517-5f824ae081cf "
+        alt=""/>
+      <p>Electrical Engineering is a section of the engineering discipline that deals with electric systems, electricity, and electromagnetism. Electrical engineers use the latest tools in computer science as well as more old-fashioned disciplines to build everything from electric cars to massive electrical infrastructures and control systems. It's a relatively new field within engineering, but it's been around since the advent of electric commercialization in the 19th century. It's divided into a wide range of subfields, including traditional ones such as signal processing and newer ones like computer engineering.</p>
+      <p>Among the most famous <strong>electrical engineers</strong> that you may have heard of are Nikola Tesla (pioneer of commercial electricity and electromagnetism), Thomas Edison (developer of the light bulb and inventor of the record player), Jack Kilby (inventor of the pocket calculator and the integrated circuit), Marcian Hoff (inventor of the microprocessor) and Martin Cooper (inventor of the mobile phone).</p>
+      <p><strong>Electrical engineering degrees</strong> will equip students with knowledge of how the industry works, as well as giving them the engineering skills and technological knowledge needed to design, assess and improve electrical and electronic systems.</p>
+      <p>If you’re interested in how electrical devices work, are inquisitive, and have a strong interest in mathematics and science, then you probably already have some essential engineering skills and an electrical engineering degree may well be for you. Although technical knowledge is essential, electrical engineers are also involved in designing and building a range of devices, often within teams.</p>
+      <p>Electrical Engineers use knowledge of circuitry and power generation to plan, design, and manage the manufacturing of electrical equipment as well as implement projects that harness different components of electricity and power. They use their knowledge of electrical systems to work in projects so small they could fit into your pocket to larger projects like aircraft electrical systems or communications systems. They design and test their projects, ensuring that everything created is safe. Careers In Electrical Engineering The field is still lucrative with the advent of 21st-century computing technology and electrical devices like smartphones and computer systems. There's also an extensive opportunity within biomedical engineering. You can find space for an electrical engineer in a wide range of fields.</p>
+      <H4>Career in Electrical Engineering</H4>
+      <p>Electrical Engineers use knowledge of circuitry and power generation to plan, design, and manage the manufacturing of electrical equipment as well as implement projects that harness different components of electricity and power. They use their knowledge of electrical systems to work in projects so small they could fit into your pocket to larger projects like aircraft electrical systems or communications systems. They design and test their projects, ensuring that everything created is safe. Careers In Electrical Engineering The field is still lucrative with the advent of 21st-century computing technology and electrical devices like smartphones and computer systems. There's also an extensive opportunity within biomedical engineering. You can find space for an electrical engineer in a wide range of fields. </p>
+      <H5>Top Jobs for EE Engineer</H5>
       <ul>
         {[
-          "Full Stack Developer",
-          "Application Analyst",
-          "Mobile Application Developer",
-          "Business Intelligence Analyst",
-          "Software Engineer",
-          "Computer Programmer",
-          "System Architect",
-          "Data Architect",
-          "Network Analyst",
-          "Database Manager",
-          "Data Science Engineer",
-          "Data Warehouse Developer",
-          "Machine Learning Learner",
-          "Graphic Designer",
-          "Full Stack Developer",
-          "Information Security Analyst",
-          "IT Manager"
+          "Micro Electrical engineer",
+          "Electrical engineer",
+          "Power Engineer",
+          "Instrumentation Engineer",
+          "Telecommunication Engineer",
+          "Electrical Design Engineer",
+          "Jobs in Scientific Research",
+          "Jobs in Indian Engineering Services",
+          "Jobs in Maintenance Field",
+          "Jobs in Infrastructure",
+          "Jobs in Manufacturing",
+          "Jobs in Power System",
         ].map(f => <li key={f}>{f}</li>)}
       </ul>
       <img src="https://a.ilovecoding.org/img/_blogs/software-development8.png" alt=""/>
-      <H3>Rising fields in CSE that are hitting the computer industry</H3>
-      <pre>{`   • Cyber Security
-    • AI/ML
-    • NLP
+      <H3>Rising fields in CSE that are hitting the electrical industry</H3>
+      <pre>{`       • Electric Vehicle
+    • Smart Grid
     • IOT
-    • Big Data Analytics
-    • Blockchain
-    • Web Developer ( REACT, Python & Django, Node JS, Javascript, MERN, Angular)
-    • Mobile Application Developer ( Android Studio, Flutter )
       `}</pre>
-      <H4>Jobs in CSE</H4>
+      <H4>Jobs in EE</H4>
       <H3>Jobs in Government Organisation / Government Undertaking Bodies</H3>
       <table>
         <tr>
@@ -83,7 +59,7 @@ export function Home() {
         <tr>
           <td>1</td>
           <td>Niti Ayog</td>
-          <td>Programmer</td>
+          <td>Startup Fellow</td>
         </tr>
         <tr>
           <td>2</td>
@@ -103,64 +79,48 @@ export function Home() {
         <tr>
           <td>5</td>
           <td>Bharat Electronics Limited</td>
-          <td>Software Developer</td>
+          <td>Operation Engineer</td>
         </tr>
         <tr>
           <td>6</td>
-          <td>MHRD</td>
-          <td>IT Manager</td>
+          <td>SAIL</td>
+          <td>Graduate Engineer Trainee</td>
         </tr>
         <tr>
           <td>7</td>
-          <td>PNB, SBI</td>
+          <td>NTPC</td>
           <td>Specialist Officer</td>
         </tr>
         <tr>
           <td>8</td>
-          <td>National Banks</td>
+          <td>BHEL</td>
           <td>Specialist Officer</td>
         </tr>
         <tr>
           <td>9</td>
           <td>RPSC</td>
-          <td>Programmer</td>
+          <td>Graduate Engineer Trainee</td>
         </tr>
         <tr>
           <td>10</td>
           <td>CDAC</td>
-          <td>Developer</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>Govt Organisation</td>
-          <td>Programmer</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>AICTE</td>
-          <td>Technical Support</td>
+          <td>Graduate Engineer Trainee</td>
         </tr>
       </table>
       <H3>Jobs in Private Companies</H3>
-      <p>Here we have listed out 15 of the top computer science companies which are highly recommended for you to work 2021 and 2022 as well. <br/>
-        Amazon, Deloitte, CGI, Mindtree, Infosys, Cognizant, TCS, HCL, Google, Wipro, Tech Mahindra, IBM, Microsoft, Mphasis, and HP Inc. So, these are 15 of the top technology service companies which are ideal for computer science graduates to begin their career in.</p>
+      <p>Here we have listed major companies which are highly recommended for you to work 2021 and 2022 as well. L&T, HAVELLS, WONDER CEMENT, JK LAKSHMI CEMENT, ADANI POWER, TATA, SIEMENS , Mahindra,  Birla Group both AB and CK, TATA Group, Crompton Greaves, ABB, ALSTOM, GE, THERMAX, etc. </p>
       <H3>Jobs in PSU’s ( Through GATE / Direct Recruitment)</H3>
-      <p>BHEL, IOCL, NFL, NLC, ONGC, ECIL etc.</p>
+      <p>BEL , IOCL, NTPC, BHEL, HAL,COAL INDIA LIMITED,   NFL, NLC, ONGC ECIL etc.</p>
       <H3>Other Opportunities</H3>
       <p>KVS, Indian Railways (Section Engineer, Jr. Engineer, Traffic Apprentice, Commercial Apprentice, Goods Guard, Station Master, Banking(Clerk, PO, SO) & SSC, IBPS  many more.</p>
       <H3>Start-Up Schemes for Engineers</H3>
       <p>Startups are ideal for computer science graduates. Most of the startups are technology driven, and a computer science graduate will understand it better. In fact, a computer science graduate is likely to make their start ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for computer science graduates.</p>
       <H4>Notable Startup in CSE</H4>
       <ul>
-        <li>Digital Application Designing</li>
-        <li>Mobile App Development</li>
-        <li>Software Development</li>
-        <li>Publishing Business</li>
-        <li>Online Recruitment Testing Service</li>
-        <li>Digital Marketing Service</li>
-        <li>Customized Desktop Computers</li>
-        <li>Games Development</li>
-        <li>Publishing Business</li>
+        <li>Electric vehicle</li>
+        <li>Renewable energy like solar, related products.</li>
+        <li>Energy efficiency product design.</li>
+        <li>Electrical consultant in rural area</li>
       </ul>
     </Cont>
   );
@@ -169,27 +129,18 @@ export function Home() {
 export function About() {
   return (
     <Cont>
-      <PageHead>Computer Science & Engineering</PageHead>
-      <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis
-        of algorithms, programming languages, program design, software, and computer hardware.</p>
-      <p>Computer Science Engineering uses principles from Computer Science and Electrical Engineering to create
-        hardware (physical components) and firmware which are used in a wide range of areas: consumer electronics,
-        medical devices, communication systems, aircraft, self-driving cars, etc.</p>
-      <p>Computer Science Engineering students learn how to develop, prototype, and test microchips, circuits,
-        processors, conductors and any other component used in computer devices or systems (e.g. super computers, smart
-        phones, laptops, servers, IoT gadgets). They also develop firmware, an essential type of software that allows
-        operating systems and applications to take full advantage of the hardware.</p>
-      <p>Today we are speeding up towards the computerization and modernization in our entire social, professional,
-        occupational, defense and many other activities. Computer is now an essential part of our life and needs. It is
-        mainly because of the error free and fast operation, and no need to keep hard store and transport the data.
-        “Your time is in your one click”.</p>
-      <img src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FABOUT%20CSE%2F1.jpg?alt=media&token=3ec1201b-364f-40b7-b1d2-d5f190fd5498" alt="img"/>
+      <PageHead>Electrical Engineering</PageHead>
+      <p>The Electrical Engineering Department was established in the year 2010 with intake of 60 seats and which was further enhanced to 120 seats in 2012. The department is recognized by AICTE, affiliated to BTU, Bikaner.</p>
+      <p>The Electrical Engineering Department has dynamic and emergent community of students with a good academic and research-oriented activity record. The Electrical Engineering Department aims at becoming a leading department that introduced courses to students, that covers latest technologies and cutting edge domains to the curriculum such as Electric Vehicle Technology, Renewable Energy Sources, Control Systems, Automation, Power Electronics, Drives, Power Systems and many more. The faculty of EE department regularly contributes to national and international conferences and journals for upgrading knowledge within their respective fields. The graduates of the EE department placed in reputed industries and public sector such as Power industries, Adani, , IBM, TCS, Metacube, Infosys Ltd., Nagarro, etc.</p>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Ffront-1024x502.jpg?alt=media&token=9a736de7-a30f-4faf-a4a5-e7b05bc41fef"
+        alt="img"/>
       <H4>About The Department</H4>
-      <p>The CSE Department of MITRC was started in the year 2007 with an intake of 30 students. Currently the
-        Department offers an under-graduate program (B. Tech) in Computer science and engineering with an intake of 180
+      <p>The EE Department of MITRC was started in the year 2007 with an intake of 30 students. Currently the
+        Department offers an under-graduate program (B. Tech) in Electrical engineering with an intake of 180
         students and post graduate program (M. Tech) in computer science and engineering with an intake of 18. The
-        department has highly qualified faculty members with minimum M. Tech qualification in Computer science and
-        engineering, Computer Technology and Software Engineering. Department of CSE is committed to impart Technical
+        department has highly qualified faculty members with minimum M. Tech qualification in Electrical
+        engineering. Department of EE is committed to impart Technical
         and Research based quality education and to develop innovative skills among the students and to enrich the
         academic activities through continual improvement in the teaching and learning processes. The department also
         focuses on infusing confidence in the minds of students and to develop them as entrepreneurs.</p>
@@ -204,33 +155,18 @@ export function About() {
         {[
           "Department organizes International Conference, Workshops, Faculty Development Programs, Short Term Training Program and Seminars for its students and Faculty",
           "Various Hackathons have been organized and students won positions in outside participation as well",
-          "Empowered with IBM Software Center of Excellence",
-          "Microsoft Ed - Vantage Platinum Campus",
-          "Capegemini Certification Partner",
+          "Empowered with 150 KVA Solar Cell",
           "Internet facility, Departmental library facility and classrooms equipped with smart boards and projectors",
+          "Apart from active participation in various extracurricular activities, students also work on live projects from industry and various professional bodies like DST, IE and AICTE etc.",
+          "Membership of IEEE, DELNET, Institute of Engineer",
           "Apart from active participation in various extracurricular activities, students also work on live projects from industry and various professional bodies like DST, IE and AICTE etc.",
           "Membership of CSI, ISTE, DELNET, Institute of Engineer.",
+          "Highly experienced faculty with good academic record and research activity.",
+          "Department has well equipped laboratories.",
+          "R & D activity of the staff have resulted in several publications in peer reviewed International Journals of High Impact Factor and International/ National conferences.",
+          "Periodically update of Laboratories as per current industry / research requirements with inclusion of beyond syllabus experiments.",
         ].map(f => <li key={f}>{f}</li>)}
       </ul>
-      <H4>Career in CSE</H4>
-      <p>Computer science job opportunities vary depending on the degree. Graduates with associate degrees often pursue
-        roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer
-        science careers in software development, database administration, and computer programming.</p>
-      <p>Employers typically expect computer and information research scientists to hold master’s degrees at minimum.
-        Since its inception during the Industrial Revolution, computer science has become essential to everyday life and
-        changed nearly every part of society: Cyber security experts protect companies from foreign and domestic
-        interference, while everyday people stream movies and connect with video conferencing technology.</p>
-      <H4>Job Profile</H4>
-      <p>For the Computer science engineering many profile are such as Application Analyst, Business Intelligence
-        Analyst, Computer Programmer, Data Architect, Database Manager, Data Warehouse Developer, Graphic Designer,
-        Information Security Analyst, IT Manager, Mobile App Developer, Network Security Engineer, Programmer Analyst,
-        Software Developer, Telecommunications Manager, Web Developer, Data Scientist, Data Engineer, Full Stack
-        Developer, and Technical Content Engineer etc.</p>
-      <H4>Start-Up Schemes for Engineers</H4>
-      <p>Startups are ideal for computer science graduates. Most of the startups are technology driven, and a computer
-        science graduate will understand it better. In fact, a computer science graduate is likely to make their start
-        ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for
-        computer science graduates.</p>
     </Cont>
   );
 }
@@ -239,40 +175,22 @@ export function VM() {
   return (
     <Cont>
       <PageHead>Vision and Mission</PageHead>
-      <p>The Vision and Mission of the Department of Computer Science and Engineering at MITRC are as follows.</p>
+      <p>The Vision and Mission of the Department of Electrical Engineering at MITRC are as follows.</p>
       <H4>Vision</H4>
-      <p>To create competent software professionals and leaders for serving society and world at large through
-        excellence in academics, research, development and innovations.</p>
+      <p>The vision of the department is to produce comprehensively confident, technically strong, socially responsible and innovative electrical engineers in the region.</p>
       <H4>Mission</H4>
-      <ul>
-        <li>Provide strong theoretical and practical computer based skills to meet the global technological changes.
-        </li>
-        <li>Provide a learning environment to enhance complex problem solving skills, research based projects/activities
-          and innovation.
-        </li>
-        <li>Establish Industry Institute Interaction Program to enhance the entrepreneurship skills, leadership
-          qualities, team-spirit and ethical responsibilities.
-        </li>
-        <li>Prepare students for lifelong learning through sustainable development.</li>
-      </ul>
+      <p>The mission of the department is to provide the high quality education and in depth knowledge with skill enhancement in the field of electrical engineering; Synchronizing with industries to meet the ever changing need of the technical era for future engineers.</p>
     </Cont>
   );
 }
 
 export function Infra() {
-  const [labImages, setLabImages] = React.useState([]);
-  React.useEffect(() => {
-    getImagesLab(Collections.departments.computer).then((imageList) => {
-      setLabImages(imageList);
-    });
-  }, []);
-
   return (
     <Cont>
       <PageHead>Infrastructure</PageHead>
-      <p>MITRC CSE Department have following infrastructure.</p>
+      <p>MITRC EE Department have following infrastructure.</p>
       <ul>
-        <li><strong>Class Rooms: </strong> 10 (Each having Area 900 Square meter)</li>
+        <li><strong>Class Rooms: </strong> 5 (Each having Area 900 Square meter)</li>
         <li><strong>Total Labs: </strong> 13</li>
         <li><strong>Internet Facility: </strong> Yes (300 MBPS)</li>
         <li><strong>Projector: </strong> Yes</li>
@@ -289,7 +207,27 @@ export function Infra() {
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
       <div className="grid">
-        {labImages.map(item => (
+        {[
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F11.jpg?alt=media&token=7fd7a4ec-98e0-43b9-9cf3-463b7da9beda",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F1.jpg?alt=media&token=f49676c8-e030-4111-9e63-111f53f320ac",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F10.jpg?alt=media&token=52df8b90-d699-4950-a6f6-cd155eece5fe",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F2.jpg?alt=media&token=d9342f78-55da-43ae-9c8d-191821831717",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F3.jpg?alt=media&token=a8ad9fad-2c0d-4384-9fc5-2326d987c34a",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F4.jpg?alt=media&token=ff632fac-accc-4608-af82-7157ddfaebd8",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F5.jpg?alt=media&token=6f59bace-a301-4d4e-9447-a4476183dacb",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F6.jpg?alt=media&token=ccdfddfe-cb66-4972-96dd-17f5b7936e17",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F7.jpg?alt=media&token=fb86e85e-ceaf-49e6-ab47-faf95d14a50d",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F8.jpg?alt=media&token=ab24039b-fb52-4e23-adbe-ed97afca20d0",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F9.jpg?alt=media&token=6994eb22-80f7-4497-85ab-4a4ad0bab93b",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F9.jpg?alt=media&token=6994eb22-80f7-4497-85ab-4a4ad0bab93b",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F10.jpg?alt=media&token=d26c4cca-041f-418f-81c8-4211b7f1196e",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F2.jpg?alt=media&token=f2dac155-f85c-4e7b-85cf-7249f4028ae6",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F3.jpg?alt=media&token=bb6ce047-1afb-4807-b1d1-be6f0a469033",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F5.jpg?alt=media&token=5cb7cfb9-de98-456e-b69e-91ae04ee61dc",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F6.jpg?alt=media&token=2e3fa974-c169-426a-ab12-7c4ee8736874",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F7.jpg?alt=media&token=2820bb5e-0697-4100-abd9-f72e2db5fac5",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F8.jpg?alt=media&token=ef155f17-d487-4cbe-baad-f179c271b43c"
+        ].map(item => (
           <img key={item} src={item} alt={item} onLoad={e => e.target.classList.add('loaded')}/>
         ))}
       </div>
@@ -304,51 +242,17 @@ export function Achieve() {
       <br/>
       <H3>Achievements, Awards & Recognitions</H3>
       <ul>
-        <li>Minakshi Sain got 12 lakh per annumn package in MSTC Ltd. –Mini-Ratna Company at Kolkata.</li>
-        <li>Akansha Gupta (2014-2018) got Gold Medal for first position in RTU KOTA for best Academic performance.</li>
-        <li>Tanya Sharma ( 2010-2016) got Xth position in RTU Merit List.</li>
+        <li>Eva Katta & Ruby Gautam got 5th & 6th in RTU Merit List of 2014-18 Batch. </li>
         <li>4 students qualified GATE 2020 Exam.</li>
-        <li>Manish Gupta got AIR 498 in GATE 2019 & got selected as Research Scholar in IIT Guwahati.</li>
-        <li>4 Teams named as Panda Coders ( Gargi Gupta),Dynamic Dudes( Pratiksha Goyal),Coder Vibes(Shailina Jain),Tech
-          Player(Kriti Kaushik) got selected in SIH 2019 Grand Finale for Software Edition. Teams solved the problem of
-          ISRO,Mind Tree, SSEPL, AICTE.
-        </li>
-        <li>4 Teams named as Panda Coders ( Gargi Gupta),Dynamic Dudes( Shailina Jain), Transworkers(Kartik Jain),Tech
-          Player(Kriti Kaushik) got selected in SIH 2020 Grand Finale for Software Edition. Teams solved the problem of
-          ISRO, Uttarakhand Government, Tripura Institute & Govt. of Bihar.
-        </li>
-        <li>Team Heart Vibes(Sanchit Mangal) got selected in National Convention of Chaatra Vishwakarma Award 2019 held
-          at AICTE HQ.
-        </li>
-        <li>3 Teams selected for Regional Convention of CVA 2019 at Jagan Institute of Mgmt,Delhi.</li>
-        <li>One Team Selected for Toycathon in Digital Toy Category.</li>
-        <li>One Team selected for Manthan 2021 organised by BPRD & AICTE for idea” Automatic Monitoring of Chain
-          Snatching & Knife Attack using CCTV Footage with timestamp & location.
-        </li>
-        <li>One Team selected for Samadhan –Fight with Covid 19 in 2020.</li>
-        <li>Sanchit Mangal team got 2nd position in Codethon organized by Govt. Engg. College Ajmer</li>
-        <li>The placement records of the department are excellent. The students are placed in highly renowned companies
-          namely Infosys, IBM, TCS, Cognizant, Wipro,Naggaro,MSTC,Government Bodies, Paytm, BEL and several other
-          Government/PSUs & IT companies.
-        </li>
-        <li>Many students have been Certified in various FOSS Courses (IIT, Bombay) under Spoken Tutorial Training
-          Program and in Swayam/NPTEL Courses
+        <li>Hemant Gupta got 10 Lakh Package in Byjus</li>
+        <li>4 students qualified GATE 2020 Exam.</li>
+        <li>The placement records of the department are excellent. The students  are placed in highly renowned companies namely Havells, Government Bodies, and several other Government/PSUs & IT companies.</li>
+        <li>Many students have been Certified in various FOSS Courses (IIT, Bombay) under Spoken Tutorial Training Program and in Swayam/NPTEL Courses
         </li>
       </ul>
-      <div className="grid">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F1.jpg?alt=media&token=ecf482af-dcb7-4bc8-8bad-c2eb02ca8614"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F2.jpg?alt=media&token=fb2a49f3-f741-487a-aa38-c807cc2fd1e3"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F3.jpg?alt=media&token=4d7cb692-e314-4073-8acd-8aa835afe00f"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F4.jpg?alt=media&token=6bf88dbf-ff26-46fa-8773-21faabb389a3"
-          alt=""/>
-      </div>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Fachievements%2F60492964_1151239531721742_5100200082620284928_n.jpg?alt=media&token=f2350d9c-c886-4405-b8ba-fe3f806cabab"
+        alt=""/>
     </Cont>
   );
 }
@@ -383,11 +287,11 @@ export function Contact() {
     <Cont>
       <PageHead>Contact Us</PageHead>
       <br/>
-      <p><strong>Mr. Arvind Sharma</strong></p>
+      <p><strong>Mr. Prashant Tyagi</strong></p>
       <p>
-        Block A, MITRC College, 6<sup>th</sup> Mile Stone, village Jharkhera, Delhi Tijara Highway , Alwar - 301028
+        Block C, MITRC College, 6<sup>th</sup> Mile Stone, village Jharkhera, Delhi Tijara Highway , Alwar - 301028
       </p>
-      <p><strong>Contact Number :</strong> 0144-2980851/52, 9828273227</p>
+      <p><strong>Contact Number :</strong> 0144-2980851/52, Extension - 250</p>
     </Cont>
   );
 }
@@ -481,33 +385,24 @@ export function Visits() {
       <PageHead>Industrial Visits</PageHead>
       <p>Various Industrial Visits Carried out :</p>
       <pre>{`    • ISRO
-    • BEL,Ghaziabad
-    • CRL,Ghaziabad
+    • MSME
+    • 220 KV GSS
     • ARIES
     • Parle G
     • Saras Dairy & many more 
       `}</pre>
       <div className="grid">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F1.jpg?alt=media&token=c418306c-4922-42e7-8998-351a5ee3e109"
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Factivities%2FWhatsApp%20Image%202021-12-07%20at%206.06.52%20PM.jpeg?alt=media&token=29bf9c74-e463-4a98-81b3-ae3e5c210c17"
           alt=""/>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F2.jpg?alt=media&token=984207bf-8302-46c7-9d85-5fa7a5b5e1ab"
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Factivities%2FWhatsApp%20Image%202021-12-07%20at%206.06.53%20PM.jpeg?alt=media&token=2c8432f5-68ce-4474-8b33-9e0a449d4247"
           alt=""/>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F3.jpg?alt=media&token=1d33b1fd-c1c3-4632-8340-d7e80f5cbb9c"
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Factivities%2FWhatsApp%20Image%202021-12-07%20at%206.06.54%20PM.jpeg?alt=media&token=0a4457aa-2e9a-4223-a5a1-ad19a24a5501"
           alt=""/>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F4.jpg?alt=media&token=ab2ef6c6-87d0-4671-8ae1-4b8bf3b222e8"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F5.jpg?alt=media&token=2782bb11-5d04-4f42-924b-edc31dd7074b"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F7.jpg?alt=media&token=949c52a9-c0a3-4388-ba90-1914d6367d8c"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F8.jpg?alt=media&token=64167ce6-ccbf-4f7a-9e1f-2d2adba5af65"
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Factivities%2FWhatsApp%20Image%202021-12-07%20at%206.07.00%20PM.jpeg?alt=media&token=be970fad-a0a0-453f-a557-d2508946a054"
           alt=""/>
       </div>
     </Cont>

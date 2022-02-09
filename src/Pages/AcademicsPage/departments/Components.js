@@ -15,44 +15,11 @@ export function CSE() {
 }
 
 export function EE() {
-  return (
-    <Cont>
-      <PageHead>Electrical Engineering</PageHead>
-      <p>The Electrical Engineering program prepares engineers to enter into a dynamic and rapidly changing world with
-        career opportunities in Electrical Power Systems, Integrated Circuits, Electrical Industry, Robotics and
-        Controls. </p>
-      <img
-        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Ffront-1024x502.jpg?alt=media&token=9a736de7-a30f-4faf-a4a5-e7b05bc41fef"
-        alt="img"/>
-      <H4>Vision</H4>
-      <p>The vision of the department is to produce comprehensively confident, technically strong, socially responsible
-        and innovative electrical engineers in the region.</p>
-      <H4>Mission</H4>
-      <p>The Electrical Engineering program prepares engineers to enter into a dynamic and rapidly changing world with
-        career opportunities in Electrical Power Systems, Integrated Circuits, Electrical Industry, Robotics and
-        Controls. The demand for Electrical power is increasing rapidly and thereby electrical engineers are in great
-        demand to meet the requirements. The Electrical Engineering Department was established in the year 2010 with 60
-        students intake and it was doubled in 2012. At present the department offers undergraduate Course in Electrical
-        Engineering. The Department has well equipped laboratories such as Electrical Machines laboratory, Power Systems
-        Laboratory, Control Systems laboratory, Electrical Measurements laboratory, Power Electronics & Drives
-        Laboratory, Electrical Workshop, Computer laboratory, Electrical and Electronics laboratory. The infrastructure
-        and lab facilities are upgraded timely to provide opportunities to students to learn and innovate and keep them
-        in sync with the industry advancements.</p>
-      <p>The Electrical department of MITRC Alwar has visited to 220 kv GSS and various industries which manufacturing
-        transformers, motors and switch gears for the practical exposure. The department also provides short term
-        training with the association of industry expert to make the skillful engineers. The department has
-        distinguished faculties, all holding M. Tech. degrees from renowned institutes in India and some are pursuing
-        PhD. The department also undertakes research projects sponsored by both the government and/or the industry. The
-        staff members and students of the department are actively involved in extracurricular activities including blood
-        donation, ‘services to community’ and energy awareness programs etc.</p>
-      <H4>Labs at MITRC</H4>
-      <ul>
-        {[
-          "Machine Lab", "High Voltage Engg. Lab", "Power System Lab", "Control System Lab", "EEE Lab", "Measurement Lab", "Power Electronics Lab", "Circuit Analysis Lab etc"
-        ].map(f => <li key={f}>{f}</li>)}
-      </ul>
-    </Cont>
-  );
+  const {push} = useHistory();
+  useEffect(() => {
+    push('/academics/departments/ee/home');
+  }, []);
+  return null;
 }
 
 export function EC() {
@@ -101,6 +68,12 @@ export function CE() {
     });
   }, []);
 
+  const {push} = useHistory();
+  useEffect(() => {
+    push('/academics/departments/ce/home');
+  }, []);
+  return null;
+
   return (
     <Cont>
       <PageHead>Civil Engineering</PageHead>
@@ -147,6 +120,12 @@ export function CE() {
 }
 
 export function ME() {
+  const {push} = useHistory();
+  useEffect(() => {
+    push('/academics/departments/me/home');
+  }, []);
+  return null;
+
   return (
     <Cont>
       <PageHead>Mechanical Engineering</PageHead>

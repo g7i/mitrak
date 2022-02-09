@@ -9,12 +9,6 @@ export const FooterMainContainer = styled.div`
   background-color: #003F87;
   position: relative;
   margin-top: 130px;
-  //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23262626' cx='50' cy='0' r='50'/%3E%3Cg fill='%23242424' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23232323' cx='50' cy='100' r='50'/%3E%3Cg fill='%23212121' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23202020' cx='50' cy='200' r='50'/%3E%3Cg fill='%231e1e1e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%231d1d1d' cx='50' cy='300' r='50'/%3E%3Cg fill='%231b1b1b' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a1a1a' cx='50' cy='400' r='50'/%3E%3Cg fill='%23181818' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23171717' cx='50' cy='500' r='50'/%3E%3Cg fill='%23151515' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23131313' cx='50' cy='600' r='50'/%3E%3Cg fill='%23121212' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23101010' cx='50' cy='700' r='50'/%3E%3Cg fill='%230d0d0d' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%230b0b0b' cx='50' cy='800' r='50'/%3E%3Cg fill='%23080808' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23060606' cx='50' cy='900' r='50'/%3E%3Cg fill='%23030303' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23000000' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
-  //background-attachment: fixed;
-  //background-size: contain;
-  //position: fixed;
-  //left: 0;
-  //bottom: 0;
   .waveTop {
     background-image: url('https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Ffooter%2F2.png?alt=media&token=c3b85640-1278-45be-a601-054eac2761b0')
   }
@@ -50,7 +44,6 @@ export const FooterMainContainer = styled.div`
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    //background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
   }
   .bgTop {
     z-index: 15;

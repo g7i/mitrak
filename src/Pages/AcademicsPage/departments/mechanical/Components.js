@@ -6,162 +6,40 @@ import {Link} from "react-router-dom";
 import {ActData} from "../../../CampusLifePage/ClubAndActivities/data";
 import {AData} from "./data";
 
-const Labs = [
-  "Data Structure Lab",
-  "DBMS Lab",
-  "OOP Lab",
-  "Software Engineering Lab",
-  "Computer Graphics Lab",
-  "Compiler Design Lab",
-  "Java Lab",
-  "Cyber Security Lab",
-  "IoT Lab",
-  "Python Lab",
-  "C Programming Lab",
-  "LSP Lab",
-  "Network Programming Lab",
-  "Android Lab",
+const Labs =[
+  "Mechanical Workshop",
+  "Thermal Engineering Lab",
+  "Thermal Engineering Lab",
+  "Basic Mechanical Engineering Lab",
+  "Turbo Lab",
+  "Auto Cad Lab",
+  "Machine Drawing Lab",
+  "Production Engineering Lab",
+  "Heat Transfer Lab",
+  "Vibration Lab",
+  "Automobile Engineering Lab",
+  "Fluid Machinery Lab",
+  "Dynamics of Machines Lab",
 ];
 
 export function Home() {
   return (
     <Cont>
-      <PageHead>Computer Science & Engineering</PageHead>
+      <PageHead>Mechanical Engineering</PageHead>
+      <p>Mechanical Engineering is the scientific approach along with its wide range of applications. Mechanical scientists study the feasibility and mechanisation of procedures, known as algorithms, which underlie the acquisition, processing, storage and communication of data.</p>
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcse1.png?alt=media&token=9d8edf35-b1fd-4ad1-8497-344c266d576b"
-        alt="img"/>
-      <p>Computer science is the scientific approach to computation, along with its wide range of applications. Computer scientists study the feasibility and mechanisation of procedures, known as algorithms, which underlie the acquisition, processing, storage and communication of data.</p>
-      <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
-      <p>Computer Science Engineering uses principles from Computer Science and Electrical Engineering to create hardware (physical components) and firmware which are used in a wide range of areas: consumer electronics, medical devices, communication systems, aircraft, self-driving cars, etc.</p>
-      <p>Computer Science Engineering students learn how to develop, prototype, and test microchips, circuits, processors, conductors and any other component used in computer devices or systems (e.g. super computers, smart phones, laptops, servers, IoT gadgets). They also develop firmware, an essential type of software that allows operating systems and applications to take full advantage of the hardware.</p>
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fdepartment%2Fme-1.jpg?alt=media&token=c5032a0d-62c5-4656-b375-492d73a52e2c"
+        alt=""/>
+      <p>Mechanical Engineering (ME) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
+      <p>Mechanical Engineering uses principles from Computer Science and Electrical Engineering to create hardware (physical components) and firmware which are used in a wide range of areas: consumer electronics, medical devices, communication systems, aircraft, self-driving cars, etc.</p>
+      <p>Mechanical Engineering students learn how to develop, prototype, and test microchips, circuits, processors, conductors and any other component used in computer devices or systems (e.g. super computers, smart phones, laptops, servers, IoT gadgets). They also develop firmware, an essential type of software that allows operating systems and applications to take full advantage of the hardware.</p>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fdepartment%2Fme-2.jpg?alt=media&token=fc85df23-a21a-48f5-9d3e-235b166bd9cc"
+        alt=""/>
       <p>Today we are speeding up towards the computerization and modernization in our entire social, professional, occupational, defense and many other activities. Computer is now an essential part of our life and needs. It is mainly because of the error free and fast operation, and no need to keep hard store and transport the data. “Your time is in your one click”.</p>
-      <img src="/static/media/coding-platform-STEM-code.bb95b27d.jpg" alt="img"/>
-      <H4>Career in CSE</H4>
-      <p>Computer science job opportunities vary depending on the degree. Graduates with associate degrees often pursue roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer science careers in software development, database administration, and computer programming.</p>
+      <H4>Career in ME</H4>
+      <p>ME job opportunities vary depending on the degree. Graduates with associate degrees often pursue roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer science careers in software development, database administration, and computer programming.</p>
       <p>Employers typically expect computer and information research scientists to hold master’s degrees at minimum. Since its inception during the Industrial Revolution, computer science has become essential to everyday life and changed nearly every part of society: Cyber security experts protect companies from foreign and domestic interference, while everyday people stream movies and connect with video conferencing technology</p>
-      <H5>Top Jobs for CSE Engineer</H5>
-      <ul>
-        {[
-          "Full Stack Developer",
-          "Application Analyst",
-          "Mobile Application Developer",
-          "Business Intelligence Analyst",
-          "Software Engineer",
-          "Computer Programmer",
-          "System Architect",
-          "Data Architect",
-          "Network Analyst",
-          "Database Manager",
-          "Data Science Engineer",
-          "Data Warehouse Developer",
-          "Machine Learning Learner",
-          "Graphic Designer",
-          "Full Stack Developer",
-          "Information Security Analyst",
-          "IT Manager"
-        ].map(f => <li key={f}>{f}</li>)}
-      </ul>
-      <img src="https://a.ilovecoding.org/img/_blogs/software-development8.png" alt=""/>
-      <H3>Rising fields in CSE that are hitting the computer industry</H3>
-      <pre>{`   • Cyber Security
-    • AI/ML
-    • NLP
-    • IOT
-    • Big Data Analytics
-    • Blockchain
-    • Web Developer ( REACT, Python & Django, Node JS, Javascript, MERN, Angular)
-    • Mobile Application Developer ( Android Studio, Flutter )
-      `}</pre>
-      <H4>Jobs in CSE</H4>
-      <H3>Jobs in Government Organisation / Government Undertaking Bodies</H3>
-      <table>
-        <tr>
-          <th>S.No.</th>
-          <th>Organisation</th>
-          <th>Job Profile</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Niti Ayog</td>
-          <td>Programmer</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>DRDO</td>
-          <td>JRF</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>ISRO</td>
-          <td>Scientist Engineer</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Niti Ayog</td>
-          <td>Start-up Fellow</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Bharat Electronics Limited</td>
-          <td>Software Developer</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>MHRD</td>
-          <td>IT Manager</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>PNB, SBI</td>
-          <td>Specialist Officer</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>National Banks</td>
-          <td>Specialist Officer</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>RPSC</td>
-          <td>Programmer</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>CDAC</td>
-          <td>Developer</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>Govt Organisation</td>
-          <td>Programmer</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>AICTE</td>
-          <td>Technical Support</td>
-        </tr>
-      </table>
-      <H3>Jobs in Private Companies</H3>
-      <p>Here we have listed out 15 of the top computer science companies which are highly recommended for you to work 2021 and 2022 as well. <br/>
-        Amazon, Deloitte, CGI, Mindtree, Infosys, Cognizant, TCS, HCL, Google, Wipro, Tech Mahindra, IBM, Microsoft, Mphasis, and HP Inc. So, these are 15 of the top technology service companies which are ideal for computer science graduates to begin their career in.</p>
-      <H3>Jobs in PSU’s ( Through GATE / Direct Recruitment)</H3>
-      <p>BHEL, IOCL, NFL, NLC, ONGC, ECIL etc.</p>
-      <H3>Other Opportunities</H3>
-      <p>KVS, Indian Railways (Section Engineer, Jr. Engineer, Traffic Apprentice, Commercial Apprentice, Goods Guard, Station Master, Banking(Clerk, PO, SO) & SSC, IBPS  many more.</p>
-      <H3>Start-Up Schemes for Engineers</H3>
-      <p>Startups are ideal for computer science graduates. Most of the startups are technology driven, and a computer science graduate will understand it better. In fact, a computer science graduate is likely to make their start ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for computer science graduates.</p>
-      <H4>Notable Startup in CSE</H4>
-      <ul>
-        <li>Digital Application Designing</li>
-        <li>Mobile App Development</li>
-        <li>Software Development</li>
-        <li>Publishing Business</li>
-        <li>Online Recruitment Testing Service</li>
-        <li>Digital Marketing Service</li>
-        <li>Customized Desktop Computers</li>
-        <li>Games Development</li>
-        <li>Publishing Business</li>
-      </ul>
     </Cont>
   );
 }
@@ -170,30 +48,25 @@ export function About() {
   return (
     <Cont>
       <PageHead>Computer Science & Engineering</PageHead>
-      <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis
-        of algorithms, programming languages, program design, software, and computer hardware.</p>
-      <p>Computer Science Engineering uses principles from Computer Science and Electrical Engineering to create
-        hardware (physical components) and firmware which are used in a wide range of areas: consumer electronics,
-        medical devices, communication systems, aircraft, self-driving cars, etc.</p>
-      <p>Computer Science Engineering students learn how to develop, prototype, and test microchips, circuits,
-        processors, conductors and any other component used in computer devices or systems (e.g. super computers, smart
-        phones, laptops, servers, IoT gadgets). They also develop firmware, an essential type of software that allows
-        operating systems and applications to take full advantage of the hardware.</p>
-      <p>Today we are speeding up towards the computerization and modernization in our entire social, professional,
-        occupational, defense and many other activities. Computer is now an essential part of our life and needs. It is
-        mainly because of the error free and fast operation, and no need to keep hard store and transport the data.
-        “Your time is in your one click”.</p>
-      <img src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FABOUT%20CSE%2F1.jpg?alt=media&token=3ec1201b-364f-40b7-b1d2-d5f190fd5498" alt="img"/>
+      <p>The Mechanical Engineering Department of MITRC has a reputation of being among the finest in the state. It is dedicated towards the advancement of technology and science. The department was established in 2007 with the objective to impart quality education in the core field of Mechanical Engineering.</p>
+      <p>Presently the department is running the B. Tech program with an intake of 60 students and M. Tech program in Production Engineering with intakes of 18 students.The aim of the department is to create and disseminate knowledge and to provide service to the society. The department consistently strives to provide world class facilities for education and research. An interactive relationship is maintained, between the students and staff, which enables the students to develop a sound foundation in a conducive environment. This is also reflected in our campus placement which has been growing year after year with our students getting placed in the top industrial houses of the country.</p>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fdepartment%2Fme-3.jpg?alt=media&token=375bab5a-9e8b-4819-90c7-6a69634fe6ae"
+        alt=""/>
+      <p>The department has an excellent industrial interaction and contributes to the industry by offering consultancy services. The department gets updated from time to time with the latest developments and trends in the field. The faculty in Mechanical engineering department is highly qualified, experienced and dedicated.</p>
       <H4>About The Department</H4>
-      <p>The CSE Department of MITRC was started in the year 2007 with an intake of 30 students. Currently the
+      <p>The ME Department of MITRC was started in the year 2007 with an intake of 30 students. Currently the
         Department offers an under-graduate program (B. Tech) in Computer science and engineering with an intake of 180
         students and post graduate program (M. Tech) in computer science and engineering with an intake of 18. The
-        department has highly qualified faculty members with minimum M. Tech qualification in Computer science and
-        engineering, Computer Technology and Software Engineering. Department of CSE is committed to impart Technical
+        department has highly qualified faculty members with minimum M. Tech qualification in Mechanical
+        engineering. Department of ME is committed to impart Technical
         and Research based quality education and to develop innovative skills among the students and to enrich the
         academic activities through continual improvement in the teaching and learning processes. The department also
         focuses on infusing confidence in the minds of students and to develop them as entrepreneurs.</p>
-      <p>It develops expertise for consultative activities by providing opportunities for company– institute
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fdepartment%2Fme-4.jpg?alt=media&token=a44fda94-02df-4f28-9529-93bab94b17aa"
+        alt=""/>
+      <p>It develops expertise for consultative activities by providing opportunities for company– institute,
         interaction. It is also constantly upgrading the technical expertise for producing competent professionals to
         cater to the needs of society and to meet the global challenges. Much care is taken to involve the faculty in
         the development of laboratories and to take an active interest in counselling the students. Students of our
@@ -212,7 +85,7 @@ export function About() {
           "Membership of CSI, ISTE, DELNET, Institute of Engineer.",
         ].map(f => <li key={f}>{f}</li>)}
       </ul>
-      <H4>Career in CSE</H4>
+      <H4>Career in ME</H4>
       <p>Computer science job opportunities vary depending on the degree. Graduates with associate degrees often pursue
         roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer
         science careers in software development, database administration, and computer programming.</p>
@@ -220,12 +93,6 @@ export function About() {
         Since its inception during the Industrial Revolution, computer science has become essential to everyday life and
         changed nearly every part of society: Cyber security experts protect companies from foreign and domestic
         interference, while everyday people stream movies and connect with video conferencing technology.</p>
-      <H4>Job Profile</H4>
-      <p>For the Computer science engineering many profile are such as Application Analyst, Business Intelligence
-        Analyst, Computer Programmer, Data Architect, Database Manager, Data Warehouse Developer, Graphic Designer,
-        Information Security Analyst, IT Manager, Mobile App Developer, Network Security Engineer, Programmer Analyst,
-        Software Developer, Telecommunications Manager, Web Developer, Data Scientist, Data Engineer, Full Stack
-        Developer, and Technical Content Engineer etc.</p>
       <H4>Start-Up Schemes for Engineers</H4>
       <p>Startups are ideal for computer science graduates. Most of the startups are technology driven, and a computer
         science graduate will understand it better. In fact, a computer science graduate is likely to make their start
@@ -239,34 +106,24 @@ export function VM() {
   return (
     <Cont>
       <PageHead>Vision and Mission</PageHead>
-      <p>The Vision and Mission of the Department of Computer Science and Engineering at MITRC are as follows.</p>
+      <p>The Vision and Mission of the Department of Mechanical Engineering at MITRC are as follows.</p>
       <H4>Vision</H4>
-      <p>To create competent software professionals and leaders for serving society and world at large through
-        excellence in academics, research, development and innovations.</p>
+      <p>To be recognized as a Centre of excellence in the field of Mechanical Engineering quality education, research, innovation & technical leadership.</p>
       <H4>Mission</H4>
       <ul>
-        <li>Provide strong theoretical and practical computer based skills to meet the global technological changes.
+        <li>To educate, prepare and mentor Mechanical Engineering students to excel as professionals.
         </li>
-        <li>Provide a learning environment to enhance complex problem solving skills, research based projects/activities
-          and innovation.
+        <li>To develop, Strengthen and expand collaborations with industries and other organizations of repute.
         </li>
-        <li>Establish Industry Institute Interaction Program to enhance the entrepreneurship skills, leadership
-          qualities, team-spirit and ethical responsibilities.
+        <li>To create an environment that stimulates stack holders to reach their highest potential.
         </li>
-        <li>Prepare students for lifelong learning through sustainable development.</li>
+        <li>To guide students in acquiring career-oriented jobs in the field of Mechanical Engineering. </li>
       </ul>
     </Cont>
   );
 }
 
 export function Infra() {
-  const [labImages, setLabImages] = React.useState([]);
-  React.useEffect(() => {
-    getImagesLab(Collections.departments.computer).then((imageList) => {
-      setLabImages(imageList);
-    });
-  }, []);
-
   return (
     <Cont>
       <PageHead>Infrastructure</PageHead>
@@ -289,7 +146,19 @@ export function Infra() {
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
       <div className="grid">
-        {labImages.map(item => (
+        {[
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FWhatsApp%20Image%202021-10-30%20at%201.15.59%20PM%20(11).jpeg?alt=media&token=f769fb0c-c8f9-4b40-a72e-ac31c21f0664",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FWhatsApp%20Image%202021-10-30%20at%201.15.59%20PM%20(2).jpeg?alt=media&token=929e735a-5e94-43fe-bc48-5abd2db398e8",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FWhatsApp%20Image%202021-10-30%20at%201.15.59%20PM%20(4).jpeg?alt=media&token=78eea311-7c13-4f7d-8e3e-2786db673ce5",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02032.JPG?alt=media&token=0a903132-86e3-4658-b197-0eed7ea07bd2",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02035.JPG?alt=media&token=a9148ff5-3665-4560-be3e-63add351917d",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02036.JPG?alt=media&token=3eedfef9-1ced-4008-baf8-727fb6661966",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02038.JPG?alt=media&token=6ecfc0b6-163d-4ef7-960e-032bd9a72235",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02040.JPG?alt=media&token=f195834c-3715-49df-ab30-097fd264d16e",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02042.JPG?alt=media&token=bcacb072-d3ec-481a-973e-a4cec43b0f6c",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02046.JPG?alt=media&token=116793d3-a861-45b7-aee9-9e5819d8ba63",
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02048.JPG?alt=media&token=fe7fd3d8-1411-468e-a8bf-f29248b17cb5"
+        ].map(item => (
           <img key={item} src={item} alt={item} onLoad={e => e.target.classList.add('loaded')}/>
         ))}
       </div>
@@ -303,50 +172,18 @@ export function Achieve() {
       <PageHead>Achievements & Awards</PageHead>
       <br/>
       <H3>Achievements, Awards & Recognitions</H3>
-      <ul>
-        <li>Minakshi Sain got 12 lakh per annumn package in MSTC Ltd. –Mini-Ratna Company at Kolkata.</li>
-        <li>Akansha Gupta (2014-2018) got Gold Medal for first position in RTU KOTA for best Academic performance.</li>
-        <li>Tanya Sharma ( 2010-2016) got Xth position in RTU Merit List.</li>
-        <li>4 students qualified GATE 2020 Exam.</li>
-        <li>Manish Gupta got AIR 498 in GATE 2019 & got selected as Research Scholar in IIT Guwahati.</li>
-        <li>4 Teams named as Panda Coders ( Gargi Gupta),Dynamic Dudes( Pratiksha Goyal),Coder Vibes(Shailina Jain),Tech
-          Player(Kriti Kaushik) got selected in SIH 2019 Grand Finale for Software Edition. Teams solved the problem of
-          ISRO,Mind Tree, SSEPL, AICTE.
-        </li>
-        <li>4 Teams named as Panda Coders ( Gargi Gupta),Dynamic Dudes( Shailina Jain), Transworkers(Kartik Jain),Tech
-          Player(Kriti Kaushik) got selected in SIH 2020 Grand Finale for Software Edition. Teams solved the problem of
-          ISRO, Uttarakhand Government, Tripura Institute & Govt. of Bihar.
-        </li>
-        <li>Team Heart Vibes(Sanchit Mangal) got selected in National Convention of Chaatra Vishwakarma Award 2019 held
-          at AICTE HQ.
-        </li>
-        <li>3 Teams selected for Regional Convention of CVA 2019 at Jagan Institute of Mgmt,Delhi.</li>
-        <li>One Team Selected for Toycathon in Digital Toy Category.</li>
-        <li>One Team selected for Manthan 2021 organised by BPRD & AICTE for idea” Automatic Monitoring of Chain
-          Snatching & Knife Attack using CCTV Footage with timestamp & location.
-        </li>
-        <li>One Team selected for Samadhan –Fight with Covid 19 in 2020.</li>
-        <li>Sanchit Mangal team got 2nd position in Codethon organized by Govt. Engg. College Ajmer</li>
-        <li>The placement records of the department are excellent. The students are placed in highly renowned companies
-          namely Infosys, IBM, TCS, Cognizant, Wipro,Naggaro,MSTC,Government Bodies, Paytm, BEL and several other
-          Government/PSUs & IT companies.
-        </li>
-        <li>Many students have been Certified in various FOSS Courses (IIT, Bombay) under Spoken Tutorial Training
-          Program and in Swayam/NPTEL Courses
-        </li>
-      </ul>
       <div className="grid">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F1.jpg?alt=media&token=ecf482af-dcb7-4bc8-8bad-c2eb02ca8614"
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fplacements%2F267664479_4663994897014295_5986047476074280976_n.jpg?alt=media&token=7b8948c7-1d85-4f17-8a94-75181900e326"
           alt=""/>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F2.jpg?alt=media&token=fb2a49f3-f741-487a-aa38-c807cc2fd1e3"
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fplacements%2F121492493_3426927100721087_7032233191031659773_n.jpg?alt=media&token=c49819b5-04a5-4604-ac6d-1cb45cd1428c"
           alt=""/>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F3.jpg?alt=media&token=4d7cb692-e314-4073-8acd-8aa835afe00f"
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fplacements%2F267664479_4663994897014295_5986047476074280976_n.jpg?alt=media&token=7b8948c7-1d85-4f17-8a94-75181900e326"
           alt=""/>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F4.jpg?alt=media&token=6bf88dbf-ff26-46fa-8773-21faabb389a3"
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fplacements%2F60800275_2258345044245971_6436667079046201344_n.jpg?alt=media&token=b465567c-12ce-471f-b68b-9b7c08177d4c"
           alt=""/>
       </div>
     </Cont>
@@ -383,11 +220,20 @@ export function Contact() {
     <Cont>
       <PageHead>Contact Us</PageHead>
       <br/>
-      <p><strong>Mr. Arvind Sharma</strong></p>
-      <p>
-        Block A, MITRC College, 6<sup>th</sup> Mile Stone, village Jharkhera, Delhi Tijara Highway , Alwar - 301028
-      </p>
-      <p><strong>Contact Number :</strong> 0144-2980851/52, 9828273227</p>
+      <H4>HOD</H4>
+      <p><strong>Mr. Mukesh Kumar</strong></p>
+      <p><strong>Email :</strong> hodme@mitrc.ac.in</p>
+      <p><strong>Extension :</strong> 257</p>
+
+      <H4>Deputy HOD</H4>
+      <p><strong>Mr. Kalyan Singh</strong></p>
+      <p><strong>Email :</strong> kalyan_me@mitrc.ac.in</p>
+      <p><strong>Extension :</strong> 251</p>
+
+      <H4>M. Tech. Coordinator</H4>
+      <p><strong>Mr. Surendra Kumar</strong></p>
+      <p><strong>Email :</strong> surendra_me@mitrc.ac.in</p>
+      <p><strong>Extension :</strong> 259</p>
     </Cont>
   );
 }
@@ -518,43 +364,9 @@ export function Testimonials() {
   return (
     <Cont>
       <PageHead>Testimonials</PageHead>
-      <div className="grid">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F1.jpg?alt=media&token=8677e6e1-95fd-4150-908e-542aeeb5bc53"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F10.jpg?alt=media&token=947f0b35-181a-47e4-9a81-bc409beca328"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F2.jpg?alt=media&token=0ab16126-9a39-4845-ab9f-841050512564"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F3.jpg?alt=media&token=eb2c420b-27e7-40aa-b438-d7a9f038238c"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F4.jpg?alt=media&token=26fe99a3-5364-4bd8-b063-3ba0a057998e"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F5.jpg?alt=media&token=419470ee-6b20-4442-8334-7a8152736480"
-          alt=""/>
-      </div>
-      <br/>
-      <PageHead>Success Stories</PageHead>
-      <div className="grid">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F8.jpg?alt=media&token=da86afa5-c3a2-43af-b38b-411d5249b64a"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F3.jpg?alt=media&token=1d7825b5-7e84-45d4-895b-eea55404221a"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F4.jpg?alt=media&token=673e96e8-569d-4cde-b83b-f4231169f758"
-          alt=""/>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F5.jpg?alt=media&token=827fb536-c794-46c4-ac2e-2721d654aa7b"
-          alt=""/>
-        <img src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F6.jpg?alt=media&token=b760f077-fa0c-46bc-9eb8-357180ec5610" alt=""/>
-      </div>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Ftestimonials%2F110174885_3170667203013746_9030661624025140017_n.jpg?alt=media&token=0788ce66-4c07-454b-becb-77365f8581ec"
+        alt=""/>
     </Cont>
   );
 }
