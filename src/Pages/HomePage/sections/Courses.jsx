@@ -25,11 +25,11 @@ const btech = [
 ]
 
 const links = [
-  '/academics/departments/cse',
-  '/academics/departments/ce',
-  '/academics/departments/ee',
-  '/academics/departments/me',
-  '/academics/departments/ec',
+  '/academics/departments/cse/home',
+  '/academics/departments/ce/home',
+  '/academics/departments/ee/home',
+  '/academics/departments/me/home',
+  '/academics/departments/ec/home',
 ];
 
 const mtech = [

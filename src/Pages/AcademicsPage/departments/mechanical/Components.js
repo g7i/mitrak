@@ -30,16 +30,16 @@ export function Home() {
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fdepartment%2Fme-1.jpg?alt=media&token=c5032a0d-62c5-4656-b375-492d73a52e2c"
         alt=""/>
-      <p>Mechanical Engineering (ME) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
-      <p>Mechanical Engineering uses principles from Computer Science and Electrical Engineering to create hardware (physical components) and firmware which are used in a wide range of areas: consumer electronics, medical devices, communication systems, aircraft, self-driving cars, etc.</p>
-      <p>Mechanical Engineering students learn how to develop, prototype, and test microchips, circuits, processors, conductors and any other component used in computer devices or systems (e.g. super computers, smart phones, laptops, servers, IoT gadgets). They also develop firmware, an essential type of software that allows operating systems and applications to take full advantage of the hardware.</p>
+      <p>Mechanical Engineering (ME) is an engineering branch that combines engineering physics and mathematics principles with materials science, to design, analyze, manufacture, and maintain mechanical systems.</p>
+      <p>The mechanical engineering field requires an understanding of core areas including mechanics, dynamics, thermodynamics, materials science, structural analysis, and electricity. In addition to these core principles, mechanical engineers use tools such as computer-aided design (CAD), computer-aided manufacturing (CAM), and product lifecycle management to design and analyze manufacturing plants, industrial equipment and machinery, heating and cooling systems, transport systems, aircraft, watercraft, robotics, medical devices, weapons, and others.</p>
+      <p>The field has continually evolved to incorporate advancements; today mechanical engineers are pursuing developments in such areas as composites, mechatronics, and nanotechnology. It also overlaps with aerospace engineering, metallurgical engineering, civil engineering, electrical engineering, manufacturing engineering, chemical engineering, industrial engineering, and other engineering disciplines to varying amounts. </p>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Fdepartment%2Fme-2.jpg?alt=media&token=fc85df23-a21a-48f5-9d3e-235b166bd9cc"
         alt=""/>
-      <p>Today we are speeding up towards the computerization and modernization in our entire social, professional, occupational, defense and many other activities. Computer is now an essential part of our life and needs. It is mainly because of the error free and fast operation, and no need to keep hard store and transport the data. “Your time is in your one click”.</p>
+      <p>The application of mechanical engineering can be seen in the archives of various ancient and medieval societies. The six classic simple machines were known in the ancient Near East. The wedge and the inclined plane (ramp) were known since prehistoric times.</p>
       <H4>Career in ME</H4>
-      <p>ME job opportunities vary depending on the degree. Graduates with associate degrees often pursue roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer science careers in software development, database administration, and computer programming.</p>
-      <p>Employers typically expect computer and information research scientists to hold master’s degrees at minimum. Since its inception during the Industrial Revolution, computer science has become essential to everyday life and changed nearly every part of society: Cyber security experts protect companies from foreign and domestic interference, while everyday people stream movies and connect with video conferencing technology</p>
+      <p>ME job opportunities vary depending on the degree. Graduates with associate degrees often pursue roles as mechanical specialists. Bachelor’s degrees open doors to many more Mechanical Engineering careers in software development, database administration, and computer programming.</p>
+      <p>Employers typically expect mechanical research scientists to hold master’s degrees at minimum. Since its inception during the Industrial Revolution, Mechanical Engineering has become essential to everyday life and changed nearly every part of society: Cyber security experts protect companies from foreign and domestic interference, while everyday people stream movies and connect with video conferencing technology</p>
     </Cont>
   );
 }
@@ -47,7 +47,7 @@ export function Home() {
 export function About() {
   return (
     <Cont>
-      <PageHead>Computer Science & Engineering</PageHead>
+      <PageHead>Mechanical Engineering</PageHead>
       <p>The Mechanical Engineering Department of MITRC has a reputation of being among the finest in the state. It is dedicated towards the advancement of technology and science. The department was established in 2007 with the objective to impart quality education in the core field of Mechanical Engineering.</p>
       <p>Presently the department is running the B. Tech program with an intake of 60 students and M. Tech program in Production Engineering with intakes of 18 students.The aim of the department is to create and disseminate knowledge and to provide service to the society. The department consistently strives to provide world class facilities for education and research. An interactive relationship is maintained, between the students and staff, which enables the students to develop a sound foundation in a conducive environment. This is also reflected in our campus placement which has been growing year after year with our students getting placed in the top industrial houses of the country.</p>
       <img
@@ -56,8 +56,8 @@ export function About() {
       <p>The department has an excellent industrial interaction and contributes to the industry by offering consultancy services. The department gets updated from time to time with the latest developments and trends in the field. The faculty in Mechanical engineering department is highly qualified, experienced and dedicated.</p>
       <H4>About The Department</H4>
       <p>The ME Department of MITRC was started in the year 2007 with an intake of 30 students. Currently the
-        Department offers an under-graduate program (B. Tech) in Computer science and engineering with an intake of 180
-        students and post graduate program (M. Tech) in computer science and engineering with an intake of 18. The
+        Department offers an under-graduate program (B. Tech) in Mechanical Engineering with an intake of 180
+        students and post graduate program (M. Tech) in Mechanical Engineering with an intake of 18. The
         department has highly qualified faculty members with minimum M. Tech qualification in Mechanical
         engineering. Department of ME is committed to impart Technical
         and Research based quality education and to develop innovative skills among the students and to enrich the
@@ -86,18 +86,17 @@ export function About() {
         ].map(f => <li key={f}>{f}</li>)}
       </ul>
       <H4>Career in ME</H4>
-      <p>Computer science job opportunities vary depending on the degree. Graduates with associate degrees often pursue
-        roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer
-        science careers in software development, database administration, and computer programming.</p>
-      <p>Employers typically expect computer and information research scientists to hold master’s degrees at minimum.
-        Since its inception during the Industrial Revolution, computer science has become essential to everyday life and
+      <p>Mechanical Engineering job opportunities vary depending on the degree. Graduates with associate degrees often pursue
+        roles as support specialists. Bachelor’s degrees open doors to many more Mechanical
+        science careers in various fields.</p>
+      <p>Employers typically expect Mechanical engineer scientists to hold master’s degrees at minimum.
+        Since its inception during the Industrial Revolution, Mechanical has become essential to everyday life and
         changed nearly every part of society: Cyber security experts protect companies from foreign and domestic
         interference, while everyday people stream movies and connect with video conferencing technology.</p>
       <H4>Start-Up Schemes for Engineers</H4>
-      <p>Startups are ideal for computer science graduates. Most of the startups are technology driven, and a computer
-        science graduate will understand it better. In fact, a computer science graduate is likely to make their start
+      <p>Startups are ideal for Mechanical engineers. Most of the startups are technology driven, and a Mechanical engineer graduate will understand it better. In fact, a Mechanical engineer graduate is likely to make their start
         ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for
-        computer science graduates.</p>
+        Mechanical engineering graduates.</p>
     </Cont>
   );
 }
@@ -127,21 +126,21 @@ export function Infra() {
   return (
     <Cont>
       <PageHead>Infrastructure</PageHead>
-      <p>MITRC CSE Department have following infrastructure.</p>
+      <p>MITRC ME Department have following infrastructure.</p>
       <ul>
-        <li><strong>Class Rooms: </strong> 10 (Each having Area 900 Square meter)</li>
-        <li><strong>Total Labs: </strong> 13</li>
+        <li><strong>Class Rooms: </strong> 9 (Each having Area 900 Square meter)</li>
+        <li><strong>Total Labs: </strong> 1</li>
         <li><strong>Internet Facility: </strong> Yes (300 MBPS)</li>
         <li><strong>Projector: </strong> Yes</li>
         <li><strong>Audio System: </strong> Yes</li>
         <li><strong>Wi-Fi: </strong> Yes</li>
         <li><strong>Power Supply: </strong> Each Lab is running on UPS of 10KVA.</li>
         <li><strong>Seminar Hall: </strong> Yes</li>
-        <li><strong>Seminar Hall: </strong> 10 (Each having Area 900 Square meter)</li>
+        <li><strong>Seminar Hall: </strong> 1 (Each having Area 900 Square meter)</li>
         <li><strong>DG SET Available of 320 KVA</strong></li>
         <li><strong>Open Library with DELNET.</strong></li>
       </ul>
-      <H4>CSE Labs at MITRC</H4>
+      <H4>ME Labs at MITRC</H4>
       <ul>
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
@@ -242,7 +241,7 @@ export function Teaching() {
   return (
     <Cont>
       <PageHead>Teaching & Learning Process</PageHead>
-      <p>In the department of Computer Science and Engineering, MITRC Alwar, we define Teaching & Learning as
+      <p>In the department of Mechanical Engineering, MITRC Alwar, we define Teaching & Learning as
         follows.</p>
       <p>Teaching and learning process can be defined as a transformation process of knowledge from teachers to
         students. It is referred as the combination of various elements within the process where an educator identifies
@@ -251,8 +250,7 @@ export function Teaching() {
         The paper evaluated various academic journals, pedagogy, and inclusive practices to assess the teaching
         effectiveness within the higher education setting. The objective of the research is to assess the teaching
         effectiveness in a higher education setting.</p>
-      <p>Many of innovative initiatives taken by faculty and staff members of Department of Computer Science and
-        Engineering can be observed in the Course Files, Laboratory Manuals and other documents that are well maintained
+      <p>Many of innovative initiatives taken by faculty and staff members of Department of Mechanical Engineering can be observed in the Course Files, Laboratory Manuals and other documents that are well maintained
         in the department.</p>
       <H4>Objectives of Teaching & Learning</H4>
       <ul>
@@ -380,7 +378,7 @@ export function Activities() {
     <Cont>
       <PageHead>Activities</PageHead>
       <p>
-        MITRC CSE Department carried out various activities for students & teachers for developing their personal, technical and social skills.
+        MITRC ME Department carried out various activities for students & teachers for developing their personal, technical and social skills.
       </p>
       <H4>Activities Carried out</H4>
       <pre>{`    • Seminar

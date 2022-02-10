@@ -98,17 +98,16 @@ export function About() {
       </ul>
       <H4>Career in CE</H4>
       <p>Civil Engineering job opportunities vary depending on the degree. Graduates with associate degrees often pursue
-        roles as computer support specialists or web developers. Bachelor’s degrees open doors to many more computer
-        science careers in software development, database administration, and computer programming.</p>
-      <p>Employers typically expect computer and information research scientists to hold master’s degrees at minimum.
-        Since its inception during the Industrial Revolution, computer science has become essential to everyday life and
+        roles as support specialists. Bachelor’s degrees open doors to many more civil
+        science careers in various fields.</p>
+      <p>Employers typically expect civil engineer scientists to hold master’s degrees at minimum.
+        Since its inception during the Industrial Revolution, civil has become essential to everyday life and
         changed nearly every part of society: Cyber security experts protect companies from foreign and domestic
         interference, while everyday people stream movies and connect with video conferencing technology.</p>
       <H4>Start-Up Schemes for Engineers</H4>
-      <p>Startups are ideal for computer science graduates. Most of the startups are technology driven, and a computer
-        science graduate will understand it better. In fact, a computer science graduate is likely to make their start
+      <p>Startups are ideal for civil engineers. Most of the startups are technology driven, and a civil engineer graduate will understand it better. In fact, a civil engineer graduate is likely to make their start
         ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for
-        computer science graduates.</p>
+        civil engineering graduates.</p>
     </Cont>
   );
 }
@@ -145,21 +144,21 @@ export function Infra() {
   return (
     <Cont>
       <PageHead>Infrastructure</PageHead>
-      <p>MITRC CSE Department have following infrastructure.</p>
+      <p>MITRC CE Department have following infrastructure.</p>
       <ul>
-        <li><strong>Class Rooms: </strong> 10 (Each having Area 900 Square meter)</li>
-        <li><strong>Total Labs: </strong> 13</li>
+        <li><strong>Class Rooms: </strong> 9 (Each having Area 900 Square meter)</li>
+        <li><strong>Total Labs: </strong> 1</li>
         <li><strong>Internet Facility: </strong> Yes (300 MBPS)</li>
         <li><strong>Projector: </strong> Yes</li>
         <li><strong>Audio System: </strong> Yes</li>
         <li><strong>Wi-Fi: </strong> Yes</li>
         <li><strong>Power Supply: </strong> Each Lab is running on UPS of 10KVA.</li>
         <li><strong>Seminar Hall: </strong> Yes</li>
-        <li><strong>Seminar Hall: </strong> 10 (Each having Area 900 Square meter)</li>
+        <li><strong>Seminar Hall: </strong> 1 (Each having Area 900 Square meter)</li>
         <li><strong>DG SET Available of 320 KVA</strong></li>
         <li><strong>Open Library with DELNET.</strong></li>
       </ul>
-      <H4>CSE Labs at MITRC</H4>
+      <H4>CE Labs at MITRC</H4>
       <ul>
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
@@ -231,7 +230,7 @@ export function Teaching() {
   return (
     <Cont>
       <PageHead>Teaching & Learning Process</PageHead>
-      <p>In the department of Computer Science and Engineering, MITRC Alwar, we define Teaching & Learning as
+      <p>In the department of Civil Engineering, MITRC Alwar, we define Teaching & Learning as
         follows.</p>
       <p>Teaching and learning process can be defined as a transformation process of knowledge from teachers to
         students. It is referred as the combination of various elements within the process where an educator identifies
@@ -240,7 +239,7 @@ export function Teaching() {
         The paper evaluated various academic journals, pedagogy, and inclusive practices to assess the teaching
         effectiveness within the higher education setting. The objective of the research is to assess the teaching
         effectiveness in a higher education setting.</p>
-      <p>Many of innovative initiatives taken by faculty and staff members of Department of Computer Science and
+      <p>Many of innovative initiatives taken by faculty and staff members of Department of Civil
         Engineering can be observed in the Course Files, Laboratory Manuals and other documents that are well maintained
         in the department.</p>
       <H4>Objectives of Teaching & Learning</H4>
@@ -365,7 +364,7 @@ export function Activities() {
     <Cont>
       <PageHead>Activities</PageHead>
       <p>
-        MITRC CSE Department carried out various activities for students & teachers for developing their personal, technical and social skills.
+        MITRC CE Department carried out various activities for students & teachers for developing their personal, technical and social skills.
       </p>
       <H4>Activities Carried out</H4>
       <pre>{`    • Seminar

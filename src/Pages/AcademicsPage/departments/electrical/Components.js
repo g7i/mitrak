@@ -18,13 +18,13 @@ export function Home() {
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2FIMG_20180915_153603035.jpg?alt=media&token=1dc74059-154a-43bd-9517-5f824ae081cf "
         alt=""/>
-      <p>Electrical Engineering is a section of the engineering discipline that deals with electric systems, electricity, and electromagnetism. Electrical engineers use the latest tools in computer science as well as more old-fashioned disciplines to build everything from electric cars to massive electrical infrastructures and control systems. It's a relatively new field within engineering, but it's been around since the advent of electric commercialization in the 19th century. It's divided into a wide range of subfields, including traditional ones such as signal processing and newer ones like computer engineering.</p>
+      <p>Electrical Engineering is a section of the engineering discipline that deals with electric systems, electricity, and electromagnetism. Electrical engineers use the latest tools in Electrical Engineering as well as more old-fashioned disciplines to build everything from electric cars to massive electrical infrastructures and control systems. It's a relatively new field within engineering, but it's been around since the advent of electric commercialization in the 19th century. It's divided into a wide range of subfields, including traditional ones such as signal processing and newer ones like Electrical engineering.</p>
       <p>Among the most famous <strong>electrical engineers</strong> that you may have heard of are Nikola Tesla (pioneer of commercial electricity and electromagnetism), Thomas Edison (developer of the light bulb and inventor of the record player), Jack Kilby (inventor of the pocket calculator and the integrated circuit), Marcian Hoff (inventor of the microprocessor) and Martin Cooper (inventor of the mobile phone).</p>
       <p><strong>Electrical engineering degrees</strong> will equip students with knowledge of how the industry works, as well as giving them the engineering skills and technological knowledge needed to design, assess and improve electrical and electronic systems.</p>
       <p>If you’re interested in how electrical devices work, are inquisitive, and have a strong interest in mathematics and science, then you probably already have some essential engineering skills and an electrical engineering degree may well be for you. Although technical knowledge is essential, electrical engineers are also involved in designing and building a range of devices, often within teams.</p>
-      <p>Electrical Engineers use knowledge of circuitry and power generation to plan, design, and manage the manufacturing of electrical equipment as well as implement projects that harness different components of electricity and power. They use their knowledge of electrical systems to work in projects so small they could fit into your pocket to larger projects like aircraft electrical systems or communications systems. They design and test their projects, ensuring that everything created is safe. Careers In Electrical Engineering The field is still lucrative with the advent of 21st-century computing technology and electrical devices like smartphones and computer systems. There's also an extensive opportunity within biomedical engineering. You can find space for an electrical engineer in a wide range of fields.</p>
+      <p>Electrical Engineers use knowledge of circuitry and power generation to plan, design, and manage the manufacturing of electrical equipment as well as implement projects that harness different components of electricity and power. They use their knowledge of electrical systems to work in projects so small they could fit into your pocket to larger projects like aircraft electrical systems or communications systems. They design and test their projects, ensuring that everything created is safe. Careers In Electrical Engineering The field is still lucrative with the advent of 21st-century computing technology and electrical devices like smartphones and Electrical systems. There's also an extensive opportunity within biomedical engineering. You can find space for an electrical engineer in a wide range of fields.</p>
       <H4>Career in Electrical Engineering</H4>
-      <p>Electrical Engineers use knowledge of circuitry and power generation to plan, design, and manage the manufacturing of electrical equipment as well as implement projects that harness different components of electricity and power. They use their knowledge of electrical systems to work in projects so small they could fit into your pocket to larger projects like aircraft electrical systems or communications systems. They design and test their projects, ensuring that everything created is safe. Careers In Electrical Engineering The field is still lucrative with the advent of 21st-century computing technology and electrical devices like smartphones and computer systems. There's also an extensive opportunity within biomedical engineering. You can find space for an electrical engineer in a wide range of fields. </p>
+      <p>Electrical Engineers use knowledge of circuitry and power generation to plan, design, and manage the manufacturing of electrical equipment as well as implement projects that harness different components of electricity and power. They use their knowledge of electrical systems to work in projects so small they could fit into your pocket to larger projects like aircraft electrical systems or communications systems. They design and test their projects, ensuring that everything created is safe. Careers In Electrical Engineering The field is still lucrative with the advent of 21st-century computing technology and electrical devices like smartphones and Electrical systems. There's also an extensive opportunity within biomedical engineering. You can find space for an electrical engineer in a wide range of fields. </p>
       <H5>Top Jobs for EE Engineer</H5>
       <ul>
         {[
@@ -114,7 +114,7 @@ export function Home() {
       <H3>Other Opportunities</H3>
       <p>KVS, Indian Railways (Section Engineer, Jr. Engineer, Traffic Apprentice, Commercial Apprentice, Goods Guard, Station Master, Banking(Clerk, PO, SO) & SSC, IBPS  many more.</p>
       <H3>Start-Up Schemes for Engineers</H3>
-      <p>Startups are ideal for computer science graduates. Most of the startups are technology driven, and a computer science graduate will understand it better. In fact, a computer science graduate is likely to make their start ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for computer science graduates.</p>
+      <p>Startups are ideal for Electrical Engineering graduates. Most of the startups are technology driven, and a Electrical Engineering graduate will understand it better. In fact, a Electrical Engineering graduate is likely to make their start ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for Electrical Engineering graduates.</p>
       <H4>Notable Startup in CSE</H4>
       <ul>
         <li>Electric vehicle</li>
@@ -138,7 +138,7 @@ export function About() {
       <H4>About The Department</H4>
       <p>The EE Department of MITRC was started in the year 2007 with an intake of 30 students. Currently the
         Department offers an under-graduate program (B. Tech) in Electrical engineering with an intake of 180
-        students and post graduate program (M. Tech) in computer science and engineering with an intake of 18. The
+        students and post graduate program (M. Tech) in Electrical Engineering with an intake of 18. The
         department has highly qualified faculty members with minimum M. Tech qualification in Electrical
         engineering. Department of EE is committed to impart Technical
         and Research based quality education and to develop innovative skills among the students and to enrich the
@@ -190,15 +190,15 @@ export function Infra() {
       <PageHead>Infrastructure</PageHead>
       <p>MITRC EE Department have following infrastructure.</p>
       <ul>
-        <li><strong>Class Rooms: </strong> 5 (Each having Area 900 Square meter)</li>
-        <li><strong>Total Labs: </strong> 13</li>
+        <li><strong>Class Rooms: </strong> 9 (Each having Area 900 Square meter)</li>
+        <li><strong>Total Labs: </strong> 1</li>
         <li><strong>Internet Facility: </strong> Yes (300 MBPS)</li>
         <li><strong>Projector: </strong> Yes</li>
         <li><strong>Audio System: </strong> Yes</li>
         <li><strong>Wi-Fi: </strong> Yes</li>
         <li><strong>Power Supply: </strong> Each Lab is running on UPS of 10KVA.</li>
         <li><strong>Seminar Hall: </strong> Yes</li>
-        <li><strong>Seminar Hall: </strong> 10 (Each having Area 900 Square meter)</li>
+        <li><strong>Seminar Hall: </strong> 1 (Each having Area 900 Square meter)</li>
         <li><strong>DG SET Available of 320 KVA</strong></li>
         <li><strong>Open Library with DELNET.</strong></li>
       </ul>
@@ -300,7 +300,7 @@ export function Teaching() {
   return (
     <Cont>
       <PageHead>Teaching & Learning Process</PageHead>
-      <p>In the department of Computer Science and Engineering, MITRC Alwar, we define Teaching & Learning as
+      <p>In the department of Electrical Engineering, MITRC Alwar, we define Teaching & Learning as
         follows.</p>
       <p>Teaching and learning process can be defined as a transformation process of knowledge from teachers to
         students. It is referred as the combination of various elements within the process where an educator identifies
@@ -309,8 +309,7 @@ export function Teaching() {
         The paper evaluated various academic journals, pedagogy, and inclusive practices to assess the teaching
         effectiveness within the higher education setting. The objective of the research is to assess the teaching
         effectiveness in a higher education setting.</p>
-      <p>Many of innovative initiatives taken by faculty and staff members of Department of Computer Science and
-        Engineering can be observed in the Course Files, Laboratory Manuals and other documents that are well maintained
+      <p>Many of innovative initiatives taken by faculty and staff members of Department of Electrical Engineering can be observed in the Course Files, Laboratory Manuals and other documents that are well maintained
         in the department.</p>
       <H4>Objectives of Teaching & Learning</H4>
       <ul>
