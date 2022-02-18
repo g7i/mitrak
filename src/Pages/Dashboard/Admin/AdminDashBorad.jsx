@@ -14,6 +14,7 @@ import NewsPage from "./News";
 import ContactMessages from "./ContactMessages";
 import ManageNewsPage from "./News/manage-news";
 import ManageNotesPage from "./Notes/manage-notes";
+import UploadData from "./UploadData";
 
 const Router = [
   { name: "admin profile", component: AdminProfile },
@@ -27,6 +28,7 @@ const Router = [
   { name: "upload news", component: NewsPage },
   { name: "manage news", component: ManageNewsPage },
   { name: "contact messages", component: ContactMessages },
+  { name: "upload data (new)", component: UploadData },
 ];
 
 function AdminDashboard(props) {
