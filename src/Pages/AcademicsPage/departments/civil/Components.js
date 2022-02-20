@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {getImagesLab} from "../../../../utils/firebase/department";
 import {Collections} from "../../../../utils/firebase/storage";
 import {Cont, Event, H3, H4, H5, PageHead} from "../../../../components/styledComponents/New";
 import {Link} from "react-router-dom";
-import {ActData} from "../../../CampusLifePage/ClubAndActivities/data";
 import {AData} from "./data";
+import {listDocuments} from "../../../../utils/firebase/db";
+import {CircularProgress} from "@mui/material";
 
 const Labs = [
   "Hydraulic Engineering Lab",
@@ -22,17 +23,39 @@ const Labs = [
   "Civil Engineering & Material Lab"
 ];
 
+const queryConfig = {queries: [{name: "department", operator: "==", value: "CE"}]}
+
 export function Home() {
   return (
     <Cont>
       <PageHead>Civil Engineering</PageHead>
-      <p>Civil engineering is arguably the oldest engineering discipline. It deals with the built environment and can be dated to the first time someone placed a roof over his or her head or laid a tree trunk across a river to make it easier to get across.</p>
-      <p>Engineering branches such as Mechanical Engineering and Electrical engineering have originated from military engineering and become independent fields. At the same time, CE remains the  All the other branches such as Mechanical Engineering and Electrical engineering have originated from military engineering and become separate fields. In contrast, CE remains the same. </p>
-      <p>The built environment encompasses much of what defines modern civilization. Buildings and bridges are often the first constructions that come to mind, as they are the most conspicuous creations of structural engineering, one of civil engineering's major sub-disciplines. Roads, railroads, subway systems, and airports are designed by transportation engineers, another category of civil engineering. And then there are the less visible creations of civil engineers. Every time you open a water faucet, you expect water to come out, without thinking that civil engineers made it possible. </p>
-      <p>Similarly, not many people seem to worry about what happens to the water after it has served its purposes. The old civil engineering discipline of sanitary engineering has evolved into modern environmental engineering of such significance that most academic departments have changed their names to civil and environmental engineering.</p>
-      <p>These few examples illustrate that civil engineers do a lot more than design buildings and bridges. They can be found in the aerospace industry, designing jetliners and space stations; in the automotive industry, perfecting the load-carrying capacity of a chassis and improving the crashworthiness of bumpers and doors; and they can be found in the ship building industry, the power industry, and many other industries wherever constructed facilities are involved. And they plan and oversee the construction of these facilities as construction managers.</p>
+      <p>Civil engineering is arguably the oldest engineering discipline. It deals with the built environment and can be
+        dated to the first time someone placed a roof over his or her head or laid a tree trunk across a river to make
+        it easier to get across.</p>
+      <p>Engineering branches such as Mechanical Engineering and Electrical engineering have originated from military
+        engineering and become independent fields. At the same time, CE remains the All the other branches such as
+        Mechanical Engineering and Electrical engineering have originated from military engineering and become separate
+        fields. In contrast, CE remains the same. </p>
+      <p>The built environment encompasses much of what defines modern civilization. Buildings and bridges are often the
+        first constructions that come to mind, as they are the most conspicuous creations of structural engineering, one
+        of civil engineering's major sub-disciplines. Roads, railroads, subway systems, and airports are designed by
+        transportation engineers, another category of civil engineering. And then there are the less visible creations
+        of civil engineers. Every time you open a water faucet, you expect water to come out, without thinking that
+        civil engineers made it possible. </p>
+      <p>Similarly, not many people seem to worry about what happens to the water after it has served its purposes. The
+        old civil engineering discipline of sanitary engineering has evolved into modern environmental engineering of
+        such significance that most academic departments have changed their names to civil and environmental
+        engineering.</p>
+      <p>These few examples illustrate that civil engineers do a lot more than design buildings and bridges. They can be
+        found in the aerospace industry, designing jetliners and space stations; in the automotive industry, perfecting
+        the load-carrying capacity of a chassis and improving the crashworthiness of bumpers and doors; and they can be
+        found in the ship building industry, the power industry, and many other industries wherever constructed
+        facilities are involved. And they plan and oversee the construction of these facilities as construction
+        managers.</p>
       <H4>Career in CE</H4>
-      <p>Civil engineering, the most demanding and very much lucrative career option. We have tried to answer most of the questions to choose civil engineering as a career option. Find all the information you want to know about civil engineering to decide on opting for civil engineering as a career option.</p>
+      <p>Civil engineering, the most demanding and very much lucrative career option. We have tried to answer most of
+        the questions to choose civil engineering as a career option. Find all the information you want to know about
+        civil engineering to decide on opting for civil engineering as a career option.</p>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2FScreenshot%20from%202022-02-09%2022-13-00.png?alt=media&token=ac7a9053-2634-499e-ad33-9b56249c8961"
         alt=""/>
@@ -65,14 +88,15 @@ export function Home() {
         <li>Consolidated Construction Consortium Ltd (CCCL)</li>
         <li>Akme Projects Ltd</li>
         <li>Anant Raj Industries Limited</li>
-        <li>B Seenaiah & Company (Projects) Ltd (BSCPL) </li>
+        <li>B Seenaiah & Company (Projects) Ltd (BSCPL)</li>
         <li>BGR Energy Systems Ltd.</li>
         <li>L&T</li>
       </ul>
       <H3>Jobs in PSU’s ( Through GATE / Direct Recruitment)</H3>
       <p>BHEL, IOCL, NFL, NLC, ONGC, ECIL etc.</p>
       <H3>Other Opportunities</H3>
-      <p>KVS, Indian Railways (Section Engineer, Jr. Engineer, Traffic Apprentice, Commercial Apprentice, Goods Guard, Station Master, Banking(Clerk, PO, SO) & SSC, IBPS  many more.</p>
+      <p>KVS, Indian Railways (Section Engineer, Jr. Engineer, Traffic Apprentice, Commercial Apprentice, Goods Guard,
+        Station Master, Banking(Clerk, PO, SO) & SSC, IBPS many more.</p>
     </Cont>
   );
 }
@@ -81,8 +105,13 @@ export function About() {
   return (
     <Cont>
       <PageHead>Civil Engineering</PageHead>
-      <p>Due to extraordinary growth in the infrastructure development in India and abroad, demand of skilled civil engineers is growing with high pace. To meet the growing demand of construction industries, our institute started B. Tech. course in civil engineering from the academic session 2011-12.</p>
-      <p>All laboratories of the department are having latest technological instruments as per requirement of curriculum and also for research purpose. Civil Engineering Department also provides consultancy services on various technical issues to the society and government departments. The department is supported by a team of faculty members having excellent research credentials as well as extensive industrial experience.</p>
+      <p>Due to extraordinary growth in the infrastructure development in India and abroad, demand of skilled civil
+        engineers is growing with high pace. To meet the growing demand of construction industries, our institute
+        started B. Tech. course in civil engineering from the academic session 2011-12.</p>
+      <p>All laboratories of the department are having latest technological instruments as per requirement of curriculum
+        and also for research purpose. Civil Engineering Department also provides consultancy services on various
+        technical issues to the society and government departments. The department is supported by a team of faculty
+        members having excellent research credentials as well as extensive industrial experience.</p>
       <H4>Salient Features</H4>
       <ul>
         {[
@@ -105,7 +134,8 @@ export function About() {
         changed nearly every part of society: Cyber security experts protect companies from foreign and domestic
         interference, while everyday people stream movies and connect with video conferencing technology.</p>
       <H4>Start-Up Schemes for Engineers</H4>
-      <p>Startups are ideal for civil engineers. Most of the startups are technology driven, and a civil engineer graduate will understand it better. In fact, a civil engineer graduate is likely to make their start
+      <p>Startups are ideal for civil engineers. Most of the startups are technology driven, and a civil engineer
+        graduate will understand it better. In fact, a civil engineer graduate is likely to make their start
         ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for
         civil engineering graduates.</p>
     </Cont>
@@ -118,14 +148,18 @@ export function VM() {
       <PageHead>Vision and Mission</PageHead>
       <p>The Vision and Mission of the Department of Civil Engineering at MITRC are as follows.</p>
       <H4>Vision</H4>
-      <p>To disseminate technical knowledge along with practical exposure and integrity in the field of Civil Engineering & Technology to create conceptually strong team of graduates at global standards to accept new challenges. </p>
+      <p>To disseminate technical knowledge along with practical exposure and integrity in the field of Civil
+        Engineering & Technology to create conceptually strong team of graduates at global standards to accept new
+        challenges. </p>
       <H4>Mission</H4>
       <ul>
-        <li>To impart knowledge and quality with emphasis on research and other skill development for industry & Society..
+        <li>To impart knowledge and quality with emphasis on research and other skill development for industry &
+          Society..
         </li>
         <li>To create hub of excellence in emerging areas of research including moral & Ethical values.
         </li>
-        <li>To motivate students to pursue higher education and take part in competitive exams & other career enhancing courses.
+        <li>To motivate students to pursue higher education and take part in competitive exams & other career enhancing
+          courses.
         </li>
         <li>To provide quality education, research, public service & consultancy for industrial and societal needs.</li>
       </ul>
@@ -178,7 +212,9 @@ export function Achieve() {
       <br/>
       <H3>Achievements, Awards & Recognitions</H3>
       <ul>
-        <li>Alumni of the department have been placed at reputed Government positions e.g., RPSC (AEN), Banking Sector, SSC-JE,  Defense Services, PSUs, etc.</li>
+        <li>Alumni of the department have been placed at reputed Government positions e.g., RPSC (AEN), Banking Sector,
+          SSC-JE, Defense Services, PSUs, etc.
+        </li>
         <li>Students have been placed in reputed companies e.g. HG Infra, BYSU’s, RTech, Kalpatru etc.</li>
         <li>Students Qualified GATE with good Score and Selected IIT’s & NIT’s for Masters.</li>
       </ul>
@@ -339,32 +375,90 @@ export function Visits() {
 }
 
 export function Testimonials() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const [data2, setData2] = useState([]);
+  const [loading2, setLoading2] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      setData(await listDocuments('departmentsData', 'departmentTestimonials', queryConfig))
+      setLoading(false);
+    })();
+    (async () => {
+      setLoading2(true);
+      setData2(await listDocuments('departmentsData', 'departmentStories', queryConfig))
+      setLoading2(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>Testimonials</PageHead>
-      <img
-        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcivil%2Ftestimonial%2F60913990_2265145676899241_2827174948580098048_n.jpg?alt=media&token=5b1b9fdc-2a50-441b-9c79-e5caed41c681"
-        alt=""/>
-      <img
-        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcivil%2Ftestimonial%2F61654122_2276966702383805_1151582561437220864_n.jpg?alt=media&token=b8170051-3614-4e7d-a3ce-d64776ddd441"
-        alt=""/>
-      <img
-        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcivil%2Ftestimonial%2F61986376_2276966892383786_4584311370056466432_n.jpg?alt=media&token=2fda1090-5eb4-4a50-b97d-6dafcbd57807"
-        alt=""/>
+      <div className="grid">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcivil%2Ftestimonial%2F61654122_2276966702383805_1151582561437220864_n.jpg?alt=media&token=b8170051-3614-4e7d-a3ce-d64776ddd441"
+          alt=""/>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcivil%2Ftestimonial%2F61986376_2276966892383786_4584311370056466432_n.jpg?alt=media&token=2fda1090-5eb4-4a50-b97d-6dafcbd57807"
+          alt=""/>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcivil%2Ftestimonial%2F60913990_2265145676899241_2827174948580098048_n.jpg?alt=media&token=5b1b9fdc-2a50-441b-9c79-e5caed41c681"
+          alt=""/>
+        {data.map(item => (
+          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+        ))}
+      </div>
+      <div className="loader">
+        {loading && <CircularProgress size={30}/>}
+      </div>
+      <br/>
+      {loading2 && <PageHead>Success Stories</PageHead>}
+      {!loading2 && data2.length > 0 && (
+        <>
+          <PageHead>Success Stories</PageHead>
+          <div className="grid">
+            {data2.map(item => (
+              <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+            ))}
+          </div>
+        </>
+      )}
+      <div className="loader">
+        {loading2 && <CircularProgress size={30}/>}
+      </div>
     </Cont>
   );
 }
 
 const yrs = ["2021-2022", "2020-2021", "2019-2020"];
+
 export function Activities() {
   const [active, setActive] = useState(null);
   const [current, setCurrent] = useState(null);
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      if (!current) return;
+      setData([]);
+      setLoading(true);
+      const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig);
+      setData(res.concat(AData[current] ?? []));
+      setLoading(false);
+    })();
+  }, [current]);
 
   return (
     <Cont>
       <PageHead>Activities</PageHead>
       <p>
-        MITRC CE Department carried out various activities for students & teachers for developing their personal, technical and social skills.
+        MITRC CE Department carried out various activities for students & teachers for developing their personal,
+        technical and social skills.
       </p>
       <H4>Activities Carried out</H4>
       <pre>{`    • Seminar
@@ -384,19 +478,22 @@ export function Activities() {
           </li>
         ))}
       </ul>
-      {!!AData[current] && (
+      {current && (
         <>
           <H4>Activities Session {current}</H4>
-          {AData[current].map((item, i) => (
+          <div className="loader">
+            {loading && <CircularProgress size={30}/>}
+          </div>
+          {data.map((item, i) => (
             <Event
               key={i}
               onClick={() => setActive(p => p === i ? null : i)}
               full={i === active}
             >
-              <div className="title">{item.Activity}</div>
-              <div className="text">{item.Remarks}</div>
+              <div className="title">{item.title}</div>
+              <div className="text">{item.description}</div>
               <div className="foot">
-                <div className="date">{item.Date}</div>
+                <div className="date">{item.date}</div>
                 <div className="inst">Click to read more <span>&gt;&gt;</span></div>
               </div>
             </Event>

@@ -1,10 +1,9 @@
-import React, {useState} from "react";
-import {getImagesLab} from "../../../../utils/firebase/department";
-import {Collections} from "../../../../utils/firebase/storage";
-import {Cont, Event, H3, H4, H5, PageHead} from "../../../../components/styledComponents/New";
+import React, {useEffect, useState} from "react";
+import {Cont, Event, H3, H4, PageHead} from "../../../../components/styledComponents/New";
 import {Link} from "react-router-dom";
-import {ActData} from "../../../CampusLifePage/ClubAndActivities/data";
 import {AData} from "./data";
+import {listDocuments} from "../../../../utils/firebase/db";
+import {CircularProgress} from "@mui/material";
 
 const Labs =[
   "Mechanical Workshop",
@@ -21,6 +20,8 @@ const Labs =[
   "Fluid Machinery Lab",
   "Dynamics of Machines Lab",
 ];
+
+const queryConfig = {queries: [{name: "department", operator: "==", value: "ME"}]}
 
 export function Home() {
   return (
@@ -359,12 +360,54 @@ export function Visits() {
 }
 
 export function Testimonials() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const [data2, setData2] = useState([]);
+  const [loading2, setLoading2] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      setData(await listDocuments('departmentsData', 'departmentTestimonials', queryConfig))
+      setLoading(false);
+    })();
+    (async () => {
+      setLoading2(true);
+      setData2(await listDocuments('departmentsData', 'departmentStories', queryConfig))
+      setLoading2(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>Testimonials</PageHead>
-      <img
-        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Ftestimonials%2F110174885_3170667203013746_9030661624025140017_n.jpg?alt=media&token=0788ce66-4c07-454b-becb-77365f8581ec"
-        alt=""/>
+      <div className="grid">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Ftestimonials%2F110174885_3170667203013746_9030661624025140017_n.jpg?alt=media&token=0788ce66-4c07-454b-becb-77365f8581ec"
+          alt=""/>
+        {data.map(item => (
+          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+        ))}
+      </div>
+      <div className="loader">
+        {loading && <CircularProgress size={30}/>}
+      </div>
+      <br/>
+      {loading2 && <PageHead>Success Stories</PageHead>}
+      {!loading2 && data2.length > 0 && (
+        <>
+          <PageHead>Success Stories</PageHead>
+          <div className="grid">
+            {data2.map(item => (
+              <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+            ))}
+          </div>
+        </>
+      )}
+      <div className="loader">
+        {loading2 && <CircularProgress size={30}/>}
+      </div>
     </Cont>
   );
 }
@@ -373,6 +416,20 @@ const yrs = ["2021-2022", "2020-2021", "2019-2020"];
 export function Activities() {
   const [active, setActive] = useState(null);
   const [current, setCurrent] = useState(null);
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      if (!current) return;
+      setData([]);
+      setLoading(true);
+      const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig);
+      setData(res.concat(AData[current] ?? []));
+      setLoading(false);
+    })();
+  }, [current]);
 
   return (
     <Cont>
@@ -398,19 +455,22 @@ export function Activities() {
           </li>
         ))}
       </ul>
-      {!!AData[current] && (
+      {current && (
         <>
           <H4>Activities Session {current}</H4>
-          {AData[current].map((item, i) => (
+          <div className="loader">
+            {loading && <CircularProgress size={30}/>}
+          </div>
+          {data.map((item, i) => (
             <Event
               key={i}
               onClick={() => setActive(p => p === i ? null : i)}
               full={i === active}
             >
-              <div className="title">{item.Activity}</div>
-              <div className="text">{item.Remarks}</div>
+              <div className="title">{item.title}</div>
+              <div className="text">{item.description}</div>
               <div className="foot">
-                <div className="date">{item.Date}</div>
+                <div className="date">{item.date}</div>
                 <div className="inst">Click to read more <span>&gt;&gt;</span></div>
               </div>
             </Event>

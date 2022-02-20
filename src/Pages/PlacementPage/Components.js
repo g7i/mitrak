@@ -5,6 +5,9 @@ import {
   testimonialImages
 } from "./staticData/doc";
 import {Cont, H4, PageHead} from "../../components/styledComponents/New";
+import {useEffect, useState} from "react";
+import {listDocuments} from "../../utils/firebase/db";
+import {CircularProgress} from "@mui/material";
 
 export function About() {
   return (
@@ -132,6 +135,17 @@ export function Journey() {
 }
 
 export function Activities() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      setData(await listDocuments('placementsData', 'placementActivities'))
+      setLoading(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>Placement Activities</PageHead>
@@ -142,12 +156,29 @@ export function Activities() {
         {placementActivitiesImages.map(item => (
           <img key={item.url} src={item.url} alt="Placement Activities" onLoad={e => e.target.classList.add('loaded')}/>
         ))}
+        {data.map(item => (
+          <img key={item.photo} src={item.photo} alt="Placement Activities" onLoad={e => e.target.classList.add('loaded')}/>
+        ))}
+      </div>
+      <div className="loader">
+        {loading && <CircularProgress size={30} />}
       </div>
     </Cont>
   );
 }
 
 export function StudentPlacements() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      setData(await listDocuments('placementsData', 'studentPlacement'))
+      setLoading(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>Student Placement</PageHead>
@@ -164,12 +195,29 @@ export function StudentPlacements() {
         {studentPlacementImages.map(item => (
           <img key={item.url} src={item.url} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')}/>
         ))}
+        {data.map(item => (
+          <img key={item.photo} src={item.photo} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')}/>
+        ))}
+      </div>
+      <div className="loader">
+        {loading && <CircularProgress size={30} />}
       </div>
     </Cont>
   );
 }
 
 export function GovtSelection() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      setData(await listDocuments('placementsData', 'govtSelection'))
+      setLoading(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>Government Selection</PageHead>
@@ -178,8 +226,14 @@ export function GovtSelection() {
       </p>
       <div className="grid">
         {govtSelectionImages.map(item => (
-          <img key={item.url} src={item.url} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.url} src={item.url} alt="" onLoad={e => e.target.classList.add('loaded')}/>
         ))}
+        {data.map(item => (
+          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+        ))}
+      </div>
+      <div className="loader">
+        {loading && <CircularProgress size={30} />}
       </div>
     </Cont>
   );
@@ -212,6 +266,17 @@ export function PlacementStatistics() {
 }
 
 export function Testimonials() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      setData(await listDocuments('placementsData', 'placementTestimonials'))
+      setLoading(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>Testimonials</PageHead>
@@ -223,6 +288,12 @@ export function Testimonials() {
         {testimonialImages.map(item => (
           <img key={item.id} src={item.image} alt="Student Testimonial" onLoad={e => e.target.classList.add('loaded')} />
         ))}
+        {data.map(item => (
+          <img key={item.photo} src={item.photo} alt="Student Testimonial" onLoad={e => e.target.classList.add('loaded')}/>
+        ))}
+      </div>
+      <div className="loader">
+        {loading && <CircularProgress size={30} />}
       </div>
     </Cont>
   );

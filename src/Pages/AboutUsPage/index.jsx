@@ -322,7 +322,7 @@ const AboutUsPage = () => {
       />
       <Container style={{ marginTop: "4vh" }}>
         <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '2.2rem', color: 'purple' }}>
-          Modern Institute of Technology and Research Center
+          Modern Institute of Technology and Research Centre
         </Heading>
         <Paragraph style={{ textAlign: "center" }}>
           (Approved By AICTE and Affiliated to B.T.U.)
@@ -404,7 +404,7 @@ const AboutUsPage = () => {
       </Container>
       <Container style={{ marginTop: "5vh" }}>
         <Heading style={{ textAlign: "center", marginTop: 0, fontSize: '1.5rem' }}>
-          Chairman's Desk
+          Chairperson's Desk
         </Heading>
         <FlexContainer style={{ alignItems: "flex-start" }}>
           <Box>

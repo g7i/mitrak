@@ -158,6 +158,12 @@ export const Cont = styled.section`
   sup {
     font-size: 12px;
   }
+  
+  .loader {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
 `;
 
 export const Event = styled.div`

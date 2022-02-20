@@ -1,14 +1,4 @@
-import {
-  Button,
-  Container,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  OutlinedInput,
-  Select,
-  Snackbar,
-  TextField,
-} from "@mui/material";
+import {Container, FormControl, InputLabel, MenuItem, OutlinedInput, Select, Snackbar, TextField,} from "@mui/material";
 import React, {useEffect} from "react";
 import styled from "styled-components";
 import {LoadingButton} from "@mui/lab";
@@ -18,20 +8,26 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DesktopDatePicker from "@mui/lab/DesktopDatePicker";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import {addDoc, collection} from "firebase/firestore";
-import {Collections, db} from "../../../utils/firebase/db";
+import {db} from "../../../utils/firebase/db";
+import MultipleInput from "../../../components/Input/MultipleInput";
+
+const session = {
+  type: "dropdown",
+  name: "session",
+  options: ["2021-2022", "2020-2021", "2019-2020"],
+};
+
+const month = {
+  type: "dropdown",
+  name: "month",
+  options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+};
 
 const types = {
   studentPlacement: {
     fields: [
-      {
-        type: "dropdown",
-        name: "session",
-        options: ["2021-22", "2020-21", "2019-20"],
-      },
-      {
-        type: "text",
-        name: "month",
-      },
+      session,
+      month,
       {
         type: "text",
         name: "photo",
@@ -41,15 +37,8 @@ const types = {
   },
   placementActivities: {
     fields: [
-      {
-        type: "dropdown",
-        name: "session",
-        options: ["2021-22", "2020-21", "2019-20"],
-      },
-      {
-        type: "text",
-        name: "month",
-      },
+      session,
+      month,
       {
         type: "text",
         name: "photo",
@@ -59,15 +48,8 @@ const types = {
   },
   placementTestimonials: {
     fields: [
-      {
-        type: "dropdown",
-        name: "session",
-        options: ["2021-22", "2020-21", "2019-20"],
-      },
-      {
-        type: "text",
-        name: "month",
-      },
+      session,
+      month,
       {
         type: "text",
         name: "photo",
@@ -86,11 +68,7 @@ const types = {
   },
   placementNews: {
     fields: [
-      {
-        type: "dropdown",
-        name: "session",
-        options: ["2021-22", "2020-21", "2019-20"],
-      },
+      session,
       {
         type: "date",
         name: "date",
@@ -116,11 +94,7 @@ const types = {
   },
   jobNotification: {
     fields: [
-      {
-        type: "dropdown",
-        name: "session",
-        options: ["2021-22", "2020-21", "2019-20"],
-      },
+      session,
       {
         type: "date",
         name: "date",
@@ -142,22 +116,19 @@ const types = {
   },
   departmentActivities: {
     fields: [
-      {
-        type: "dropdown",
-        name: "session",
-        options: ["2021-22", "2020-21", "2019-20"],
-      },
+      session,
       {
         type: "date",
         name: "date",
       },
       {
-        type: "text",
-        name: "photo",
+        type: "links",
+        name: "photos",
       },
       {
-        type: "text",
+        type: "dropdown",
         name: "department",
+        options: ["CSE", "EE", "ME", "CE"],
       },
       {
         type: "text",
@@ -172,11 +143,7 @@ const types = {
   },
   industrialVisits: {
     fields: [
-      {
-        type: "dropdown",
-        name: "session",
-        options: ["2021-22", "2020-21", "2019-20"],
-      },
+      session,
       {
         type: "date",
         name: "date",
@@ -186,8 +153,9 @@ const types = {
         name: "photo",
       },
       {
-        type: "text",
+        type: "dropdown",
         name: "department",
+        options: ["CSE", "EE", "ME", "CE"],
       },
       {
         type: "text",
@@ -207,8 +175,9 @@ const types = {
         name: "photo",
       },
       {
-        type: "text",
+        type: "dropdown",
         name: "department",
+        options: ["CSE", "EE", "ME", "CE"],
       },
     ],
     collection: 'departmentsData',
@@ -220,8 +189,9 @@ const types = {
         name: "photo",
       },
       {
-        type: "text",
+        type: "dropdown",
         name: "department",
+        options: ["CSE", "EE", "ME", "CE"],
       },
     ],
     collection: 'departmentsData',
@@ -233,19 +203,16 @@ const types = {
         name: "photo",
       },
       {
-        type: "text",
+        type: "dropdown",
         name: "department",
+        options: ["CSE", "EE", "ME", "CE"],
       },
     ],
     collection: 'departmentsData',
   },
   clubsAndActivities: {
     fields: [
-      {
-        type: "dropdown",
-        name: "session",
-        options: ["2021-22", "2020-21", "2019-20"],
-      },
+      session,
       {
         type: "dropdown",
         name: "type",
@@ -330,8 +297,8 @@ export default function UploadData() {
     setLoading(true);
     try {
       const obj = {
-        ...currentData,
         type: currentType,
+        ...currentData,
       };
       console.log(obj)
       await addDoc(collection(db, types[currentType].collection), obj);
@@ -361,6 +328,13 @@ export default function UploadData() {
         renderInput={(params) => <TextField {...params} />}
         key={item.name}
         value={currentData[item.name] ?? new Date()}
+      />
+    );
+    if (item.type === "links") return (
+      <MultipleInput
+        value={currentData[item.name] ?? []}
+        label={item.name}
+        onChange={arr => setCurrentData(p => ({...p, [item.name]: arr}))}
       />
     );
     return (

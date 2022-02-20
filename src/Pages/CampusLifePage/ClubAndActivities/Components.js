@@ -1,12 +1,29 @@
 import {Link} from "react-router-dom";
 import {ActData, CSRData, GovtData} from "./data";
-import {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Cont, Event, H4, PageHead} from "../../../components/styledComponents/New";
+import {listDocuments} from "../../../utils/firebase/db";
+import {AData} from "../../AcademicsPage/departments/cse/data";
+import {CircularProgress} from "@mui/material";
 
 const yrs = ["2021-2022", "2020-2021", "2019-2020"];
 export function Activities() {
   const [active, setActive] = useState(null);
   const [current, setCurrent] = useState(null);
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      if (!current) return;
+      setData([]);
+      setLoading(true);
+      const res = await listDocuments('clubsNActivities', 'Session');
+      setData(res.concat(AData[current] ?? []));
+      setLoading(false);
+    })();
+  }, [current]);
 
   return (
     <Cont>
@@ -25,10 +42,13 @@ export function Activities() {
           </li>
         ))}
       </ul>
-      {!!ActData[current] && (
+      {current && (
         <>
           <H4>Activities Session {current}</H4>
-          {ActData[current].map(item => (
+          <div className="loader">
+            {loading && <CircularProgress size={30} />}
+          </div>
+          {data.map(item => (
             <Event
               key={item.id}
               onClick={() => setActive(p => p === item.id ? null : item.id)}
@@ -86,6 +106,18 @@ export function Clubs() {
 export function Govt() {
   const [active, setActive] = useState(null);
 
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      const res = await listDocuments('clubsNActivities', 'Govt. Initiated');
+      setData(res.concat(GovtData));
+      setLoading(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>Government Initiated Events</PageHead>
@@ -93,7 +125,10 @@ export function Govt() {
         The Society aims to promote synergy among the students and faculties by promoting interactions and exchange of ideas and encourage students to get involved in organizing and coordinating events of interest to its members and others.</p>
       <p>An excellent and well-rounded academic course always includes extra-curricular activities as a part of the main course to provide the students with the essential information as well as a way for them to develop and streamline their various skills, develop their personalities and character.</p>
       <H4>Events</H4>
-      {GovtData.map(govt => (
+      <div className="loader">
+        {loading && <CircularProgress size={30} />}
+      </div>
+      {data.map(govt => (
         <Event
           key={govt.id}
           onClick={() => setActive(p => p === govt.id ? null : govt.id)}
@@ -114,6 +149,18 @@ export function Govt() {
 export function CSR() {
   const [active, setActive] = useState(null);
 
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      const res = await listDocuments('clubsNActivities', 'CSR & NSS');
+      setData(res.concat(CSRData));
+      setLoading(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>CSR & NSS Activities</PageHead>
@@ -121,7 +168,10 @@ export function CSR() {
         The Society aims to promote synergy among the students and faculties by promoting interactions and exchange of ideas and encourage students to get involved in organizing and coordinating events of interest to its members and others.</p>
       <p>An excellent and well-rounded academic course always includes extra-curricular activities as a part of the main course to provide the students with the essential information as well as a way for them to develop and streamline their various skills, develop their personalities and character.</p>
       <H4>Activities</H4>
-      {CSRData.map(csr => (
+      <div className="loader">
+        {loading && <CircularProgress size={30} />}
+      </div>
+      {data.map(csr => (
         <Event
           key={csr.id}
           onClick={() => setActive(p => p === csr.id ? null : csr.id)}

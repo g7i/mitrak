@@ -1,14 +1,15 @@
-import React, {useState} from "react";
-import {getImagesLab} from "../../../../utils/firebase/department";
-import {Collections} from "../../../../utils/firebase/storage";
+import React, {useEffect, useState} from "react";
 import {Cont, Event, H3, H4, H5, PageHead} from "../../../../components/styledComponents/New";
 import {Link} from "react-router-dom";
-import {ActData} from "../../../CampusLifePage/ClubAndActivities/data";
 import {AData} from "./data";
+import {listDocuments} from "../../../../utils/firebase/db";
+import {CircularProgress} from "@mui/material";
 
 const Labs = [
   "Machine Lab", "High Voltage Engg. Lab", "Power System Lab", "Control System Lab", "EEE Lab", "Measurement Lab", "Power Electronics Lab", "Circuit Analysis Lab etc"
 ];
+
+const queryConfig = {queries: [{name: "department", operator: "==", value: "EE"}]}
 
 export function Home() {
   return (
@@ -42,9 +43,8 @@ export function Home() {
           "Jobs in Power System",
         ].map(f => <li key={f}>{f}</li>)}
       </ul>
-      <img src="https://a.ilovecoding.org/img/_blogs/software-development8.png" alt=""/>
-      <H3>Rising fields in CSE that are hitting the electrical industry</H3>
-      <pre>{`       • Electric Vehicle
+      <H3>Rising fields in EE that are hitting the electrical industry</H3>
+      <pre>{`    • Electric Vehicle
     • Smart Grid
     • IOT
       `}</pre>
@@ -115,7 +115,7 @@ export function Home() {
       <p>KVS, Indian Railways (Section Engineer, Jr. Engineer, Traffic Apprentice, Commercial Apprentice, Goods Guard, Station Master, Banking(Clerk, PO, SO) & SSC, IBPS  many more.</p>
       <H3>Start-Up Schemes for Engineers</H3>
       <p>Startups are ideal for Electrical Engineering graduates. Most of the startups are technology driven, and a Electrical Engineering graduate will understand it better. In fact, a Electrical Engineering graduate is likely to make their start ideas successful than non-technical persons. The following is the list of the top 10 business startup ideas for Electrical Engineering graduates.</p>
-      <H4>Notable Startup in CSE</H4>
+      <H4>Notable Startup in EE</H4>
       <ul>
         <li>Electric vehicle</li>
         <li>Renewable energy like solar, related products.</li>
@@ -202,7 +202,7 @@ export function Infra() {
         <li><strong>DG SET Available of 320 KVA</strong></li>
         <li><strong>Open Library with DELNET.</strong></li>
       </ul>
-      <H4>CSE Labs at MITRC</H4>
+      <H4>EE Labs at MITRC</H4>
       <ul>
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
@@ -409,6 +409,25 @@ export function Visits() {
 }
 
 export function Testimonials() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const [data2, setData2] = useState([]);
+  const [loading2, setLoading2] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      setLoading(true);
+      setData(await listDocuments('departmentsData', 'departmentTestimonials', queryConfig))
+      setLoading(false);
+    })();
+    (async () => {
+      setLoading2(true);
+      setData2(await listDocuments('departmentsData', 'departmentStories', queryConfig))
+      setLoading2(false);
+    })();
+  }, []);
+
   return (
     <Cont>
       <PageHead>Testimonials</PageHead>
@@ -431,6 +450,12 @@ export function Testimonials() {
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F5.jpg?alt=media&token=419470ee-6b20-4442-8334-7a8152736480"
           alt=""/>
+        {data.map(item => (
+          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+        ))}
+      </div>
+      <div className="loader">
+        {loading && <CircularProgress size={30}/>}
       </div>
       <br/>
       <PageHead>Success Stories</PageHead>
@@ -448,6 +473,12 @@ export function Testimonials() {
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F5.jpg?alt=media&token=827fb536-c794-46c4-ac2e-2721d654aa7b"
           alt=""/>
         <img src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F6.jpg?alt=media&token=b760f077-fa0c-46bc-9eb8-357180ec5610" alt=""/>
+        {data2.map(item => (
+          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+        ))}
+      </div>
+      <div className="loader">
+        {loading2 && <CircularProgress size={30}/>}
       </div>
     </Cont>
   );
@@ -457,6 +488,20 @@ const yrs = ["2021-2022", "2020-2021", "2019-2020"];
 export function Activities() {
   const [active, setActive] = useState(null);
   const [current, setCurrent] = useState(null);
+
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      if (!current) return;
+      setData([]);
+      setLoading(true);
+      const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig);
+      setData(res.concat(AData[current] ?? []));
+      setLoading(false);
+    })();
+  }, [current]);
 
   return (
     <Cont>
@@ -482,19 +527,22 @@ export function Activities() {
           </li>
         ))}
       </ul>
-      {!!AData[current] && (
+      {current && (
         <>
           <H4>Activities Session {current}</H4>
-          {AData[current].map((item, i) => (
+          <div className="loader">
+            {loading && <CircularProgress size={30}/>}
+          </div>
+          {data.map((item, i) => (
             <Event
               key={i}
               onClick={() => setActive(p => p === i ? null : i)}
               full={i === active}
             >
-              <div className="title">{item.Activity}</div>
-              <div className="text">{item.Remarks}</div>
+              <div className="title">{item.title}</div>
+              <div className="text">{item.description}</div>
               <div className="foot">
-                <div className="date">{item.Date}</div>
+                <div className="date">{item.date}</div>
                 <div className="inst">Click to read more <span>&gt;&gt;</span></div>
               </div>
             </Event>

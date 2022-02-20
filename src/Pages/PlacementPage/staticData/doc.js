@@ -1021,10 +1021,6 @@ export const studentPlacementImages = [
     url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Fvijaya.jpg?alt=media&token=8fce6efa-2e6e-4112-9508-23e56bc350a7",
     size: "small",
   },
-  {
-    url: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Fmegha.jpg?alt=media&token=e8235c9e-9cbc-4c6a-a616-b4c18a1dccfc",
-    size: "small",
-  },
 ];
 
 export const govtSelectionImages = [

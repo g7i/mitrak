@@ -7,7 +7,6 @@ import { amenities, studentaffair, clubandactivities } from './staticData/doc';
 import { FillImage, HalfImage, Heading, HyperLink, ListItem, PageContainer, Paragraph } from '../../components/styledComponents/GlobalComponents';
 import ComplaintForm from './ComplaintForm';
 import BusChart from "./BusChart";
-import {getImagesFromStorage} from "../../utils/firebase/images";
 import Slider from "react-slick";
 
 const CampusLife = () => {

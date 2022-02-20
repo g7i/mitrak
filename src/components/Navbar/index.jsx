@@ -113,7 +113,7 @@ const Navbar = () => {
           }
           alt="Mitrc Logo"
         />
-        <p>REAP CODE 60</p>
+        <p>REAP CODE 60 & RMAP CODE 265</p>
       </ImageLogoLink>
 
       <Hamburger onClick={() => setShowMobileMenu(!showMobileMenu)}>

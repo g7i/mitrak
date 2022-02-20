@@ -89,7 +89,7 @@ const FeeStructurePage = () => {
                         <td>MBA</td>
                         <td>39500</td>
                         <td>21000</td>
-                        <td>2500</td>
+                        <td>1000</td>
                         <td>7500</td>
                     </tr>
                     </tbody>
