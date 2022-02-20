@@ -3,7 +3,6 @@ import {ActData, CSRData, GovtData} from "./data";
 import React, {useEffect, useState} from "react";
 import {Cont, Event, H4, PageHead} from "../../../components/styledComponents/New";
 import {listDocuments} from "../../../utils/firebase/db";
-import {AData} from "../../AcademicsPage/departments/cse/data";
 import {CircularProgress} from "@mui/material";
 
 const yrs = ["2021-2022", "2020-2021", "2019-2020"];
@@ -20,7 +19,7 @@ export function Activities() {
       setData([]);
       setLoading(true);
       const res = await listDocuments('clubsNActivities', 'Session');
-      setData(res.concat(AData[current] ?? []));
+      setData(res.concat(ActData[current] ?? []));
       setLoading(false);
     })();
   }, [current]);
