@@ -19,6 +19,11 @@ const OrganizationaChartPage = () => {
           "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Forganization-chart-mitrc.jpg?alt=media&token=b298fd5d-282d-43de-b786-1cd86e37af8c"
         }
       />
+      <FillImage
+        src={
+          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/ACADEMICS%2FMANDATORY%20DISCLOSURE%2FORGANISATION%20CHART.jpg?alt=media&token=43f30aef-93af-48c0-a429-5746dfbd60cf"
+        }
+      />
     </div>
   );
 };

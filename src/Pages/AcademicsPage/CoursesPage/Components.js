@@ -4,6 +4,10 @@ export function BTech() {
   return (
     <Cont>
       <PageHead>B.Tech</PageHead>
+      <img
+        style={{ width: '40%', marginLeft: '25%' }}
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/ACADEMICS%2FB.TECH%2Fb.tech-removebg-preview.jpg?alt=media&token=c60978a9-5af0-4cce-b1e0-bb5aaedc5675"
+        alt=""/>
       <p>
         B.Tech stands for Bachelor of Technology. This is an undergraduate course in engineering that awards you a degree at the end of four years of study. This degree in engineering is your stepping stone to a career in engineering. In India, B.Tech engineering courses are regulated by All India Council for Technical Education (AICTE).
       </p>
@@ -72,6 +76,10 @@ export function MTech() {
   return (
     <Cont>
       <PageHead>M.Tech</PageHead>
+      <img
+        style={{ width: '40%', marginLeft: '25%' }}
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/ACADEMICS%2FM.TECH%2Fcollage22__2_-removebg-preview.png?alt=media&token=37b7716b-4f92-46dd-81e7-7fc5dea7635a"
+        alt=""/>
       <p>
         MTech is Master of Technology. MTech is a professional postgraduate engineering master degree programme awarded to candidates after completion of two years of study in the discipline of engineering. This degree is predicated in a specific branch of engineering.
       </p>
