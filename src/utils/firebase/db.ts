@@ -19,7 +19,8 @@ type ListConfig = {
     }[],
 };
 
-export async function listDocuments(coll: string, type: string, { queries = [] }: ListConfig ): Promise<[] | null> {
+export async function listDocuments(coll: string, type: string, config?: ListConfig ): Promise<[] | null> {
+    const { queries = [] } = config ?? {};
     const data: [] = [];
     try {
         const q = query(collection(db, coll), where("type", "==", type), ...queries.map(q => where(q.name, q.operator, q.value)));
