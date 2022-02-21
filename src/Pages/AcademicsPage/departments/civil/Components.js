@@ -448,7 +448,8 @@ export function Activities() {
       setData([]);
       setLoading(true);
       const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig);
-      setData(res.concat(AData[current] ?? []));
+      setData(res);
+      // setData(res.concat(AData[current] ?? []));
       setLoading(false);
     })();
   }, [current]);

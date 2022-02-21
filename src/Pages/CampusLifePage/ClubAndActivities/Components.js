@@ -19,7 +19,8 @@ export function Activities() {
       setData([]);
       setLoading(true);
       const res = await listDocuments('clubsNActivities', 'Session');
-      setData(res.concat(ActData[current] ?? []));
+      setData(res);
+      // setData(res.concat(ActData[current] ?? []));
       setLoading(false);
     })();
   }, [current]);
@@ -112,7 +113,8 @@ export function Govt() {
     (async () => {
       setLoading(true);
       const res = await listDocuments('clubsNActivities', 'Govt. Initiated');
-      setData(res.concat(GovtData));
+      // setData(res.concat(GovtData));
+      setData(res);
       setLoading(false);
     })();
   }, []);
@@ -155,7 +157,8 @@ export function CSR() {
     (async () => {
       setLoading(true);
       const res = await listDocuments('clubsNActivities', 'CSR & NSS');
-      setData(res.concat(CSRData));
+      // setData(res.concat(CSRData));
+      setData(res);
       setLoading(false);
     })();
   }, []);
