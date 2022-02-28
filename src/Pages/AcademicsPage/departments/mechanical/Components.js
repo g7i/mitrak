@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import {AData} from "./data";
 import {listDocuments} from "../../../../utils/firebase/db";
 import {CircularProgress} from "@mui/material";
+import {getImagesLab} from "../../../../utils/firebase/department";
+import {Collections} from "../../../../utils/firebase/storage";
 
 const Labs =[
   "Mechanical Workshop",
@@ -21,7 +23,12 @@ const Labs =[
   "Dynamics of Machines Lab",
 ];
 
-const queryConfig = {queries: [{name: "department", operator: "==", value: "ME"}]}
+const queryConfig = {queries: [{name: "department", operator: "==", value: "ME"}]};
+const getQueryConfig = session => {
+  const arr = [];
+  if (session) arr.push({name: "session", operator: "==", value: session})
+  return { queries: [{name: "department", operator: "==", value: "ME"}, ...arr] };
+};
 
 export function Home() {
   return (
@@ -124,6 +131,13 @@ export function VM() {
 }
 
 export function Infra() {
+  const [labImages, setLabImages] = React.useState([]);
+  React.useEffect(() => {
+    getImagesLab(Collections.departments.machanical).then((imageList) => {
+      setLabImages(imageList);
+    });
+  }, []);
+
   return (
     <Cont>
       <PageHead>Infrastructure</PageHead>
@@ -146,19 +160,7 @@ export function Infra() {
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
       <div className="grid">
-        {[
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FWhatsApp%20Image%202021-10-30%20at%201.15.59%20PM%20(11).jpeg?alt=media&token=f769fb0c-c8f9-4b40-a72e-ac31c21f0664",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FWhatsApp%20Image%202021-10-30%20at%201.15.59%20PM%20(2).jpeg?alt=media&token=929e735a-5e94-43fe-bc48-5abd2db398e8",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FWhatsApp%20Image%202021-10-30%20at%201.15.59%20PM%20(4).jpeg?alt=media&token=78eea311-7c13-4f7d-8e3e-2786db673ce5",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02032.JPG?alt=media&token=0a903132-86e3-4658-b197-0eed7ea07bd2",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02035.JPG?alt=media&token=a9148ff5-3665-4560-be3e-63add351917d",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02036.JPG?alt=media&token=3eedfef9-1ced-4008-baf8-727fb6661966",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02038.JPG?alt=media&token=6ecfc0b6-163d-4ef7-960e-032bd9a72235",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02040.JPG?alt=media&token=f195834c-3715-49df-ab30-097fd264d16e",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02042.JPG?alt=media&token=bcacb072-d3ec-481a-973e-a4cec43b0f6c",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02046.JPG?alt=media&token=116793d3-a861-45b7-aee9-9e5819d8ba63",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fmechanical%2Flabs%2FLAB%2FDSC02048.JPG?alt=media&token=fe7fd3d8-1411-468e-a8bf-f29248b17cb5"
-        ].map(item => (
+        {labImages.map(item => (
           <img key={item} src={item} alt={item} onLoad={e => e.target.classList.add('loaded')}/>
         ))}
       </div>
@@ -425,7 +427,7 @@ export function Activities() {
       if (!current) return;
       setData([]);
       setLoading(true);
-      const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig);
+      const res = await listDocuments('departmentsData', 'departmentActivities', getQueryConfig(current));
       // setData(res.concat(AData[current] ?? []));
       setData(res);
       setLoading(false);
@@ -470,8 +472,9 @@ export function Activities() {
             >
               <div className="title">{item.title}</div>
               <div className="text">{item.description}</div>
+              {i === active && item.photos.map(p => <img src={p}/>)}
               <div className="foot">
-                <div className="date">{item.date}</div>
+                <div className="date">{item.date.toDate().toDateString()}</div>
                 <div className="inst">Click to read more <span>&gt;&gt;</span></div>
               </div>
             </Event>

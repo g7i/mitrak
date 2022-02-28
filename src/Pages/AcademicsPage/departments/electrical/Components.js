@@ -4,12 +4,18 @@ import {Link} from "react-router-dom";
 import {AData} from "./data";
 import {listDocuments} from "../../../../utils/firebase/db";
 import {CircularProgress} from "@mui/material";
+import {getImagesLab} from "../../../../utils/firebase/department";
 
 const Labs = [
   "Machine Lab", "High Voltage Engg. Lab", "Power System Lab", "Control System Lab", "EEE Lab", "Measurement Lab", "Power Electronics Lab", "Circuit Analysis Lab etc"
 ];
 
-const queryConfig = {queries: [{name: "department", operator: "==", value: "EE"}]}
+const queryConfig = {queries: [{name: "department", operator: "==", value: "EE"}]};
+const getQueryConfig = session => {
+  const arr = [];
+  if (session) arr.push({name: "session", operator: "==", value: session})
+  return { queries: [{name: "department", operator: "==", value: "EE"}, ...arr] };
+};
 
 export function Home() {
   return (
@@ -185,6 +191,13 @@ export function VM() {
 }
 
 export function Infra() {
+  const [labImages, setLabImages] = React.useState([]);
+  React.useEffect(() => {
+    getImagesLab('ee').then((imageList) => {
+      setLabImages(imageList);
+    });
+  }, []);
+
   return (
     <Cont>
       <PageHead>Infrastructure</PageHead>
@@ -207,27 +220,7 @@ export function Infra() {
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
       <div className="grid">
-        {[
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F11.jpg?alt=media&token=7fd7a4ec-98e0-43b9-9cf3-463b7da9beda",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F1.jpg?alt=media&token=f49676c8-e030-4111-9e63-111f53f320ac",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F10.jpg?alt=media&token=52df8b90-d699-4950-a6f6-cd155eece5fe",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F2.jpg?alt=media&token=d9342f78-55da-43ae-9c8d-191821831717",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F3.jpg?alt=media&token=a8ad9fad-2c0d-4384-9fc5-2326d987c34a",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F4.jpg?alt=media&token=ff632fac-accc-4608-af82-7157ddfaebd8",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F5.jpg?alt=media&token=6f59bace-a301-4d4e-9447-a4476183dacb",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F6.jpg?alt=media&token=ccdfddfe-cb66-4972-96dd-17f5b7936e17",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F7.jpg?alt=media&token=fb86e85e-ceaf-49e6-ab47-faf95d14a50d",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F8.jpg?alt=media&token=ab24039b-fb52-4e23-adbe-ed97afca20d0",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F9.jpg?alt=media&token=6994eb22-80f7-4497-85ab-4a4ad0bab93b",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2F9.jpg?alt=media&token=6994eb22-80f7-4497-85ab-4a4ad0bab93b",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F10.jpg?alt=media&token=d26c4cca-041f-418f-81c8-4211b7f1196e",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F2.jpg?alt=media&token=f2dac155-f85c-4e7b-85cf-7249f4028ae6",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F3.jpg?alt=media&token=bb6ce047-1afb-4807-b1d1-be6f0a469033",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F5.jpg?alt=media&token=5cb7cfb9-de98-456e-b69e-91ae04ee61dc",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F6.jpg?alt=media&token=2e3fa974-c169-426a-ab12-7c4ee8736874",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F7.jpg?alt=media&token=2820bb5e-0697-4100-abd9-f72e2db5fac5",
-          "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fee%2Flabs%2Fpsp%20lab%2F8.jpg?alt=media&token=ef155f17-d487-4cbe-baad-f179c271b43c"
-        ].map(item => (
+        {labImages.map(item => (
           <img key={item} src={item} alt={item} onLoad={e => e.target.classList.add('loaded')}/>
         ))}
       </div>
@@ -497,7 +490,7 @@ export function Activities() {
       if (!current) return;
       setData([]);
       setLoading(true);
-      const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig);
+      const res = await listDocuments('departmentsData', 'departmentActivities', getQueryConfig(current));
       // setData(res.concat(AData[current] ?? []));
       setData(res);
       setLoading(false);
@@ -542,8 +535,9 @@ export function Activities() {
             >
               <div className="title">{item.title}</div>
               <div className="text">{item.description}</div>
+              {i === active && item.photos.map(p => <img src={p}/>)}
               <div className="foot">
-                <div className="date">{item.date}</div>
+                <div className="date">{item.date.toDate().toDateString()}</div>
                 <div className="inst">Click to read more <span>&gt;&gt;</span></div>
               </div>
             </Event>

@@ -15,12 +15,27 @@ const session = {
   type: "dropdown",
   name: "session",
   options: ["2021-2022", "2020-2021", "2019-2020"],
+  default: '2021-2022',
 };
 
 const month = {
   type: "dropdown",
   name: "month",
   options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+  default: "January",
+};
+
+const department = {
+  type: "dropdown",
+  name: "department",
+  options: ["CSE", "EE", "ME", "CE"],
+  default: "CSE",
+};
+
+const date = {
+  type: "date",
+  name: "date",
+  default: new Date(),
 };
 
 const types = {
@@ -69,10 +84,7 @@ const types = {
   placementNews: {
     fields: [
       session,
-      {
-        type: "date",
-        name: "date",
-      },
+      date,
       {
         type: "text",
         name: "company",
@@ -95,10 +107,7 @@ const types = {
   jobNotification: {
     fields: [
       session,
-      {
-        type: "date",
-        name: "date",
-      },
+      date,
       {
         type: "text",
         name: "company",
@@ -117,19 +126,12 @@ const types = {
   departmentActivities: {
     fields: [
       session,
-      {
-        type: "date",
-        name: "date",
-      },
+      date,
       {
         type: "links",
         name: "photos",
       },
-      {
-        type: "dropdown",
-        name: "department",
-        options: ["CSE", "EE", "ME", "CE"],
-      },
+      department,
       {
         type: "text",
         name: "description",
@@ -144,19 +146,12 @@ const types = {
   industrialVisits: {
     fields: [
       session,
-      {
-        type: "date",
-        name: "date",
-      },
+      date,
       {
         type: "text",
         name: "photo",
       },
-      {
-        type: "dropdown",
-        name: "department",
-        options: ["CSE", "EE", "ME", "CE"],
-      },
+      department,
       {
         type: "text",
         name: "description",
@@ -174,11 +169,7 @@ const types = {
         type: "text",
         name: "photo",
       },
-      {
-        type: "dropdown",
-        name: "department",
-        options: ["CSE", "EE", "ME", "CE"],
-      },
+      department,
     ],
     collection: 'departmentsData',
   },
@@ -188,11 +179,7 @@ const types = {
         type: "text",
         name: "photo",
       },
-      {
-        type: "dropdown",
-        name: "department",
-        options: ["CSE", "EE", "ME", "CE"],
-      },
+      department,
     ],
     collection: 'departmentsData',
   },
@@ -202,11 +189,7 @@ const types = {
         type: "text",
         name: "photo",
       },
-      {
-        type: "dropdown",
-        name: "department",
-        options: ["CSE", "EE", "ME", "CE"],
-      },
+      department,
     ],
     collection: 'departmentsData',
   },
@@ -217,11 +200,9 @@ const types = {
         type: "dropdown",
         name: "type",
         options: ["Session", "CSR & NSS", "Govt. Initiated"],
+        default: "Session",
       },
-      {
-        type: "date",
-        name: "date",
-      },
+      date,
       {
         type: "text",
         name: "photo",
@@ -290,7 +271,12 @@ export default function UploadData() {
   const [loading , setLoading] = React.useState(false);
   const [open, setOpen] = React.useState(null);
 
-  useEffect(() => setCurrentData({}), [currentType])
+  useEffect(() => {
+    const fields = types[currentType].fields.filter(f => f.default);
+    const obj = {};
+    fields.forEach(f => obj[f.name] = f.default);
+    setCurrentData(obj);
+  }, [currentType])
 
   const onSubmit = async () => {
     if (!Object.keys(currentData).length) return;
@@ -300,9 +286,7 @@ export default function UploadData() {
         type: currentType,
         ...currentData,
       };
-      console.log(obj)
       await addDoc(collection(db, types[currentType].collection), obj);
-      setCurrentData({});
       setOpen("success");
     } catch (e) {
       console.log(e)

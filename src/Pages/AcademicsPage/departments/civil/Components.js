@@ -25,6 +25,12 @@ const Labs = [
 
 const queryConfig = {queries: [{name: "department", operator: "==", value: "CE"}]}
 
+const getQueryConfig = session => {
+  const arr = [];
+  if (session) arr.push({name: "session", operator: "==", value: session})
+  return { queries: [{name: "department", operator: "==", value: "CE"}, ...arr] };
+};
+
 export function Home() {
   return (
     <Cont>
@@ -447,7 +453,7 @@ export function Activities() {
       if (!current) return;
       setData([]);
       setLoading(true);
-      const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig);
+      const res = await listDocuments('departmentsData', 'departmentActivities', getQueryConfig(current));
       setData(res);
       // setData(res.concat(AData[current] ?? []));
       setLoading(false);
@@ -493,8 +499,9 @@ export function Activities() {
             >
               <div className="title">{item.title}</div>
               <div className="text">{item.description}</div>
+              {i === active && item.photos.map(p => <img src={p}/>)}
               <div className="foot">
-                <div className="date">{item.date}</div>
+                <div className="date">{item.date.toDate().toDateString()}</div>
                 <div className="inst">Click to read more <span>&gt;&gt;</span></div>
               </div>
             </Event>

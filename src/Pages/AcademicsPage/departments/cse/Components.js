@@ -24,7 +24,11 @@ const Labs = [
   "Android Lab",
 ];
 
-const queryConfig = { queries: [{name: "department", operator: "==", value: "CSE"}] }
+const queryConfig = session => {
+  const arr = [];
+  if (session) arr.push({name: "session", operator: "==", value: session})
+  return { queries: [{name: "department", operator: "==", value: "CSE"}, ...arr] };
+};
 
 export function Home() {
   return (
@@ -526,12 +530,12 @@ export function Testimonials() {
   useEffect(() => {
     (async () => {
       setLoading(true);
-      setData(await listDocuments('departmentsData', 'departmentTestimonials', queryConfig))
+      setData(await listDocuments('departmentsData', 'departmentTestimonials', queryConfig()))
       setLoading(false);
     })();
     (async () => {
       setLoading2(true);
-      setData2(await listDocuments('departmentsData', 'departmentStories', queryConfig))
+      setData2(await listDocuments('departmentsData', 'departmentStories', queryConfig()))
       setLoading2(false);
     })();
   }, []);
@@ -605,7 +609,7 @@ export function Activities() {
       if (!current) return;
       setData([]);
       setLoading(true);
-      const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig);
+      const res = await listDocuments('departmentsData', 'departmentActivities', queryConfig(current));
       // setData(res.concat(AData[current] ?? []));
       setData(res);
       setLoading(false);
@@ -650,8 +654,9 @@ export function Activities() {
             >
               <div className="title">{item.title}</div>
               <div className="text">{item.description}</div>
+              {i === active && item.photos.map(p => <img src={p}/>)}
               <div className="foot">
-                <div className="date">{item.date}</div>
+                <div className="date">{item.date.toDate().toDateString()}</div>
                 <div className="inst">Click to read more <span>&gt;&gt;</span></div>
               </div>
             </Event>
