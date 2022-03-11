@@ -2,9 +2,10 @@ import React, {useEffect, useState} from "react";
 import {Cont, Event, H3, H4, H5, PageHead} from "../../../../components/styledComponents/New";
 import {Link} from "react-router-dom";
 import {AData} from "./data";
-import {listDocuments} from "../../../../utils/firebase/db";
+import {listDocuments, listLabs} from "../../../../utils/firebase/db";
 import {CircularProgress} from "@mui/material";
 import {getImagesLab} from "../../../../utils/firebase/department";
+import { LabCard } from "../Components";
 
 const Labs = [
   "Machine Lab", "High Voltage Engg. Lab", "Power System Lab", "Control System Lab", "EEE Lab", "Measurement Lab", "Power Electronics Lab", "Circuit Analysis Lab etc"
@@ -192,10 +193,14 @@ export function VM() {
 
 export function Infra() {
   const [labImages, setLabImages] = React.useState([]);
-  React.useEffect(() => {
+  const [labs, setLabs] = React.useState([]);
+
+  React.useEffect(async() => {
     getImagesLab('ee').then((imageList) => {
       setLabImages(imageList);
     });
+    const labsData = await listLabs();
+    setLabs(labsData)
   }, []);
 
   return (
@@ -220,9 +225,20 @@ export function Infra() {
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
       <div className="grid">
-        {labImages.map(item => (
+        {/* {labImages.map(item => (
           <img key={item} src={item} alt={item} onLoad={e => e.target.classList.add('loaded')}/>
-        ))}
+        ))} */}
+        {
+          labs.map(lab => (
+            <>
+              {
+                lab?.Department == "electrical" && (
+                  <LabCard lab={lab} />
+                )
+              }
+            </>
+          ))
+        }
       </div>
     </Cont>
   );

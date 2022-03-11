@@ -101,3 +101,11 @@ code {
   place-items: center;
   margin-bottom: 5rem;
 }
+
+.text_trim {
+  display: inline-block;
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}

@@ -252,6 +252,36 @@ const types = {
     ],
     collection: 'eventsData',
   },
+  labsAndActivities: {
+    fields: [
+      {
+        type: "dropdown",
+        name: "Department",
+        options: ["computer", "mechanical", "electrical", "civil"],
+        default: "computer"
+      },
+      {
+        type: "text",
+        name: "Photo"
+      },
+      {
+        type: "text",
+        name: "Name",
+      },
+      {
+        type: "dropdown",
+        name: "Category",
+        options: ["Trainer Kit","Computer Lab","Machine","Product"],
+        default: "Trainer Kit",
+      },
+      {
+        type: "text",
+        multiline: true,
+        name: "Description",
+      },
+    ],
+    collection: 'labs',
+  },
 };
 
 const ITEM_HEIGHT = 48;
@@ -270,6 +300,9 @@ export default function UploadData() {
   const [currentData, setCurrentData] = React.useState({});
   const [loading , setLoading] = React.useState(false);
   const [open, setOpen] = React.useState(null);
+
+  // console.log('current', currentData); 
+
 
   useEffect(() => {
     const fields = types[currentType].fields.filter(f => f.default);
@@ -301,6 +334,7 @@ export default function UploadData() {
         label={item.name}
         onChange={e => setCurrentData(p => ({...p, [item.name]: e.target.value}))}
         key={item.name}
+        multiline={item.multiline}
         value={currentData[item.name] ?? ''}
       />
     );

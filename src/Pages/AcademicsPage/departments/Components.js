@@ -4,6 +4,15 @@ import {getImagesLab} from "../../../utils/firebase/department";
 import {Collections} from "../../../utils/firebase/storage";
 import ImageSlider from "./components/imageSlider";
 import {useHistory} from "react-router-dom";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
 
 
 export function CSE() {
@@ -171,4 +180,78 @@ export function ME() {
       <p>A comprehensive list of start-up schemes introduced by Govt. of India in Last few years. The Indian govt. has introduced over 50+ start-up for engineers, each startup scheme is boosting towards New Era & Dream. There are closed to 4400 technology start-up exist in India & the No. is expected to reach over 10,000 by 2020. India is also at 3rd place behind US & Britain in terms of start-up.</p>
     </Cont>
   );
+}
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+
+export function BasicModal({ showModal, data }) {
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => setOpen(false);
+
+  React.useEffect(() => {
+    setOpen(showModal)
+  },[showModal])
+
+  return (
+    <div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <CardMedia
+            component="img"
+            height="140"
+            image={data.Photo}
+            alt="green iguana"
+          />
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            {data?.Name}
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            {data?.Description}
+          </Typography>
+        </Box>
+      </Modal>
+    </div>
+  );
+}
+
+
+export const LabCard = ({ lab }) => {
+  const [showModal, setShowModal] = React.useState(false);
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={lab.Photo}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {lab?.Name}
+        </Typography>
+        <Typography variant="body2" color="text.secondary" className="text_trim">
+          {lab?.Description}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" onClick={() => setShowModal(prev => !prev)}>Learn More</Button>
+      </CardActions>
+      <BasicModal showModal={showModal} data={lab} />
+    </Card>
+  )
 }

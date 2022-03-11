@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from "react";
-import {getImagesLab} from "../../../../utils/firebase/department";
-import {Collections} from "../../../../utils/firebase/storage";
-import {Cont, Event, H3, H4, H5, PageHead} from "../../../../components/styledComponents/New";
-import {Link} from "react-router-dom";
-import {AData} from "./data";
-import {listDocuments} from "../../../../utils/firebase/db";
-import {CircularProgress} from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { getImagesLab } from "../../../../utils/firebase/department";
+import { Collections } from "../../../../utils/firebase/storage";
+import { Cont, Event, H3, H4, H5, PageHead, Right } from "../../../../components/styledComponents/New";
+import { Link } from "react-router-dom";
+import { listDocuments, listLabs } from "../../../../utils/firebase/db";
+
+import { CircularProgress } from "@mui/material";
+import { LabCard } from "../Components";
 
 const Labs = [
   "Data Structure Lab",
@@ -26,8 +27,8 @@ const Labs = [
 
 const queryConfig = session => {
   const arr = [];
-  if (session) arr.push({name: "session", operator: "==", value: session})
-  return { queries: [{name: "department", operator: "==", value: "CSE"}, ...arr] };
+  if (session) arr.push({ name: "session", operator: "==", value: session })
+  return { queries: [{ name: "department", operator: "==", value: "CSE" }, ...arr] };
 };
 
 export function Home() {
@@ -36,7 +37,7 @@ export function Home() {
       <PageHead>Computer Science & Engineering</PageHead>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcse1.png?alt=media&token=9d8edf35-b1fd-4ad1-8497-344c266d576b"
-        alt="img"/>
+        alt="img" />
       <p>Computer science is the scientific approach to computation, along with its wide range of applications. Computer scientists study the feasibility and mechanisation of procedures, known as algorithms, which underlie the acquisition, processing, storage and communication of data.</p>
       <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
       <p>Computer Science Engineering uses principles from Computer Science and Electrical Engineering to create hardware (physical components) and firmware which are used in a wide range of areas: consumer electronics, medical devices, communication systems, aircraft, self-driving cars, etc.</p>
@@ -67,7 +68,7 @@ export function Home() {
           "IT Manager"
         ].map(f => <li key={f}>{f}</li>)}
       </ul>
-      <img src="https://a.ilovecoding.org/img/_blogs/software-development8.png" alt=""/>
+      <img src="https://a.ilovecoding.org/img/_blogs/software-development8.png" alt="" />
       <H3>Rising fields in CSE that are hitting the computer industry</H3>
       <pre>{`   • Cyber Security
     • AI/ML
@@ -148,7 +149,7 @@ export function Home() {
         </tr>
       </table>
       <H3>Jobs in Private Companies</H3>
-      <p>Here we have listed out 15 of the top computer science companies which are highly recommended for you to work 2021 and 2022 as well. <br/>
+      <p>Here we have listed out 15 of the top computer science companies which are highly recommended for you to work 2021 and 2022 as well. <br />
         Amazon, Deloitte, CGI, Mindtree, Infosys, Cognizant, TCS, HCL, Google, Wipro, Tech Mahindra, IBM, Microsoft, Mphasis, and HP Inc. So, these are 15 of the top technology service companies which are ideal for computer science graduates to begin their career in.</p>
       <H3>Jobs in PSU’s ( Through GATE / Direct Recruitment)</H3>
       <p>BHEL, IOCL, NFL, NLC, ONGC, ECIL etc.</p>
@@ -189,7 +190,7 @@ export function About() {
         occupational, defense and many other activities. Computer is now an essential part of our life and needs. It is
         mainly because of the error free and fast operation, and no need to keep hard store and transport the data.
         “Your time is in your one click”.</p>
-      <img src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FABOUT%20CSE%2F1.jpg?alt=media&token=3ec1201b-364f-40b7-b1d2-d5f190fd5498" alt="img"/>
+      <img src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FABOUT%20CSE%2F1.jpg?alt=media&token=3ec1201b-364f-40b7-b1d2-d5f190fd5498" alt="img" />
       <H4>About The Department</H4>
       <p>The CSE Department of MITRC was started in the year 2007 with an intake of 30 students. Currently the
         Department offers an under-graduate program (B. Tech) in Computer science and engineering with an intake of 180
@@ -265,12 +266,17 @@ export function VM() {
   );
 }
 
+
 export function Infra() {
   const [labImages, setLabImages] = React.useState([]);
-  React.useEffect(() => {
+  const [labs, setLabs] = React.useState([]);
+
+  React.useEffect(async () => {
     getImagesLab(Collections.departments.computer).then((imageList) => {
       setLabImages(imageList);
     });
+    const labs = await listLabs();
+    setLabs(labs);
   }, []);
 
   return (
@@ -294,10 +300,23 @@ export function Infra() {
       <ul>
         {Labs.map(f => <li key={f}>{f}</li>)}
       </ul>
-      <div className="grid">
+      {/* <div className="grid">
         {labImages.map(item => (
           <img key={item} src={item} alt={item} onLoad={e => e.target.classList.add('loaded')}/>
         ))}
+      </div> */}
+      <div className="grid">
+        {
+          labs.map(lab => (
+            <>
+              {
+                lab.Department == "computer" && (
+                  <LabCard lab={lab} key={Math.random().toString()} />
+                )
+              }
+            </>
+          ))
+        }
       </div>
     </Cont>
   );
@@ -307,7 +326,7 @@ export function Achieve() {
   return (
     <Cont>
       <PageHead>Achievements & Awards</PageHead>
-      <br/>
+      <br />
       <H3>Achievements, Awards & Recognitions</H3>
       <ul>
         <li>Minakshi Sain got 12 lakh per annumn package in MSTC Ltd. –Mini-Ratna Company at Kolkata.</li>
@@ -344,16 +363,16 @@ export function Achieve() {
       <div className="grid">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F1.jpg?alt=media&token=ecf482af-dcb7-4bc8-8bad-c2eb02ca8614"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F2.jpg?alt=media&token=fb2a49f3-f741-487a-aa38-c807cc2fd1e3"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F3.jpg?alt=media&token=4d7cb692-e314-4073-8acd-8aa835afe00f"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSTUDENT%20ACHIEVEMENTS%2F4.jpg?alt=media&token=6bf88dbf-ff26-46fa-8773-21faabb389a3"
-          alt=""/>
+          alt="" />
       </div>
     </Cont>
   );
@@ -388,7 +407,7 @@ export function Contact() {
   return (
     <Cont>
       <PageHead>Contact Us</PageHead>
-      <br/>
+      <br />
       <p><strong>Mr. Arvind Sharma</strong></p>
       <p>
         Block A, MITRC College, 6<sup>th</sup> Mile Stone, village Jharkhera, Delhi Tijara Highway , Alwar - 301028
@@ -496,25 +515,25 @@ export function Visits() {
       <div className="grid">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F1.jpg?alt=media&token=c418306c-4922-42e7-8998-351a5ee3e109"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F2.jpg?alt=media&token=984207bf-8302-46c7-9d85-5fa7a5b5e1ab"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F3.jpg?alt=media&token=1d33b1fd-c1c3-4632-8340-d7e80f5cbb9c"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F4.jpg?alt=media&token=ab2ef6c6-87d0-4671-8ae1-4b8bf3b222e8"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F5.jpg?alt=media&token=2782bb11-5d04-4f42-924b-edc31dd7074b"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F7.jpg?alt=media&token=949c52a9-c0a3-4388-ba90-1914d6367d8c"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FVISITS%2F8.jpg?alt=media&token=64167ce6-ccbf-4f7a-9e1f-2d2adba5af65"
-          alt=""/>
+          alt="" />
       </div>
     </Cont>
   );
@@ -546,47 +565,47 @@ export function Testimonials() {
       <div className="grid">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F1.jpg?alt=media&token=8677e6e1-95fd-4150-908e-542aeeb5bc53"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F10.jpg?alt=media&token=947f0b35-181a-47e4-9a81-bc409beca328"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F2.jpg?alt=media&token=0ab16126-9a39-4845-ab9f-841050512564"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F3.jpg?alt=media&token=eb2c420b-27e7-40aa-b438-d7a9f038238c"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F4.jpg?alt=media&token=26fe99a3-5364-4bd8-b063-3ba0a057998e"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FTestimonial%2F5.jpg?alt=media&token=419470ee-6b20-4442-8334-7a8152736480"
-          alt=""/>
+          alt="" />
         {data.map(item => (
-          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')} />
         ))}
       </div>
       <div className="loader">
         {loading && <CircularProgress size={30} />}
       </div>
-      <br/>
+      <br />
       <PageHead>Success Stories</PageHead>
       <div className="grid">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F8.jpg?alt=media&token=da86afa5-c3a2-43af-b38b-411d5249b64a"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F3.jpg?alt=media&token=1d7825b5-7e84-45d4-895b-eea55404221a"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F4.jpg?alt=media&token=673e96e8-569d-4cde-b83b-f4231169f758"
-          alt=""/>
+          alt="" />
         <img
           src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F5.jpg?alt=media&token=827fb536-c794-46c4-ac2e-2721d654aa7b"
-          alt=""/>
-        <img src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F6.jpg?alt=media&token=b760f077-fa0c-46bc-9eb8-357180ec5610" alt=""/>
+          alt="" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/departments%2Fcomputer%2FSUCCESS%20STORIES%2F6.jpg?alt=media&token=b760f077-fa0c-46bc-9eb8-357180ec5610" alt="" />
         {data2.map(item => (
-          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')} />
         ))}
       </div>
       <div className="loader">
@@ -654,7 +673,7 @@ export function Activities() {
             >
               <div className="title">{item.title}</div>
               <div className="text">{item.description}</div>
-              {i === active && item.photos.map(p => <img src={p}/>)}
+              {i === active && item.photos.map(p => <img src={p} />)}
               <div className="foot">
                 <div className="date">{item.date.toDate().toDateString()}</div>
                 <div className="inst">Click to read more <span>&gt;&gt;</span></div>
