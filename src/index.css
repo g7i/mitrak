@@ -109,3 +109,14 @@ code {
     overflow: hidden !important;
     text-overflow: ellipsis;
 }
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}

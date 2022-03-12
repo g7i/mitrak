@@ -124,6 +124,7 @@ const PlacementsPage = () => {
                 id="standard-basic"
                 label="Apply Link"
                 variant="standard"
+                placeholder="use http/https format"
                 onChange={onHandleChange("applyLink")}
               />
               <MultipleInput

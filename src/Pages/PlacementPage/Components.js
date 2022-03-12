@@ -4,10 +4,28 @@ import {
   studentPlacementImages,
   testimonialImages
 } from "./staticData/doc";
-import {Cont, H4, PageHead} from "../../components/styledComponents/New";
-import {useEffect, useState} from "react";
-import {listDocuments} from "../../utils/firebase/db";
-import {CircularProgress} from "@mui/material";
+import { Cont, H4, PageHead } from "../../components/styledComponents/New";
+import React, { useEffect, useState } from "react";
+import { listDocuments } from "../../utils/firebase/db";
+import { CircularProgress } from "@mui/material";
+import { getPlacements } from "../../utils/firebase/placements";
+
+import { styled } from '@mui/material/styles';
+import Card from '@mui/material/Card';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import CardActions from '@mui/material/CardActions';
+import Collapse from '@mui/material/Collapse';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import { red } from '@mui/material/colors';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ShareIcon from '@mui/icons-material/Share';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { Button } from "antd";
 
 export function About() {
   return (
@@ -21,10 +39,10 @@ export function About() {
       <H4>Highest Package Offered: 12.0 LPA</H4>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Ftop-recruiters.jpg?alt=media&token=4ff63492-692e-43d6-834c-e10c194de7fd"
-        alt="Placement"/>
+        alt="Placement" />
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2020-8%2Fplacement_highlights.jpg?alt=media&token=202ec1ff-77c3-43dc-b4cc-c4781e9b455a"
-        alt="Placement"/>
+        alt="Placement" />
     </Cont>
   );
 }
@@ -114,7 +132,7 @@ export function Recruiters() {
       </p>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fplacement-poster%2FCompany-Logo-2018-768x1627.jpg?alt=media&token=b198e53d-86d8-411d-8be9-8fc3a4c872a0"
-        alt="Recruiters"/>
+        alt="Recruiters" />
     </Cont>
   );
 }
@@ -129,7 +147,7 @@ export function Journey() {
       <H4>Typical Journey of a student in Placement Department</H4>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2022%2Fjourney-T%26P.jpg?alt=media&token=200ed5ad-77e9-4123-92a5-81b11d753d99"
-        alt="Journey of Student in T&P"/>
+        alt="Journey of Student in T&P" />
     </Cont>
   );
 }
@@ -154,11 +172,11 @@ export function Activities() {
       </p>
       <div className="grid">
         {placementActivitiesImages.map(item => (
-          <img key={item.url} src={item.url} alt="Placement Activities" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.url} src={item.url} alt="Placement Activities" onLoad={e => e.target.classList.add('loaded')} />
         ))}
-        {data.map(item => (
+        {/* {data.map(item => (
           <img key={item.photo} src={item.photo} alt="Placement Activities" onLoad={e => e.target.classList.add('loaded')}/>
-        ))}
+        ))} */}
       </div>
       <div className="loader">
         {loading && <CircularProgress size={30} />}
@@ -189,14 +207,14 @@ export function StudentPlacements() {
       <img
         style={{ marginBottom: '20px' }}
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2022%2Fphoto6257849762560716826.jpg?alt=media&token=a7ab6177-be0f-479a-a035-d1b66542dc25"
-        alt="Placement"/>
+        alt="Placement" />
       <H4>Previous Placements</H4>
       <div className="grid">
         {studentPlacementImages.map(item => (
-          <img key={item.url} src={item.url} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.url} src={item.url} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')} />
         ))}
         {data.map(item => (
-          <img key={item.photo} src={item.photo} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.photo} src={item.photo} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')} />
         ))}
       </div>
       <div className="loader">
@@ -226,10 +244,10 @@ export function GovtSelection() {
       </p>
       <div className="grid">
         {govtSelectionImages.map(item => (
-          <img key={item.url} src={item.url} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.url} src={item.url} alt="" onLoad={e => e.target.classList.add('loaded')} />
         ))}
         {data.map(item => (
-          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')} />
         ))}
       </div>
       <div className="loader">
@@ -239,7 +257,97 @@ export function GovtSelection() {
   );
 }
 
+
+const ExpandMore = styled((props) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+  marginLeft: 'auto',
+  transition: theme.transitions.create('transform', {
+    duration: theme.transitions.duration.shortest,
+  }),
+}));
+
+const PlacementCard = ({ item }) => {
+
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
+  return (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="194"
+        image={item.image}
+        alt="Company Logo"
+      />
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          {item?.description}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Max Package Offered (In LPA): {item?.package}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Starting Date: {new Date(item.startAt).toDateString()}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Ending Date: {new Date(item.endAt).toDateString()}
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <a href={item.applyLink} className="button" aria-label="share">
+          <Typography>Apply Now</Typography>
+        </a>
+        <ExpandMore
+          expand={expanded}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label="show more"
+        >
+          <ExpandMoreIcon />
+        </ExpandMore>
+      </CardActions>
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <CardContent>
+          <Typography paragraph>Requirements</Typography>
+          <ul>
+            {
+              item.requirements.map(item => (
+                <li key={item}>{item}</li>
+              ))
+            }
+          </ul>
+          <Typography>Who can apply ( Students in semester )</Typography>
+          <ul>
+            {
+              item.canApply.map(item => (
+                <li key={item}>{item}</li>
+              ))
+            }
+          </ul>
+        </CardContent>
+      </Collapse>
+    </Card>
+  )
+}
+
 export function PlacementNews() {
+  const [placements, setPlacements] = React.useState([]);
+
+  React.useEffect(() => {
+    (async () => {
+      const placementdata = await getPlacements();
+      setPlacements(placementdata);
+    })()
+  }, [])
+
+  console.log('placement data', placements)
+
   return (
     <Cont>
       <PageHead>Placement News</PageHead>
@@ -250,6 +358,11 @@ export function PlacementNews() {
       <p>
         At MITRC, placement cell focus a lot on industry readiness of budding technocrats, other than the technical education Training and Placement department runs mandatory programs for students.
       </p>
+      <div className="grid">
+        {
+          placements.map((item) => <PlacementCard item={item} />)
+        }
+      </div>
     </Cont>
   );
 }
@@ -289,7 +402,7 @@ export function Testimonials() {
           <img key={item.id} src={item.image} alt="Student Testimonial" onLoad={e => e.target.classList.add('loaded')} />
         ))}
         {data.map(item => (
-          <img key={item.photo} src={item.photo} alt="Student Testimonial" onLoad={e => e.target.classList.add('loaded')}/>
+          <img key={item.photo} src={item.photo} alt="Student Testimonial" onLoad={e => e.target.classList.add('loaded')} />
         ))}
       </div>
       <div className="loader">
