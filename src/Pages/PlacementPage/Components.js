@@ -26,6 +26,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Button } from "antd";
+import PlacementActivities from "./PlacementActivities";
 
 export function About() {
   return (
@@ -171,12 +172,10 @@ export function Activities() {
         At MITRC, placement cell focus a lot on industry readiness of budding technocrats, other than the technical education Training and Placement department runs mandatory programs for students.
       </p>
       <div className="grid">
-        {placementActivitiesImages.map(item => (
+        {/* {placementActivitiesImages.map(item => (
           <img key={item.url} src={item.url} alt="Placement Activities" onLoad={e => e.target.classList.add('loaded')} />
-        ))}
-        {/* {data.map(item => (
-          <img key={item.photo} src={item.photo} alt="Placement Activities" onLoad={e => e.target.classList.add('loaded')}/>
         ))} */}
+       <PlacementActivities data={data}/>
       </div>
       <div className="loader">
         {loading && <CircularProgress size={30} />}
@@ -204,6 +203,7 @@ export function StudentPlacements() {
         At MITRC, placement cell focus a lot on industry readiness of budding technocrats, other than the technical education Training and Placement department runs mandatory programs for students.
       </p>
       <H4>Placements 2021-22</H4>
+      {console.log(data)}
       <img
         style={{ marginBottom: '20px' }}
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2022%2Fphoto6257849762560716826.jpg?alt=media&token=a7ab6177-be0f-479a-a035-d1b66542dc25"
