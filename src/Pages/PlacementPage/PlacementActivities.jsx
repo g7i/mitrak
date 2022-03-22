@@ -41,7 +41,7 @@ const PlacementActivities = ({ data }) => {
             <PageHead>{element}</PageHead>
 
             {monthList.map((month) => (
-              <div style={{marginTop : activitiesData[element][month].length > 0 ? "20px" : "0px"}}>
+              <div style={{marginTop : activitiesData[element][month].length > 0 ? "20px" : "0px", width: '40vw'}}>
                 {activitiesData[element][month].length > 0 && (
                   <PageHead>{month}</PageHead>
                 )}
