@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { H4, PageHead } from "../../components/styledComponents/New";
 
-const PlacementActivities = ({ data }) => {
+const StudentPlacement = ({ data }) => {
   const sessionList = ["2021-2022", "2020-2021", "2019-2020"];
   const monthList = [
     "January",
@@ -34,11 +34,10 @@ const PlacementActivities = ({ data }) => {
   }, [data]);
   return (
     <div>
-      <PageHead>Placement Activities</PageHead>
       {Object.keys(activitiesData).map((element) => {
         return (
           <div style={{ marginTop: "50px" }}>
-            <H4>Session{element}</H4>
+            <H4>Session: {element}</H4>
 
             {monthList.map((month) => (
               <div style={{marginTop : activitiesData[element][month].length > 0 ? "20px" : "0px", width: '40vw'}}>
@@ -67,4 +66,4 @@ const PlacementActivities = ({ data }) => {
   );
 };
 
-export default PlacementActivities;
+export default StudentPlacement;

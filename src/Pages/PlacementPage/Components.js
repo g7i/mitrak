@@ -27,6 +27,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Button } from "antd";
 import PlacementActivities from "./PlacementActivities";
+import StudentPlacement from "./StudentPlacement";
 
 export function About() {
   return (
@@ -208,14 +209,8 @@ export function StudentPlacements() {
         style={{ marginBottom: '20px' }}
         src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F2022%2Fphoto6257849762560716826.jpg?alt=media&token=a7ab6177-be0f-479a-a035-d1b66542dc25"
         alt="Placement" />
-      <H4>Previous Placements</H4>
       <div className="grid">
-        {studentPlacementImages.map(item => (
-          <img key={item.url} src={item.url} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')} />
-        ))}
-        {data.map(item => (
-          <img key={item.photo} src={item.photo} alt="Student Placements" onLoad={e => e.target.classList.add('loaded')} />
-        ))}
+        <StudentPlacement data={data} />
       </div>
       <div className="loader">
         {loading && <CircularProgress size={30} />}
@@ -398,12 +393,7 @@ export function Testimonials() {
       </p>
       <H4>What does Alumni say about us?</H4>
       <div className="grid">
-        {testimonialImages.map(item => (
-          <img key={item.id} src={item.image} alt="Student Testimonial" onLoad={e => e.target.classList.add('loaded')} />
-        ))}
-        {data.map(item => (
-          <img key={item.photo} src={item.photo} alt="Student Testimonial" onLoad={e => e.target.classList.add('loaded')} />
-        ))}
+        <StudentPlacement data={data} />
       </div>
       <div className="loader">
         {loading && <CircularProgress size={30} />}
