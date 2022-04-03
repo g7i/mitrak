@@ -20,10 +20,10 @@ import {
   FlexContainer,
   Heading,
 } from "../../../components/styledComponents/GlobalComponents";
-import PartnerSlider from "../PartnerSlider";
 import styled from "styled-components";
 import { getPlacements } from "../../../utils/firebase/placements";
 import ExploreMore from "../../../components/ExploreMore/ExploreMore";
+// import PartnerSlider from '../PartnerSlider'
 import { useHistory } from "react-router-dom";
 import ModalImage from "../../../components/ModalImage";
 import StackGrid from "react-stack-grid";
@@ -57,7 +57,7 @@ export default function Placements() {
           ))}
         </StackGrid>
       </div>
-      <PartnerSlider />
+      {/* <PartnerSlider /> */}
       <div style={{ marginTop: "4rem" }} />
       {/* <PlacementFlex gap={70} wrap={"wrap"} justify={"space-around"}>
         {placements.slice(0, 3).map((item) => (

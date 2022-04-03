@@ -282,6 +282,24 @@ const types = {
     ],
     collection: 'labs',
   },
+  homePageSlider: {
+    fields: [
+      {
+        type: "text",
+        name: "Photo"
+      },
+      {
+        type: "text",
+        name: "Name",
+      },
+      {
+        type: "text",
+        multiline: true,
+        name: "Description",
+      },
+    ],
+    collection: 'homeslider',
+  },
 };
 
 const ITEM_HEIGHT = 48;

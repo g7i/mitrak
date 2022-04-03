@@ -21,15 +21,10 @@ const ContactHeader = () => {
   return (
     <Nav background={Colors.BLUE} flexType="space-around">
       <Wrapper>
-        <img
-          src={
-            "https://pbs.twimg.com/profile_images/918457632716984320/fgVEAVi1_400x400.jpg"
-          }
-          style={{ width: "25px", height: "auto", marginRight: "20px" }}
-          onClick={() => {
-            window.location.href = "https://statcounter.com/login/";
-          }}
-        />
+      <Wrapper>
+      <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=7969657&style=0002&nbdigits=8&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+      </Wrapper>
         <Wrapper>
           <ContactHeaderLinksWrapper href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=admin@mitrc.ac.in">
             <AiOutlineMail color={"#FFFFFF"} />

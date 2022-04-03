@@ -9,7 +9,8 @@ export const Collections = {
     news: 'news',
     placements: 'placements',
     contacts: 'contacts',
-    labs: 'labs'
+    labs: 'labs',
+    homeslider: 'homeslider'
 };
 
 type ListConfig = {
@@ -38,6 +39,13 @@ export async function listDocuments(coll: string, type: string, config?: ListCon
 
 export async function listLabs() {
     const snapshot = await getDocs(collection(db, Collections.labs));
+    const data = [];
+    snapshot.forEach((doc) => data.push(doc.data()));
+    return data;
+}
+
+export async function getHomeSlider() {
+    const snapshot = await getDocs(collection(db, Collections.homeslider))
     const data = [];
     snapshot.forEach((doc) => data.push(doc.data()));
     return data;
