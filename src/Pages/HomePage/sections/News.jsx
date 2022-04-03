@@ -109,7 +109,7 @@ export default function News() {
           </ItemWrapper>
         ))}
       </Slider> */}
-      <Heading style={{ textAlign: "center" }}>Important Updates</Heading>
+      <Heading style={{ textAlign: "center" }}>IMPORTANT UPDATES</Heading>
       <Container style={{ display: "flex", justifyContent: "space-between" }}>
         <NewsBox>
           <Heading style={{ fontSize: "1.4rem", textAlign: "center" }}>
