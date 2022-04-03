@@ -8,6 +8,7 @@ import StudentsPlaced from './sections/StudentsPlaced';
 import ApplyForAdmission from '../../components/Banner/ApplyForAdmission';
 import Testimonials from './sections/Testimonials';
 import { Heading } from '../../components/styledComponents/GlobalComponents';
+import UpdatesCarousel from './UpdatesCarousel';
 
 const LandingPage = () => {
   return (
@@ -17,6 +18,7 @@ const LandingPage = () => {
       {/* <ExploreMore /> */}
       {/*<Placements />*/}
       {/*<StudentsPlaced />*/}
+      <UpdatesCarousel />
       <News />
       {/*<div style={{ textAlign: 'center', marginBottom: '2rem' }}>*/}
       {/*  <Heading>Testimonials</Heading>*/}

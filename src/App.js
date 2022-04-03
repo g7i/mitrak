@@ -16,7 +16,6 @@ const App = () => {
         <Navbar />
         <LandingPage />
         <LandingSectionsPage />
-        <UpdatesCarousel />
         <Footer />
       </div>
     </>

@@ -76,7 +76,7 @@ const UpdatesCarousel: React.FC<props> = () => {
 
     return (
         <Container>
-            <Heading>Recent College Activities</Heading>
+            <Heading style={{ textAlign: "center" }}>RECENT COLLEGE ACTIVITIES</Heading>
             <div style={{marginBottom: '4vh'}} />
             <div style={{display: 'flex',flexDirection: 'row', overflowX: 'scroll'}}>
             {
