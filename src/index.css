@@ -120,3 +120,33 @@ code {
   padding-left: 2vw;
   padding-right: 2vw;
 }
+
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  width: 20vw;
+  position: absolute;
+  /* top: 0; */
+  border: 2px rgba(0,0,0,0.9);
+  padding: 8px;
+}
+
+.border__left {
+  width: 5px;
+  background-color: #FFFFFF;
+  height: 100%;
+}
+
+
+.imgBox { /* now a container for the image */
+  display: inline-block; /* shrink wrap to image */
+  overflow: hidden; /* hide the excess */
+}
+.imgBox img {
+  display: block; /* no whitespace */
+  transition: .3s ease-in-out;
+  width: 20vw;
+  height: 40vh;
+}
+.imgBox:hover img {
+  transform: scale(1.3);
+}

@@ -35,7 +35,15 @@ const DataCard = ({item}) => {
     const handleClose = () => setOpen(false);
     return (
         <div>
-            <HalfImage src={item.Photo} style={{height: '50vh', width: '20vw', marginLeft: '2vw', cursor: 'pointer'}} onClick={handleOpen} />
+            <div  style={{height: '50vh', width: '20vw', marginLeft: '2vw', cursor: 'pointer'}} onClick={handleOpen}>
+                <div className='imgBox'>
+                    <img src={item.Photo} />
+                </div>
+                <div className='overlay'>
+                    <div className="border__left" />
+                    <Heading style={{color: '#FFFFFF', fontSize: '20px'}}>{item.Name}</Heading>
+                </div>
+            </div>
             <div>
                 <Modal
                     open={open}
