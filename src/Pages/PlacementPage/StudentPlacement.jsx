@@ -4,11 +4,6 @@ import { H4, PageHead } from "../../components/styledComponents/New";
 const StudentPlacement = ({ data }) => {
   const sessionList = ["2021-2022", "2020-2021", "2019-2020"];
   const monthList = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
     "June",
     "July",
     "August",
@@ -16,6 +11,11 @@ const StudentPlacement = ({ data }) => {
     "October",
     "November",
     "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
   ];
   const [activitiesData, setActivitiesData] = useState({});
   useEffect(() => {
