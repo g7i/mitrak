@@ -22,9 +22,17 @@ const ContactHeader = () => {
     <Nav background={Colors.BLUE} flexType="space-around">
       <Wrapper>
       <Wrapper>
-      <a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=7969724&style=0042&nbdigits=8&type=ip&initCount=10000" title="Free Counter" Alt="web counter"   border="0" /></a>
-     
+      <img
+          src={
+            "https://pbs.twimg.com/profile_images/918457632716984320/fgVEAVi1_400x400.jpg"
+          }
+          style={{ width: "25px", height: "auto", marginRight: "20px" }}
+          onClick={() => {
+            window.location.href = "https://statcounter.com/login/";
+          }}
+        />
+
+        
       </Wrapper>
         <Wrapper>
           <ContactHeaderLinksWrapper href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=admin@mitrc.ac.in">

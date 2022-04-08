@@ -51,15 +51,25 @@ const DataCard = ({item}) => {
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                 >
-                    <Box sx={style} style={{display: 'flex', flexDirection:'column', alignItems: 'center', justifyContent: 'center', overflowY: 'scroll'}}>
-                    <HalfImage src={item.Photo} style={{height: '50vh', width: '20vw', marginLeft: '2vw', margin: '0 auto'}} onClick={handleOpen} />
+                    <Box style={{display: 'flex', flexDirection:'column', alignItems: 'center', justifyContent: 'center', overflowY: 'scroll', height: '100vh', width: '100vw', }}>
+                    <HalfImage src={item.Photo} style={{ height: '80vh', marginLeft: '2vw', margin: '0 auto'}} onClick={handleOpen} />
 
-                    <Typography id="modal-modal-title" variant="h6" component="h2">
-                        {item.Name}
-                    </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        {item.Description}
-                    </Typography>
+                    <Box style={{background: 'white', width: '100%', textAlign: 'center', height: '20vh'}}>
+                      <Typography id="modal-modal-title" variant="h6" component="h2">
+                          {item.Name}
+                      </Typography>
+                      <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                          {item.Description}
+                      </Typography>
+                    </Box>
+                    <span style={{
+                      position: 'absolute',
+                      top: 10,
+                      right: 10,
+                      fontSize: '40px',
+                      cursor: 'pointer',
+                      color: 'white'
+                    }} onClick={handleClose}>X</span>
                     </Box>
                 </Modal>
             </div>
