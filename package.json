@@ -1,6 +1,7 @@
 {
   "name": "mitrc",
   "version": "0.1.0",
+  "homepage": "http://www.mitrc.ac.in",
   "private": true,
   "license": "ISC",
   "scripts": {

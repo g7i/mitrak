@@ -22,6 +22,15 @@ const MandatoryPublicDisclosuresPage = () => {
                     <PageHead>Mandatory Public Disclosures</PageHead>
                     <br/>
                     <div className="grid">
+                        <Event>
+                          <div className="title">Extension of Approval by AICTE</div>
+                          <div className="foot">
+                            <a href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2FEOA_Report%2021-22.PDF?alt=media&token=1e3d9ce4-699d-4164-b6ad-c398ae3a1958">Session 2021-22</a>
+                            <a href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FEOA%2FAICTE_2020-21.pdf?alt=media&token=50473e51-17a6-4d06-a42a-8905914968e3">Session 2020-21</a>
+                            <a href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FEOA%2FAICTE%202019-20.PDF?alt=media&token=84319ac6-e703-44a1-9e8c-853c7851a0b3">Session 2019-20</a>
+                            <a href="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FEOA%2Faicte%202018-19.pdf?alt=media&token=c445a287-7741-4dc3-9631-aef5701585f6">Session 2018-19</a>
+                          </div>
+                        </Event>
                         {publicRoutingData.map((item) => (
                             <Event
                                 key={item?.link}
@@ -70,6 +79,9 @@ const MandatoryPublicDisclosuresPage = () => {
                             </div>
                         ))
                     }
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FAICTE%20Feedback.png?alt=media&token=bed99fc9-a8ff-4854-ad74-fc5855ad33c8"
+                    alt=""/>
                 </Cont>
             </Wrapper>
         </Layout>

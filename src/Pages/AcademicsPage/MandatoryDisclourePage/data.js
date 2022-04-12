@@ -124,10 +124,10 @@ export const RoutingData = [
 
 
 export const publicRoutingData = [
-  {
-    title: "Extension of Approval by AICTE",
-    pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2FEOA_Report%2021-22.PDF?alt=media&token=1e3d9ce4-699d-4164-b6ad-c398ae3a1958"
-  },
+  // {
+  //   title: "Extension of Approval by AICTE",
+  //   pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2FEOA_Report%2021-22.PDF?alt=media&token=1e3d9ce4-699d-4164-b6ad-c398ae3a1958"
+  // },
   {
     title: "Building Safety Certificate",
     pdf: "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FAcademics%2FPublic%20Mandatory%20Disclosure%2Fbuilding%20safety%20up%20to%20Feb%2024.jpg?alt=media&token=309245bc-a6e7-4cef-882c-8bd1e0c3d88d"
