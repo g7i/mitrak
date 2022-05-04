@@ -51,18 +51,21 @@ const DataCard = ({ item }) => {
           width: "20vw",
           marginLeft: "2vw",
           cursor: "pointer",
+          display: 'flex',
+          flexDirection: 'column'
         }}
         onClick={handleOpen}
       >
         <div className="imgBox">
           <img src={item.Photo} />
         </div>
-        <div className="overlay">
+        <h1>{item.name}</h1>
+        {/* <div className="overlay">
           <div className="border__left" />
           <Heading style={{ color: "#FFFFFF", fontSize: "20px" }}>
             {item.Name}
           </Heading>
-        </div>
+        </div> */}
       </div>
       <div>
         <Modal
@@ -135,17 +138,17 @@ const UpdatesCarousel: React.FC<props> = () => {
 
   return (
     <Container>
-      {/* <Heading style={{ textAlign: "center" }}>
+      <Heading style={{ textAlign: "center" }}>
         RECENT COLLEGE ACTIVITIES
       </Heading>
-      <div style={{ marginBottom: "4vh" }} /> */}
-      {/* <div style={{display: 'flex',flexDirection: 'row', overflowX: 'scroll', width: '100%'}}>
+      <div style={{ marginBottom: "4vh" }} /> 
+       <div style={{display: 'flex',flexDirection: 'row', overflowX: 'scroll', width: '100%'}}>
             {
                 data.map((item, index) => (
                    <DataCard item={item} key={index} />
                 ))
             }
-            </div> */}
+            </div>
     </Container>
   );
 };

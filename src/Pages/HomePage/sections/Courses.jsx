@@ -16,13 +16,12 @@ import { Link } from 'react-router-dom'
 
 const btech = [
   // 'Artificial Intelligence & Data Science Engineering (AI & DS)',
+  'Artificial Intelligence & Data Science',
   'Computer Science Engineering (CSE)',
   'Civil Engineering (CE)',
   'Electrical Engineering (EE)',
   // 'Electronics & Communication Engineering (ECE)',
   'Mechanical Engineering (ME)',
-  'Artificial Intellegence',
-  'Machine Learning'
   // 'Electronics & Communication (EC)',
 ]
 

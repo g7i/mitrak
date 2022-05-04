@@ -145,7 +145,7 @@ code {
   display: block; /* no whitespace */
   transition: .3s ease-in-out;
   width: 20vw;
-  height: 40vh;
+  height: 50vh;
 }
 .imgBox:hover img {
   transform: scale(1.3);
