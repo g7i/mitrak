@@ -90,11 +90,11 @@ export default function Courses() {
           <ImageWrapper>
             <CardImage
               src={
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVY4-a9s00pYmU8D9Hfw-s0wxQle-XeJ15A&usqp=CAU"
+                "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2F83c5a222-3b75-44c0-bc74-d6a469c52194.jpg?alt=media&token=bb1025d2-defb-4fd8-8056-b0c5a9c111e4"
               }
             />
           </ImageWrapper>
-          <CardTitle>MBA</CardTitle>
+          <CardTitle>MBA (In Dual Specialisation)</CardTitle>
           <CardContent>
             <ul>
               {mba.map((item, index) => (
