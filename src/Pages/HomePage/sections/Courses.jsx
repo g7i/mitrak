@@ -21,6 +21,8 @@ const btech = [
   'Electrical Engineering (EE)',
   // 'Electronics & Communication Engineering (ECE)',
   'Mechanical Engineering (ME)',
+  'Artificial Intellegence',
+  'Machine Learning'
   // 'Electronics & Communication (EC)',
 ]
 
@@ -61,7 +63,7 @@ export default function Courses() {
             <ul>
               {btech.map((item, index) => (
                 <li key={index}>
-                  <Link to={links[index]}>{item}</Link>
+                  <p to={links[index]}>{item}</p>
                 </li>
               ))}
             </ul>
