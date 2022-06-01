@@ -21,29 +21,27 @@ const ContactHeader = () => {
   return (
     <Nav background={Colors.BLUE} flexType="space-around">
       <Wrapper>
-      <Wrapper>
-      <img
-          src={
-            "https://pbs.twimg.com/profile_images/918457632716984320/fgVEAVi1_400x400.jpg"
-          }
-          style={{ width: "25px", height: "auto", marginRight: "20px" }}
-          onClick={() => {
-            window.location.href = "https://statcounter.com/login/";
-          }}
-        />
-
-        
-      </Wrapper>
         <Wrapper>
-          <ContactHeaderLinksWrapper href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=admin@mitrc.ac.in">
+          <img
+            src={
+              "https://pbs.twimg.com/profile_images/918457632716984320/fgVEAVi1_400x400.jpg"
+            }
+            style={{ width: "25px", height: "auto", marginRight: "20px" }}
+            onClick={() => {
+              window.location.href = "https://statcounter.com/login/";
+            }}
+          />
+        </Wrapper>
+        <Wrapper>
+          <ContactHeaderLinksWrapper href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hr@mitrc.ac.in">
             <AiOutlineMail color={"#FFFFFF"} />
-            <Text color="#FFFFFF">admin@mitrc.ac.in</Text>
+            <Text color="#FFFFFF">hr@mitrc.ac.in</Text>
           </ContactHeaderLinksWrapper>
         </Wrapper>
         <Wrapper>
           <ContactHeaderLinksWrapper href="tel:+917597676193">
             <AiFillPhone color={"#FFFFFF"} size={20} />
-            <Text color="#FFFFFF">+91 7597676193</Text>
+            <Text color="#FFFFFF">+91 7597676193/7597244813</Text>
           </ContactHeaderLinksWrapper>
         </Wrapper>
       </Wrapper>

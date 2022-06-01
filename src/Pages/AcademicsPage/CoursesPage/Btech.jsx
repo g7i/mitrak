@@ -11,7 +11,8 @@ import {
 } from "../../../components/styledComponents/GlobalComponents";
 import { Wrapper } from "../../../components/styledComponents/Navbar";
 import { OR_Span, Table, TableData, TableHeading, TableRow } from "./styles";
-const BTechImg = "https://www.bmu.edu.in/wp-content/uploads/2017/05/dual-specialisation-in-BTech-810x540.jpg";
+const BTechImg =
+  "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/ACADEMICS%2FB.TECH%2FB.TECH.jpg?alt=media&amp;token=792bfa12-15c5-476c-a0df-2fcc301d8634";
 
 const BtechPage = () => {
   return (

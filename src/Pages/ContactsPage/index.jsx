@@ -15,7 +15,9 @@ const ContactsPage = () => {
       <Layout>
         <div className="contactContainer">
           <div className="contentContaner">
-            <Heading style={{ fontSize: '1.8rem' }}>MODERN INSTITUTE OF TECHNOLOGY & RESEARCH CENTRE</Heading>
+            <Heading style={{ fontSize: "1.8rem" }}>
+              MODERN INSTITUTE OF TECHNOLOGY & RESEARCH CENTRE
+            </Heading>
             <Paragraph>
               <bold>Address: </bold>
               6th Mile Stone Delhi – Tijara State Highway, Sirmoli Road, Village
@@ -23,11 +25,11 @@ const ContactsPage = () => {
             </Paragraph>
             <Paragraph>
               <bold>Phone: </bold>
-              +91 (144) 2980851/52, +917597676193
+              +91 (144) 2980851/52, +917597676193/+917597244813
             </Paragraph>
             <Paragraph>
               <bold>Email: </bold>
-              admin@mitrc.ac.in, admission@mitrc.ac.in, hr@mitrc.ac.in
+              admission@mitrc.ac.in, hr@mitrc.ac.in
             </Paragraph>
             {/*<Heading>*/}
             {/*    Institute Functionaries (Directors, Deans, Placement Officer, Human Resource Manager)*/}
@@ -44,7 +46,9 @@ const ContactsPage = () => {
           </div>
           <div>
             <div className="contactForm">
-              <Heading style={{ fontSize: '1.8rem' }}>Send us your enquiry</Heading>
+              <Heading style={{ fontSize: "1.8rem" }}>
+                Send us your enquiry
+              </Heading>
               <form action={submitContactForm}>
                 <TextField
                   title="Email Address"
@@ -83,8 +87,10 @@ const ContactsPage = () => {
             src={
               "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FHome%20Page%2FContact%20Us%2Fgoogle%20earth.png?alt=media&token=4c41989e-59f0-4d9c-9bf4-a2b0b5d81d7d"
             }
-            onClick={()=>{window.location.href =
-              "https://earth.google.com/web/search/MITRC+College+Campus,+Sirmoli+Road,+Jahar+Khera,+Rajasthan/@27.63370465,76.64956745,267.8754726a,436.75831862d,35y,0h,45t,0r/data=CqUBGnsSdQolMHgzOTcyOTdmMTBiOTJiMGU3OjB4NjQ5ZTFiMTEyOGRmMGRjNBlqEyf3O6I7QCGp1fydkilTQCo6TUlUUkMgQ29sbGVnZSBDYW1wdXMsIFNpcm1vbGkgUm9hZCwgSmFoYXIgS2hlcmEsIFJhamFzdGhhbhgCIAEiJgokCTwcY-pDczJAETscY-pDczLAGSjrH-G5dyRAIeJn4LCKJ1bAKAI";}}
+            onClick={() => {
+              window.location.href =
+                "https://earth.google.com/web/search/MITRC+College+Campus,+Sirmoli+Road,+Jahar+Khera,+Rajasthan/@27.63370465,76.64956745,267.8754726a,436.75831862d,35y,0h,45t,0r/data=CqUBGnsSdQolMHgzOTcyOTdmMTBiOTJiMGU3OjB4NjQ5ZTFiMTEyOGRmMGRjNBlqEyf3O6I7QCGp1fydkilTQCo6TUlUUkMgQ29sbGVnZSBDYW1wdXMsIFNpcm1vbGkgUm9hZCwgSmFoYXIgS2hlcmEsIFJhamFzdGhhbhgCIAEiJgokCTwcY-pDczJAETscY-pDczLAGSjrH-G5dyRAIeJn4LCKJ1bAKAI";
+            }}
           />
         </GoogleEarthImageWrapper>
       </Layout>

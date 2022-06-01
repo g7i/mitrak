@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom'
 
 const btech = [
   // 'Artificial Intelligence & Data Science Engineering (AI & DS)',
-  'Artificial Intelligence & Data Science',
+  'Artificial Intelligence & Data Science (AI & DS)',
   'Computer Science Engineering (CSE)',
   'Civil Engineering (CE)',
   'Electrical Engineering (EE)',
@@ -41,6 +41,7 @@ const mtech = [
 
 const mba = [
   'MBA from Human Resource',
+  "MBA from Marketing",
   'MBA from Finance'
 ]
 
@@ -53,7 +54,7 @@ export default function Courses() {
           <ImageWrapper>
             <CardImage
               src={
-                "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcourses%2FEngineering-Courses-After-12th.jpg?alt=media&token=2161e519-77ff-4c74-a374-287b5295c3f7"
+                "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/ACADEMICS%2FB.TECH%2FB.TECH.jpg?alt=media&amp;token=792bfa12-15c5-476c-a0df-2fcc301d8634"
               }
             />
           </ImageWrapper>

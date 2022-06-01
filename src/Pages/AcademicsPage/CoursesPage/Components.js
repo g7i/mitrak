@@ -31,7 +31,7 @@ export function BTech() {
         resilience and self-discipline.
       </p>
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2Fcourses%2FEngineering-Courses-After-12th.jpg?alt=media&token=2161e519-77ff-4c74-a374-287b5295c3f7"
+        src="https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/ACADEMICS%2FB.TECH%2FB.TECH.jpg?alt=media&amp;token=792bfa12-15c5-476c-a0df-2fcc301d8634"
         alt="Img"
       />
       <br />
@@ -96,28 +96,28 @@ export function BTech() {
           <td>Artificial Intelligence & Data Science Engineering</td>
           <td>60</td>
         </tr>
-        <tr>
+        {/* <tr>
           <td>2</td>
           <td>Artificial Intelligence & Machine Learning</td>
           <td>30</td>
-        </tr>
+        </tr> */}
         <tr>
-          <td>3</td>
+          <td>2</td>
           <td>Computer Science & Engineering</td>
           <td>120</td>
         </tr>
         <tr>
-          <td>4</td>
+          <td>3</td>
           <td>Civil Engineering</td>
           <td>90</td>
         </tr>
         <tr>
-          <td>5</td>
+          <td>4</td>
           <td>Electrical Engineering</td>
           <td>30</td>
         </tr>
         <tr>
-          <td>6</td>
+          <td>5</td>
           <td>Mechanical Engineering</td>
           <td>30</td>
         </tr>
@@ -335,17 +335,28 @@ export function MBA() {
       <List>Ranked No. 1 College by University.</List>
       <List>100% Placement assistance for all MBA students.</List>
       <List>Special Personality Development Program.</List>
-      <List>Industry Oriented Program Structure with Case Studies, Role Play &amp; Regular Industry
-      Visits</List>
-      <List>Visiting Faculty from Companies like – HDFC Bank, Ashok Leyland, Bank of
-      Baroda, SHCIL, LIC etc.</List>
-      <List>Expert lectures from institutes – IMT Gurgaon, IIMs, IIFT Delhi, FMS Delhi
-      University, NISM, NCFE etc.</List>
+      <List>
+        Industry Oriented Program Structure with Case Studies, Role Play &amp;
+        Regular Industry Visits
+      </List>
+      <List>
+        Visiting Faculty from Companies like – HDFC Bank, Ashok Leyland, Bank of
+        Baroda, SHCIL, LIC etc.
+      </List>
+      <List>
+        Expert lectures from institutes – IMT Gurgaon, IIMs, IIFT Delhi, FMS
+        Delhi University, NISM, NCFE etc.
+      </List>
       <List>Smart Classrooms</List>
       <List>Wi-Fi campus.</List>
       <List>Coaching for Govt. Competitive exams.</List>
       <H4>Eligibility For MBA</H4>
-      <p>Graduation degree with 50% marks (45% marks for SC/ST/OBC)</p>
+      <p>
+        The candidates must possess Graduate (10+2+3) degree or equivalent from
+        any recognized University with at least 50% marks in aggregate (45% in
+        case of SC/ST and OBC candidates), without any approximation in the
+        Graduate Examination.
+      </p>
       <H4>Seat Matrix</H4>
       <table>
         <tr>

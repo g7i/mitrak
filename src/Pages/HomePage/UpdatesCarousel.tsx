@@ -83,6 +83,8 @@ const DataCard = ({ item }) => {
               overflowY: "scroll",
               height: "100vh",
               width: "100vw",
+              // backgroundColor : "red",
+              backdropFilter: "blur(5px)"
             }}
           >
             <HalfImage
