@@ -38,6 +38,7 @@ export default function Offered() {
       <ul>
         {[
           "B.Tech in Artificial Intelligence & Data Science (UG)",
+          "B.Tech in Artificial Intelligence & Machine Learning (UG)",
           "B.Tech in Computer Science Engineering (UG)",
           "B.Tech in Civil Engineering (UG)",
           "B.Tech in Electrical Engineering (UG)",

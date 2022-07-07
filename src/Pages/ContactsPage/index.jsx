@@ -4,11 +4,27 @@ import Layout from '../../constants/Layout'
 import { TextField } from '@mui/material'
 import { Link } from 'react-router-dom'
 import styled from "styled-components";
-const ContactsPage = () => {
+import {addContact} from "../../utils/firebase/contacts";
 
-    const submitContactForm = (e) => {
-        e.preventDefault();
-        //
+const ContactsPage = () => {
+  const [loading, setLoading] = React.useState(false);
+
+    const submitContactForm = async (e) => {
+      e.preventDefault();
+      setLoading(true);
+
+      const name = e.target.name.value;
+      const phone = e.target.phone.value;
+      const message = e.target.message.value;
+
+      try {
+        await addContact({ name, phone, message, createdAt: Date.now(), title: "Contact" });
+        e.target.reset();
+      } catch (e) {
+        alert("Unable to submit message");
+      }
+
+      setLoading(false);
     }
 
     return (
@@ -49,24 +65,25 @@ const ContactsPage = () => {
               <Heading style={{ fontSize: "1.8rem" }}>
                 Send us your enquiry
               </Heading>
-              <form action={submitContactForm}>
+              <form onSubmit={submitContactForm}>
                 <TextField
-                  title="Email Address"
-                  label="Email Address"
-                  placeholder="Your email address"
+                  name="name"
+                  title="Full Name"
+                  label="Full Name"
                   variant="outlined"
                   required
                   style={{ width: "80%", marginTop: "1em" }}
                 />
                 <TextField
-                  title="Subject"
-                  label="Subject"
-                  placeholder="Subject/Matter of your query"
+                  name="phone"
+                  title="Phone Number"
+                  label="Phone Number"
                   variant="outlined"
                   required
                   style={{ width: "80%", marginTop: "1em" }}
                 />
                 <TextField
+                  name="message"
                   title="Message"
                   label="Message"
                   placeholder="Type your message here"
@@ -75,7 +92,7 @@ const ContactsPage = () => {
                   required
                   style={{ width: "80%", marginTop: "1em" }}
                 />
-                <FillButton style={{ width: "40%" }}>Submit Form</FillButton>
+                <FillButton disabled={loading} type="submit" style={{ width: "40%" }}>{loading ? 'Submitting' : 'Submit'} Form</FillButton>
               </form>
             </div>
           </div>

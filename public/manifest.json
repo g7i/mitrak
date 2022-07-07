@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/MITRC.jpeg?alt=media&token=a3b1b6a0-15b0-4c1d-8387-8c89a446b2fc",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/MITRC.jpeg?alt=media&token=a3b1b6a0-15b0-4c1d-8387-8c89a446b2fc",
       "type": "image/png",
       "sizes": "512x512"
     }

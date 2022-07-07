@@ -1,4 +1,4 @@
-import {addDoc, collection, deleteDoc, doc, getDoc, getDocs, updateDoc} from "firebase/firestore";
+import {addDoc, collection, deleteDoc, doc, getDoc, getDocs, updateDoc, orderBy, query} from "firebase/firestore";
 import {Collections, db} from "./db";
 
 export type Contact = {
@@ -36,7 +36,8 @@ export async function updateContact(id: string, data: Partial<Omit<Contact, "id"
 }
 
 export async function getContacts(): Promise<Contact[]> {
-    const querySnapshot = await getDocs(collection(db, Collections.contacts));
+    const q = query(collection(db, Collections.contacts), orderBy("createdAt", "desc"));
+    const querySnapshot = await getDocs(q);
     const data: Contact[] = [];
     querySnapshot.forEach((doc) => data.push({id: doc.id, ...doc.data()} as Contact));
     return data;
