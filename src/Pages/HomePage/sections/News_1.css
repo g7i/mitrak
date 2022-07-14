@@ -1,0 +1,28 @@
+.marquee {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marqueeContentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-left: 8vmax;
+    word-wrap: normal;
+    -moz-animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
