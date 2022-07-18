@@ -58,7 +58,7 @@ const Button = styled.a`
     border: none;
     color: #FFFFFF;
     padding: 1rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
     cursor: pointer;
     margin-left: 5rem;
     text-decoration: none;
