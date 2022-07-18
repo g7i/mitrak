@@ -13,7 +13,7 @@ const ApplyForAdmission = () => {
                     <Paragraph align="center" style={{ color: 'white' }}>Apply for admission now!</Paragraph>
                 </div>
                 <Button href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">Apply Now For Admission</Button>
-                <Button>MITRC@NEWS</Button>
+                
             </Overlay>
         </Container>
     )
