@@ -136,7 +136,7 @@ const Navbar = () => {
         <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">
           Apply For Admission
         </MenuLink>
-        <MenuLink href="/govnews">
+        <MenuLink href="/mitrcnews">
           MITRC @NEWS
         </MenuLink>
       </Menu>

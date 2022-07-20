@@ -16,7 +16,7 @@ function News_1() {
   }, []);
   return (
     <div class="news_1">
-        <div class="box1" style={{width:'100%',height:'50px',backgroundColor:"#F4C410"}} >
+        <div class="box1" style={{width:'100%',height:'30px',backgroundColor:"#E07C24"}} >
                 <div class='marquee' >
                     <div class='marqueeContentContainer'> 
                     {newsList
@@ -38,7 +38,7 @@ function News_1() {
                 </div>
                 
         </div>
-        <div class="box1" style={{width:'100%',height:'40px',backgroundColor:"#fff"}}>
+        <div class="box1" style={{width:'100%',height:'30px',backgroundColor:"#fff"}}>
                 <div class='marquee' >
                     <div class='marqueeContentContainer' >
                     {newsList
@@ -55,15 +55,15 @@ function News_1() {
                 </div>
                 
         </div>
-        <div class="box1" style={{width:'100%',height:'40px',backgroundColor:"#1FAA59"}}>
+        {/* <div class="box1" style={{width:'100%',height:'30px',backgroundColor:"#1FAA59"}}>
                 <div class='marquee' >
                     <div class='marqueeContentContainer' >
-                      
+
                     </div>
 
                 </div>
                 
-        </div>
+        </div> */}
     </div>
   )
 }
