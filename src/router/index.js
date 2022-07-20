@@ -39,6 +39,7 @@ import MandatoryPublicDisclosuresPage from "../Pages/AcademicsPage/MandatoryDisc
 import FeeStructurePage from "../Pages/AcademicsPage/FeeStructurePage";
 import NationalLevelEvents from "../Pages/CampusLifePage/NationalLevelEvents/index";
 import Department from "../Pages/AcademicsPage/departments/Department";
+import GovtSelectionNews from "../Pages/PlacementPage/GovtSelectionNews";
 
 const Router = () => {
   const {
@@ -181,7 +182,8 @@ const Router = () => {
             exact
             component={PlacementPage}
           />
-
+           <Route path="/govnews" excat component={GovtSelectionNews }/>
+          
           {/*Dashboard*/}
           <Route path="/admin/dashboard" exact component={AdminDashboard} />
           <Route

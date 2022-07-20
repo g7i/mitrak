@@ -9,11 +9,12 @@ import ApplyForAdmission from '../../components/Banner/ApplyForAdmission';
 import Testimonials from './sections/Testimonials';
 import { Heading } from '../../components/styledComponents/GlobalComponents';
 import UpdatesCarousel from './UpdatesCarousel';
+import News_1 from './sections/News_1';
 
 const LandingPage = () => {
   return (
     <>
-      
+      <News_1/>
       <AboutUsSection />
       <Courses />
       {/* <ExploreMore /> */}
