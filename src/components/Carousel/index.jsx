@@ -31,6 +31,10 @@ const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
 
 const SlideTextData = [
   {
+    title:"Developing Leaders Worldwide",
+    subtitle:"Engage. Produce. Grow"
+  },
+  {
     title: "A Small College with a Big Reputation",
     subtitle: "Where Academics And Character Are Classmates",
   },
@@ -88,6 +92,7 @@ const SlideTextData = [
 
 const ImageSlider = ({
   images = [
+    "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FHOME%20PAGE.jpg?alt=media&token=0ef3abac-3948-4a22-80fa-03b152c74445",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FHome%20Page%2FPhoto%203.jpg?alt=media&token=0a245d04-e342-4e7f-9595-023b786aeece",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FHome%20Page%2Fphoto%201.jpg?alt=media&token=6e78000e-31d3-4f21-8578-9d1b26c41538",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FHome%20Page%2Fphoto%202.jpg?alt=media&token=0fed5f04-694a-4115-8217-e3b2db6ba4f8",

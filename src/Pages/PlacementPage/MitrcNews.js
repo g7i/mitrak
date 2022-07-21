@@ -37,7 +37,9 @@ function Mitrcnews() {
         </para>
         <div className="grid" style={{padding:'6em',paddingTop:'2em',justifyContent:'center',textAlign:'center'}} >
           {mitrcnews.map(item => (
-            <img className='img-mitrcnews' key={item.url} src={item.url} alt="" onLoad={e => e.target.classList.add('loaded')} style={{width:'30%', height:'40%',objectFit:'contain',margin:'1em'}}  />
+            <div className='newsmitrc' style={{width:'20%',height:'20%',display:"inline-block",margin:"1em",border:'1px solid white',paddingRight:'2em',background:'white'}}> 
+            <img className='img-mitrcnews' key={item.url} src={item.url} alt="" onLoad={e => e.target.classList.add('loaded')} style={{width:'100%', height:'100%',objectFit:'contain',margin:'1em'}}  />
+            </div>
           ))}
           {/* {data.map(item => (
             <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}  style={{width:'40%', height:'50%',objectFit:'contain',margin:'1em'}}/>
