@@ -1093,8 +1093,8 @@ export const mitrcnews = [{
     },
     {
 
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F2.jpeg?alt=media&token=cca3ded4-2ba6-4798-a3d3-d761658936d3',
-
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F2.jpeg?alt=media&token=cca3ded4-2ba6-4798-a3d3-d761658936d3',
+        size: 'small'
     },
     {
 
