@@ -87,7 +87,7 @@ const FeeStructurePage = () => {
                     </tr>
                     <tr style={{ textAlign: "center" }}>
                         <td>MBA</td>
-                        <td>39500</td>
+                        <td>19750</td>
                         <td>21000</td>
                         <td>1000</td>
                         <td>7500</td>

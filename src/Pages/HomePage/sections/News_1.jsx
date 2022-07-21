@@ -55,7 +55,7 @@ function News_1() {
                 </div>
                 
         </div>
-        {/* <div class="box1" style={{width:'100%',height:'30px',backgroundColor:"#1FAA59"}}>
+        <div class="box1" style={{width:'100%',height:'30px',backgroundColor:"#1FAA59"}}>
                 <div class='marquee' >
                     <div class='marqueeContentContainer' >
 
@@ -63,7 +63,7 @@ function News_1() {
 
                 </div>
                 
-        </div> */}
+        </div>
     </div>
   )
 }
