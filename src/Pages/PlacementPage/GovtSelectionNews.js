@@ -22,7 +22,7 @@ function GovtSelection() {
     useEffect(() => {
       (async () => {
         setLoading(true);
-        setData(await listDocuments('placementsData', 'govtSelection'))
+        setData(await listDocuments('', ''))
         setLoading(false);
       })();
     }, []);   

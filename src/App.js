@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import AboutUsSection from './Pages/HomePage/sections/AboutUsSection';
 import ScrollToTop from "./components/ScrollToTop";
 import UpdatesCarousel from "./Pages/HomePage/UpdatesCarousel";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (

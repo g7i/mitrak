@@ -1087,91 +1087,113 @@ export const testimonialImages = [{
 
 
 export const mitrcnews = [{
-        id: '1',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F1.jpeg?alt=media&token=a0d7792f-28f3-45ba-85bf-8e973933871a',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F1.jpeg?alt=media&token=a0d7792f-28f3-45ba-85bf-8e973933871a',
+        size: "small"
     },
     {
-        id: '2',
+
         image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F2.jpeg?alt=media&token=cca3ded4-2ba6-4798-a3d3-d761658936d3',
+
     },
     {
-        id: '3',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F3.jpeg?alt=media&token=329a87f6-3129-45be-bbe3-d0bdf23c956e',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F3.jpeg?alt=media&token=329a87f6-3129-45be-bbe3-d0bdf23c956e',
+        size: "small"
     },
     {
-        id: '4',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F3-1.jpeg?alt=media&token=d1f462a7-7cb1-4cd9-9edc-855d53a5812f',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F3-1.jpeg?alt=media&token=d1f462a7-7cb1-4cd9-9edc-855d53a5812f',
+        size: "small"
     },
     {
-        id: '5',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F4.jpeg?alt=media&token=fa452c7f-1c96-41c1-8cdd-47341fc11b4b',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F4.jpeg?alt=media&token=fa452c7f-1c96-41c1-8cdd-47341fc11b4b',
+        size: "small"
     },
     {
-        id: '6',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F5.jpeg?alt=media&token=3124c6c6-15fe-4a20-a304-bdcd0d246cff',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F5.jpeg?alt=media&token=3124c6c6-15fe-4a20-a304-bdcd0d246cff',
+        size: "small"
     },
     {
-        id: '7',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F6.jpeg?alt=media&token=4069e76e-87bc-4f77-9f2e-e9824198269c',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F6.jpeg?alt=media&token=4069e76e-87bc-4f77-9f2e-e9824198269c',
+        size: "small"
     },
     {
-        id: '8',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F6-1.jpeg?alt=media&token=ef2957b2-23b0-4217-8cb4-3cba76547a86',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F6-1.jpeg?alt=media&token=ef2957b2-23b0-4217-8cb4-3cba76547a86',
+        size: "small"
     },
     {
-        id: '9',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F7.jpeg?alt=media&token=7b400d17-dc03-4ce8-942a-fbb07ceb30f5',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F7.jpeg?alt=media&token=7b400d17-dc03-4ce8-942a-fbb07ceb30f5',
+        size: "small"
     },
     {
-        id: '10',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F8.jpeg?alt=media&token=f31cc133-5d53-4681-8348-3c572509a6ae',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F8.jpeg?alt=media&token=f31cc133-5d53-4681-8348-3c572509a6ae',
+        size: "small"
     },
     {
-        id: '11',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F9.jpeg?alt=media&token=bed936b5-bf0f-4087-a5ff-586d5f779fbc',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F9.jpeg?alt=media&token=bed936b5-bf0f-4087-a5ff-586d5f779fbc',
+        size: "small"
     },
     {
-        id: '12',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F10.jpeg?alt=media&token=dfd360a8-de40-449e-941b-240ad0212f19',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F10.jpeg?alt=media&token=dfd360a8-de40-449e-941b-240ad0212f19',
+        size: "small"
     },
     {
-        id: '13',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F11.jpeg?alt=media&token=f3f54e28-5a82-441e-8d38-3945accd30d1',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F11.jpeg?alt=media&token=f3f54e28-5a82-441e-8d38-3945accd30d1',
+        size: "small"
     },
     {
-        id: '14',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F12.jpeg?alt=media&token=93293ea4-fe46-4670-a406-fd117362c2a8',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F12.jpeg?alt=media&token=93293ea4-fe46-4670-a406-fd117362c2a8',
+        size: "small"
     },
     {
-        id: '15',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F13.jpeg?alt=media&token=a7151a37-b80a-486e-8b2a-a4e465d58f44',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F13.jpeg?alt=media&token=a7151a37-b80a-486e-8b2a-a4e465d58f44',
+        size: "small"
     },
     {
-        id: '16',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F14.jpeg?alt=media&token=749401a7-a766-4499-a186-c21c8b536f98',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F14.jpeg?alt=media&token=749401a7-a766-4499-a186-c21c8b536f98',
+        size: "small"
     },
     {
-        id: '17',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F15.jpeg?alt=media&token=7882cee1-2b0b-43b6-abd3-ad97dd82e4e7',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F15.jpeg?alt=media&token=7882cee1-2b0b-43b6-abd3-ad97dd82e4e7',
+        size: "small"
     },
     {
-        id: '18',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F16.jpeg?alt=media&token=b6e38c53-bff9-4142-adb0-01b0e2bfcf84',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F16.jpeg?alt=media&token=b6e38c53-bff9-4142-adb0-01b0e2bfcf84',
+        size: "small"
     },
     {
-        id: '19',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F17.jpeg?alt=media&token=ab8c062c-6aa4-4ff2-a8fc-7265b7f62903',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F17.jpeg?alt=media&token=ab8c062c-6aa4-4ff2-a8fc-7265b7f62903',
+        size: "small"
     },
     {
-        id: '20',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F18.jpeg?alt=media&token=6225372e-86a4-4ad5-98f3-8c8bb203fbac',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F18.jpeg?alt=media&token=6225372e-86a4-4ad5-98f3-8c8bb203fbac',
+        size: "small"
     },
     {
-        id: '21',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F19-1.jpeg?alt=media&token=10903f85-427a-4a68-bb16-0abc1cee5dcd',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F19-1.jpeg?alt=media&token=10903f85-427a-4a68-bb16-0abc1cee5dcd',
+        size: "small"
     },
     {
-        id: '22',
-        image: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F20.jpeg?alt=media&token=b0d99571-12a7-4a9e-b3e2-5da3d7e2c990',
+
+        url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F20.jpeg?alt=media&token=b0d99571-12a7-4a9e-b3e2-5da3d7e2c990',
+        size: "small"
     },
 ];

@@ -4,6 +4,7 @@ import ContactHeader from "../../components/Navbar/ContactHeader";
 import Footer from "../../components/Footer/Footer";
 import { listDocuments } from "../../utils/firebase/db";
 import {PageHead } from "../../components/styledComponents/New";
+import "./MItrcNews.css";
 import { CircularProgress } from "@mui/material";
 import {
     govtSelectionImages,
@@ -14,6 +15,8 @@ import {
   } from "./staticData/doc";
 
 
+
+
 function Mitrcnews() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -21,7 +24,7 @@ function Mitrcnews() {
     useEffect(() => {
       (async () => {
         setLoading(true);
-        setData(await listDocuments('placementsData', 'mitrcNews'))
+        setData(await listDocuments('', ''))
         setLoading(false);
       })();
     }, []);   
@@ -34,7 +37,7 @@ function Mitrcnews() {
         </para>
         <div className="grid" style={{padding:'6em',paddingTop:'2em',justifyContent:'center',textAlign:'center'}} >
           {mitrcnews.map(item => (
-            <img key={item.url} src={item.url} alt="" onLoad={e => e.target.classList.add('loaded')} style={{width:'40%', height:'50%',objectFit:'contain',margin:'1em'}}/>
+            <img key={item.url} src={item.url} alt="" onLoad={e => e.target.classList.add('loaded')} style={{width:'40%', height:'50%',objectFit:'contain',margin:'1em'}}  />
           ))}
           {/* {data.map(item => (
             <img key={item.photo} src={item.photo} alt="" onLoad={e => e.target.classList.add('loaded')}  style={{width:'40%', height:'50%',objectFit:'contain',margin:'1em'}}/>
