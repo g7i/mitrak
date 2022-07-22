@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { H4, PageHead } from "../../components/styledComponents/New";
 
 const PlacementActivities = ({ data }) => {
-  const sessionList = ["2021-2022", "2020-2021", "2019-2020"];
+  const sessionList = ["2022-2023","2021-2022", "2020-2021", "2019-2020"];
   const monthList = [
     
     "June",
