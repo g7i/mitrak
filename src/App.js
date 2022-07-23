@@ -17,8 +17,8 @@ import {addContact} from "./utils/firebase/contacts";
 import { FillButton, FillImage, Heading, HyperLink, Paragraph } from "./components/styledComponents/GlobalComponents";
 // import Layout from '../../constants/Layout';
 import Layout from "./constants/Layout";
-import { TextField } from '@mui/material'
-
+import { TextField,Box,AutoComplete } from '@mui/material'
+import Options from "./components/Options/Options";
 
 
 
@@ -32,9 +32,11 @@ const ContactsPopup = () => {
       const name = e.target.name.value;
       const phone = e.target.phone.value;
       const message = e.target.message.value;
+      const email = e.target.email.value;
+      
 
       try {
-        await addContact({ name, phone, message, createdAt: Date.now(), title: "Contact" });
+        await addContact({ name, phone,email ,message, createdAt: Date.now(), title: "Contact" });
         e.target.reset();
       } catch (e) {
         alert("Unable to submit message");
@@ -58,6 +60,7 @@ const ContactsPopup = () => {
                   required
                   style={{ width: "80%", marginTop: "1em" }}
                 />
+                
                 <TextField
                   name="phone"
                   title="Phone Number"
@@ -66,6 +69,16 @@ const ContactsPopup = () => {
                   required
                   style={{ width: "80%", marginTop: "1em" }}
                 />
+                <TextField 
+                  name="email"
+                  title="Email Address"
+                  label="Email Address"
+                  variant="outlined"
+                  required
+                  style={{ width: "80%", marginTop: "1em" }}
+                  />
+                <Options  />
+                  
                 <TextField
                   name="message"
                   title="Message"
