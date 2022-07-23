@@ -7,6 +7,7 @@ export type Contact = {
     name: string,
     message: string,
     phone: Number,
+    email:String,
     createdAt: Number,
 }
 

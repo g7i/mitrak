@@ -1,7 +1,5 @@
 import {collection, getDocs, getFirestore, query, where, WhereFilterOp} from "firebase/firestore";
-
 export const db = getFirestore();
-
 export const Collections = {
     users: 'users',
     notes: 'notes',

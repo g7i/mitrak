@@ -7,7 +7,7 @@ export default function ComboBox() {
     <Autocomplete
       disablePortal
       id="combo-box-demo"
-      options={top100Films}
+      options={enquiry}
       renderInput={(params) => <TextField {...params} label="For Enquiry" />}
       required
       style={{ width: "80%", marginTop: "1em" }}
@@ -15,8 +15,8 @@ export default function ComboBox() {
   );
 }
 
-// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-const top100Films = [
+
+const enquiry = [
   { label: 'ADMISSION IN B.TECH' },
   { label: 'ADMISSION IN MBA' },
   { label: 'JOB ENQUIRY' },

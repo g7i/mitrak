@@ -36,7 +36,7 @@ const ContactsPopup = () => {
       
 
       try {
-        await addContact({ name, phone,email ,message, createdAt: Date.now(), title: "Contact" });
+        await addContact({ name, phone, email ,message, createdAt: Date.now(), title: "Contact" });
         e.target.reset();
       } catch (e) {
         alert("Unable to submit message");
