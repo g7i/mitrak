@@ -1,3 +1,4 @@
+import "./App.css";
 import LandingPage from "./Pages/HomePage";
 import Navbar from "./components/Navbar";
 import ContactHeader from "./components/Navbar/ContactHeader";
@@ -86,12 +87,6 @@ const ContactsPopup = () => {
 
 
 
-const popupstyle = {
-  border:"1px solid black",
-  width:'500px',
-  height:'500px',
-  backgroundColor:'blue'
-}
 
 const PopupModal = ({url}) => {
   const [open, setOpen] = useState(false);
@@ -105,7 +100,7 @@ const PopupModal = ({url}) => {
 
   return (
       <Popup open={open} closeOnDocumentClick onClose={closeModal} >
-          <h1 style={popupstyle}><ContactsPopup/></h1>
+          <h1 className="popupstyle"><ContactsPopup/></h1>
       </Popup>
   );
 };
