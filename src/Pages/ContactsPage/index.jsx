@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import styled from "styled-components";
 import {addContact} from "../../utils/firebase/contacts";
 
+
 const ContactsPage = () => {
   const [loading, setLoading] = React.useState(false);
 
