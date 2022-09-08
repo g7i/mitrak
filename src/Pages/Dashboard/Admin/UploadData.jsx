@@ -14,8 +14,8 @@ import MultipleInput from "../../../components/Input/MultipleInput";
 const session = {
   type: "dropdown",
   name: "session",
-  options: ["2021-2022", "2020-2021", "2019-2020"],
-  default: '2021-2022',
+  options: ["2022-2023","2021-2022", "2020-2021", "2019-2020"],
+  default: '2022-2023',
 };
 
 const month = {
