@@ -1344,6 +1344,85 @@ export function NationalLevelEvents() {
   );
 }
 
+export function NationalLevelEvents22_23() {
+  return (
+    <Cont>
+      <H4>EVENTS PARTICIPATION IN 2022-23</H4>
+      <ul style={{ listStyle: "none" }}>
+        <li>
+          <H5>
+          GRAND FINALE SELECTION IN SMART INDIA HACKATHON 2022 – LETS CODE FOR COUNTRY SECURITY
+          </H5>
+          <UL>
+            <li>
+              <strong>EVENT NAME : </strong>SIH 2022 (NATIONAL LEVEL HACKATHON)
+            </li>
+            <li>
+              <strong>ORGANISED BY : </strong>AICTE,MOE,MIC
+            </li>
+            <li>
+              <strong>LEVEL : </strong>NATIONAL LEVEL
+            </li>
+            <li>
+              <strong>DATE : </strong>25-26 AUGUST,2022
+            </li>
+            <li>
+              <strong>TOTAL TEAMS PARTICIPATED : </strong>28
+            </li>
+            <li>
+              <strong>IDEAS SELECTED FOR GRAND FINALE : </strong>21
+            </li>
+            <li>
+              <strong>IDEAS SELECTED IS : </strong>
+              <ul>
+                <li>AI BASED TOOL TO GET INFORMATION ABOUT 5 GOOD INSTITUTES BASED ON AISHE</li>
+                <li>PREDICTION OF ADMISSION & JOBS IN ENGINEERING & TECHNOLOGY WITH RESPECT TO DEMOGRAPHIC LOCATIONS</li>
+                <li>ATTRACTIVENESS AND USER FRIENDLINESS OF AICTE WEBSITE</li>
+                <li>COST OF AIR POLLUTION TO SOLAR POWER GENERATION (CAPSOLAR)</li>
+                <li>A STATISTICAL MODEL FOR OBJECTIVE DETERMINATION OF OUTDOOR ADVERTISING RATES AT KEY LOCATIONS IN INDIA ON THE BASIS OF FACTORS SUCH AS FOOTFALL/VIEWERSHIP, DEMOGRAPHIC PROFILE OF THE TARGET AUDIENCE AT A PARTICULAR LOCATION, EXISTING RATES, ETC.</li>
+                <li>A MOBILE APP FOR PIB WITH ENGAGING FEATURES FOR DIRECT OUTREACH TO THE PEOPLE.</li>
+                <li>CAREER GUIDANCE SYSTEM.</li>
+                <li>RECOMMENDATION SYSTEM FOR FUTURE SKILLS.</li>
+                <li>STANDALONE DESKTOP APPLICATION FOR ANALYSIS, VISUALIZATION AND INTERPRETATION OF HYDRO CHEMICAL DATA.</li>
+                <li>DEVELOPMENT OF A WEB-BASED PLATFORM & MOBILE APP FOR STORING & SHARING INFORMATION ABOUT ACCESSIBLE BUILDINGS/ OFFICES/ PUBLIC PLACES/ BUS STOPS/ RAILWAYS/ MARKETPLACE SCHOOLS ETC.</li>
+                <li>SOFTWARE FOR FACILITATION OF VARIOUS GOVT. SCHEMES FOR PERSONS WITH DISABILITIES.</li>
+                <li>MONITORING SAFETY IN SCHOOLS BY THE SCHOOL, STUDENTS, TEACHERS AND PARENTS, WITH ESCALATION OF ISSUES TO DISTRICT AND STATE LEVEL WITH THE HELP OF AN APP MASKING THE IDENTITY OF PERSON WHO ESCALATES THE ISSUE.</li>
+                <li>REQUIRE CRIME PREDICTIVE MODEL/TOOL FOR HOTSPOT MAPPING</li>
+                <li>LAYERING OF BANK ACCOUNTS</li>
+                <li>AL BASED SOLUTION FOR PREDICTING MAJOR LAW & ORDER INCIDENTS: THE SOLUTION SHOULD BE ABLE TO USE INPUTS SUCH AS: PCR CALL KEY WORDS, TIME OF CALL, LOCATION, MONTH, CALENDAR OF FESTIVALS/POLITICAL EVENTS, COMMUNITY INVOLVED, DISTRIBUTION OF SIMILAR PCR CALLS, ETC. TO ALLOW COMMAND ROOM OFFICERS TO ICATORS OF SERIOUS LAW & ORDER ISSUE AT THE VERY INITIAL STAGES FOR TIMELY INTERVENTION</li>
+                <li>BUILD AN APPLICATION THAT CAN CALCULATE SPO2, BLOOD PRESSURE, STRESS OR ANY OTHER POSSIBLE BODY VITALS USING A SMARTPHONE. APPLICATIONS THAT CAN HELP DO SCREENING FOR ANY CONDITIONS FOR PEOPLE TO TAKE A DECISION TO DO A DR CONSULTATION ARE ALSO WELCOME.</li>
+                <li>ANDROID APPLICATION FOR THE IMAGING POSSIBILITIES BY AN EARTH OBSERVING SATELLITE</li>
+                <li>PREDICTION OF TEC VARIATIONS WITH ARTIFICIAL INTELLIGENCE USING SPACE WEATHER DATA AS INPUT</li>
+              </ul>
+            </li>
+            <li>
+              <strong>ACHIEVEMENT : </strong>2  TEAMS GOT WINNERS FOR ORGANISATION PIB & 2 TEAMS GOT OPPORTUNITY  FOR FULL DEVELOPMENT FOR ISRO  .Project of ISRO “ PREDICTION OF TEC VARIATIONS WITH ARTIFICIAL INTELLIGENCE USING SPACE WEATHER DATA AS INPUT”  GOT ALSO SELECTED FOR NASA -SOPC.  
+            </li>
+          </UL>
+          <div className="grid three">
+            {[
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNATIONAL%20%26%20STATE%20LEVEL%20EVENTS%2F2022-23%2FSIH%202022%2F1.jpg?alt=media&token=da76c640-2507-4097-b749-e3a5bdab1645",
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNATIONAL%20%26%20STATE%20LEVEL%20EVENTS%2F2022-23%2FSIH%202022%2F2.jpg?alt=media&token=d1d3c941-360c-4b69-817f-54dfb89fe4fe",
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNATIONAL%20%26%20STATE%20LEVEL%20EVENTS%2F2022-23%2FSIH%202022%2F3.jpg?alt=media&token=91190b31-261b-4506-9e81-2b81ffb5a0cf",
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNATIONAL%20%26%20STATE%20LEVEL%20EVENTS%2F2022-23%2FSIH%202022%2F4.jpg?alt=media&token=7c5012de-3b9d-49c8-b014-35986bbba78d",
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNATIONAL%20%26%20STATE%20LEVEL%20EVENTS%2F2022-23%2FSIH%202022%2F5.jpg?alt=media&token=f80cf01c-11af-449d-806e-93f60c6c86f0",
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNATIONAL%20%26%20STATE%20LEVEL%20EVENTS%2F2022-23%2FSIH%202022%2F6.jpg?alt=media&token=43af7521-d267-41eb-997d-4827369ce727",
+              "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNATIONAL%20%26%20STATE%20LEVEL%20EVENTS%2F2022-23%2FSIH%202022%2F7.jpg?alt=media&token=61931ded-2b6d-410f-8cbf-42ccebb66f61"
+            ].map((item) => (
+              <img
+                key={item}
+                src={item}
+                alt={item}
+                onLoad={(e) => e.target.classList.add("loaded")}
+              />
+            ))}
+          </div>
+        </li>
+      </ul>
+    </Cont>
+  );
+}
+
 export function NationalLevelEvents21_22() {
   return (
     <Cont>

@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import AboutUsSection from './Pages/HomePage/sections/AboutUsSection';
 import ScrollToTop from "./components/ScrollToTop";
 import UpdatesCarousel from "./Pages/HomePage/UpdatesCarousel";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React,{Component,useState} from "react";
 import Carousel from "nuka-carousel";
@@ -19,6 +20,7 @@ import { FillButton, FillImage, Heading, HyperLink, Paragraph } from "./componen
 import Layout from "./constants/Layout";
 import { TextField,Box,AutoComplete } from '@mui/material'
 import Options from "./components/Options/Options";
+
 
 
 
@@ -48,7 +50,7 @@ const ContactsPopup = () => {
     return (       
           <div>
             <div className="contactForm">
-              <Heading style={{ fontSize: "1.8rem" }}>
+              <Heading style={{ fontSize: "1.4rem" }}>
                 Send us your enquiry
               </Heading>
               <form onSubmit={submitContactForm}>
@@ -58,16 +60,15 @@ const ContactsPopup = () => {
                   label="Full Name"
                   variant="outlined"
                   required
-                  style={{ width: "80%", marginTop: "1em" }}
+                  style={{ width: "100%", marginTop: "1em" }}
                 />
-                
                 <TextField
                   name="phone"
                   title="Phone Number"
                   label="Phone Number"
                   variant="outlined"
                   required
-                  style={{ width: "80%", marginTop: "1em" }}
+                  style={{ width: "100%", marginTop: "1em" }}
                 />
                 <TextField 
                   name="email"
@@ -75,7 +76,7 @@ const ContactsPopup = () => {
                   label="Email Address"
                   variant="outlined"
                   required
-                  style={{ width: "80%", marginTop: "1em" }}
+                  style={{ width: "100%", marginTop: "1em" }}
                   />
                 <Options  />
                   
@@ -87,9 +88,9 @@ const ContactsPopup = () => {
                   variant="outlined"
                   multiline
                   required
-                  style={{ width: "80%", marginTop: "1em" }}
+                  style={{ width: "100%", marginTop: "1em" }}
                 />
-                <FillButton disabled={loading} type="submit" style={{ width: "40%" }}>{loading ? 'Submitting' : 'Submit'} Form</FillButton>
+                <FillButton disabled={loading} type="submit" style={{ width: "100%" }}>{loading ? 'Submitting' : 'Submit'} Form</FillButton>
               </form>
             </div>
           </div>    
@@ -113,19 +114,21 @@ const PopupModal = ({url}) => {
 
   return (
       <Popup open={open} closeOnDocumentClick onClose={closeModal} >
-          <h1 className="popupstyle"><ContactsPopup/></h1>
+          <h1 className="popupstyle"><ContactsPopup className="contactpopup"/></h1>
       </Popup>
   );
 };
+
 
 const App = () => {
   return (
     <>
       <div className="app-main-container">
-        <PopupModal/>
+        <PopupModal />
         <ContactHeader />
         <Navbar />
         <LandingPage />
+
         <LandingSectionsPage />
         <Footer />
       </div>

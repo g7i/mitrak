@@ -10,7 +10,7 @@ export default function ComboBox() {
       options={enquiry}
       renderInput={(params) => <TextField {...params} label="For Enquiry" />}
       required
-      style={{ width: "80%", marginTop: "1em" }}
+      style={{ width: "100%", marginTop: "1em" }}
     />
   );
 }

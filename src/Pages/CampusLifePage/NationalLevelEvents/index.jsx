@@ -13,9 +13,14 @@ import {
   NationalLevelEvents19_20,
   NationalLevelEvents20_21,
   NationalLevelEvents21_22,
+  NationalLevelEvents22_23
 } from "../EventGallery/Components";
 
 const data = [
+  {
+    title:"event participation in 2022-23",
+    component:<NationalLevelEvents22_23 />,
+  },
   {
     title: "event participation in 2021-22",
     component: <NationalLevelEvents21_22 />,

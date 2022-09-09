@@ -137,7 +137,7 @@ const Navbar = () => {
           Apply For Admission
         </MenuLink>
         <MenuLink href="/mitrcnews">
-          MITRC @NEWS
+          Press Release
         </MenuLink>
       </Menu>
       {/*TODO: Remove Me*/}

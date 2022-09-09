@@ -31,6 +31,15 @@ const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
 
 const SlideTextData = [
   {
+    title:"The only source of knowledge is experience"
+  },
+  {
+    title:"Talk is cheap. Show me the code"
+  },
+  {
+    title:"Hackathons are where your crazy idea becomes reality"
+  },
+  {
     title:"Developing Leaders Worldwide",
     subtitle:"Engage. Produce. Grow"
   },
@@ -92,6 +101,9 @@ const SlideTextData = [
 
 const ImageSlider = ({
   images = [
+    "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FHOME%20PAGE%2F1.jpg?alt=media&token=a6c400d2-3f63-4225-8051-2e906ae0cbce",
+    "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FHOME%20PAGE%2F2.jpg?alt=media&token=905b18e1-4553-4bdc-b236-7dd090745293",
+    " https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FHOME%20PAGE%2F3.jpg?alt=media&token=76b7dec3-6ffa-4689-a04b-8b019b68f36e",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FHOME%20PAGE.jpg?alt=media&token=0ef3abac-3948-4a22-80fa-03b152c74445",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FHome%20Page%2FPhoto%203.jpg?alt=media&token=0a245d04-e342-4e7f-9595-023b786aeece",
     "https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/images%2FHome%20Page%2Fphoto%201.jpg?alt=media&token=6e78000e-31d3-4f21-8578-9d1b26c41538",

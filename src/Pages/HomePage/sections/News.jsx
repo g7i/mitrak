@@ -126,7 +126,7 @@ export default function News() {
                   width={
                     newsList?.filter((item) => item.type == "new").length === 1
                       ? "100%"
-                      : "50%"
+                      : "100%"
                   }
                 />
               ))}
@@ -444,10 +444,9 @@ const ModalBodySecondWrapper = styled.div`
   }
   .document-link-div {
     display: flex;
-
     align-items: center;
     a {
-      max-width: 80%;
+      max-width: 100%;
       overflow: hidden;
     }
   }
@@ -494,12 +493,12 @@ const CloseIcon = styled(CancelIcon)`
 `;
 
 const NewsContainer = styled.div`
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  /* margin: 0 auto; */
   a {
     font-size: 1rem;
     margin: 10px 0;
-    display: block;
+    /* display: block; */
     text-decoration: none;
   }
 `;

@@ -10,11 +10,13 @@ import Testimonials from './sections/Testimonials';
 import { Heading } from '../../components/styledComponents/GlobalComponents';
 import UpdatesCarousel from './UpdatesCarousel';
 import News_1 from './sections/News_1';
+import ViewBox from "./sections/Viewbox";
 
 const LandingPage = () => {
   return (
     <>
       <News_1/>
+      <ViewBox/>
       <AboutUsSection />
       <Courses />
       {/* <ExploreMore /> */}

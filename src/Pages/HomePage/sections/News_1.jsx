@@ -16,7 +16,7 @@ function News_1() {
   }, []);
   return (
     <div class="news_1">
-        <div class="box1" style={{width:'100%',height:'30px',backgroundColor:"#E07C24"}} >
+        <div class="box1" style={{width:'100%',height:'42px',backgroundColor:"#E07C24"}} >
                 <div class='marquee' >
                     <div class='marqueeContentContainer'> 
                     {newsList
@@ -69,13 +69,12 @@ function News_1() {
 }
 
 const NewsContainer = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   a {
     font-size: 0.5em;
     margin:40px 30px;
     text-decoration: none;
-
   }
 `;
 

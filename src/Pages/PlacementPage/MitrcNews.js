@@ -32,9 +32,9 @@ function Mitrcnews() {
     return (
       <div>
         <h1 className="pagehead" style={{border:"none",fontSize:'3em',textAlign:'center',fontWeight:'500',marginBottom:'0.5em' }}>MITRC NEWS </h1>
-        <para style={{fontsize:'1em',textAlign:'center',padding:'5em',fontWeight:'200'}}>
+        {/* <para style={{fontsize:'1em',textAlign:'center',padding:'5em',fontWeight:'200'}}>
           At MITRC, placement cell focus a lot on industry readiness of budding technocrats, other than the technical education Training and Placement department runs mandatory programs for students.
-        </para>
+        </para> */}
         <div className="grid" style={{padding:'6em',paddingTop:'2em',justifyContent:'center',textAlign:'center'}} >
           {mitrcnews.map(item => (
             <div className='newsmitrc' style={{width:'20%',height:'20%',display:"inline-block",margin:"1em",border:'1px solid white',paddingRight:'2em',background:'white'}}> 

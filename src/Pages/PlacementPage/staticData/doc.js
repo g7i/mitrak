@@ -1086,8 +1086,24 @@ export const testimonialImages = [{
 ];
 
 
-export const mitrcnews = [{
-
+export const mitrcnews = [
+    {
+        url:"https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%20%40%20MITRC%2F1.jpg?alt=media&token=a1fb9fc3-f5f9-4d21-b3cc-bf8003cf1824",
+        size:"small"
+    },
+    {
+        url:"https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%20%40%20MITRC%2F2.jpg?alt=media&token=8f55a48a-1af8-458f-8fcc-399599878559",
+        size:"small"
+    },
+    {
+        url:"https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%20%40%20MITRC%2F3.jpg?alt=media&token=0d0cca37-86f3-4b93-898d-d574d73b0631",
+        size:"small"
+    },
+    {
+        url:"https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%20%40%20MITRC%2F4.jpg?alt=media&token=5aac3b45-4a8d-4584-b647-6aed1ef100ef",
+        size:"small"
+    },
+    {
         url: 'https://firebasestorage.googleapis.com/v0/b/mitrak-7.appspot.com/o/APIS%2FNEWS%2F1.jpeg?alt=media&token=a0d7792f-28f3-45ba-85bf-8e973933871a',
         size: "small"
     },
