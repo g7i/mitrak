@@ -22,17 +22,6 @@ const ContactHeader = () => {
     <Nav background={Colors.BLUE} flexType="space-around">
       <Wrapper>
         <Wrapper>
-          <img
-            src={
-              "https://pbs.twimg.com/profile_images/918457632716984320/fgVEAVi1_400x400.jpg"
-            }
-            style={{ width: "25px", height: "auto", marginRight: "20px" }}
-            onClick={() => {
-              window.location.href = "https://statcounter.com/login/";
-            }}
-          />
-        </Wrapper>
-        <Wrapper>
           <ContactHeaderLinksWrapper href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hr@mitrc.ac.in">
             <AiOutlineMail color={"#FFFFFF"} />
             <Text color="#FFFFFF">hr@mitrc.ac.in</Text>

@@ -186,8 +186,8 @@ export const publicTables = [
         ],
         [
             "6",
-            "SCHOOL EMAIL ID",
-            "min@mitrc.ac.in,mitrcindia@gmail.com"
+            "ADMIN EMAIL ID",
+            "min@mitrc.ac.in, mitrcindia@gmail.com"
         ]
     ]
   },
@@ -207,7 +207,7 @@ export const publicTables = [
       [
         "2",
         "COMPLETE ADDRESS WITH PIN CODE",
-        "6TH MILE STONE,  DELHI-TIJARA STATE HIGHWAY,SIRMOLI ROAD-VILLAGE JHARKHERA, ALWAR(RAJASTHAN-301028)"
+        "6TH MILE STONE, DELHI-TIJARA STATE HIGHWAY,SIRMOLI ROAD-VILLAGE JHARKHERA, ALWAR(RAJASTHAN-301028"
       ],
       [
         "3",
@@ -240,19 +240,20 @@ export const publicTables = [
     tableData: [
       [
         "1",
-        "TOTAL PROGRAMMES ACCREDIATED BY AICTE",
-        "07"
+        "TOTAL PROGRAMMES APPROVED BY AICTE",
+        "08"
       ],
       [
         "2",
-        "NAME OF  PROGRAMMES ACCREDIATED BY AICTE",
+        "NAME OF  PROGRAMMES APPROVED BY AICTE",
         "    • B.Tech in Artificial Intelligence & Data Science (UG)\n" +
         "    • B.Tech in Computer Science Engineering (UG)\n" +
         "    • B.Tech in Civil Engineering (UG)\n" +
         "    • B.Tech in Electrical Engineering (UG)\n" +
         "    • B.Tech in Mechanical Engineering (UG)\n" +
         "    • M.Tech in Computer Science Engineering (PG)\n"+
-        "    • M.Tech in Production Engineering\n"
+        "    • M.Tech in Production Engineering\n" +
+        "    • B.Tech in Artificial Intelligence & Machine Learning (UG) "
       ]
     ]
   },
@@ -292,15 +293,20 @@ export const publicTables = [
         "70,000 per Annumn"
       ],
       [
-        "M.TECH-CSE (18 INTAKE)",
+        "M.TECH-CSE (6 INTAKE)",
         "2 YEARS",
         "70,000 per Annumn"
       ],
       [
-        "M.TECH-ME (18 INTAKE)",
+        "M.TECH-ME (6 INTAKE)",
         "2 YEARS",
         "70,000 per Annumn"
       ],
+      [
+        "B.TECH-AI & ML (60 INTAKE)",
+        "4 YEARS",
+        "70,000 per Annumn"
+      ]
     ]
   },
   {
@@ -308,29 +314,25 @@ export const publicTables = [
     header: [
       "SL. No.",
       "INFORMATION",
-      "DETAILS"
+     
     ],
     center: 2,
     tableData: [
       [
         "1",
         "TOTAL FACULTIES",
-        "110"
       ],
       [
         "2",
         "FACULTY : STUDENT RATIO",
-        "1:20"
       ],
       [
         "3",
         "TOTAL FACULTIES FOR PG PROGRAMMES",
-        "24"
       ],
       [
         "4",
         "TOTAL FACULTIES FOR UG PROGRAMMES",
-        "110"
       ]
     ]
   },
@@ -389,58 +391,57 @@ export const publicTables = [
     header: [
       "SL. No.",
       "INFORMATION",
-      "DETAILS"
+     
     ],
     tableData: [
       [
         "1",
         "TOTAL CAMPUS AREA",
-        "27 Acres"
+     
       ],
       [
         "2",
         "NUMBER OF CLASS ROOMS & CLASS ROOM SIZE",
-        "28 & 66 Square Meter EACH"
+      
       ],
       [
         "3",
         "NUMBER OF LABORATORIES &  SIZE",
-        "41 & 33 Square Meter EACH"
+       
       ],
       [
         "4",
         "NUMBER OF DRAWING HALLS & SIZE",
-        "2 & 132 Square meter EACH"
+        
       ],
       [
         "5",
         "NUMBER OF COMPUTER LABS",
-        "25"
+      
       ],
       [
         "6",
         "INTERNET FACILTY",
-        "YES ( 500 Mbps) with Fibre"
+        
       ],
       [
         "7",
         "WI FI FACILITY",
-        "YES ( WHOLE CAMPUS)"
+       
       ],
       [
         "8",
         "TOTAL TOILETS ( MALE)",
-        "20"
+     
       ],
       [
         "9",
         "TOTAL TOILETS ( FEMALE)",
-        "20"
+       
       ],
       [
         "10",
         "ONLINE LIBRARY RESOURCE",
-        "YES"
       ]
     ]
   },

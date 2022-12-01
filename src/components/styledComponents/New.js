@@ -204,11 +204,6 @@ export const Event = styled.div`
       -webkit-box-orient: vertical;
     `}
   }
-  .foot {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 7px;
-  }
   .date, .inst {
     font-size: 14px;
     line-height: 20px;

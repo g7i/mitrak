@@ -97,11 +97,6 @@ const ContactsPopup = () => {
     );
 }
 
-
-
-
-
-
 const PopupModal = ({url}) => {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
@@ -118,6 +113,7 @@ const PopupModal = ({url}) => {
       </Popup>
   );
 };
+
 
 
 const App = () => {
