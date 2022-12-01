@@ -4,8 +4,8 @@ export const IndicatorWrapper = styled.div`
   display: flex;
   flex-wrap: nowrap;
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  bottom: 10px;
+  left:40%;
 `;
 
 export const Dot = styled.div`

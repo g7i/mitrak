@@ -24,95 +24,95 @@ import Options from "./components/Options/Options";
 
 
 
-const ContactsPopup = () => {
-  const [loading, setLoading] = useState(false);
+// const ContactsPopup = () => {
+//   const [loading, setLoading] = useState(false);
 
-    const submitContactForm = async (e) => {
-      e.preventDefault();
-      setLoading(true);
+//     const submitContactForm = async (e) => {
+//       e.preventDefault();
+//       setLoading(true);
 
-      const name = e.target.name.value;
-      const phone = e.target.phone.value;
-      const message = e.target.message.value;
-      const email = e.target.email.value;
+//       const name = e.target.name.value;
+//       const phone = e.target.phone.value;
+//       const message = e.target.message.value;
+//       const email = e.target.email.value;
       
 
-      try {
-        await addContact({ name, phone, email ,message, createdAt: Date.now(), title: "Contact" });
-        e.target.reset();
-      } catch (e) {
-        alert("Unable to submit message");
-      }
+//       try {
+//         await addContact({ name, phone, email ,message, createdAt: Date.now(), title: "Contact" });
+//         e.target.reset();
+//       } catch (e) {
+//         alert("Unable to submit message");
+//       }
 
-      setLoading(false);
-    }
+//       setLoading(false);
+//     }
 
-    return (       
-          <div>
-            <div className="contactForm">
-              <Heading style={{ fontSize: "1.4rem" }}>
-                Send us your enquiry
-              </Heading>
-              <form onSubmit={submitContactForm}>
-                <TextField
-                  name="name"
-                  title="Full Name"
-                  label="Full Name"
-                  variant="outlined"
-                  required
-                  style={{ width: "100%", marginTop: "1em" }}
-                />
-                <TextField
-                  name="phone"
-                  title="Phone Number"
-                  label="Phone Number"
-                  variant="outlined"
-                  required
-                  style={{ width: "100%", marginTop: "1em" }}
-                />
-                <TextField 
-                  name="email"
-                  title="Email Address"
-                  label="Email Address"
-                  variant="outlined"
-                  required
-                  style={{ width: "100%", marginTop: "1em" }}
-                  />
-                <Options  />
+//     return (       
+//           <div>
+//             <div className="contactForm">
+//               <Heading style={{ fontSize: "1.4rem" }}>
+//                 Send us your enquiry
+//               </Heading>
+//               <form onSubmit={submitContactForm}>
+//                 <TextField
+//                   name="name"
+//                   title="Full Name"
+//                   label="Full Name"
+//                   variant="outlined"
+//                   required
+//                   style={{ width: "100%", marginTop: "1em" }}
+//                 />
+//                 <TextField
+//                   name="phone"
+//                   title="Phone Number"
+//                   label="Phone Number"
+//                   variant="outlined"
+//                   required
+//                   style={{ width: "100%", marginTop: "1em" }}
+//                 />
+//                 <TextField 
+//                   name="email"
+//                   title="Email Address"
+//                   label="Email Address"
+//                   variant="outlined"
+//                   required
+//                   style={{ width: "100%", marginTop: "1em" }}
+//                   />
+//                 <Options  />
                   
-                <TextField
-                  name="message"
-                  title="Message"
-                  label="Message"
-                  placeholder="Type your message here"
-                  variant="outlined"
-                  multiline
-                  required
-                  style={{ width: "100%", marginTop: "1em" }}
-                />
-                <FillButton disabled={loading} type="submit" style={{ width: "100%" }}>{loading ? 'Submitting' : 'Submit'} Form</FillButton>
-              </form>
-            </div>
-          </div>    
-    );
-}
+//                 <TextField
+//                   name="message"
+//                   title="Message"
+//                   label="Message"
+//                   placeholder="Type your message here"
+//                   variant="outlined"
+//                   multiline
+//                   required
+//                   style={{ width: "100%", marginTop: "1em" }}
+//                 />
+//                 <FillButton disabled={loading} type="submit" style={{ width: "100%" }}>{loading ? 'Submitting' : 'Submit'} Form</FillButton>
+//               </form>
+//             </div>
+//           </div>    
+//     );
+// }
 
-const PopupModal = ({url}) => {
-  const [open, setOpen] = useState(false);
-  const closeModal = () => setOpen(false);
-  React.useEffect(() => {
-      setTimeout(() => {
-          setOpen(true)
-      }, 1000)
-  }, [setOpen]) 
-  if (!open) return null // also this line is useless, since you're using the `open` prop of the Popup component
+// const PopupModal = ({url}) => {
+//   const [open, setOpen] = useState(false);
+//   const closeModal = () => setOpen(false);
+//   React.useEffect(() => {
+//       setTimeout(() => {
+//           setOpen(true)
+//       }, 1000)
+//   }, [setOpen]) 
+//   if (!open) return null // also this line is useless, since you're using the `open` prop of the Popup component
 
-  return (
-      <Popup open={open} closeOnDocumentClick onClose={closeModal} >
-          <h1 className="popupstyle"><ContactsPopup className="contactpopup"/></h1>
-      </Popup>
-  );
-};
+//   return (
+//       <Popup open={open} closeOnDocumentClick onClose={closeModal} >
+//           <h1 className="popupstyle"><ContactsPopup className="contactpopup"/></h1>
+//       </Popup>
+//   );
+// };
 
 
 
@@ -120,7 +120,7 @@ const App = () => {
   return (
     <>
       <div className="app-main-container">
-        <PopupModal />
+        {/* <PopupModal /> */}
         <ContactHeader />
         <Navbar />
         <LandingPage />

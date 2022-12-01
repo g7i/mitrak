@@ -452,15 +452,19 @@ export function Testimonials() {
   );
 }
 
-const yrs = ["2021-2022", "2020-2021", "2019-2020"];
+const yrs = ["2022-2023","2021-2022", "2020-2021", "2019-2020"];
 
 export function Activities() {
   const [active, setActive] = useState(null);
   const [current, setCurrent] = useState(null);
-
+  const [show,setShow] = useState(false);
+  const [hide,setHide] = useState(false);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  const onclickhide = ()=>setHide(true);
+  const onClick = () => setShow(true)
+  
   useEffect(() => {
     (async () => {
       if (!current) return;
@@ -510,12 +514,15 @@ export function Activities() {
               onClick={() => setActive(p => p === i ? null : i)}
               full={i === active}
             >
-              <div className="title">{item.title}</div>
+             <div className="title">{item.title}</div>
               <div className="text">{item.description}</div>
-              {i === active && item.photos.map(p => <img src={p}/>)}
-              <div className="foot">
-                <div className="date">{item.date.toDate().toDateString()}</div>
-                <div className="inst">Click to read more <span>&gt;&gt;</span></div>
+              <div className="date">{item.date.toDate().toDateString()}</div>
+              <div className="" onClick={onclickhide}>
+                <div className="" onClick={onClick}>{hide ? <> </>: <p>Click to read more </p> } {
+                    show?  <> 
+                    {item.photos.map(p => <img src={p} alt="" className="w-30 h-30" />)}</> : <> </>
+                  }<span>
+                  </span></div>
               </div>
             </Event>
           ))}

@@ -5,7 +5,8 @@ import {Cont, Event, H4, PageHead} from "../../../components/styledComponents/Ne
 import {listDocuments} from "../../../utils/firebase/db";
 import {CircularProgress} from "@mui/material";
 
-const yrs = ["2021-2022", "2020-2021", "2019-2020"];
+const yrs = ["2022-2023","2021-2022", "2020-2021", "2019-2020"];
+
 export function Activities() {
   const [active, setActive] = useState(null);
   const [current, setCurrent] = useState(null);
