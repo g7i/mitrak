@@ -187,7 +187,7 @@ export const publicTables = [
         [
             "6",
             "ADMIN EMAIL ID",
-            "min@mitrc.ac.in, mitrcindia@gmail.com"
+            "admin@mitrc.ac.in, mitrcindia@gmail.com"
         ]
     ]
   },
@@ -207,7 +207,7 @@ export const publicTables = [
       [
         "2",
         "COMPLETE ADDRESS WITH PIN CODE",
-        "6TH MILE STONE, DELHI-TIJARA STATE HIGHWAY,SIRMOLI ROAD-VILLAGE JHARKHERA, ALWAR(RAJASTHAN-301028"
+        "6TH MILE STONE, DELHI-TIJARA STATE HIGHWAY,SIRMOLI ROAD-VILLAGE JHARKHERA, ALWAR(RAJASTHAN-301028)"
       ],
       [
         "3",
