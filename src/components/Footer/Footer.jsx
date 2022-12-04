@@ -28,62 +28,9 @@ import { quickLinks, programs, resources } from './footer.data'
 const Footer = () => {
   const history = useHistory();
   return (
-    <FooterMainContainer>
-      <FooterSecondMainContainer>
-        <FooterSectionContainer>
-          <LogoImage
-            src={logo}
-            alt={"mitrc-logo"}
-            style={{ backgroundColor: 'white', padding: '5px 0' }}
-          />
-        </FooterSectionContainer>
-        <FooterSectionContainer>
-          <SectionHeading>Quick Links</SectionHeading>
-          <FooterSecondSectionContainer numberOfRow={1}>
-            {
-              quickLinks.map((item, index) => (
-                  <SectionText key={index} onClick={() => history.push(item.path)}>{item.label}</SectionText>
-              ))
-            }
-          </FooterSecondSectionContainer>
-        </FooterSectionContainer>
-
-        <FooterSectionContainer>
-          <SectionHeading>Programs</SectionHeading>
-          <FooterSecondSectionContainer numberOfRow={1}>
-            {
-              programs.map((item, index) => (
-                  <SectionText key={index} onClick={() => history.push(item.path)}>{item.label}</SectionText>
-              ))
-            }
-          </FooterSecondSectionContainer>
-        </FooterSectionContainer>
-
-        <FooterSectionContainer>
-          <SectionHeading>Resources</SectionHeading>
-          <FooterSecondSectionContainer numberOfRow={1}>
-            {
-              resources.map((item, index) => (
-                  <SectionText key={index} onClick={() => history.push(item.path)}>{item.label}</SectionText>
-              ))
-            }
-          </FooterSecondSectionContainer>
-        </FooterSectionContainer>
-
-        <FooterSectionContainer>
-          <SectionHeading>Enquiry</SectionHeading>
-          <SectionText>We will call you on the number provided</SectionText>
-          <FooterSecondSectionContainer numberOfRow={1}>
-            <CustomInputContainer>
-              <input placeholder={"enter your number"} />
-              <div>
-                <IoMdSend />
-              </div>
-            </CustomInputContainer>
-          </FooterSecondSectionContainer>
-        </FooterSectionContainer>
-
-        <SocailMediaContainer>
+    <div className="bg-slate-900 bg-opacity-90 relative ">
+      <div className="py-4">
+      <div className="flex m-auto justify-center ">
           <SocialMediaIcon href="https://www.facebook.com/mitrc.alwar.1">
             <FaFacebookF />
           </SocialMediaIcon>
@@ -99,12 +46,66 @@ const Footer = () => {
           <SocialMediaIcon href="https://www.instagram.com/mitrcalwar/">
             <FaInstagram />
           </SocialMediaIcon>
-        </SocailMediaContainer>
-      </FooterSecondMainContainer>
+        </div>
 
-      <CopyRightContainer>
-        <h4>Copyright © 2021 MITRC. All rights reserved.</h4>
-      </CopyRightContainer>
+      <div className="">
+        {/* <div>
+          <LogoImage
+            src={logo}
+            alt={"mitrc-logo"}
+            style={{ backgroundColor: 'white', padding: '5px 0' }}
+          />
+        </div> */}
+        <div className="w-full pt-4">
+          {/* <SectionHeading>Quick Links</SectionHeading> */}
+          <div  numberOfRow={1} className= "flex m-auto justify-center">
+            {
+              quickLinks.map((item, index) => (
+                  <div key={index} onClick={() => history.push(item.path)} className={`text-md mx-2 font-bold uppercase text-white opacity-90 hover:underline`}>{item.label}</div>
+              ))
+            }
+          </div>
+        </div>
+
+         
+
+        <div>
+          {/* <SectionHeading>Resources</SectionHeading> */}
+          <div numberOfRow={1}  className="flex m-auto justify-center py-1">
+             {/* <SectionHeading>Programs</SectionHeading> */}
+          
+            {
+              programs.map((item, index) => (
+                  <div key={index} onClick={() => history.push(item.path)} className={`text-sm mx-2  uppercase text-white opacity-90 hover:underline cursor-pointer`}>{item.label}</div>
+              ))
+            }
+            {
+              resources.map((item, index) => (
+                  <div key={index} onClick={() => history.push(item.path)} className={`text-sm mx-2  uppercase text-white opacity-90 hover:underline cursor-pointer`} >{item.label}</div>
+              ))
+            }
+          </div>
+        </div>
+
+        {/* <FooterSectionContainer>
+          <SectionHeading>Enquiry</SectionHeading>
+          <SectionText>We will call you on the number provided</SectionText>
+          <FooterSecondSectionContainer numberOfRow={1}>
+            <CustomInputContainer>
+              <input placeholder={"enter your number"} />
+              <div>
+                <IoMdSend />
+              </div>
+            </CustomInputContainer>
+          </FooterSecondSectionContainer>
+        </FooterSectionContainer> */}
+
+        
+      </div>
+      </div>
+      <div className=" border-t py-2 mt-4 border-white opacity-80">
+        <p className="text-md text-white text-center pt-1">Copyright © 2022 MITRC. All rights reserved.</p>
+      </div>
       <div className="waveWrapper waveAnimation">
         <div className="waveWrapperInner bgMiddle">
           <div className="wave waveMiddle"/>
@@ -116,7 +117,7 @@ const Footer = () => {
           <div className="wave waveTop"/>
         </div>
       </div>
-    </FooterMainContainer>
+    </div>
   );
 };
 

@@ -15,7 +15,7 @@ import ViewBox from "./sections/Viewbox";
 const LandingPage = () => {
   return (
     <>
-      <News_1/>
+      {/* <News_1/> */}
       <ViewBox/>
       <AboutUsSection />
       <Courses />

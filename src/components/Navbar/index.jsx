@@ -17,6 +17,7 @@ import { MenuItem, Menu as MaterialMenu, Avatar } from "@mui/material";
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 import {useStore} from "../../store";
 import {logOut, signIn} from "../../utils/firebase/auth";
+import Sidebar from "../Sidebar/sidebar";
 
 const DropDownContent = {
   aboutUs: [
@@ -113,33 +114,31 @@ const Navbar = () => {
           }
           alt="Mitrc Logo"
         />
-        <p>REAP CODE 60 & RMAP CODE 265</p>
+        {/* <p>REAP CODE 60 & RMAP CODE 265</p> */}
       </ImageLogoLink>
 
-      <Hamburger onClick={() => setShowMobileMenu(!showMobileMenu)}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </Hamburger>
-      <Menu showMobileMenu={showMobileMenu}>
+      <div className="lg:hidden absolute right-10">
+        <Sidebar/>
+      </div>
+      <div className="lg:flex lg:items-center hidden">
         <DropDown content={DropDownContent.aboutUs}>
-          <MenuLink href="/">Home</MenuLink>
+          <a href="/" className=" no-underline p-1 cursor-pointer text-center text-[1rem]  transition duration-300 ease-in  font-medium hover:bg-blue-500 hover:text-white text-gray-800 px-4 py-2 rounded-md"  >Home</a>
         </DropDown>
         <DropDown content={DropDownContent.academics}>
-          <MenuLink href="#">Academics</MenuLink>
+          <a href="#"  className=" no-underline p-1 cursor-pointer text-center text-[1rem]  transition duration-300 ease-in  font-medium hover:bg-blue-500 hover:text-white text-gray-800 px-4 py-2 rounded-md" >Academics</a>
         </DropDown>
         <DropDown content={DropDownContent.campusLife}>
-          <MenuLink href="#">Campus Life</MenuLink>
+          <MenuLink href="#"  className=" no-underline p-1 cursor-pointer text-center text-[1rem]  transition duration-300 ease-in  font-medium hover:bg-blue-500 hover:text-white text-gray-800 px-4 py-2 rounded-md" >Campus Life</MenuLink>
         </DropDown>
-        <MenuLink href="/placements">Placements</MenuLink>
+        <a href="/placements"  className=" no-underline p-1 cursor-pointer text-center text-[1rem]  transition duration-300 ease-in  font-medium hover:bg-blue-500 hover:text-white text-gray-800 px-4 py-2 rounded-md" >Placements</a>
 
-        <MenuLink href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">
+        <a className=" no-underline p-1 cursor-pointer text-center text-[1rem]  transition duration-300 ease-in  font-medium hover:bg-blue-500 hover:text-white text-gray-800 px-4 py-2 rounded-md"  href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">
           Apply For Admission
-        </MenuLink>
-        <MenuLink href="/mitrcnews">
+        </a>
+        <a  className=" no-underline p-1 cursor-pointer text-center text-[1rem]  transition duration-300 ease-in  font-medium hover:bg-blue-500 hover:text-white text-gray-800 px-4 py-2 rounded-md"  href="/mitrcnews">
           Press Release
-        </MenuLink>
-      </Menu>
+        </a>
+      </div>
       {/*TODO: Remove Me*/}
       <div></div>
     </Nav>

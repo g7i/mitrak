@@ -127,10 +127,10 @@ const UpdatesCarousel = () => {
   }, []);
 
   return (
-    <Container style={{ padding: '0 5vw' }}>
-      <Heading style={{ textAlign: "center" }}>
+    <div className="px-[5vw] mt-[10vh] bg-gray-100 py-20">
+      <div className="text-3xl font-bold text-center pb-4">
         RECENT COLLEGE ACTIVITIES
-      </Heading>
+      </div>
       <div style={{ marginBottom: "4vh" }} />
       <Slider onSwipe={handleSwiped} {...settings}>
         {
@@ -146,7 +146,7 @@ const UpdatesCarousel = () => {
        {/*         ))*/}
        {/*     }*/}
        {/*     </div>*/}
-    </Container>
+    </div>
   );
 };
 

@@ -62,7 +62,7 @@ export const CardImage = styled.img`
   object-fit: contain;
   transition: transform 0.3s linear;
   object-position: center;
-  &:hover {
-    transform: scale(1.1);
-  }
+
+
+  
 `;

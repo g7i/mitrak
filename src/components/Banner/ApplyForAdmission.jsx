@@ -9,7 +9,7 @@ const ApplyForAdmission = () => {
         <Container>
             <Overlay>
                 <div>
-                    <Heading style={{ color: 'white' }}>Wanna get started with your career?</Heading>
+                    <Heading className='font-semibold' style={{ color: 'white' }}>Wanna get started with your career?</Heading>
                     <Paragraph align="center" style={{ color: 'white' }}>Apply for admission now!</Paragraph>
                 </div>
                 <Button href="https://docs.google.com/forms/d/e/1FAIpQLScvsKRxjMKKCqMZO8yGiEuvIVQDp2blnasry2_7BE5O_k1xuQ/viewform">Apply Now For Admission</Button>
@@ -62,6 +62,7 @@ const Button = styled.a`
     cursor: pointer;
     margin-left: 5rem;
     text-decoration: none;
+    border-radius:'20px';
     @media (max-width: 768px) {
         margin: 0;
         width: 90%;

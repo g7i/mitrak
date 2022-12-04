@@ -45,11 +45,11 @@ const DropDown = ({ children, content }) => {
     //   </DropDownContentContainer>
     // </DropDownOuterContainer>
  
-      <div className="relative" onMouseEnter={()=> setOpen(true)} onMouseLeave={()=>setOpen(false)}>
+      <div className="relative w-4/12" onMouseEnter={()=> setOpen(true)} onMouseLeave={()=>setOpen(false)}>
         <div >
           {children}
           </div>
-          {open ?<ul className="absolute top-[35px] rounded-md bg-gray-100 z-50  w-[200%] justify-center">
+          {open ?<ul className=" mt-2 top-[35px] rounded-md bg-gray-100 z-50  w-full justify-center">
            
            {content?.map((item , i) => (
             <li key={i} className="py-2 ">

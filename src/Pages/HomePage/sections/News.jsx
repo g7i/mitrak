@@ -86,7 +86,7 @@ export default function News() {
     } catch (error) { }
   }, []);
   return (
-    <Container>
+    <div className=" py-20 px-[8vw] ">
       {/* <Heading style={{ textAlign: "center" }}>News</Heading>
       <Slider {...settings}>
         {Array.from({ length: 5 }).map((_, i) => (
@@ -109,15 +109,15 @@ export default function News() {
           </ItemWrapper>
         ))}
       </Slider> */}
-      <Heading style={{ textAlign: "center" }}>IMPORTANT UPDATES</Heading>
-      <Container style={{ display: "flex", justifyContent: "space-between" }}>
-        <NewsBox>
-          <Heading style={{ fontSize: "1.4rem", textAlign: "center" }}>
+      <div className="text-3xl font-bold text-center mb-10">IMPORTANT UPDATES</div>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+        <div className="h-[50vh] overflow-hidden shadow-sm rounded-lg">
+          <div className="opacity-70 font-semibold bg-white py-2  border-b text-center text-[1rem]" >
             Latest News
-          </Heading>
-          <marquee direction = "up" style={{ height: '80%' }} scrollAmount={5} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
+          </div>
+          <marquee direction = "up" style={{ height: '80%',marginLeft:'4px', marginRight:'4px' }} scrollAmount={5} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
             {newsList
-              ?.filter((item) => item.type == "new")
+              ?.filter((item) => item.type === "new")
               // .slice(0, 2)
               .map((item) => (
                 <NewsComponent
@@ -136,12 +136,12 @@ export default function News() {
           {/*    <Paragraph >Show More..</Paragraph>*/}
           {/*  </Link>*/}
           {/*</div>*/}
-        </NewsBox>
-        <NewsBox>
-          <Heading style={{ fontSize: "1.4rem", textAlign: "center", marginBottom: '10px' }}>
+        </div>
+        <div className="h-[50vh] overflow-hidden shadow-sm rounded-lg">
+          <div className="opacity-70 font-semibold bg-white  py-2 border-b text-center text-[1rem]">
             Useful Links
-          </Heading>
-          <marquee direction = "up" style={{ height: '80%' }} scrollAmount={5} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
+          </div>
+          <marquee direction = "up" style={{ height: '80%',marginLeft:'4px', marginRight:'4px' }} scrollAmount={5} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
             {newsList
               ?.filter((item) => item.type == "usefullLinks")
               .map((item) => (
@@ -152,12 +152,12 @@ export default function News() {
                 </NewsContainer>
               ))}
           </marquee>
-        </NewsBox>
-        <NewsBox>
-          <Heading style={{ fontSize: "1.4rem", textAlign: "center", marginBottom: '10px' }}>
+        </div>
+        <div className="h-[50vh] overflow-hidden shadow-sm rounded-lg">
+          <div className="opacity-70 font-semibold bg-white py-2  border-b text-center text-[1rem]">
             Important Articles
-          </Heading>
-          <marquee direction="up" style={{ height: '80%' }} scrollAmount={6} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
+          </div>
+          <marquee direction="up" style={{ height: '80%',marginLeft:'4px', marginRight:'4px' }} scrollAmount={6} onMouseEnter={e => e.target.stop?.()} onMouseLeave={e => e.target.start?.()}>
             <div style={{ pointerEvents: 'none' }}>
               <Linkify>
                 <div style={{textAlign: "center", textDecoration: 'underline', color: "brown"}}>GOVERNMENT EDUCATION BODIES</div>
@@ -347,9 +347,9 @@ export default function News() {
             {/*        </NewsContainer>*/}
             {/*    ))}*/}
           </marquee>
-        </NewsBox>
-      </Container>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -3,9 +3,9 @@ import { AiOutlineDown } from "react-icons/ai";
 import { Colors } from '../../constants/UiConstants'
 
 export const DropDownOuterContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center;
+  
+  /* flex-direction: column;
+  justify-content: center;
   align-items: center; */
 `;
 
@@ -26,8 +26,8 @@ export const DropDownContentContainer = styled.div`
   position: absolute;
   top: 50px;
   z-index: 1000;
-  padding: 1rem;
-  width: 100%;
+  padding: 4px;
+  width: 30%;
   left: 0;
   ul {
     list-style-type: none;
@@ -35,7 +35,7 @@ export const DropDownContentContainer = styled.div`
       padding: 1rem 0rem;
       &:hover {
         a {
-          color: ${Colors.SECONDARY};
+          /* color: ${Colors.SECONDARY};*/
         }
       }
     }
@@ -67,11 +67,9 @@ export const DropDownContentContainer = styled.div`
 `;
 
 export const DropDownList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  li{
-    margin-left: 20px;
-  }
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+ 
 `
 
 

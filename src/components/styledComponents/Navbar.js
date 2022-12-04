@@ -38,7 +38,7 @@ export const Hamburger = styled.div`
 `;
 
 export const ImgLogo = styled.img`
-  width: 14rem;
+  width: 12rem;
   height: auto;
   padding: 0.5rem;
   padding-left: 2.5rem;
@@ -80,11 +80,7 @@ export const MenuLink = styled.a`
   color: ${Colors.PRIMARY};
   transition: all 0.3s ease-in;
   font-size: 1rem;
-  text-align: center;
-  &:hover {
-    background-color: ${Colors.SECONDARY};
-    color: ${Colors.WHITE};
-  }
+  text-align: center;  
 `;
 
 export const ExpandableList = styled.div`
@@ -101,17 +97,12 @@ export const ExpandableLink = styled.div``;
 export const Menu = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-left:2px;
+  margin-right:2px;
   align-items: center;
   position: relative;
 
-  @media (max-width: 768px) {
-    overflow: hidden;
-    flex-direction: column;
-    width: 100%;
-    max-height: ${({ showMobileMenu }) => (showMobileMenu ? "2000px" : "0")};
-    transition: max-height 0.3s ease;
-    align-items: flex-start;
-  }
+ 
 `;
 
 export const Text = styled.span`
